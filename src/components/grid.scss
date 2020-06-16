@@ -1,0 +1,38 @@
+/* ========================================================================
+     Component: Grid
+   ========================================================================== */
+.fu-grid {
+  display: grid;
+}
+
+.fu-grid-inline {
+  display: inline-grid;
+}
+
+/* Row and column spacing
+   ========================================================================== */
+
+@each $grid, $spacing in $grid-spacings {
+  .fu-grid-row-#{$grid} > * {
+    margin-left: #{$spacing/2};
+    margin-right: #{$spacing/2};
+  }
+
+  .fu-grid-column-#{$grid} > * {
+    margin-top: #{$spacing/2};
+    margin-bottom: #{$spacing/2};
+  }
+}
+
+/* Grid template
+   ========================================================================== */
+
+@for $number from 2 through 6 {
+  .fu-grid-row-#{$number} {
+    grid-template-rows: repeat(#{$number}, 1fr);
+  }
+
+  .fu-grid-column-#{$number} {
+    grid-template-columns: repeat(#{$number}, 1fr);
+  }
+}

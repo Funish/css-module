@@ -1,0 +1,93 @@
+/* ========================================================================
+     Component: Base
+   ========================================================================== */
+:root {
+  @each $scale, $color in $light-colors {
+    --theme-#{$scale}: #{$color};
+  }
+}
+
+/* Style modifiers
+   ========================================================================== */
+
+/** 
+  * Theme
+  */
+
+.fu-theme-dark {
+  @each $scale, $color in $dark-colors {
+    --theme-#{$scale}: #{$color};
+  }
+}
+
+/** 
+  * Status 
+  */
+
+.fu-status-light {
+  --theme-default-color-primary: #{$surface-color-light};
+  --theme-default-color-secondary: #{$middle-color};
+}
+
+.fu-status-dark {
+  --theme-default-color-primary: #{$surface-color-dark};
+  --theme-default-color-secondary: #{$middle-color};
+}
+
+.fu-status-default {
+  --theme-default-color-primary: #{$default-color};
+  --theme-default-color-secondary: #{$default-color-light};
+}
+
+.fu-status-danger {
+  --theme-default-color-primary: #{$danger-color};
+  --theme-default-color-secondary: #{$danger-color-light};
+}
+
+.fu-status-success {
+  --theme-default-color-primary: #{$success-color};
+  --theme-default-color-secondary: #{$success-color-light};
+}
+
+/* Universal style
+   ========================================================================== */
+/**
+  * 1.Remove the outline on all elements when they are active or hovered
+  * 2.Make the tap highlight color of all elements in Webkit browser transparent
+  */
+* {
+  /* 1 */
+  outline: none;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Visual */
+  color: $text-color-light;
+  /* @alternate */
+  color: var(--theme-text-color, $text-color-light);
+}
+
+/* Element modifiers
+   ========================================================================== */
+
+body {
+  /* Layout */
+  overflow-y: scroll;
+
+  /* Visual */
+  background: $surface-color-light;
+  /* @alternate */
+  background: var(--theme-surface-color, $surface-color-light);
+
+  /* Text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.25;
+  word-wrap: break-word;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $middle-color;
+}

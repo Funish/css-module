@@ -1,0 +1,47 @@
+/* ========================================================================
+     Component: Nav
+   ========================================================================== */
+.fu-navbar {
+  /* Layout */
+  display: flex;
+  z-index: 999;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* Box model */
+  padding: 16px;
+
+  /* Text */
+  font-size: 14px;
+
+  /* Visual */
+  background: $surface-color-light;
+  background: var(--theme-surface-color, $surface-color-light);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.fu-navbar-item {
+  /* Layout */
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  /* Box model */
+  margin-right: 16px;
+}
+
+.fu-navbar-link {
+  white-space: nowrap;
+  font-weight: 600;
+  color: $text-color-light;
+  color: var(--theme-text-color, $text-color-light);
+
+  &:hover,
+  &:focus {
+    color: $middle-color;
+  }
+}

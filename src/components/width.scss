@@ -1,0 +1,137 @@
+/* ========================================================================
+     Component: Width
+   ========================================================================== */
+[class*="fu-width"] {
+  box-sizing: border-box;
+}
+
+@each $width, $spacing in $widths {
+  .fu-width-#{$width} {
+    width: #{$spacing};
+  }
+}
+
+/* Relative widths
+   ========================================================================== */
+
+@for $width from 1 through 6 {
+  .fu-width-1-#{$width} {
+    width: #{100% / $width};
+  }
+}
+
+.fu-width-2-3 {
+  width: 100% * 2 / 3;
+}
+
+.fu-width-3-4 {
+  width: 100% * 3 / 4;
+}
+
+.fu-width-2-5 {
+  width: 100% * 2 / 5;
+}
+
+.fu-width-3-5 {
+  width: 100% * 3 / 5;
+}
+
+.fu-width-5-6 {
+  width: 100% * 5 / 6;
+}
+
+/* Child widths
+   ========================================================================== */
+
+[class*="fu-child-width"] > * {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@for $width from 2 through 6 {
+  .fu-child-width-1-#{$width} > * {
+    width: #{100% / $width};
+  }
+}
+
+/* Auto and expand
+   ========================================================================== */
+
+/* Auto */
+.fu-width-auto {
+  width: auto;
+}
+
+/* Expand */
+.fu-width-expand {
+  flex: 1;
+  min-width: 1px;
+}
+
+/* Fit content */
+.fu-width-fit-content {
+  width: fit-content;
+}
+
+/* Responsive width
+   ========================================================================== */
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @each $width, $spacing in $widths {
+      .fu-width-#{$width} {
+        width: #{$spacing};
+      }
+    }
+
+    /* Relative widths */
+    @for $width from 1 through 6 {
+      .fu-width-1-#{$width}#{$breakpoint} {
+        width: #{100% / $width};
+      }
+    }
+
+    .fu-width-2-3#{$breakpoint} {
+      width: 100% * 2 / 3;
+    }
+
+    .fu-width-3-4#{$breakpoint} {
+      width: 100% * 3 / 4;
+    }
+
+    .fu-width-2-5#{$breakpoint} {
+      width: 100% * 2 / 5;
+    }
+
+    .fu-width-3-5#{$breakpoint} {
+      width: 100% * 3 / 5;
+    }
+
+    .fu-width-5-6#{$breakpoint} {
+      width: 100% * 5 / 6;
+    }
+  }
+
+  /* Child widths */
+  @for $width from 2 through 6 {
+    .fu-child-width-1-#{$width}#{$breakpoint} > * {
+      width: #{100% / $width};
+    }
+  }
+
+  /* Auto */
+  .uk-width-auto#{$breakpoint} {
+    width: auto;
+  }
+
+  /* Expand */
+  .uk-width-expand#{$breakpoint} {
+    flex: 1;
+    min-width: 1px;
+  }
+
+  /* Fit content */
+  .fu-width-fit-content#{$breakpoint} {
+    width: fit-content;
+  }
+}

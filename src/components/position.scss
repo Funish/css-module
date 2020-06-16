@@ -1,0 +1,153 @@
+/* ========================================================================
+   Component: Position
+   ========================================================================== */
+/* Directions
+   ========================================================================== */
+/**
+  * 1. Prevent content overflow if `max-width: 100%` is used inside position container.
+  */
+
+[class*="fu-position-top"],
+[class*="fu-position-right"],
+[class*="fu-position-bottom"],
+[class*="fu-position-left"],
+[class*="fu-position-center"] {
+   position: absolute;
+
+   /* 1 */
+   max-width: 100%;
+}
+
+/* Edges
+   ========================================================================== */
+/* Don't use `width: 100%` because it is wrong if the parent has padding. */
+
+.fu-position-top {
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+.fu-position-right {
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
+
+.fu-position-bottom {
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.fu-position-left {
+   top: 0;
+   bottom: 0;
+   left: 0;
+}
+
+/**
+  * Center
+  * 1. Fix text wrapping if content is larger than 50% of the container.
+  */
+
+.fu-position-center {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   /* 1 */
+   width: max-content;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+/* Corners
+   ========================================================================== */
+
+.fu-position-top-left {
+   top: 0;
+   left: 0;
+}
+
+.fu-position-top-right {
+   top: 0;
+   right: 0;
+}
+
+.fu-position-bottom-left {
+   bottom: 0;
+   left: 0;
+}
+
+.fu-position-bottom-right {
+   bottom: 0;
+   right: 0;
+}
+
+/* Vertical */
+
+[class*="fu-position-center-left"],
+[class*="fu-position-center-right"] {
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.fu-position-center-left {
+   left: 0;
+}
+
+.fu-position-center-right {
+   right: 0;
+}
+
+/* Horizontal */
+
+.fu-position-top-center,
+.fu-position-bottom-center {
+   left: 50%;
+   transform: translateX(-50%);
+
+   /* 1 */
+   width: max-content;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.fu-position-top-center {
+   top: 0;
+}
+
+.fu-position-bottom-center {
+   bottom: 0;
+}
+
+/* Cover
+   ========================================================================== */
+
+.fu-position-cover {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+/* Utility
+   ========================================================================== */
+
+.fu-position-relative {
+   position: relative;
+}
+
+.fu-position-absolute {
+   position: absolute;
+}
+
+.fu-position-fixed {
+   position: fixed;
+}
+
+.fu-position-z-index {
+   z-index: 1;
+}

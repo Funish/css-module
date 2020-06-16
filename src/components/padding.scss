@@ -1,0 +1,34 @@
+/* ========================================================================
+     Component: padding
+   ========================================================================== */
+@each $padding, $length in $padding-spacings {
+  .fu-padding-#{$padding} {
+    padding: #{$length};
+  }
+
+  .fu-padding-top-#{$padding} {
+    padding-top: #{$length};
+  }
+
+  .fu-padding-left-#{$padding} {
+    padding-left: #{$length};
+  }
+
+  .fu-padding-bottom-#{$padding} {
+    padding-bottom: #{$length};
+  }
+
+  .fu-padding-right-#{$padding} {
+    padding-right: #{$length};
+  }
+
+  .fu-padding-horizontal-#{$padding} {
+    padding-left: #{$length};
+    padding-right: #{$length};
+  }
+
+  .fu-padding-vertical-#{$padding} {
+    padding-top: #{$length};
+    padding-bottom: #{$length};
+  }
+}

@@ -1,0 +1,103 @@
+/* ========================================================================
+     Component: Box
+   ========================================================================== */
+.fu-box {
+  /* Layout */
+  box-sizing: border-box;
+  position: relative;
+
+  /* Box model */
+  border: 1px solid;
+  border-color: $focus-color-light;
+  border-color: var(--theme-focus-color, $focus-color-light);
+  border-radius: 8px;
+  width: 344px;
+
+  /* Text */
+  line-height: 1.5;
+  word-break: break-word;
+  text-overflow: ellipsis;
+
+  &:hover {
+    box-shadow: 0 2px 1px -1px $focus-color-light, 0 1px 1px 0 $focus-color-light, 0 1px 3px 0 $focus-color-light;
+    box-shadow: 0 2px 1px -1px var(--theme-focus-color, $focus-color-light),
+      0 1px 1px 0 var(--theme-focus-color, $focus-color-light), 0 1px 3px 0 var(--theme-focus-color, $focus-color-light);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fu-box-header {
+    padding: 15px 15px 5px;
+  }
+
+  .fu-box-content {
+    padding: 10px 15px;
+  }
+
+  .fu-box-content:last-child {
+    padding-bottom: 15px;
+  }
+
+  .fu-box-footer {
+    padding: 5px 15px 10px;
+  }
+}
+
+.fu-box-media {
+  overflow: hidden;
+  height: 194px;
+}
+
+.fu-box-action {
+  /* Layout */
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  /* Visual */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 150ms linear;
+
+  &::before,
+  &::after {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+
+    top: calc(50% - 100%);
+
+    /* @noflip */
+    left: calc(50% - 100%);
+    width: 200%;
+    height: 200%;
+    background: $focus-color-light;
+    /* @alternate */
+    background: var(--theme-focus-color, $focus-color-light);
+  }
+
+  &::before {
+    transition: opacity 15ms linear, background-color 15ms linear;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    opacity: 0.16;
+  }
+
+  &:focus::before,
+  &:active::after {
+    transition-duration: 75ms;
+    opacity: 0.36;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
+  }
+}

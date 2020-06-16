@@ -1,0 +1,42 @@
+/* ========================================================================
+     Component: Markdown
+   ========================================================================== */
+.fu-menu,
+.fu-dropdown-menu {
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.fu-menu-header {
+  display: block;
+  padding: 4px 16px;
+  color: $middle-color;
+}
+
+.fu-menu-item {
+  display: block;
+  padding: 4px 16px;
+
+  /* Text */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* Visual */
+  color: $text-color-light;
+  /* @alternate */
+  color: var(--theme-text-color, $text-color-light);
+
+  &:hover,
+  &:focus {
+    /* Visual */
+    color: $text-color-dark;
+    background: $default-color;
+    /* @alternate */
+    background: var(--theme-default-color-primary, $default-color);
+  }
+}

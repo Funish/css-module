@@ -1,0 +1,57 @@
+/* ========================================================================
+     Component: Visibility
+   ========================================================================== */
+[hidden],
+.fu-hidden {
+  display: none;
+}
+
+.fu-invisible {
+  visibility: hidden;
+}
+
+.fu-visible {
+  visibility: visible;
+}
+
+/* Responsive visibility
+   ========================================================================== */
+
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    .fu-hidden#{$breakpoint} {
+      display: none;
+    }
+  }
+}
+
+@each $breakpoint, $width in $breakpoints {
+  @media (max-width: #{$width - 1px}) {
+    .fu-visible#{$breakpoint} {
+      display: none;
+    }
+  }
+}
+
+/* Touch
+   ========================================================================== */
+
+.fu-hidden-touch {
+  display: block;
+}
+
+@media (pointer: coarse) {
+  .fu-hidden-touch {
+    display: none;
+  }
+}
+
+.fu-hidden-notouch {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .fu-hidden-notouch {
+    display: block;
+  }
+}

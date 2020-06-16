@@ -1,0 +1,39 @@
+{
+  "name": "@funish/css",
+  "version": "0.0.1-alpha",
+  "description": "A concise front-end CSS framework.",
+  "author": "Funish.net",
+  "homepage": "https://css.funish.net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Funish/css-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Funish/css-module/issues",
+    "email": "feedback@funish.net"
+  },
+  "files": [
+    "*README*",
+    "/src",
+    "/dist"
+  ],
+  "main": "dist/funish.min.css",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "complete": "node-sass src/funish.scss dist/funish.css --output-style compact",
+    "compressed": "node-sass src/funish.scss dist/funish.min.css --output-style compressed",
+    "output": "yarn complete & yarn compressed"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@nuxtjs/markdownit": "^1.2.9",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {}
+}

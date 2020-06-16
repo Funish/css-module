@@ -1,0 +1,133 @@
+/* ========================================================================
+     Component: Utility
+   ========================================================================== */
+/* Border
+   ========================================================================== */
+[class*="fu-border"] {
+  box-sizing: border-box;
+  border-color: $focus-color-light;
+  border-color: var(--theme-focus-color, $focus-color-light);
+}
+
+.fu-border {
+  border: 1px solid;
+}
+
+.fu-border-top {
+  border-top: 1px solid;
+}
+
+.fu-border-left {
+  border-left: 1px solid;
+}
+
+.fu-border-bottom {
+  border-bottom: 1px solid;
+}
+
+.fu-border-right {
+  border-right: 1px solid;
+}
+
+/** 
+  * Border radius
+  */
+
+.fu-border-small {
+  border-radius: 4px;
+}
+
+.fu-border-large {
+  border-radius: 8px;
+}
+
+.fu-border-pill {
+  border-radius: 500px;
+}
+
+.fu-border-circle {
+  border-radius: 50%;
+}
+
+/** 
+  * Border color
+  */
+
+.fu-border-fade {
+  border-color: $middle-color;
+}
+
+.fu-border-inherit {
+  border-color: inherit;
+}
+
+.fu-border-transparent {
+  border-color: transparent;
+}
+
+/* Background color
+   ========================================================================== */
+
+.fu-background {
+  /* Visual */
+  background: $default-color-light;
+  /* @alternate */
+  background: var(--theme-default-color, $default-color-light);
+}
+
+.fu-background-fade {
+  background: $middle-color;
+}
+
+.fu-background-inherit {
+  background: inherit;
+}
+
+.fu-background-transparent {
+  background: transparent;
+}
+
+/* Text Color
+   ========================================================================== */
+
+.fu-color-fade {
+  color: $middle-color;
+}
+
+.fu-color-inherit {
+  color: inherit;
+}
+
+.fu-color-transparent {
+  color: transparent;
+}
+
+/* Float
+   ========================================================================== */
+
+.fu-float-start {
+  float: inline-start;
+}
+
+.fu-float-end {
+  float: inline-end;
+}
+
+.fu-float-none {
+  float: none;
+}
+
+/* Overflow
+   ========================================================================== */
+
+.fu-overflow-hidden {
+  overflow: hidden;
+}
+
+.fu-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.fu-overflow-y-scroll {
+  overflow-y: scroll;
+}

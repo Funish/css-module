@@ -1,0 +1,122 @@
+/* ========================================================================
+     Component: Flex
+   ========================================================================== */
+.fu-flex {
+  display: flex;
+}
+
+.fu-flex-inline {
+  display: inline-flex;
+}
+
+/**
+  * Remove the pseudo-element created by micro clearfix as a precaution
+  */
+
+.fu-flex {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.fu-flex-inline {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+/* Direction
+   ========================================================================== */
+
+.fu-flex-row {
+  flex-direction: row;
+}
+
+.fu-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.fu-flex-column {
+  flex-direction: column;
+}
+
+.fu-flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Wrap
+   ========================================================================== */
+
+.fu-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.fu-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fu-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Alignments of main axis
+   ========================================================================== */
+
+.fu-main-start {
+  justify-content: flex-start;
+}
+
+.fu-main-end {
+  justify-content: flex-end;
+}
+
+.fu-main-center {
+  justify-content: center;
+}
+
+.fu-main-between {
+  justify-content: space-between;
+}
+
+.fu-main-around {
+  justify-content: space-around;
+}
+
+/* Alignments of cross axis
+   ========================================================================== */
+
+.fu-cross-stretch {
+  align-items: stretch;
+}
+
+.fu-cross-start {
+  align-items: flex-start;
+}
+
+.fu-cross-end {
+  align-items: flex-end;
+}
+
+.fu-cross-center {
+  align-items: center;
+}
+
+/* Allocate child space
+   ========================================================================== */
+
+.fu-flex-auto {
+  /* Ratio */
+  flex: auto;
+}
+
+.fu-flex-none {
+  /* Fit */
+  flex: none;
+}
+
+.fu-flex-1 {
+  /* Equal */
+  flex: 1;
+}

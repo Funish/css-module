@@ -1,0 +1,176 @@
+/* ========================================================================
+     Component: Form
+   ========================================================================== */
+.fu-button,
+.fu-form {
+  /* Layout */
+  box-sizing: border-box;
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+
+  /* Box model */
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  min-width: 64px;
+
+  /* Text */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.fu-form {
+  /* Box model */
+  border: 1px solid;
+  padding: 0 12px;
+
+  /* Visual */
+  &:not(:disabled) {
+    color: $default-color;
+    /* @alternate */
+    color: var(--theme-default-color-primary, $default-color);
+    border-color: $default-color;
+    /* @alternate */
+    border-color: var(--theme-default-color-primary, $default-color);
+    background: inherit;
+
+    &::placeholder {
+      opacity: 0.8;
+      color: $default-color-light;
+      /* @alternate */
+      color: var(--theme-default-color-secondary, $default-color-light);
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $default-color-light;
+    box-shadow: 0 0 0 2px var(--theme-default-color-secondary, $default-color-light);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    /* @alternate */
+    color: var(--theme-disabled-color, $disabled-color);
+
+    border-color: $disabled-color;
+    /* @alternate */
+    border-color: var(--theme-disabled-color, $disabled-color);
+  }
+}
+
+.fu-form-file {
+  display: inline-flex;
+
+  input[type="file"] {
+    display: none;
+  }
+}
+
+select.fu-form {
+  option {
+    /* Visual */
+    color: initial;
+    background: initial;
+  }
+}
+
+textarea.fu-form {
+  /* Box model */
+  padding: 12px;
+  height: 72px;
+  resize: none;
+}
+
+/* Style modifiers
+   ========================================================================== */
+
+.fu-form-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: unset;
+
+  &:focus {
+    box-shadow: 0 2px $default-color-light;
+    box-shadow: 0 2px var(--theme-default-color-secondary, $default-color-light);
+  }
+}
+
+/* `.fu-checkbox`, `.fu-radio`, `.fu-range`
+   ========================================================================== */
+/**
+  * Still in plan
+  */
+
+/* Icon form
+   ========================================================================== */
+
+/**
+  * 1. Container fits its content
+  * 2. Create position context
+  * 3. Prevent content overflow
+  * 4. Behave like most inline-block elements
+  */
+.fu-icon-form {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+  /* 4 */
+  vertical-align: middle;
+}
+
+/**
+  * 1. Set position
+  * 2. Set width
+  * 3. Center icon vertically and horizontally
+  * 4. Style
+  */
+
+.fu-form-icon {
+  /* 1 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  /* 2 */
+  width: 36px;
+
+  /* 3 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 4 */
+  color: $default-color;
+  /* @alternate */
+  color: var(--theme-default-color-primary, $default-color);
+
+  &:not(a):not(button):not(input) {
+    pointer-events: none;
+  }
+
+  &:not([dir="rtl"]) ~ .fu-form {
+    position: initial;
+    padding-left: 36px;
+  }
+}
+
+[dir="rtl"] .fu-form-icon {
+  right: 0;
+  left: auto;
+
+  ~ .fu-form {
+    position: initial;
+    padding-left: 12px;
+    padding-right: 36px;
+  }
+}

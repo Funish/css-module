@@ -1,0 +1,217 @@
+/* ========================================================================
+     Component: Button
+   ========================================================================== */
+.fu-button {
+  padding: 0 8px;
+  text-transform: uppercase;
+  user-select: none;
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    color: $default-color;
+    /* @alternate */
+    color: var(--theme-default-color-primary, $default-color);
+    background: transparent;
+    transition: background-color 150ms linear;
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+
+    color: $disabled-color;
+    /* @alternate */
+    color: var(--theme-disabled-color, $disabled-color);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+
+    top: calc(50% - 100%);
+
+    /* @noflip */
+    left: calc(50% - 100%);
+    width: 200%;
+    height: 200%;
+    background: $default-color;
+    /* @alternate */
+    background: var(--theme-default-color-primary, $default-color);
+  }
+
+  &::before {
+    transition: opacity 15ms linear, background-color 15ms linear;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    opacity: 0.04;
+  }
+
+  &:focus::before,
+  &:active::after {
+    transition-duration: 75ms;
+    opacity: 0.12;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
+  }
+}
+
+.fu-button-dense {
+  height: 32px;
+  font-size: 0.8125rem;
+}
+
+.fu-button-loose {
+  height: 40px;
+}
+
+/* Style modifiers
+   ========================================================================== */
+
+.fu-button-raised,
+.fu-button-contained {
+  padding: 0 16px;
+}
+
+.fu-button-outlined,
+.fu-button-raised {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 2px $default-color-light;
+    box-shadow: 0 0 0 2px var(--theme-default-color-secondary, $default-color-light);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 3px $default-color-light;
+    box-shadow: 0 0 0 3px var(--theme-default-color-secondary, $default-color-light);
+  }
+
+  &:disabled {
+    box-shadow: none;
+  }
+}
+
+.fu-button-outlined {
+  border-style: solid;
+  padding: 0 15px;
+  border-width: 1px;
+
+  &:not(:disabled) {
+    border-color: $default-color;
+    /* @alternate */
+    border-color: var(--theme-default-color-primary, $default-color);
+  }
+
+  &:disabled {
+    padding: 0 16px;
+    border: none;
+  }
+}
+
+.fu-button-raised,
+.fu-button-contained {
+  &:not(:disabled) {
+    color: $text-color-dark;
+    background: $default-color;
+    /* @alternate */
+    background: var(--theme-default-color-primary, $default-color);
+  }
+
+  &::before,
+  &::after {
+    background: $surface-color-light;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
+  }
+
+  &:hover::before {
+    opacity: 0.08;
+  }
+
+  &:focus::before,
+  &:active::after {
+    transition-duration: 75ms;
+    opacity: 0.24;
+  }
+}
+
+/* Icon button
+   ========================================================================== */
+
+.fu-button-icon {
+  /* Layout */
+  display: inline-block;
+
+  /* Box model */
+  width: 18px;
+  height: 18px;
+  /* @noflip */
+  margin-left: 0;
+  margin-right: 8px;
+
+  /* Text */
+  font-size: 18px;
+
+  /* Visual */
+  color: inherit;
+}
+
+[dir="rtl"] .fu-button .fu-button-icon,
+[dir="rtl"].fu-button .fu-button-icon {
+  /* @noflip */
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+svg.fu-button-icon {
+  fill: currentColor;
+}
+
+.fu-button-raised .fu-button-icon,
+.fu-button-contained .fu-button-icon,
+.fu-button-outlined .fu-button-icon {
+  /* @noflip */
+  margin-left: -4px;
+  margin-right: 8px;
+}
+
+[dir="rtl"] .fu-button-raised .fu-button-icon,
+[dir="rtl"] .fu-button-contained .fu-button-icon,
+[dir="rtl"] .fu-button-outlined .fu-button-icon,
+[dir="rtl"].fu-button-raised .fu-button-icon,
+[dir="rtl"].fu-button-contained .fu-button-icon,
+[dir="rtl"].fu-button-outlined .fu-button-icon {
+  /* @noflip */
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+.fu-icon-button {
+  min-width: 36px;
+  padding: 0;
+  border-radius: 500px;
+
+  &.fu-button-dense {
+    min-width: 32px;
+  }
+
+  &.fu-button-loose {
+    min-width: 40px;
+  }
+
+  .fu-button-icon {
+    margin: 0;
+  }
+}

@@ -1,0 +1,34 @@
+/* ========================================================================
+     Component: Margin
+   ========================================================================== */
+@each $margin, $length in $margin-spacings {
+  .fu-margin-#{$margin} {
+    margin: #{$length};
+  }
+
+  .fu-margin-top-#{$margin} {
+    margin-top: #{$length};
+  }
+
+  .fu-margin-left-#{$margin} {
+    margin-left: #{$length};
+  }
+
+  .fu-margin-bottom-#{$margin} {
+    margin-bottom: #{$length};
+  }
+
+  .fu-margin-right-#{$margin} {
+    margin-right: #{$length};
+  }
+
+  .fu-margin-horizontal-#{$margin} {
+    margin-left: #{$length};
+    margin-right: #{$length};
+  }
+
+  .fu-margin-vertical-#{$margin} {
+    margin-top: #{$length};
+    margin-bottom: #{$length};
+  }
+}

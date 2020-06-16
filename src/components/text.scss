@@ -1,0 +1,152 @@
+/* ========================================================================
+     Component: Text
+   ========================================================================== */
+/* Link
+   ========================================================================== */
+a {
+  color: $default-color;
+  color: var(--theme-default-color-primary, $default-color);
+
+  &:not(:hover) {
+    text-decoration: none;
+  }
+}
+
+/* Title
+   ========================================================================== */
+
+.fu-text-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+.fu-text-subtitle {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.0071428571em;
+}
+
+/* Text alignment
+   ========================================================================== */
+
+.fu-text-start {
+  text-align: left;
+}
+
+[dir="rtl"] .fu-text-start {
+  text-align: right;
+}
+
+.fu-text-end {
+  text-align: right;
+}
+
+[dir="rtl"] .fu-text-end {
+  text-align: left;
+}
+
+.fu-text-center {
+  text-align: center;
+}
+
+.fu-text-justify {
+  text-align: justify;
+}
+
+.fu-text-justify-all {
+  text-align: justify-all;
+}
+
+/* Text transform
+   ========================================================================== */
+
+.fu-text-capitalize {
+  text-transform: capitalize;
+}
+
+.fu-text-uppercase {
+  text-transform: uppercase;
+}
+
+.fu-text-lowercase {
+  text-transform: lowercase;
+}
+
+/* Text size
+   ========================================================================== */
+
+.fu-text-xxsmall {
+  font-size: xx-small;
+}
+
+.fu-text-xsmall {
+  font-size: x-small;
+}
+
+.fu-text-small {
+  font-size: small;
+}
+
+.fu-text-medium {
+  font-size: medium;
+}
+
+.fu-text-large {
+  font-size: large;
+}
+
+.fu-text-xlarge {
+  font-size: x-large;
+}
+
+.fu-text-xxlarge {
+  font-size: xx-large;
+}
+
+.fu-text-smaller {
+  font-size: smaller;
+}
+
+.fu-text-larger {
+  font-size: larger;
+}
+
+/* Text weight
+   ========================================================================== */
+
+.fu-text-light {
+  font-weight: 300;
+}
+
+.fu-text-normal {
+  font-weight: normal;
+}
+
+.fu-text-bold {
+  font-weight: bold;
+}
+
+.fu-text-lighter {
+  font-weight: lighter;
+}
+
+.fu-text-bolder {
+  font-weight: bolder;
+}
+
+/* Text wrap
+   ========================================================================== */
+
+.fu-text-nowrap {
+  word-break: keep-all;
+}
+
+.fu-text-break-all {
+  word-break: break-all;
+}
+
+.fu-text-break-word {
+  word-break: break-word;
+}
