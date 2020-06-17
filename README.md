@@ -46,7 +46,7 @@ Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project devel
 Recommended for faster global response times from the Jsdelivr CDN.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@funish/css@latest/dist/funish.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@funish/css@latest/dist/funish.min.css" />
 ```
 
 ### NPM / Yarn
