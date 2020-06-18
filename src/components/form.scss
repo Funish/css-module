@@ -37,7 +37,8 @@
     border-color: $default-color;
     /* @alternate */
     border-color: var(--theme-default-color-primary, $default-color);
-    background: inherit;
+    background: $surface-color-light;
+    background: var(--theme-surface-color, $surface-color-light);
 
     &::placeholder {
       opacity: 0.8;
@@ -85,20 +86,6 @@ textarea.fu-form {
   padding: 12px;
   height: 72px;
   resize: none;
-}
-
-/* Style modifiers
-   ========================================================================== */
-
-.fu-form-underlined {
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-radius: unset;
-
-  &:focus {
-    box-shadow: 0 2px $default-color-light;
-    box-shadow: 0 2px var(--theme-default-color-secondary, $default-color-light);
-  }
 }
 
 /* `.fu-checkbox`, `.fu-radio`, `.fu-range`

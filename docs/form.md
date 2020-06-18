@@ -14,14 +14,6 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input class="fu-form" />
 ```
 
-## 变体
-
-可使用类选择器 `.fu-form-underlined` 来应用下划线样式。
-
-```html
-<input class="fu-form fu-form-underlined" />
-```
-
 ## 上传
 
 ```html

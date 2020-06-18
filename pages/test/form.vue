@@ -12,16 +12,6 @@
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
     </div>
-    <h2>Underlined form</h2>
-    <div class="fu-flex fu-grid-row-medium fu-grid-column-medium">
-      <input class="fu-form fu-form-underlined" placeholder="Placeholder" />
-      <select class="fu-form fu-form-underlined">
-        <option>Option1</option>
-        <option>Option2</option>
-        <option>Option3</option>
-      </select>
-      <textarea class="fu-form fu-form-underlined" placeholder="Placeholder"></textarea>
-    </div>
     <h2>Upload</h2>
     <div class="fu-flex fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-form-file">

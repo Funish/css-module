@@ -18,6 +18,10 @@
   word-break: break-word;
   text-overflow: ellipsis;
 
+  /* Visual */
+  background: $surface-color-light;
+  background: var(--theme-surface-color, $surface-color-light);
+
   &:hover {
     box-shadow: 0 2px 1px -1px $focus-color-light, 0 1px 1px 0 $focus-color-light, 0 1px 3px 0 $focus-color-light;
     box-shadow: 0 2px 1px -1px var(--theme-focus-color, $focus-color-light),

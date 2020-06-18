@@ -9,9 +9,7 @@
         exact
         class="fu-menu-item"
       >
-        <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
-        </v-list-item-content>
+        <div v-text="item.title"></div>
       </nuxt-link>
       <hr />
       <div class="fu-menu-header fu-text-subtitle">布局</div>
@@ -23,9 +21,7 @@
         exact
         class="fu-menu-item"
       >
-        <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
-        </v-list-item-content>
+        <div v-text="item.title"></div>
       </nuxt-link>
       <hr />
       <div class="fu-menu-header fu-text-subtitle">盒模型</div>
@@ -37,9 +33,7 @@
         exact
         class="fu-menu-item"
       >
-        <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
-        </v-list-item-content>
+        <div v-text="item.title"></div>
       </nuxt-link>
       <hr />
       <div class="fu-menu-header fu-text-subtitle">文本</div>
@@ -51,9 +45,7 @@
         exact
         class="fu-menu-item"
       >
-        <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
-        </v-list-item-content>
+        <div v-text="item.title"></div>
       </nuxt-link>
       <hr />
       <div class="fu-menu-header fu-text-subtitle">控件</div>
@@ -65,9 +57,7 @@
         exact
         class="fu-menu-item"
       >
-        <v-list-item-content>
-          <v-list-item-title v-text="item.title" />
-        </v-list-item-content>
+        <div v-text="item.title"></div>
       </nuxt-link>
     </v-list>
   </aside>

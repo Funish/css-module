@@ -62,9 +62,7 @@
   -webkit-tap-highlight-color: transparent;
 
   /* Visual */
-  color: $text-color-light;
-  /* @alternate */
-  color: var(--theme-text-color, $text-color-light);
+  color: inherit;
 }
 
 /* Element modifiers
@@ -75,6 +73,9 @@ body {
   overflow-y: scroll;
 
   /* Visual */
+  color: $text-color-light;
+  /* @alternate */
+  color: var(--theme-text-color, $text-color-light);
   background: $surface-color-light;
   /* @alternate */
   background: var(--theme-surface-color, $surface-color-light);

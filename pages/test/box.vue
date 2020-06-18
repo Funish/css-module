@@ -33,14 +33,14 @@
         </div>
         <div class="fu-box-footer fu-flex fu-main-end">
           <button class="fu-button fu-icon-button">
-            <i class="far fa-heart fu-button-icon"></i>
+            <i class="far fa-heart"></i>
           </button>
           <button class="fu-button fu-icon-button">
-            <i class="far fa-bookmark fu-button-icon"></i>
+            <i class="far fa-bookmark"></i>
           </button>
           <details class="fu-dropdown">
             <summary class="fu-button fu-icon-button">
-              <i class="fas fa-ellipsis-v fu-button-icon"></i>
+              <i class="fas fa-ellipsis-v"></i>
             </summary>
             <div class="fu-dropdown-menu fu-dropdown-menu-top">
               <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
