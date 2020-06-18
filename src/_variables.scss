@@ -1,29 +1,24 @@
 /* Color modifiers
    ========================================================================== */
-/** 
-  * Surface
-  */
-
-/* Light */
-$surface-color-light: #fff;
-
-$text-color-light: #222;
-
-$focus-color-light: rgba(27, 31, 35, 0.15);
-
-/* Dark */
-$surface-color-dark: #1b1f23;
-
-$text-color-dark: #fff;
-
-$focus-color-dark: rgba(255, 255, 255, 0.15);
 
 /* Middle */
-$middle-color: #9f9f9f;
+$middle-color: rgb(128, 128, 128);
 
-/** 
-  * Elements 
-  */
+/* Background */
+$background-color-light: rgb(246, 246, 246);
+$background-color-dark: rgb(33, 33, 33);
+
+/* Surface */
+$surface-color-light: rgb(252, 252, 252);
+$surface-color-dark: rgb(48, 48, 48);
+
+/* On surface */
+$on-surface-color-light: #000;
+$on-surface-color-dark: #fff;
+
+/* Variant */
+$variant-color-light: rgba(33, 33, 33, 0.15);
+$variant-color-dark: rgba(237, 237, 237, 0.15);
 
 /* Default */
 $default-color: #0366d6;
@@ -45,9 +40,10 @@ $disabled-color: rgba(0, 0, 0, 0.37);
 
 /* Theme */
 $light-colors: (
+   background-color: $background-color-light,
    surface-color: $surface-color-light,
-   text-color: $text-color-light,
-   focus-color: $focus-color-light,
+   on-surface-color: $on-surface-color-light,
+   variant-color: $variant-color-light,
    middle-color: $middle-color,
    default-color-primary: $default-color,
    default-color-secondary: $default-color-light,
@@ -59,9 +55,10 @@ $light-colors: (
 ) !default;
 
 $dark-colors: (
+   background-color: $background-color-dark,
    surface-color: $surface-color-dark,
-   text-color: $text-color-dark,
-   focus-color: $focus-color-dark,
+   on-surface-color: $on-surface-color-dark,
+   variant-color: $variant-color-dark,
    default-color-secondary: $default-color-dark,
    danger-color-secondary: $danger-color-dark,
    success-color-secondary: $success-color-dark,

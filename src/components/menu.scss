@@ -10,6 +10,7 @@
   a {
     text-decoration: none;
   }
+  
 }
 
 .fu-menu-header {
@@ -27,14 +28,14 @@
   white-space: nowrap;
 
   /* Visual */
-  color: $text-color-light;
+  color: $on-surface-color-light;
   /* @alternate */
-  color: var(--theme-text-color, $text-color-light);
+  color: var(--theme-on-surface-color, $on-surface-color-light);
 
   &:hover,
   &:focus {
     /* Visual */
-    color: $text-color-dark;
+    color: $on-surface-color-dark;
     background: $default-color;
     /* @alternate */
     background: var(--theme-default-color-primary, $default-color);

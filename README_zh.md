@@ -13,32 +13,32 @@ Funish CSS 是 [Thus.Fun](https://thus.fun) 团队开发的 `Funish` 项目的�
 
 ### 布局
 
-* [Flex](/docs/flex)
-* [Grid](/docs/grid)
-* [Position](/docs/position)
-* [Visibility](/docs/visibility)
+* [Flex](/docs/flex.md)
+* [Grid](/docs/grid.md)
+* [Position](/docs/position.md)
+* [Visibility](/docs/visibility.md)
 
 ### 盒模型
 
-* [Margin](/docs/margin)
-* [Padding](/docs/padding)
-* [Width](/docs/width)
-* [Height](/docs/height)
+* [Margin](/docs/margin.md)
+* [Padding](/docs/padding.md)
+* [Width](/docs/width.md)
+* [Height](/docs/height.md)
 
 ### 文本
 
-* [Text](/docs/text)
-* [Markdown](/docs/markdown)
+* [Text](/docs/text.md)
+* [Markdown](/docs/markdown.md)
 
 ### 控件
 
-* [Box](/docs/box)
-* [Button](/docs/button)
-* [Dropdown](/docs/dropdown)
-* [Form](/docs/form)
-* [Menu](/docs/menu)
-* [Navbar](/docs/navbar)
-* [Utility](/docs/utility)
+* [Box](/docs/box.md)
+* [Button](/docs/button.md)
+* [Dropdown](/docs/dropdown.md)
+* [Form](/docs/form.md)
+* [Menu](/docs/menu.md)
+* [Navbar](/docs/navbar.md)
+* [Utility](/docs/utility.md)
 
 ## 用法
 

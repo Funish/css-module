@@ -8,8 +8,8 @@
 
   /* Box model */
   border: 1px solid;
-  border-color: $focus-color-light;
-  border-color: var(--theme-focus-color, $focus-color-light);
+  border-color: $variant-color-light;
+  border-color: var(--theme-variant-color, $variant-color-light);
   border-radius: 8px;
   width: 344px;
 
@@ -23,10 +23,8 @@
   background: var(--theme-surface-color, $surface-color-light);
 
   &:hover {
-    box-shadow: 0 2px 1px -1px $focus-color-light, 0 1px 1px 0 $focus-color-light, 0 1px 3px 0 $focus-color-light;
-    box-shadow: 0 2px 1px -1px var(--theme-focus-color, $focus-color-light),
-      0 1px 1px 0 var(--theme-focus-color, $focus-color-light), 0 1px 3px 0 var(--theme-focus-color, $focus-color-light);
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 12px 0 $variant-color-light;
+    box-shadow: 0 2px 12px 0 var(--theme-variant-color, $variant-color-light);
   }
 
   img {
@@ -81,9 +79,9 @@
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
-    background: $focus-color-light;
+    background: $variant-color-light;
     /* @alternate */
-    background: var(--theme-focus-color, $focus-color-light);
+    background: var(--theme-variant-color, $variant-color-light);
   }
 
   &::before {

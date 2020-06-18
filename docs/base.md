@@ -23,8 +23,8 @@
 | 类名                              | 描述                               |
 |-----------------------------------|------------------------------------|
 | `--theme-surface-color`           | 面板颜色                           |
-| `--theme-text-color`              | 文字颜色（）                       |
-| `--theme-focus-color`             | 聚焦颜色（通常为褪色后的面板颜色） |
+| `--theme-on-surface-color`              | 文字颜色（）                       |
+| `--theme-variant-color`             | 聚焦颜色（通常为褪色后的面板颜色） |
 | `--theme-middle-color`            | 中间色（用于浅色和深色切换）       |
 | `--theme-default-color-primary`   | 默认色的主要颜色                   |
 | `--theme-default-color-secondary` | 默认色的次要颜色                   |

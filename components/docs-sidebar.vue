@@ -1,6 +1,6 @@
 <template>
   <aside class="fu-padding-small custom-aside">
-    <v-list class="fu-menu">
+    <div class="fu-menu">
       <nuxt-link
         v-for="(item, i) in home_items"
         :key="i"
@@ -59,7 +59,7 @@
       >
         <div v-text="item.title"></div>
       </nuxt-link>
-    </v-list>
+    </div>
   </aside>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="fu-position-center">
+  <div>
     <h1 v-if="error.statusCode === 404">页面不存在</h1>
     <h1 v-else>应用发生错误异常</h1>
     <button onclick="window.history.back();" class="fu-button fu-button-contained">返回上一页</button>

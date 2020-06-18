@@ -44,8 +44,8 @@
   padding: 4px;
   margin-top: 2px;
   border-radius: 4px;
-  border: 1px solid $focus-color-light;
-  border-color: var(--theme-focus-color, $focus-color-light);
+  border: 1px solid $variant-color-light;
+  border-color: var(--theme-variant-color, $variant-color-light);
 
   /* Visual */
   background: $surface-color-light;

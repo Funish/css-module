@@ -5,8 +5,8 @@
    ========================================================================== */
 [class*="fu-border"] {
   box-sizing: border-box;
-  border-color: $focus-color-light;
-  border-color: var(--theme-focus-color, $focus-color-light);
+  border-color: $variant-color-light;
+  border-color: var(--theme-variant-color, $variant-color-light);
 }
 
 .fu-border {

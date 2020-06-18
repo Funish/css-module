@@ -121,7 +121,7 @@
 .fu-button-raised,
 .fu-button-contained {
   &:not(:disabled) {
-    color: $text-color-dark;
+    color: $on-surface-color-dark;
     background: $default-color;
     /* @alternate */
     background: var(--theme-default-color-primary, $default-color);

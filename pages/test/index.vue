@@ -99,5 +99,10 @@
         </div>
       </div>
     </div>
+    <style>
+  ::-webkit-scrollbar {
+    background: transparent;
+  }
+    </style>
   </div>
 </template>

@@ -73,12 +73,12 @@ body {
   overflow-y: scroll;
 
   /* Visual */
-  color: $text-color-light;
+  color: $on-surface-color-light;
   /* @alternate */
-  color: var(--theme-text-color, $text-color-light);
-  background: $surface-color-light;
+  color: var(--theme-on-surface-color, $on-surface-color-light);
+  background: $background-color-light;
   /* @alternate */
-  background: var(--theme-surface-color, $surface-color-light);
+  background: var(--theme-background-color, $background-color-light);
 
   /* Text */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",

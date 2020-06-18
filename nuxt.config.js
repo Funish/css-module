@@ -53,17 +53,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/dark.min.css"
-      }
-    ],
-    script: [
-      {
-        src: "//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js", async: true, defer: true
-      }
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ]
   },
   /*

@@ -2,7 +2,7 @@
   <div>
     <h1>Navbar</h1>
     <hr />
-    <div class="fu-border fu-width-1-1">
+    <div class="fu-width-1-1">
       <header class="fu-navbar">
         <div class="fu-flex-inline fu-flex-auto">
           <div class="fu-navbar-item fu-text-title">
@@ -16,9 +16,16 @@
           </div>
         </div>
         <div class="fu-navbar-item">
-          <nuxt-link to="#menu" class="fu-navbar-link">
-            <i class="fas fa-bars"></i>
-          </nuxt-link>
+          <details class="fu-dropdown">
+            <summary>
+              <i class="fas fa-bars"></i>
+            </summary>
+            <div class="fu-dropdown-menu fu-dropdown-menu-left">
+              <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
+              <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
+              <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+            </div>
+          </details>
         </div>
       </header>
     </div>

@@ -37,8 +37,8 @@
     border-color: $default-color;
     /* @alternate */
     border-color: var(--theme-default-color-primary, $default-color);
-    background: $surface-color-light;
-    background: var(--theme-surface-color, $surface-color-light);
+    background: $background-color-light;
+    background: var(--theme-background-color, $background-color-light);
 
     &::placeholder {
       opacity: 0.8;

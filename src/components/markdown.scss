@@ -8,11 +8,11 @@
     font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     line-height: 10px;
     vertical-align: middle;
-    background: $focus-color-dark;
-    background: var(--theme-focus-color, $focus-color-dark);
+    background: $variant-color-light;
+    background: var(--theme-variant-color, $variant-color-light);
     border: 1px solid $middle-color;
     border-radius: 3px;
-    box-shadow: inset 0 -1px 0 $text-color-dark;
+    box-shadow: inset 0 -1px 0 $on-surface-color-dark;
   }
 
   &::before {
@@ -57,16 +57,16 @@
     height: 0.25em;
     padding: 0;
     margin: 24px 0;
-    background: $focus-color-dark;
-    background: var(--theme-focus-color, $focus-color-dark);
+    background: $variant-color-light;
+    background: var(--theme-variant-color, $variant-color-light);
     border: 0;
   }
 
   blockquote {
     padding: 0 1em;
     color: $middle-color;
-    border-left: 0.25em solid $focus-color-dark;
-    border-left-color: var(--theme-focus-color, $focus-color-dark);
+    border-left: 0.25em solid $variant-color-light;
+    border-left-color: var(--theme-variant-color, $variant-color-light);
 
     > {
       :first-child {
@@ -235,12 +235,11 @@
     }
 
     tr {
-      background: $focus-color-dark;
       border-top: 1px solid $middle-color;
 
       &:nth-child(2n) {
-        background: $focus-color-dark;
-        background: var(--theme-focus-color, $focus-color-dark);
+        background: $variant-color-light;
+        background: var(--theme-variant-color, $variant-color-light);
       }
     }
 
@@ -268,8 +267,8 @@
     margin: 0;
     font-size: 85%;
     border-radius: 3px;
-    background: $focus-color-dark;
-    background: var(--theme-focus-color, $focus-color-dark);
+    background: $variant-color-light;
+    background: var(--theme-variant-color, $variant-color-light);
   }
 
   code br,
@@ -310,8 +309,8 @@ pre {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background: $focus-color-light;
-  background: var(--theme-focus-color, $focus-color-light);
+  background: $surface-color-dark;
+  background: var(--theme-surface-color, $surface-color-light);
   border-radius: 3px;
 
   code,

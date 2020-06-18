@@ -37,8 +37,8 @@
 .fu-navbar-link {
   white-space: nowrap;
   font-weight: 600;
-  color: $text-color-light;
-  color: var(--theme-text-color, $text-color-light);
+  color: $on-surface-color-light;
+  color: var(--theme-on-surface-color, $on-surface-color-light);
 
   &:hover,
   &:focus {

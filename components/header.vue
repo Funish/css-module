@@ -1,5 +1,5 @@
 <template>
-  <header class="fu-navbar">
+  <header class="fu-navbar fu-background-transparent">
     <div class="fu-flex-inline fu-flex-auto">
       <div class="fu-navbar-item fu-text-title">
         <nuxt-link to="/" class="fu-navbar-link">Funish CSS</nuxt-link>
