@@ -1133,23 +1133,3 @@ svg.fu-button-icon { fill: currentColor; }
 .fu-overflow-x-scroll { overflow-x: scroll; }
 
 .fu-overflow-y-scroll { overflow-y: scroll; }
-
-.hljs { display: block; overflow-x: auto; padding: 0.5em; /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #fcfcfc; /* @alternate */ background: var(--theme-surface-color, #fcfcfc); }
-
-.hljs-comment, .hljs-quote, .hljs-variable { color: #28a745; }
-
-.hljs-built_in, .hljs-keyword, .hljs-name, .hljs-selector-tag, .hljs-tag { color: #005cc5; }
-
-.hljs-addition, .hljs-attribute, .hljs-literal, .hljs-section, .hljs-string, .hljs-template-tag, .hljs-template-variable, .hljs-title, .hljs-type { color: #d73a49; }
-
-.hljs-deletion, .hljs-meta, .hljs-selector-attr, .hljs-selector-pseudo { color: #34d058; }
-
-.hljs-doctag { color: gray; }
-
-.hljs-attr { color: #cb2431; }
-
-.hljs-bullet, .hljs-link, .hljs-symbol { color: #0366d6; }
-
-.hljs-emphasis { font-style: italic; }
-
-.hljs-strong { font-weight: 700; }

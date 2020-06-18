@@ -65,6 +65,7 @@ export default {
   */
   css: [
     '~/src/funish.scss',
+    '~/src/highlight.js.scss',
     '@fortawesome/fontawesome-free/css/all.min.css'
   ],
   /*
