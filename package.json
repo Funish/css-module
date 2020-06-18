@@ -26,7 +26,8 @@
     "generate": "nuxt generate",
     "complete": "node-sass src/funish.scss dist/funish.css --output-style compact",
     "compressed": "node-sass src/funish.scss dist/funish.min.css --output-style compressed",
-    "output": "yarn complete & yarn compressed"
+    "output": "yarn complete & yarn compressed",
+    "publish": "yarn output & yarn publish"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
