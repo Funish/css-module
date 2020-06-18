@@ -1,7 +1,8 @@
 # Funish CSS
 
-[![npm version](https://badge.fury.io/js/%40funish%2Fcss.svg)](https://badge.fury.io/js/%40funish%2Fcss)
-![NPM](https://img.shields.io/npm/l/@funish/css)
+![npm version](https://img.shields.io/npm/v/@funish/css)
+![npm license](https://img.shields.io/npm/l/@funish/css)
+![npm downloads](https://img.shields.io/npm/dm/@funish/css)
 [![](https://data.jsdelivr.com/v1/package/npm/@funish/css/badge)](https://www.jsdelivr.com/package/npm/@funish/css)
 
 ### 一个简洁的前端CSS框架。
