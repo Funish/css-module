@@ -60,6 +60,10 @@ export default {
   ** Customize the progress-bar color
   */
   loading: false,
+
+  render: {
+    resourceHints: false
+  },
   /*
   ** Global CSS
   */
