@@ -41,8 +41,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
-    "nuxt": "^2.0.0",
-    "nuxt-purgecss": "^1.0.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
