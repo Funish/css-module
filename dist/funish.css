@@ -954,7 +954,7 @@ a:not(:hover) { text-decoration: none; }
 
 .fu-form:not(:disabled) { color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); border-color: #0366d6; /* @alternate */ border-color: var(--theme-default-color-primary, #0366d6); background: #f6f6f6; background: var(--theme-background-color, #f6f6f6); }
 
-.fu-form:not(:disabled)::placeholder { opacity: 0.8; color: #c8e1ff; /* @alternate */ color: var(--theme-default-color-secondary, #c8e1ff); }
+.fu-form:not(:disabled)::placeholder { opacity: 0.6; color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); }
 
 .fu-form:focus { box-shadow: 0 0 0 2px #c8e1ff; box-shadow: 0 0 0 2px var(--theme-default-color-secondary, #c8e1ff); transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); }
 
@@ -963,8 +963,6 @@ a:not(:hover) { text-decoration: none; }
 .fu-form-file { display: inline-flex; }
 
 .fu-form-file input[type="file"] { display: none; }
-
-select.fu-form option { /* Visual */ color: initial; background: initial; }
 
 textarea.fu-form { /* Box model */ padding: 12px; height: 72px; resize: none; }
 
@@ -1011,9 +1009,7 @@ textarea.fu-form { /* Box model */ padding: 12px; height: 72px; resize: none; }
 
 .fu-button-outlined, .fu-button-raised { transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); }
 
-.fu-button-outlined:hover, .fu-button-outlined:focus, .fu-button-raised:hover, .fu-button-raised:focus { box-shadow: 0 0 0 2px #c8e1ff; box-shadow: 0 0 0 2px var(--theme-default-color-secondary, #c8e1ff); }
-
-.fu-button-outlined:active, .fu-button-raised:active { box-shadow: 0 0 0 3px #c8e1ff; box-shadow: 0 0 0 3px var(--theme-default-color-secondary, #c8e1ff); }
+.fu-button-outlined:hover, .fu-button-raised:hover { box-shadow: 0 0 0 2px #c8e1ff; box-shadow: 0 0 0 2px var(--theme-default-color-secondary, #c8e1ff); }
 
 .fu-button-outlined:disabled, .fu-button-raised:disabled { box-shadow: none; }
 
@@ -1050,7 +1046,15 @@ svg.fu-button-icon { fill: currentColor; }
 
 .fu-icon-button.fu-button-loose { min-width: 40px; }
 
-.fu-icon-button .fu-button-icon { margin: 0; }
+/* Group ========================================================================== */
+/* 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 2. Behave like button 3. Create position context */
+.fu-button-group { /* 1 */ display: inline-flex; /* 2 */ vertical-align: middle; /* 3 */ position: relative; }
+
+.fu-button-group > .fu-button:not(:first-child) { border-left-color: #000; border-left-color: var(--theme-on-surface-color, #000); border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.fu-button-group > .fu-button:not(:last-child) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.fu-button-group .fu-button:hover, .fu-button-group .fu-button:focus, .fu-button-group .fu-button:active, .fu-button-group .fu-button.uk-active { position: relative; z-index: 1; }
 
 /* ======================================================================== Component: Markdown ========================================================================== */
 .fu-menu li, .fu-dropdown-menu li { list-style: none; }
