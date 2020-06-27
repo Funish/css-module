@@ -41,17 +41,25 @@
     <h2>Icon Button</h2>
     <div>
       <button class="fu-button fu-icon-button">
-        <i class="fas fa-location-arrow fu-button-icon"></i>
+        <i class="fas fa-location-arrow"></i>
       </button>
       <button class="fu-button fu-button-outlined fu-icon-button">
-        <i class="fas fa-location-arrow fu-button-icon"></i>
+        <i class="fas fa-location-arrow"></i>
       </button>
       <button class="fu-button fu-button-contained fu-icon-button">
-        <i class="fas fa-location-arrow fu-button-icon"></i>
+        <i class="fas fa-location-arrow"></i>
       </button>
       <button class="fu-button fu-button-raised fu-icon-button">
-        <i class="fas fa-location-arrow fu-button-icon"></i>
+        <i class="fas fa-location-arrow"></i>
       </button>
+    </div>
+    <h2>Button Group</h2>
+    <div>
+      <div class="fu-button-group">
+        <button class="fu-button fu-button-contained">Button</button>
+        <button class="fu-button fu-button-contained">Button</button>
+        <button class="fu-button fu-button-contained">Button</button>
+      </div>
     </div>
   </div>
 </template>

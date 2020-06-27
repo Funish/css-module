@@ -41,10 +41,10 @@
     background: var(--theme-background-color, $background-color-light);
 
     &::placeholder {
-      opacity: 0.8;
-      color: $default-color-light;
+      opacity: 0.6;
+      color: $default-color;
       /* @alternate */
-      color: var(--theme-default-color-secondary, $default-color-light);
+      color: var(--theme-default-color-primary, $default-color);
     }
   }
 
@@ -70,14 +70,6 @@
 
   input[type="file"] {
     display: none;
-  }
-}
-
-select.fu-form {
-  option {
-    /* Visual */
-    color: initial;
-    background: initial;
   }
 }
 

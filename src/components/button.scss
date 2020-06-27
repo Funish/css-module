@@ -85,17 +85,10 @@
 .fu-button-raised {
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0 0 0 2px $default-color-light;
     box-shadow: 0 0 0 2px var(--theme-default-color-secondary, $default-color-light);
   }
-
-  &:active {
-    box-shadow: 0 0 0 3px $default-color-light;
-    box-shadow: 0 0 0 3px var(--theme-default-color-secondary, $default-color-light);
-  }
-
   &:disabled {
     box-shadow: none;
   }
@@ -210,8 +203,47 @@ svg.fu-button-icon {
   &.fu-button-loose {
     min-width: 40px;
   }
+}
 
-  .fu-button-icon {
-    margin: 0;
+/* Group
+ ========================================================================== */
+/*
+ * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements
+ * 2. Behave like button
+ * 3. Create position context
+ */
+
+.fu-button-group {
+  /* 1 */
+  display: inline-flex;
+  /* 2 */
+  vertical-align: middle;
+  /* 3 */
+  position: relative;
+
+  > {
+    .fu-button:not(:first-child) {
+      border-left-color: $on-surface-color-light;
+      border-left-color: var(--theme-on-surface-color, $on-surface-color-light);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  > {
+    .fu-button:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .fu-button {
+    &:hover,
+    &:focus,
+    &:active,
+    &.uk-active {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
