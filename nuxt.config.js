@@ -81,7 +81,10 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/markdownit'],
+  modules: [
+    'nuxt-purgecss', '@nuxtjs/markdownit'
+  ],
+  
   markdownit: {
     injected: true,
     linkify: true,
