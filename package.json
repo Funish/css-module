@@ -4,16 +4,7 @@
   "description": "A concise front-end CSS framework.",
   "author": "Funish.net",
   "homepage": "https://css.funish.net",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://spdx.org/licenses/MIT.html"
-    },
-    {
-      "type": "CC-BY-NC-SA-4.0",
-      "url": "https://spdx.org/licenses/CC-BY-NC-SA-4.0.html"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Funish/css-module.git"

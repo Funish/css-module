@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="fu-flex fu-flex-column fu-height-viewport">
     <Header></Header>
-    <div class="fu-position-center">
-      <nuxt class="fu-margin-bottom-xlarge"/>
+    <div class="fu-grid fu-main-center fu-cross-center fu-height-1-1 fu-margin-bottom-xlarge">
+      <nuxt />
     </div>
-    <Footer class="fu-position-bottom"></Footer>
+    <Footer></Footer>
     <style>
   ::-webkit-scrollbar {
     background: transparent;

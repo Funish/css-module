@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @import "./variables";
 
 /* Style for Highlight.js */
@@ -40,18 +41,18 @@
 .hljs-template-variable,
 .hljs-title,
 .hljs-type {
-  color: $danger-color;
+  color: $danger-color-dark;
 }
 
 .hljs-deletion,
 .hljs-meta,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: $success-color;
+  color: $success-color-dark;
 }
 
 .hljs-doctag {
-  color: $middle-color;
+  color: $variant-color-dark;
 }
 
 .hljs-attr {
@@ -61,7 +62,7 @@
 .hljs-bullet,
 .hljs-link,
 .hljs-symbol {
-  color: $default-color;
+  color: $default-color-dark;
 }
 
 .hljs-emphasis {

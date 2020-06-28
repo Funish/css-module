@@ -26,3 +26,4 @@ Padding 模块用于创建内边距。
 | `.fu-padding-{direction}-medium` | 为元素添加中等的内边距 |
 | `.fu-padding-{direction}-large`  | 为元素添加较大的内边距 |
 | `.fu-padding-{direction}-remove` | 为元素移除内边距       |
+| `.fu-padding-{direction}-auto`   | 为元素自动设置内边距   |

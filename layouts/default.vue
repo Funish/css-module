@@ -1,7 +1,7 @@
 <template>
   <div class="fu-position-relative" style="min-height:100vh;">
     <Header></Header>
-    <nuxt class="fu-padding-large" />
+    <nuxt class="fu-padding-horizontal-auto" />
     <Footer></Footer>
   </div>
 </template>

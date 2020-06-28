@@ -70,9 +70,9 @@
 
 .fu-background {
   /* Visual */
-  background: $default-color-light;
+  background: $default-color;
   /* @alternate */
-  background: var(--theme-default-color, $default-color-light);
+  background: var(--theme-default-color-primary, $default-color);
 }
 
 .fu-background-fade {

@@ -96,4 +96,5 @@ For a detailed description of how it works, see [nuxt.js docs](https://nuxtjs.or
 
 ## License
 
-[MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
+* Code - [MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
+* Documentation - [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) &copy; [Funish.net](https://funish.net/)

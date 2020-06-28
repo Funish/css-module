@@ -7,11 +7,8 @@
   position: relative;
 
   /* Box model */
-  border: 1px solid;
-  border-color: $variant-color-light;
-  border-color: var(--theme-variant-color, $variant-color-light);
-  border-radius: 8px;
-  width: 344px;
+  border-radius: 6px;
+  max-width: 344px;
 
   /* Text */
   line-height: 1.5;
@@ -21,11 +18,6 @@
   /* Visual */
   background: $surface-color-light;
   background: var(--theme-surface-color, $surface-color-light);
-
-  &:hover {
-    box-shadow: 0 2px 12px 0 $variant-color-light;
-    box-shadow: 0 2px 12px 0 var(--theme-variant-color, $variant-color-light);
-  }
 
   img {
     width: 100%;
@@ -45,7 +37,7 @@
   }
 
   .fu-box-footer {
-    padding: 5px 15px 10px;
+    padding: 5px 15px 5px;
   }
 }
 
@@ -59,6 +51,10 @@
   display: block;
   position: relative;
   overflow: hidden;
+
+  /* Box model */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 
   /* Visual */
   cursor: pointer;
@@ -84,22 +80,22 @@
     background: var(--theme-variant-color, $variant-color-light);
   }
 
-  &::before {
-    transition: opacity 15ms linear, background-color 15ms linear;
-    z-index: 1;
+  &::before,
+  &::after {
+    background: $surface-color-light;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
   }
 
   &:hover::before {
-    opacity: 0.16;
+    opacity: 0.08;
   }
 
   &:focus::before,
   &:active::after {
     transition-duration: 75ms;
-    opacity: 0.36;
-  }
-
-  &::after {
-    transition: opacity 150ms linear;
+    opacity: 0.24;
   }
 }

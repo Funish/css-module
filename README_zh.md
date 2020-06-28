@@ -96,4 +96,5 @@ $ yarn output
 
 ## 许可
 
-[MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
+* 代码 - [MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
+* 文档 - [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) &copy; [Funish.net](https://funish.net/)

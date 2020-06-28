@@ -3,14 +3,20 @@
     <h1>Form</h1>
     <hr />
     <h2>Style</h2>
-    <div class="fu-flex fu-grid-row-medium fu-grid-column-medium">
-      <input class="fu-form" placeholder="Placeholder" />
-      <select class="fu-form">
-        <option>Option1</option>
-        <option>Option2</option>
-        <option>Option3</option>
-      </select>
-      <textarea class="fu-form" placeholder="Placeholder"></textarea>
+    <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
+      <div>
+        <input class="fu-form" placeholder="Placeholder" />
+      </div>
+      <div>
+        <select class="fu-form">
+          <option>Option1</option>
+          <option>Option2</option>
+          <option>Option3</option>
+        </select>
+      </div>
+      <div>
+        <textarea class="fu-form" placeholder="Placeholder"></textarea>
+      </div>
     </div>
     <h2>Upload</h2>
     <div class="fu-flex fu-grid-row-medium fu-grid-column-medium">

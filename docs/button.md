@@ -26,12 +26,10 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 |------------------------|--------------------------------------------|
 | `.fu-button-outlined`  | 添加此类以应用一个与 `.fu-form` 相似的样式 |
 | `.fu-button-contained` | 添加此类以应用一个容器类按钮               |
-| `.fu-button-raised`    | 添加此类以应用一个有阴影的容器类按钮       |
 
 ```html
 <button class="fu-button fu-button-outlined">Button</button>
 <button class="fu-button fu-button-contained">Button</button>
-<button class="fu-button fu-button-raised">Button</button>
 ```
 
 ## 图标

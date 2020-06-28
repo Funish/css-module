@@ -44,9 +44,8 @@
     background: var(--theme-default-color-primary, $default-color);
   }
 
-  &::before {
-    transition: opacity 15ms linear, background-color 15ms linear;
-    z-index: 1;
+  &::after {
+    transition: opacity 150ms linear;
   }
 
   &:hover::before {
@@ -57,10 +56,6 @@
   &:active::after {
     transition-duration: 75ms;
     opacity: 0.12;
-  }
-
-  &::after {
-    transition: opacity 150ms linear;
   }
 }
 
@@ -76,22 +71,8 @@
 /* Style modifiers
    ========================================================================== */
 
-.fu-button-raised,
 .fu-button-contained {
   padding: 0 16px;
-}
-
-.fu-button-outlined,
-.fu-button-raised {
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    box-shadow: 0 0 0 2px $default-color-light;
-    box-shadow: 0 0 0 2px var(--theme-default-color-secondary, $default-color-light);
-  }
-  &:disabled {
-    box-shadow: none;
-  }
 }
 
 .fu-button-outlined {
@@ -105,13 +86,22 @@
     border-color: var(--theme-default-color-primary, $default-color);
   }
 
+  &:hover::before {
+    opacity: 0.06;
+  }
+
+  &:focus::before,
+  &:active::after {
+    transition-duration: 75ms;
+    opacity: 0.18;
+  }
+
   &:disabled {
     padding: 0 16px;
     border: none;
   }
 }
 
-.fu-button-raised,
 .fu-button-contained {
   &:not(:disabled) {
     color: $on-surface-color-dark;
@@ -125,17 +115,12 @@
     background: $surface-color-light;
   }
 
-  &::after {
-    transition: opacity 150ms linear;
-  }
-
   &:hover::before {
     opacity: 0.08;
   }
 
   &:focus::before,
   &:active::after {
-    transition-duration: 75ms;
     opacity: 0.24;
   }
 }
@@ -172,7 +157,6 @@ svg.fu-button-icon {
   fill: currentColor;
 }
 
-.fu-button-raised .fu-button-icon,
 .fu-button-contained .fu-button-icon,
 .fu-button-outlined .fu-button-icon {
   /* @noflip */
@@ -180,10 +164,8 @@ svg.fu-button-icon {
   margin-right: 8px;
 }
 
-[dir="rtl"] .fu-button-raised .fu-button-icon,
 [dir="rtl"] .fu-button-contained .fu-button-icon,
 [dir="rtl"] .fu-button-outlined .fu-button-icon,
-[dir="rtl"].fu-button-raised .fu-button-icon,
 [dir="rtl"].fu-button-contained .fu-button-icon,
 [dir="rtl"].fu-button-outlined .fu-button-icon {
   /* @noflip */
@@ -222,28 +204,21 @@ svg.fu-button-icon {
   position: relative;
 
   > {
+    .fu-button:first-child,
+    .fu-button:last-child {
+      border-radius: 4px;
+    }
+
     .fu-button:not(:first-child) {
       border-left-color: $on-surface-color-light;
       border-left-color: var(--theme-on-surface-color, $on-surface-color-light);
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-  }
 
-  > {
     .fu-button:not(:last-child) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-    }
-  }
-
-  .fu-button {
-    &:hover,
-    &:focus,
-    &:active,
-    &.uk-active {
-      position: relative;
-      z-index: 1;
     }
   }
 }

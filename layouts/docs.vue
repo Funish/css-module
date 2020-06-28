@@ -4,7 +4,7 @@
     <div class="fu-flex">
       <Sidebar class="fu-border-left fu-border-right fu-border-fade fu-width-small fu-visible@m"></Sidebar>
       <div
-        class="fu-markdown-body fu-padding-horizontal-large fu-padding-vertical-medium fu-width-1-1"
+        class="fu-markdown-body fu-padding-horizontal-auto fu-width-1-1"
       >
         <nuxt />
       </div>

@@ -39,8 +39,10 @@
             <i class="far fa-bookmark"></i>
           </button>
           <details class="fu-dropdown">
-            <summary class="fu-button fu-icon-button">
-              <i class="fas fa-ellipsis-v"></i>
+            <summary>
+              <div class="fu-button fu-icon-button">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
             </summary>
             <div class="fu-dropdown-menu fu-dropdown-menu-top">
               <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
