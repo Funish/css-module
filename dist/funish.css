@@ -939,7 +939,7 @@ a:not(:hover) { text-decoration: none; }
 
 /* Controls */
 /* ======================================================================== Component: Box ========================================================================== */
-.fu-box { /* Layout */ box-sizing: border-box; position: relative; /* Box model */ border-radius: 6px; max-width: 344px; /* Text */ line-height: 1.5; word-break: break-word; text-overflow: ellipsis; /* Visual */ background: #fcfcfc; background: var(--theme-surface-color, #fcfcfc); }
+.fu-box { /* Layout */ box-sizing: border-box; position: relative; /* Box model */ border-radius: 6px; width: 100%; max-width: 344px; /* Text */ line-height: 1.5; word-break: break-word; text-overflow: ellipsis; /* Visual */ background: #fcfcfc; background: var(--theme-surface-color, #fcfcfc); }
 
 .fu-box img { width: 100%; height: auto; }
 
