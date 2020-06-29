@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Height</h1>
-    <div class="fu-flex fu-flex-wrap">
+    <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-box fu-height-xsmall">
         <div class="fu-box-content">.fu-height-xsmall</div>
       </div>

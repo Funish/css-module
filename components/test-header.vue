@@ -1,20 +1,33 @@
 <template>
-  <header class="fu-navbar fu-background-transparent">
-    <div class="fu-flex-inline fu-flex-auto">
-      <div class="fu-navbar-item fu-text-title">
-        <nuxt-link to="/" class="fu-navbar-link">Funish CSS</nuxt-link>
-      </div>
-      <div class="fu-navbar-item">
-        <nuxt-link to="/docs/" class="fu-navbar-link">文档</nuxt-link>
-      </div>
-      <div class="fu-navbar-item">
-        <nuxt-link to="/test/" class="fu-navbar-link">测试</nuxt-link>
-      </div>
-      <div class="fu-navbar-item">
-        <a target="_blank" href="https://github.com/Funish/css-module" class="fu-navbar-link">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
+  <header class="fu-padding-vertical-medium fu-flex fu-flex-wrap fu-grid-row-small fu-grid-column-small">
+    <select class="fu-form" onchange="self.location.href=options[selectedIndex].value">
+      <option disabled selected hidden>Layouts</option>
+      <option value="/test/flex">Flex</option>
+      <option value="/test/grid">Grid</option>
+      <option value="/test/position">Position</option>
+      <option value="/test/visibility">Visibility</option>
+    </select>
+    <select class="fu-form" onchange="self.location.href=options[selectedIndex].value">
+      <option disabled selected hidden>Box models</option>
+      <option value="/test/margin">Margin</option>
+      <option value="/test/padding">Padding</option>
+      <option value="/test/width">Width</option>
+      <option value="/test/height">Height</option>
+    </select>
+    <select class="fu-form" onchange="self.location.href=options[selectedIndex].value">
+      <option disabled selected hidden>Text Components</option>
+      <option value="/test/text">Text</option>
+      <option value="/test/markdown">Markdown</option>
+    </select>
+    <select class="fu-form" onchange="self.location.href=options[selectedIndex].value">
+      <option disabled selected hidden>Controls</option>
+      <option value="/test/box">Box</option>
+      <option value="/test/button">Button</option>
+      <option value="/test/dropdown">Dropdown</option>
+      <option value="/test/form">Form</option>
+      <option value="/test/menu">Menu</option>
+      <option value="/test/navbar">Navbar</option>
+      <option value="/test/utility">Utility</option>
+    </select>
   </header>
 </template>

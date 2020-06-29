@@ -2,7 +2,7 @@
   <div>
     <h1>Box</h1>
     <hr />
-    <div class="fu-grid-row-medium fu-grid-column-medium">
+    <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-box">
         <div class="fu-box-header">
           <div class="fu-text-title">Box</div>

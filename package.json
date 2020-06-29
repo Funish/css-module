@@ -31,12 +31,12 @@
     "prerelease": "yarn output & yarn version --new-version prerelease & yarn publish"
   },
   "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "nuxt": "^2.0.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
   }
 }

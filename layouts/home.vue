@@ -5,11 +5,6 @@
       <nuxt />
     </div>
     <Footer></Footer>
-    <style>
-  ::-webkit-scrollbar {
-    background: transparent;
-  }
-    </style>
   </div>
 </template>
 
