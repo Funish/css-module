@@ -29,7 +29,7 @@
     <div class="fu-grid fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-icon-form">
         <i class="fas fa-user fu-form-icon"></i>
-        <input class="fu-form" />
+        <input class="fu-form" placeholder="Placeholder" />
       </div>
       <div class="fu-icon-form">
         <i class="fas fa-user fu-form-icon"></i>

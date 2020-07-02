@@ -29,7 +29,7 @@
 .hljs-name,
 .hljs-selector-tag,
 .hljs-tag {
-  color: $default-color-dark;
+  color: $success-color;
 }
 
 .hljs-addition,
@@ -41,14 +41,14 @@
 .hljs-template-variable,
 .hljs-title,
 .hljs-type {
-  color: $danger-color-dark;
+  color: $danger-color;
 }
 
 .hljs-deletion,
 .hljs-meta,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: $success-color-dark;
+  color: $success-color;
 }
 
 .hljs-doctag {
@@ -56,7 +56,7 @@
 }
 
 .hljs-attr {
-  color: $danger-color-dark;
+  color: $default-color;
 }
 
 .hljs-bullet,

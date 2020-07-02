@@ -5,20 +5,26 @@
     <h2>Style</h2>
     <div>
       <button class="fu-button">Button</button>
-      <button class="fu-button fu-button-outlined">Button</button>
-      <button class="fu-button fu-button-contained">Button</button>
+      <button class="fu-button fu-button-outlined">Outlined</button>
+      <button class="fu-button fu-button-contained">Contained</button>
+    </div>
+    <h2>Disabled button</h2>
+    <div>
+      <button class="fu-button" disabled>Button</button>
+      <button class="fu-button fu-button-outlined" disabled>Outlined</button>
+      <button class="fu-button fu-button-contained" disabled>Contained</button>
     </div>
     <h3>Dense button</h3>
     <div>
       <button class="fu-button fu-button-dense">Button</button>
-      <button class="fu-button fu-button-outlined fu-button-dense">Button</button>
-      <button class="fu-button fu-button-contained fu-button-dense">Button</button>
+      <button class="fu-button fu-button-outlined fu-button-dense">Outlined</button>
+      <button class="fu-button fu-button-contained fu-button-dense">Contained</button>
     </div>
     <h3>Loose button</h3>
     <div>
       <button class="fu-button fu-button-loose">Button</button>
-      <button class="fu-button fu-button-outlined fu-button-loose">Button</button>
-      <button class="fu-button fu-button-contained fu-button-loose">Button</button>
+      <button class="fu-button fu-button-outlined fu-button-loose">Outlined</button>
+      <button class="fu-button fu-button-contained fu-button-loose">Contained</button>
     </div>
     <h2>Button with icon</h2>
     <div>
@@ -26,10 +32,10 @@
         <i class="fas fa-user-circle fu-button-icon"></i>Button
       </button>
       <button class="fu-button fu-button-outlined">
-        <i class="fas fa-user-circle fu-button-icon"></i>Button
+        <i class="fas fa-user-circle fu-button-icon"></i>Outlined
       </button>
       <button class="fu-button fu-button-contained">
-        <i class="fas fa-user-circle fu-button-icon"></i>Button
+        <i class="fas fa-user-circle fu-button-icon"></i>Contained
       </button>
     </div>
     <h2>Icon Button</h2>
@@ -59,8 +65,8 @@
       </div>
       <div class="fu-button-group">
         <button class="fu-button fu-button-contained">Button</button>
-        <button class="fu-button fu-button-contained">Button</button>
-        <button class="fu-button fu-button-contained">Button</button>
+        <button class="fu-button fu-button-contained">Outlined</button>
+        <button class="fu-button fu-button-contained">Contained</button>
       </div>
     </div>
   </div>

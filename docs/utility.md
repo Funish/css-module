@@ -2,22 +2,6 @@
 
 Utility 模块是实用性工具的集合。
 
-## 边框
-
-通过应用类选择器 `.fu-border` 创建边框样式。
-
-| 类名                | 描述                         |
-|---------------------|------------------------------|
-| `.fu-border`        | 创建类似于盒子容器的四条边框 |
-| `.fu-border-top`    | 创建顶部边框                 |
-| `.fu-border-left`   | 创建左侧边框                 |
-| `.fu-border-bottom` | 创建底部边框                 |
-| `.fu-border-right`  | 创建右侧边框                 |
-
-```html
-<div class="fu-border"></div>
-```
-
 ## 边框圆角
 
 | 类名                | 描述               |
@@ -31,13 +15,14 @@ Utility 模块是实用性工具的集合。
 <button class="fu-button fu-border-pill">button</button>
 ```
 
-## 边框颜色
+## 边框阴影
 
-| 类名                     | 描述               |
-|--------------------------|--------------------|
-| `.fu-border-fade`        | 褪色的边框颜色     |
-| `.fu-border-inherit`     | 继承父元素边框颜色 |
-| `.fu-border-transparent` | 边框颜色显示为透明 |
+| 类名                | 描述               |
+|---------------------|--------------------|
+| `.fu-shadow-none`   | 移除边框阴影       |
+| `.fu-shadow-small`  | 创建较小的边框阴影 |
+| `.fu-shadow-medium` | 创建中等的边框阴影 |
+| `.fu-shadow-large`  | 创建较大的边框阴影 |
 
 ## 背景颜色
 
@@ -45,16 +30,7 @@ Utility 模块是实用性工具的集合。
 |------------------------------|--------------------|
 | `.fu-background`             | 背景颜色随状态调整 |
 | `.fu-background-fade`        | 褪色的背景颜色     |
-| `.fu-background-inherit`     | 继承父元素背景颜色 |
 | `.fu-background-transparent` | 背景颜色显示为透明 |
-
-## 文本颜色
-
-| 类名                    | 描述               |
-|-------------------------|--------------------|
-| `.fu-color-fade`        | 褪色的文本颜色     |
-| `.fu-color-inherit`     | 继承父元素文本颜色 |
-| `.fu-color-transparent` | 文本颜色显示为透明 |
 
 ## 浮动
 

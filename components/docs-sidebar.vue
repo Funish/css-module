@@ -1,5 +1,7 @@
 <template>
-  <aside class="fu-padding-small custom-aside">
+  <aside
+    class="fu-margin-medium fu-padding-vertical-medium fu-width-small fu-background-surface fu-border-large fu-height-1-1 fu-shadow-small"
+  >
     <div class="fu-menu">
       <nuxt-link
         v-for="(item, i) in home_items"
@@ -69,16 +71,16 @@ export default {
     return {
       home_items: [
         {
-          title: "首页",
-          to: "/"
-        },
-        {
           title: "简介",
           to: "/docs/"
         },
         {
-          title: "测试",
-          to: "/test/"
+          title: "设计",
+          to: "/docs/design"
+        },
+        {
+          title: "基础",
+          to: "/docs/base"
         },
         {
           title: "关于",

@@ -2,7 +2,7 @@
   <div>
     <h1>Menu</h1>
     <hr />
-    <div class="fu-box">
+    <div class="fu-box fu-overflow-hidden">
       <div class="fu-menu">
         <div class="fu-menu-header">Menu</div>
         <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>

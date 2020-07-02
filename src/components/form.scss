@@ -22,6 +22,17 @@
   align-items: center;
   justify-content: center;
   vertical-align: middle;
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+
+    color: $middle-color;
+    background: $disabled-color-light;
+    background: var(--theme-disabled-color, $disabled-color-light);
+    border-color: $disabled-color-light;
+    border-color: var(--theme-disabled-color, $disabled-color-light);
+  }
 }
 
 .fu-form {
@@ -39,37 +50,10 @@
     border-color: var(--theme-default-color-primary, $default-color);
     background: $background-color-light;
     background: var(--theme-background-color, $background-color-light);
-
-    &::placeholder {
-      opacity: 0.6;
-      color: $default-color;
-      /* @alternate */
-      color: var(--theme-default-color-primary, $default-color);
-    }
   }
-
-  &:focus {
-    box-shadow: 0 0 0 2px $default-color-light;
-    box-shadow: 0 0 0 2px var(--theme-default-color-secondary, $default-color-light);
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &:disabled {
-    color: $disabled-color;
-    /* @alternate */
-    color: var(--theme-disabled-color, $disabled-color);
-
-    border-color: $disabled-color;
-    /* @alternate */
-    border-color: var(--theme-disabled-color, $disabled-color);
-  }
-}
-
-.fu-form-file {
-  display: inline-flex;
-
-  input[type="file"] {
-    display: none;
+  
+  &::placeholder {
+    color: $middle-color;
   }
 }
 
@@ -85,6 +69,17 @@ textarea.fu-form {
 /**
   * Still in plan
   */
+
+/* Form for file
+   ========================================================================== */
+
+.fu-form-file {
+  display: inline-flex;
+
+  input[type="file"] {
+    display: none;
+  }
+}
 
 /* Icon form
    ========================================================================== */

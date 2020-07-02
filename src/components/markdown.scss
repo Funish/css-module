@@ -3,16 +3,24 @@
    ========================================================================== */
 .fu-markdown-body {
   kbd {
+    /* Layout */
     display: inline-block;
+
+    /* Box model */
     padding: 3px 5px;
-    font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    line-height: 10px;
-    vertical-align: middle;
-    background: $variant-color-light;
-    background: var(--theme-variant-color, $variant-color-light);
     border: 1px solid $middle-color;
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 $on-surface-color-dark;
+
+    /* Text */
+    font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    line-height: 10px;
+    vertical-align: middle;
+
+    /* Visual */
+    background: $variant-color-light;
+    /* @alternate */
+    background: var(--theme-variant-color, $variant-color-light);
   }
 
   &::before {
@@ -58,15 +66,18 @@
     padding: 0;
     margin: 24px 0;
     background: $variant-color-light;
+    /* @alternate */
     background: var(--theme-variant-color, $variant-color-light);
     border: 0;
   }
 
   blockquote {
     padding: 0 1em;
+
     color: $middle-color;
     border-left: 0.25em solid $variant-color-light;
-    border-left-color: var(--theme-variant-color, $variant-color-light);
+    /* @alternate */
+    border-color: var(--theme-variant-color, $variant-color-light);
 
     > {
       :first-child {
@@ -136,13 +147,17 @@
   h1 {
     padding-bottom: 0.3em;
     font-size: 2em;
-    border-bottom: 1px solid $middle-color;
+    border-bottom: 1px solid $disabled-color-light;
+    /* @alternate */
+    border-color: var(--theme-disabled-color, $disabled-color-light);
   }
 
   h2 {
     padding-bottom: 0.3em;
     font-size: 1.5em;
-    border-bottom: 1px solid $middle-color;
+    border-bottom: 1px solid $disabled-color-light;
+    /* @alternate */
+    border-color: var(--theme-disabled-color, $disabled-color-light);
   }
 
   h3 {
@@ -159,7 +174,7 @@
 
   h6 {
     font-size: 0.85em;
-    color: $middle-color;
+    opacity: 0.85;
   }
 
   ul,
@@ -226,20 +241,26 @@
     th {
       font-weight: 600;
       padding: 6px 13px;
-      border: 1px solid $middle-color;
+      border: 1px solid $disabled-color-light;
+      border-color: var(--theme-disabled-color, $disabled-color-light);
     }
 
     td {
       padding: 6px 13px;
-      border: 1px solid $middle-color;
+      border: 1px solid $disabled-color-light;
+      /* @alternate */
+      border-color: var(--theme-disabled-color, $disabled-color-light);
     }
 
     tr {
-      border-top: 1px solid $middle-color;
+      border-top: 1px solid $disabled-color-light;
+      /* @alternate */
+      border-color: var(--theme-disabled-color, $disabled-color-light);
 
       &:nth-child(2n) {
         background: $variant-color-light;
-        background: var(--theme-variant-color, $variant-color-light);
+        /* @alternate */
+        background: var(--theme-surface-color, $surface-color-light);
       }
     }
 
@@ -268,6 +289,7 @@
     font-size: 85%;
     border-radius: 3px;
     background: $variant-color-light;
+    /* @alternate */
     background: var(--theme-variant-color, $variant-color-light);
   }
 
@@ -282,6 +304,7 @@
 
   pre {
     word-wrap: normal;
+    word-break: normal;
 
     > code {
       padding: 0;
@@ -293,15 +316,6 @@
       border: 0;
     }
   }
-
-  pre {
-    word-break: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    border-radius: 3px;
-  }
 }
 
 pre {
@@ -309,7 +323,8 @@ pre {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background: $surface-color-dark;
+  background: $surface-color-light;
+  /* @alternate */
   background: var(--theme-surface-color, $surface-color-light);
   border-radius: 3px;
 

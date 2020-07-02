@@ -1,5 +1,5 @@
 <template>
-  <footer class="fu-text-center fu-margin-medium">
+  <footer class="fu-text-center fu-padding-medium">
     <span>Powered by Funish</span>
     <span>
       <i>&copy;</i>

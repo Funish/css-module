@@ -3,13 +3,14 @@
    ========================================================================== */
 .fu-box {
   /* Layout */
-  box-sizing: border-box;
   position: relative;
 
   /* Box model */
+  box-sizing: border-box;
   border-radius: 6px;
   width: 100%;
   max-width: 344px;
+  box-shadow: 0 1px 4px -1px $box-shadow-color;
 
   /* Text */
   line-height: 1.5;
@@ -76,14 +77,9 @@
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
-    background: $variant-color-light;
+    background: $on-surface-color-light;
     /* @alternate */
-    background: var(--theme-variant-color, $variant-color-light);
-  }
-
-  &::before,
-  &::after {
-    background: $surface-color-light;
+    background: var(--theme-on-surface-color, $on-surface-color-light);
   }
 
   &::after {
@@ -91,12 +87,12 @@
   }
 
   &:hover::before {
-    opacity: 0.08;
+    opacity: 0.04;
   }
 
   &:focus::before,
   &:active::after {
     transition-duration: 75ms;
-    opacity: 0.24;
+    opacity: 0.12;
   }
 }

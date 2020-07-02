@@ -10,13 +10,15 @@
 
   /* Box model */
   padding: 16px;
+  box-shadow: 0 1px 6px -1px $box-shadow-color;
 
   /* Text */
   font-size: 14px;
 
   /* Visual */
-  background: $surface-color-light;
-  background: var(--theme-surface-color, $surface-color-light);
+  background: $background-color-light;
+  /* @alternate */
+  background: var(--theme-background-color, $background-color-light);
 
   a {
     text-decoration: none;

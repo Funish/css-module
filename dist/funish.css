@@ -6,10 +6,11 @@
 /* Surface */
 /* On surface */
 /* Variant */
+/* Disabled */
+/* Box shadow color */
 /* Default */
 /* Danger */
 /* Success */
-/* Disabled */
 /* Theme */
 /* Breakpoints ========================================================================== */
 /* Reset CSS */
@@ -122,31 +123,20 @@ template, [hidden] { display: none; }
 
 /* Global variables */
 /* ======================================================================== Component: Base ========================================================================== */
-:root { --theme-background-color: #f6f6f6; --theme-surface-color: #fcfcfc; --theme-on-surface-color: #000; --theme-variant-color: rgba(33, 33, 33, 0.15); --theme-middle-color: gray; --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; --theme-danger-color-primary: #d73a49; --theme-danger-color-secondary: #cea0a5; --theme-success-color-primary: #34d058; --theme-success-color-secondary: #a2cbac; --theme-disabled-color: rgba(0, 0, 0, 0.37); }
+:root { --theme-background-color: #fff; --theme-surface-color: #fafafa; --theme-on-surface-color: #000; --theme-variant-color: rgba(33, 33, 33, 0.14); --theme-middle-color: #808080; --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; --theme-danger-color-primary: #d73a49; --theme-danger-color-secondary: #cea0a5; --theme-success-color-primary: #34d058; --theme-success-color-secondary: #a2cbac; --theme-disabled-color: #dedede; }
 
 /* Style modifiers ========================================================================== */
 /**  Theme */
-.fu-theme-dark { --theme-background-color: #212121; --theme-surface-color: #303030; --theme-on-surface-color: #fff; --theme-variant-color: rgba(237, 237, 237, 0.15); --theme-default-color-secondary: #005cc5; --theme-danger-color-secondary: #cb2431; --theme-success-color-secondary: #28a745; }
-
-/**  Status  */
-.fu-status-light { --theme-default-color-primary: #fcfcfc; --theme-default-color-secondary: gray; }
-
-.fu-status-dark { --theme-default-color-primary: #303030; --theme-default-color-secondary: gray; }
-
-.fu-status-default { --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; }
-
-.fu-status-danger { --theme-default-color-primary: #d73a49; --theme-default-color-secondary: #cea0a5; }
-
-.fu-status-success { --theme-default-color-primary: #34d058; --theme-default-color-secondary: #a2cbac; }
+.fu-theme-dark { /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #fff; /* @alternate */ background: var(--theme-background-color, #fff); --theme-background-color: #212121; --theme-surface-color: #303030; --theme-on-surface-color: #fff; --theme-variant-color: rgba(255, 255, 255, 0.14); --theme-default-color-secondary: #005cc5; --theme-danger-color-secondary: #cb2431; --theme-success-color-secondary: #28a745; --theme-disabled-color: #434343; }
 
 /* Universal style ========================================================================== */
 /** 1.Remove the outline on all elements when they are active or hovered 2.Make the tap highlight color of all elements in Webkit browser transparent */
-* { /* 1 */ outline: none; /* 2 */ -webkit-tap-highlight-color: transparent; /* Visual */ color: inherit; }
+* { /* 1 */ outline: none; /* 2 */ -webkit-tap-highlight-color: transparent; }
 
 /* Element modifiers ========================================================================== */
-body { /* Layout */ overflow-y: scroll; /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #f6f6f6; /* @alternate */ background: var(--theme-background-color, #f6f6f6); /* Text */ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 16px; line-height: 1.25; word-wrap: break-word; }
+body { /* Layout */ overflow-y: scroll; /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #fff; /* @alternate */ background: var(--theme-background-color, #fff); /* Text */ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 16px; line-height: 1.25; word-wrap: break-word; }
 
-hr { border: none; border-bottom: 1px solid gray; }
+hr { height: 2px; border: 0; background: rgba(33, 33, 33, 0.14); background: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); }
 
 /* Layouts */
 /* ======================================================================== Component: Flex ========================================================================== */
@@ -299,6 +289,8 @@ hr { border: none; border-bottom: 1px solid gray; }
 .fu-position-absolute { position: absolute; }
 
 .fu-position-fixed { position: fixed; }
+
+.fu-position-sticky { position: sticky; top: 0; }
 
 .fu-position-z-index { z-index: 1; }
 
@@ -765,7 +757,7 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 /* Text */
 /* ======================================================================== Component: Markdown ========================================================================== */
-.fu-markdown-body kbd { display: inline-block; padding: 3px 5px; font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; line-height: 10px; vertical-align: middle; background: rgba(33, 33, 33, 0.15); background: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); border: 1px solid gray; border-radius: 3px; box-shadow: inset 0 -1px 0 #fff; }
+.fu-markdown-body kbd { /* Layout */ display: inline-block; /* Box model */ padding: 3px 5px; border: 1px solid #808080; border-radius: 3px; box-shadow: inset 0 -1px 0 #fff; /* Text */ font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; line-height: 10px; vertical-align: middle; /* Visual */ background: rgba(33, 33, 33, 0.14); /* @alternate */ background: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); }
 
 .fu-markdown-body::before { display: table; content: ""; }
 
@@ -779,9 +771,9 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 .fu-markdown-body p, .fu-markdown-body blockquote, .fu-markdown-body ul, .fu-markdown-body ol, .fu-markdown-body dl, .fu-markdown-body table, .fu-markdown-body pre, .fu-markdown-body details { margin-top: 0; margin-bottom: 16px; }
 
-.fu-markdown-body hr { height: 0.25em; padding: 0; margin: 24px 0; background: rgba(33, 33, 33, 0.15); background: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); border: 0; }
+.fu-markdown-body hr { height: 0.25em; padding: 0; margin: 24px 0; background: rgba(33, 33, 33, 0.14); /* @alternate */ background: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); border: 0; }
 
-.fu-markdown-body blockquote { padding: 0 1em; color: gray; border-left: 0.25em solid rgba(33, 33, 33, 0.15); border-left-color: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); }
+.fu-markdown-body blockquote { padding: 0 1em; color: #808080; border-left: 0.25em solid rgba(33, 33, 33, 0.14); /* @alternate */ border-color: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); }
 
 .fu-markdown-body blockquote > :first-child { margin-top: 0; }
 
@@ -801,9 +793,9 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 .fu-markdown-body h6 tt, .fu-markdown-body h6 code { font-size: inherit; }
 
-.fu-markdown-body h1 { padding-bottom: 0.3em; font-size: 2em; border-bottom: 1px solid gray; }
+.fu-markdown-body h1 { padding-bottom: 0.3em; font-size: 2em; border-bottom: 1px solid #dedede; /* @alternate */ border-color: var(--theme-disabled-color, #dedede); }
 
-.fu-markdown-body h2 { padding-bottom: 0.3em; font-size: 1.5em; border-bottom: 1px solid gray; }
+.fu-markdown-body h2 { padding-bottom: 0.3em; font-size: 1.5em; border-bottom: 1px solid #dedede; /* @alternate */ border-color: var(--theme-disabled-color, #dedede); }
 
 .fu-markdown-body h3 { font-size: 1.25em; }
 
@@ -811,7 +803,7 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 .fu-markdown-body h5 { font-size: 0.875em; }
 
-.fu-markdown-body h6 { font-size: 0.85em; color: gray; }
+.fu-markdown-body h6 { font-size: 0.85em; opacity: 0.85; }
 
 .fu-markdown-body ul, .fu-markdown-body ol { padding-left: 2em; }
 
@@ -835,13 +827,13 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 .fu-markdown-body table { display: block; width: 100%; overflow: auto; }
 
-.fu-markdown-body table th { font-weight: 600; padding: 6px 13px; border: 1px solid gray; }
+.fu-markdown-body table th { font-weight: 600; padding: 6px 13px; border: 1px solid #dedede; border-color: var(--theme-disabled-color, #dedede); }
 
-.fu-markdown-body table td { padding: 6px 13px; border: 1px solid gray; }
+.fu-markdown-body table td { padding: 6px 13px; border: 1px solid #dedede; /* @alternate */ border-color: var(--theme-disabled-color, #dedede); }
 
-.fu-markdown-body table tr { border-top: 1px solid gray; }
+.fu-markdown-body table tr { border-top: 1px solid #dedede; /* @alternate */ border-color: var(--theme-disabled-color, #dedede); }
 
-.fu-markdown-body table tr:nth-child(2n) { background: rgba(33, 33, 33, 0.15); background: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); }
+.fu-markdown-body table tr:nth-child(2n) { background: rgba(33, 33, 33, 0.14); /* @alternate */ background: var(--theme-surface-color, #fafafa); }
 
 .fu-markdown-body table img { background: transparent; }
 
@@ -851,19 +843,17 @@ hr { border: none; border-bottom: 1px solid gray; }
 
 .fu-markdown-body img[align="left"] { padding-right: 20px; }
 
-.fu-markdown-body code, .fu-markdown-body tt { padding: 0.2em 0.4em; margin: 0; font-size: 85%; border-radius: 3px; background: rgba(33, 33, 33, 0.15); background: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); }
+.fu-markdown-body code, .fu-markdown-body tt { padding: 0.2em 0.4em; margin: 0; font-size: 85%; border-radius: 3px; background: rgba(33, 33, 33, 0.14); /* @alternate */ background: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); }
 
 .fu-markdown-body code br, .fu-markdown-body tt br { display: none; }
 
 .fu-markdown-body del code { text-decoration: inherit; }
 
-.fu-markdown-body pre { word-wrap: normal; }
+.fu-markdown-body pre { word-wrap: normal; word-break: normal; }
 
 .fu-markdown-body pre > code { padding: 0; margin: 0; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0; }
 
-.fu-markdown-body pre { word-break: normal; padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; }
-
-pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background: #303030; background: var(--theme-surface-color, #fcfcfc); border-radius: 3px; }
+pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background: #fafafa; /* @alternate */ background: var(--theme-surface-color, #fafafa); border-radius: 3px; }
 
 pre code, pre tt { display: inline; max-width: auto; padding: 0; margin: 0; overflow: visible; line-height: inherit; word-wrap: normal; background: transparent; border: 0; }
 
@@ -873,6 +863,10 @@ a { color: #0366d6; color: var(--theme-default-color-primary, #0366d6); }
 
 a:not(:hover) { text-decoration: none; }
 
+/* Text Color ========================================================================== */
+.fu-color-fade { color: #808080; }
+
+/*  */
 /* Title ========================================================================== */
 .fu-text-title { font-size: 1.25rem; font-weight: 500; letter-spacing: 0.0125em; }
 
@@ -938,33 +932,6 @@ a:not(:hover) { text-decoration: none; }
 .fu-text-break-word { word-break: break-word; }
 
 /* Controls */
-/* ======================================================================== Component: Box ========================================================================== */
-.fu-box { /* Layout */ box-sizing: border-box; position: relative; /* Box model */ border-radius: 6px; width: 100%; max-width: 344px; /* Text */ line-height: 1.5; word-break: break-word; text-overflow: ellipsis; /* Visual */ background: #fcfcfc; background: var(--theme-surface-color, #fcfcfc); }
-
-.fu-box img { width: 100%; height: auto; }
-
-.fu-box .fu-box-header { padding: 15px 15px 5px; }
-
-.fu-box .fu-box-content { padding: 10px 15px; }
-
-.fu-box .fu-box-content:last-child { padding-bottom: 15px; }
-
-.fu-box .fu-box-footer { padding: 5px 15px 5px; }
-
-.fu-box-media { overflow: hidden; height: 194px; }
-
-.fu-box-action { /* Layout */ display: block; position: relative; overflow: hidden; /* Box model */ border-top-left-radius: 6px; border-top-right-radius: 6px; /* Visual */ cursor: pointer; user-select: none; transition: background-color 150ms linear; }
-
-.fu-box-action::before, .fu-box-action::after { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none; content: ""; top: calc(50% - 100%); /* @noflip */ left: calc(50% - 100%); width: 200%; height: 200%; background: rgba(33, 33, 33, 0.15); /* @alternate */ background: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); }
-
-.fu-box-action::before, .fu-box-action::after { background: #fcfcfc; }
-
-.fu-box-action::after { transition: opacity 150ms linear; }
-
-.fu-box-action:hover::before { opacity: 0.08; }
-
-.fu-box-action:focus::before, .fu-box-action:active::after { transition-duration: 75ms; opacity: 0.24; }
-
 /* ======================================================================== Component: Base ========================================================================== */
 .fu-dropdown { position: relative; }
 
@@ -976,7 +943,7 @@ a:not(:hover) { text-decoration: none; }
 
 .fu-dropdown[open] > summary::before { display: block; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 80; cursor: default; content: " "; background: transparent; }
 
-.fu-dropdown-menu, .fu-dropdown-menu-bottom-left { /* Layout */ position: absolute; top: 100%; left: 0; z-index: 100; /* Box model */ padding: 4px; margin-top: 2px; border-radius: 4px; border: 1px solid rgba(33, 33, 33, 0.15); border-color: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); /* Visual */ background: #fcfcfc; /* @alternate */ background: var(--theme-surface-color, #fcfcfc); }
+.fu-dropdown-menu, .fu-dropdown-menu-bottom-left { /* Layout */ position: absolute; top: 100%; left: 0; z-index: 100; /* Box model */ box-sizing: border-box; padding: 4px; margin-top: 2px; border-radius: 4px; border: 1px solid rgba(33, 33, 33, 0.14); border-color: var(--theme-variant-color, rgba(33, 33, 33, 0.14)); min-width: 100%; /* Visual */ background: #fafafa; /* @alternate */ background: var(--theme-surface-color, #fafafa); }
 
 /* Style modifiers ========================================================================== */
 .fu-dropdown-menu-top { top: auto; bottom: 100%; left: 0; margin-bottom: 3px; }
@@ -994,24 +961,23 @@ a:not(:hover) { text-decoration: none; }
 /* ======================================================================== Component: Form ========================================================================== */
 .fu-button, .fu-form { /* Layout */ box-sizing: border-box; display: inline-flex; overflow: hidden; position: relative; /* Box model */ border: none; border-radius: 4px; height: 36px; min-width: 64px; /* Text */ -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; text-decoration: none; align-items: center; justify-content: center; vertical-align: middle; }
 
+.fu-button:disabled, .fu-form:disabled { cursor: default; pointer-events: none; color: #808080; background: #dedede; background: var(--theme-disabled-color, #dedede); border-color: #dedede; border-color: var(--theme-disabled-color, #dedede); }
+
 .fu-form { /* Box model */ border: 1px solid; padding: 0 12px; /* Visual */ }
 
-.fu-form:not(:disabled) { color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); border-color: #0366d6; /* @alternate */ border-color: var(--theme-default-color-primary, #0366d6); background: #f6f6f6; background: var(--theme-background-color, #f6f6f6); }
+.fu-form:not(:disabled) { color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); border-color: #0366d6; /* @alternate */ border-color: var(--theme-default-color-primary, #0366d6); background: #fff; background: var(--theme-background-color, #fff); }
 
-.fu-form:not(:disabled)::placeholder { opacity: 0.6; color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); }
-
-.fu-form:focus { box-shadow: 0 0 0 2px #c8e1ff; box-shadow: 0 0 0 2px var(--theme-default-color-secondary, #c8e1ff); transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); }
-
-.fu-form:disabled { color: rgba(0, 0, 0, 0.37); /* @alternate */ color: var(--theme-disabled-color, rgba(0, 0, 0, 0.37)); border-color: rgba(0, 0, 0, 0.37); /* @alternate */ border-color: var(--theme-disabled-color, rgba(0, 0, 0, 0.37)); }
-
-.fu-form-file { display: inline-flex; }
-
-.fu-form-file input[type="file"] { display: none; }
+.fu-form::placeholder { color: #808080; }
 
 textarea.fu-form { /* Box model */ padding: 12px; height: 72px; resize: none; }
 
 /* `.fu-checkbox`, `.fu-radio`, `.fu-range` ========================================================================== */
 /** Still in plan */
+/* Form for file ========================================================================== */
+.fu-form-file { display: inline-flex; }
+
+.fu-form-file input[type="file"] { display: none; }
+
 /* Icon form ========================================================================== */
 /** 1. Container fits its content 2. Create position context 3. Prevent content overflow 4. Behave like most inline-block elements */
 .fu-icon-form { /* 1 */ display: inline-block; /* 2 */ position: relative; /* 3 */ max-width: 100%; /* 4 */ vertical-align: middle; }
@@ -1030,9 +996,7 @@ textarea.fu-form { /* Box model */ padding: 12px; height: 72px; resize: none; }
 /* ======================================================================== Component: Button ========================================================================== */
 .fu-button { padding: 0 8px; text-transform: uppercase; user-select: none; }
 
-.fu-button:not(:disabled) { cursor: pointer; color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); background: transparent; transition: background-color 150ms linear; }
-
-.fu-button:disabled { cursor: default; pointer-events: none; color: rgba(0, 0, 0, 0.37); /* @alternate */ color: var(--theme-disabled-color, rgba(0, 0, 0, 0.37)); }
+.fu-button:not(:disabled) { cursor: pointer; color: #0366d6; /* @alternate */ color: var(--theme-default-color-primary, #0366d6); background: transparent; }
 
 .fu-button::before, .fu-button::after { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none; content: ""; top: calc(50% - 100%); /* @noflip */ left: calc(50% - 100%); width: 200%; height: 200%; background: #0366d6; /* @alternate */ background: var(--theme-default-color-primary, #0366d6); }
 
@@ -1047,21 +1011,17 @@ textarea.fu-form { /* Box model */ padding: 12px; height: 72px; resize: none; }
 .fu-button-loose { height: 40px; }
 
 /* Style modifiers ========================================================================== */
-.fu-button-contained { padding: 0 16px; }
+.fu-button-outlined, .fu-button-contained { padding: 0 16px; }
 
-.fu-button-outlined { border-style: solid; padding: 0 15px; border-width: 1px; }
-
-.fu-button-outlined:not(:disabled) { border-color: #0366d6; /* @alternate */ border-color: var(--theme-default-color-primary, #0366d6); }
+.fu-button-outlined { padding: 0 15px; border: 1px solid #0366d6; /* @alternate */ border-color: var(--theme-default-color-primary, #0366d6); }
 
 .fu-button-outlined:hover::before { opacity: 0.06; }
 
-.fu-button-outlined:focus::before, .fu-button-outlined:active::after { transition-duration: 75ms; opacity: 0.18; }
-
-.fu-button-outlined:disabled { padding: 0 16px; border: none; }
+.fu-button-outlined:focus::before, .fu-button-outlined:active::after { opacity: 0.18; }
 
 .fu-button-contained:not(:disabled) { color: #fff; background: #0366d6; /* @alternate */ background: var(--theme-default-color-primary, #0366d6); }
 
-.fu-button-contained::before, .fu-button-contained::after { background: #fcfcfc; }
+.fu-button-contained::before, .fu-button-contained::after { background: #fafafa; }
 
 .fu-button-contained:hover::before { opacity: 0.08; }
 
@@ -1095,72 +1055,44 @@ svg.fu-button-icon { fill: currentColor; }
 .fu-button-group > .fu-button:not(:last-child) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 /* ======================================================================== Component: Markdown ========================================================================== */
+.fu-menu, .fu-dropdown-menu { /* Layout */ overflow: hidden; }
+
 .fu-menu li, .fu-dropdown-menu li { list-style: none; }
 
 .fu-menu a, .fu-dropdown-menu a { text-decoration: none; }
 
-.fu-menu-header { display: block; padding: 4px 16px; color: gray; }
+.fu-menu-header { display: block; padding: 4px 16px; color: #808080; }
 
-.fu-menu-item { display: block; padding: 4px 16px; /* Text */ text-overflow: ellipsis; white-space: nowrap; /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); }
+.fu-menu-item { /* Layout */ display: block; /* Box model */ padding: 4px 16px; /* Text */ text-overflow: ellipsis; white-space: nowrap; /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); }
 
 .fu-menu-item:hover, .fu-menu-item:focus { /* Visual */ color: #fff; background: #0366d6; /* @alternate */ background: var(--theme-default-color-primary, #0366d6); }
 
-/* ======================================================================== Component: Nav ========================================================================== */
-.fu-navbar { /* Layout */ display: flex; z-index: 999; align-items: center; flex-wrap: wrap; /* Box model */ padding: 16px; /* Text */ font-size: 14px; /* Visual */ background: #fcfcfc; background: var(--theme-surface-color, #fcfcfc); }
-
-.fu-navbar a { text-decoration: none; }
-
-.fu-navbar-item { /* Layout */ display: inline-flex; align-self: stretch; align-items: center; flex-wrap: nowrap; /* Box model */ margin-right: 16px; }
-
-.fu-navbar-link { white-space: nowrap; font-weight: 600; color: #000; color: var(--theme-on-surface-color, #000); }
-
-.fu-navbar-link:hover, .fu-navbar-link:focus { opacity: 0.5; }
-
 /* ======================================================================== Component: Utility ========================================================================== */
 /* Border ========================================================================== */
-[class*="fu-border"] { box-sizing: border-box; border-color: rgba(33, 33, 33, 0.15); border-color: var(--theme-variant-color, rgba(33, 33, 33, 0.15)); }
-
-.fu-border { border: 1px solid; }
-
-.fu-border-top { border-top: 1px solid; }
-
-.fu-border-left { border-left: 1px solid; }
-
-.fu-border-bottom { border-bottom: 1px solid; }
-
-.fu-border-right { border-right: 1px solid; }
+[class*="fu-border"] { box-sizing: border-box; }
 
 /**  Border radius */
 .fu-border-small { border-radius: 4px; }
 
-.fu-border-large { border-radius: 8px; }
+.fu-border-large { border-radius: 6px; }
 
 .fu-border-pill { border-radius: 500px; }
 
 .fu-border-circle { border-radius: 50%; }
 
-/**  Border color */
-.fu-border-fade { border-color: gray; }
+/* Box shadow ========================================================================== */
+.fu-shadow-none { box-shadow: none; }
 
-.fu-border-inherit { border-color: inherit; }
+.fu-shadow-small { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37); }
 
-.fu-border-transparent { border-color: transparent; }
+.fu-shadow-medium { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37); }
+
+.fu-shadow-large { box-shadow: 0 1px 6px rgba(0, 0, 0, 0.37); }
 
 /* Background color ========================================================================== */
-.fu-background { /* Visual */ background: #0366d6; /* @alternate */ background: var(--theme-default-color-primary, #0366d6); }
-
-.fu-background-fade { background: gray; }
-
-.fu-background-inherit { background: inherit; }
+.fu-background-surface { color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #fafafa; background: var(--theme-surface-color, #fafafa); }
 
 .fu-background-transparent { background: transparent; }
-
-/* Text Color ========================================================================== */
-.fu-color-fade { color: gray; }
-
-.fu-color-inherit { color: inherit; }
-
-.fu-color-transparent { color: transparent; }
 
 /* Float ========================================================================== */
 .fu-float-start { float: inline-start; }
@@ -1175,3 +1107,40 @@ svg.fu-button-icon { fill: currentColor; }
 .fu-overflow-x-scroll { overflow-x: scroll; }
 
 .fu-overflow-y-scroll { overflow-y: scroll; }
+
+/* Enhanced controls */
+/* ======================================================================== Component: Box ========================================================================== */
+.fu-box { /* Layout */ position: relative; /* Box model */ box-sizing: border-box; border-radius: 6px; width: 100%; max-width: 344px; box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.37); /* Text */ line-height: 1.5; word-break: break-word; text-overflow: ellipsis; /* Visual */ background: #fafafa; background: var(--theme-surface-color, #fafafa); }
+
+.fu-box img { width: 100%; height: auto; }
+
+.fu-box .fu-box-header { padding: 15px 15px 5px; }
+
+.fu-box .fu-box-content { padding: 10px 15px; }
+
+.fu-box .fu-box-content:last-child { padding-bottom: 15px; }
+
+.fu-box .fu-box-footer { padding: 5px 15px 5px; }
+
+.fu-box-media { overflow: hidden; height: 194px; }
+
+.fu-box-action { /* Layout */ display: block; position: relative; overflow: hidden; /* Box model */ border-top-left-radius: 6px; border-top-right-radius: 6px; /* Visual */ cursor: pointer; user-select: none; transition: background-color 150ms linear; }
+
+.fu-box-action::before, .fu-box-action::after { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none; content: ""; top: calc(50% - 100%); /* @noflip */ left: calc(50% - 100%); width: 200%; height: 200%; background: #000; /* @alternate */ background: var(--theme-on-surface-color, #000); }
+
+.fu-box-action::after { transition: opacity 150ms linear; }
+
+.fu-box-action:hover::before { opacity: 0.04; }
+
+.fu-box-action:focus::before, .fu-box-action:active::after { transition-duration: 75ms; opacity: 0.12; }
+
+/* ======================================================================== Component: Nav ========================================================================== */
+.fu-navbar { /* Layout */ display: flex; z-index: 999; align-items: center; flex-wrap: wrap; /* Box model */ padding: 16px; box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.37); /* Text */ font-size: 14px; /* Visual */ background: #fff; /* @alternate */ background: var(--theme-background-color, #fff); }
+
+.fu-navbar a { text-decoration: none; }
+
+.fu-navbar-item { /* Layout */ display: inline-flex; align-self: stretch; align-items: center; flex-wrap: nowrap; /* Box model */ margin-right: 16px; }
+
+.fu-navbar-link { white-space: nowrap; font-weight: 600; color: #000; color: var(--theme-on-surface-color, #000); }
+
+.fu-navbar-link:hover, .fu-navbar-link:focus { opacity: 0.5; }

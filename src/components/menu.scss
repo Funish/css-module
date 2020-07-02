@@ -3,6 +3,9 @@
    ========================================================================== */
 .fu-menu,
 .fu-dropdown-menu {
+  /* Layout */
+  overflow: hidden;
+
   li {
     list-style: none;
   }
@@ -10,7 +13,6 @@
   a {
     text-decoration: none;
   }
-  
 }
 
 .fu-menu-header {
@@ -20,7 +22,10 @@
 }
 
 .fu-menu-item {
+  /* Layout */
   display: block;
+
+  /* Box model */
   padding: 4px 16px;
 
   /* Text */

@@ -20,11 +20,14 @@
 @import "./markdown.scss";
 @import "./text.scss";
 
+
 /* Controls */
-@import "./box.scss";
 @import "./dropdown.scss";
 @import "./form.scss";
 @import "./button.scss";
 @import "./menu.scss";
-@import "./navbar.scss";
 @import "./utility.scss";
+
+/* Enhanced controls */
+@import "./box.scss";
+@import "./navbar.scss";

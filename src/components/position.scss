@@ -148,6 +148,11 @@
    position: fixed;
 }
 
+.fu-position-sticky {
+   position: sticky;
+   top: 0;
+}
+
 .fu-position-z-index {
    z-index: 1;
 }

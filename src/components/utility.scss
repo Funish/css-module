@@ -5,28 +5,6 @@
    ========================================================================== */
 [class*="fu-border"] {
   box-sizing: border-box;
-  border-color: $variant-color-light;
-  border-color: var(--theme-variant-color, $variant-color-light);
-}
-
-.fu-border {
-  border: 1px solid;
-}
-
-.fu-border-top {
-  border-top: 1px solid;
-}
-
-.fu-border-left {
-  border-left: 1px solid;
-}
-
-.fu-border-bottom {
-  border-bottom: 1px solid;
-}
-
-.fu-border-right {
-  border-right: 1px solid;
 }
 
 /** 
@@ -38,7 +16,7 @@
 }
 
 .fu-border-large {
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .fu-border-pill {
@@ -49,57 +27,38 @@
   border-radius: 50%;
 }
 
-/** 
-  * Border color
-  */
+/* Box shadow
+   ========================================================================== */
 
-.fu-border-fade {
-  border-color: $middle-color;
+.fu-shadow-none {
+  box-shadow: none;
 }
 
-.fu-border-inherit {
-  border-color: inherit;
+.fu-shadow-small {
+  box-shadow: 0 1px 2px $box-shadow-color;
 }
 
-.fu-border-transparent {
-  border-color: transparent;
+.fu-shadow-medium {
+  box-shadow: 0 1px 4px $box-shadow-color;
+}
+
+.fu-shadow-large {
+  box-shadow: 0 1px 6px $box-shadow-color;
 }
 
 /* Background color
    ========================================================================== */
 
-.fu-background {
-  /* Visual */
-  background: $default-color;
+.fu-background-surface {
+  color: $on-surface-color-light;
   /* @alternate */
-  background: var(--theme-default-color-primary, $default-color);
-}
-
-.fu-background-fade {
-  background: $middle-color;
-}
-
-.fu-background-inherit {
-  background: inherit;
+  color: var(--theme-on-surface-color, $on-surface-color-light);
+  background: $surface-color-light;
+  background: var(--theme-surface-color, $surface-color-light);
 }
 
 .fu-background-transparent {
   background: transparent;
-}
-
-/* Text Color
-   ========================================================================== */
-
-.fu-color-fade {
-  color: $middle-color;
-}
-
-.fu-color-inherit {
-  color: inherit;
-}
-
-.fu-color-transparent {
-  color: transparent;
 }
 
 /* Float

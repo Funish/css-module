@@ -13,16 +13,6 @@
     /* @alternate */
     color: var(--theme-default-color-primary, $default-color);
     background: transparent;
-    transition: background-color 150ms linear;
-  }
-
-  &:disabled {
-    cursor: default;
-    pointer-events: none;
-
-    color: $disabled-color;
-    /* @alternate */
-    color: var(--theme-disabled-color, $disabled-color);
   }
 
   &::before,
@@ -71,20 +61,16 @@
 /* Style modifiers
    ========================================================================== */
 
+.fu-button-outlined,
 .fu-button-contained {
   padding: 0 16px;
 }
 
 .fu-button-outlined {
-  border-style: solid;
   padding: 0 15px;
-  border-width: 1px;
-
-  &:not(:disabled) {
-    border-color: $default-color;
-    /* @alternate */
-    border-color: var(--theme-default-color-primary, $default-color);
-  }
+  border: 1px solid $default-color;
+  /* @alternate */
+  border-color: var(--theme-default-color-primary, $default-color);
 
   &:hover::before {
     opacity: 0.06;
@@ -92,13 +78,7 @@
 
   &:focus::before,
   &:active::after {
-    transition-duration: 75ms;
     opacity: 0.18;
-  }
-
-  &:disabled {
-    padding: 0 16px;
-    border: none;
   }
 }
 

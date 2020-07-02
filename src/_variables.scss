@@ -2,23 +2,30 @@
    ========================================================================== */
 
 /* Middle */
-$middle-color: rgb(128, 128, 128);
+$middle-color: #808080;
 
 /* Background */
-$background-color-light: rgb(246, 246, 246);
-$background-color-dark: rgb(33, 33, 33);
+$background-color-light: #fff;
+$background-color-dark: #212121;
 
 /* Surface */
-$surface-color-light: rgb(252, 252, 252);
-$surface-color-dark: rgb(48, 48, 48);
+$surface-color-light: #fafafa;
+$surface-color-dark: #303030;
 
 /* On surface */
 $on-surface-color-light: #000;
 $on-surface-color-dark: #fff;
 
 /* Variant */
-$variant-color-light: rgba(33, 33, 33, 0.15);
-$variant-color-dark: rgba(237, 237, 237, 0.15);
+$variant-color-light: rgba(33, 33, 33, 0.14);
+$variant-color-dark: rgba(255, 255, 255, 0.14);
+
+/* Disabled */
+$disabled-color-light: #dedede;
+$disabled-color-dark: #434343;
+
+/* Box shadow color */
+$box-shadow-color: rgba(0, 0, 0, 0.37);
 
 /* Default */
 $default-color: #0366d6;
@@ -35,9 +42,6 @@ $success-color: #34d058;
 $success-color-light: #a2cbac;
 $success-color-dark: #28a745;
 
-/* Disabled */
-$disabled-color: rgba(0, 0, 0, 0.37);
-
 /* Theme */
 $light-colors: (
    background-color: $background-color-light,
@@ -51,7 +55,7 @@ $light-colors: (
    danger-color-secondary: $danger-color-light,
    success-color-primary: $success-color,
    success-color-secondary: $success-color-light,
-   disabled-color: $disabled-color,
+   disabled-color: $disabled-color-light,
 ) !default;
 
 $dark-colors: (
@@ -62,6 +66,7 @@ $dark-colors: (
    default-color-secondary: $default-color-dark,
    danger-color-secondary: $danger-color-dark,
    success-color-secondary: $success-color-dark,
+   disabled-color: $disabled-color-dark,
 ) !default;
 
 /* Breakpoints

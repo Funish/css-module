@@ -1,13 +1,20 @@
 <template>
-  <div class="fu-position-relative">
+  <div
+    class="fu-flex fu-flex-column"
+    v-bind:class="{ 'fu-theme-dark': dark }"
+    style="min-height:100vh;"
+  >
     <Header></Header>
-    <div class="fu-flex">
-      <Sidebar class="fu-border-left fu-border-right fu-border-fade fu-width-small fu-visible@m"></Sidebar>
-      <div
-        class="fu-markdown-body fu-padding-horizontal-auto fu-width-1-1"
-      >
+    <div class="fu-flex fu-flex-1">
+      <Sidebar class="fu-visible@m"></Sidebar>
+      <div class="fu-markdown-body fu-padding-horizontal-auto fu-width-1-1">
         <nuxt />
       </div>
+    </div>
+    <div class="fu-position-fixed fu-position-bottom-right fu-margin-medium">
+      <button class="fu-button fu-icon-button" @click.stop="dark = !dark, sun = !sun, moon = !moon">
+        <i v-bind:class="{ 'far fa-sun': sun, 'fas fa-moon': moon }"></i>
+      </button>
     </div>
     <Footer></Footer>
   </div>
@@ -23,17 +30,13 @@ export default {
     Header,
     Footer,
     Sidebar
+  },
+  data() {
+    return {
+      dark: true,
+      sun: false,
+      moon: true
+    };
   }
 };
 </script>
-
-<style>
-.fu-border-left.custom-aside {
-  border-left: none;
-}
-
-[dir="rtl"] .fu-border-left.custom-aside {
-  border-left: 1px solid;
-  border-right: none;
-}
-</style>

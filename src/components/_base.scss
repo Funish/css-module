@@ -15,38 +15,17 @@
   */
 
 .fu-theme-dark {
+  /* Visual */
+  color: $on-surface-color-light;
+  /* @alternate */
+  color: var(--theme-on-surface-color, $on-surface-color-light);
+  background: $background-color-light;
+  /* @alternate */
+  background: var(--theme-background-color, $background-color-light);
+
   @each $scale, $color in $dark-colors {
     --theme-#{$scale}: #{$color};
   }
-}
-
-/** 
-  * Status 
-  */
-
-.fu-status-light {
-  --theme-default-color-primary: #{$surface-color-light};
-  --theme-default-color-secondary: #{$middle-color};
-}
-
-.fu-status-dark {
-  --theme-default-color-primary: #{$surface-color-dark};
-  --theme-default-color-secondary: #{$middle-color};
-}
-
-.fu-status-default {
-  --theme-default-color-primary: #{$default-color};
-  --theme-default-color-secondary: #{$default-color-light};
-}
-
-.fu-status-danger {
-  --theme-default-color-primary: #{$danger-color};
-  --theme-default-color-secondary: #{$danger-color-light};
-}
-
-.fu-status-success {
-  --theme-default-color-primary: #{$success-color};
-  --theme-default-color-secondary: #{$success-color-light};
 }
 
 /* Universal style
@@ -60,9 +39,6 @@
   outline: none;
   /* 2 */
   -webkit-tap-highlight-color: transparent;
-
-  /* Visual */
-  color: inherit;
 }
 
 /* Element modifiers
@@ -89,6 +65,8 @@ body {
 }
 
 hr {
-  border: none;
-  border-bottom: 1px solid $middle-color;
+  height: 2px;
+  border: 0;
+  background: $variant-color-light;
+  background: var(--theme-variant-color, $variant-color-light);
 }
