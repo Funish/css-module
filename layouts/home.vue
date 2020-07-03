@@ -1,7 +1,7 @@
 <template>
   <div class="fu-flex fu-flex-column fu-height-viewport" v-bind:class="{ 'fu-theme-dark': dark }">
     <Header></Header>
-    <div class="fu-grid fu-main-center fu-cross-center fu-height-1-1 fu-margin-bottom-xlarge">
+    <div class="fu-flex fu-main-center fu-cross-center fu-flex-1">
       <nuxt />
     </div>
     <div class="fu-position-fixed fu-position-bottom-right fu-margin-medium">
