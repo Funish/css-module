@@ -1,6 +1,6 @@
 {
   "name": "@funish/css",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.1-alpha.7",
   "description": "A concise front-end CSS framework.",
   "author": "Funish.net",
   "homepage": "https://css.funish.net",
@@ -28,7 +28,7 @@
     "compressed": "node-sass src/funish.scss dist/funish.min.css --output-style compressed",
     "highlight": "node-sass src/highlight.js.scss dist/funish-hl.css --output-style compressed",
     "output": "yarn complete & yarn compressed & yarn highlight",
-    "prerelease": "yarn output & yarn version --new-version prerelease & yarn publish"
+    "prerelease": "yarn output & yarn version --new-version prerelease & yarn publish & git push --tags"
   },
   "dependencies": {
     "node-sass": "^4.14.1",
