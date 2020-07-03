@@ -19,6 +19,7 @@
 
   /* Visual */
   background: $surface-color-light;
+  /* @alternate */
   background: var(--theme-surface-color, $surface-color-light);
 
   img {

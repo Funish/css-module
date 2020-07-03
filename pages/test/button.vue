@@ -8,6 +8,12 @@
       <button class="fu-button fu-button-outlined">Outlined</button>
       <button class="fu-button fu-button-contained">Contained</button>
     </div>
+    <h2>Fade button</h2>
+    <div>
+      <button class="fu-button fu-button-fade">Button</button>
+      <button class="fu-button fu-button-outlined fu-button-fade">Outlined</button>
+      <button class="fu-button fu-button-contained fu-button-fade">Contained</button>
+    </div>
     <h2>Disabled button</h2>
     <div>
       <button class="fu-button" disabled>Button</button>

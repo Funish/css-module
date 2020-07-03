@@ -105,6 +105,31 @@
   }
 }
 
+.fu-button-fade {
+  border-color: $on-surface-color-light;
+  /* @alternate */
+  border-color: var(--theme-on-surface-color, $on-surface-color-light);
+
+  &:not(:disabled) {
+    color: $on-surface-color-light;
+    /* @alternate */
+    color: var(--theme-on-surface-color, $on-surface-color-light);
+  }
+
+  &.fu-button-contained:not(:disabled) {
+    background: $variant-color-light;
+    /* @alternate */
+    background: var(--theme-variant-color, $variant-color-light);
+  }
+
+  &::before,
+  &::after {
+    background: $on-surface-color-light;
+    /* @alternate */
+    background: var(--theme-on-surface-color, $on-surface-color-light);
+  }
+}
+
 /* Icon button
    ========================================================================== */
 

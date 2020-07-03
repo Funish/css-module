@@ -32,6 +32,16 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 <button class="fu-button fu-button-contained">Button</button>
 ```
 
+## 褪色
+
+通过应用类选择器 `.fu-button-fade` 为按钮设置褪色颜色。
+
+```html
+<button class="fu-button fu-button-fade">Button</button>
+<button class="fu-button fu-button-contained fu-button-fade">Button</button>
+<button class="fu-button fu-button-outlined fu-button-fade">Button</button>
+```
+
 ## 图标
 
 通过应用类选择器 `.fu-button-icon` 配合 `fontawesome` 为按钮添加图标。
