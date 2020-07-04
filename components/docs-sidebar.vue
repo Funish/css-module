@@ -131,6 +131,10 @@ export default {
         {
           title: "Markdown",
           to: "/docs/markdown"
+        },
+        {
+          title: "Highlight.js",
+          to: "/docs/highlight"
         }
       ],
       controls_items: [

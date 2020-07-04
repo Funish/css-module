@@ -12,7 +12,10 @@
       <nuxt />
     </div>
     <div class="fu-position-fixed fu-position-bottom-right fu-margin-medium">
-      <button class="fu-button fu-icon-button fu-button-contained fu-button-fade" @click.stop="dark = !dark, sun = !sun, moon = !moon">
+      <button
+        class="fu-button fu-icon-button fu-button-contained fu-button-fade"
+        @click.stop="dark = !dark, sun = !sun, moon = !moon"
+      >
         <i v-bind:class="{ 'far fa-sun': sun, 'fas fa-moon': moon }"></i>
       </button>
     </div>
@@ -33,9 +36,9 @@ export default {
   },
   data() {
     return {
-      dark: true,
-      sun: false,
-      moon: true
+      dark: false,
+      sun: true,
+      moon: false
     };
   }
 };

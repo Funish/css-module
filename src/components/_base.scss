@@ -1,7 +1,15 @@
 /* ========================================================================
      Component: Base
    ========================================================================== */
-:root {
+@media (prefers-color-scheme: no-preference) and (prefers-color-scheme: light) {
+  :root {
+    @each $scale, $color in $light-colors {
+      --theme-#{$scale}: #{$color};
+    }
+  }
+}
+
+.fu-theme-light {
   @each $scale, $color in $light-colors {
     --theme-#{$scale}: #{$color};
   }
@@ -13,6 +21,14 @@
 /** 
   * Theme
   */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $scale, $color in $dark-colors {
+      --theme-#{$scale}: #{$color};
+    }
+  }
+}
 
 .fu-theme-dark {
   /* Visual */
@@ -34,6 +50,7 @@
   * 1.Remove the outline on all elements when they are active or hovered
   * 2.Make the tap highlight color of all elements in Webkit browser transparent
   */
+
 * {
   /* 1 */
   outline: none;

@@ -123,10 +123,14 @@ template, [hidden] { display: none; }
 
 /* Global variables */
 /* ======================================================================== Component: Base ========================================================================== */
-:root { --theme-background-color: #fff; --theme-surface-color: #fafafa; --theme-on-surface-color: #000; --theme-variant-color: #f2f2f2; --theme-middle-color: #808080; --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; --theme-danger-color-primary: #d73a49; --theme-danger-color-secondary: #cea0a5; --theme-success-color-primary: #34d058; --theme-success-color-secondary: #a2cbac; --theme-disabled-color: #d9d9d9; }
+@media (prefers-color-scheme: no-preference) and (prefers-color-scheme: light) { :root { --theme-background-color: #fff; --theme-surface-color: #fafafa; --theme-on-surface-color: #000; --theme-variant-color: #f2f2f2; --theme-middle-color: #808080; --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; --theme-danger-color-primary: #d73a49; --theme-danger-color-secondary: #cea0a5; --theme-success-color-primary: #34d058; --theme-success-color-secondary: #a2cbac; --theme-disabled-color: #d9d9d9; } }
+
+.fu-theme-light { --theme-background-color: #fff; --theme-surface-color: #fafafa; --theme-on-surface-color: #000; --theme-variant-color: #f2f2f2; --theme-middle-color: #808080; --theme-default-color-primary: #0366d6; --theme-default-color-secondary: #c8e1ff; --theme-danger-color-primary: #d73a49; --theme-danger-color-secondary: #cea0a5; --theme-success-color-primary: #34d058; --theme-success-color-secondary: #a2cbac; --theme-disabled-color: #d9d9d9; }
 
 /* Style modifiers ========================================================================== */
 /**  Theme */
+@media (prefers-color-scheme: dark) { :root { --theme-background-color: #212121; --theme-surface-color: #303030; --theme-on-surface-color: #fff; --theme-variant-color: #292929; --theme-default-color-secondary: #005cc5; --theme-danger-color-secondary: #cb2431; --theme-success-color-secondary: #28a745; --theme-disabled-color: #424242; } }
+
 .fu-theme-dark { /* Visual */ color: #000; /* @alternate */ color: var(--theme-on-surface-color, #000); background: #fff; /* @alternate */ background: var(--theme-background-color, #fff); --theme-background-color: #212121; --theme-surface-color: #303030; --theme-on-surface-color: #fff; --theme-variant-color: #292929; --theme-default-color-secondary: #005cc5; --theme-danger-color-secondary: #cb2431; --theme-success-color-secondary: #28a745; --theme-disabled-color: #424242; }
 
 /* Universal style ========================================================================== */
