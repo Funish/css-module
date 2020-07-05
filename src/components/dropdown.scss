@@ -44,15 +44,13 @@
   box-sizing: border-box;
   padding: 4px;
   margin-top: 2px;
-  border-radius: 4px;
-  border: 1px solid $variant-color-light;
-  border-color: var(--theme-variant-color, $variant-color-light);
   min-width: 100%;
+  box-shadow: 0 1px 4px -1px $box-shadow;
 
   /* Visual */
-  background: $surface-color-light;
+  background: $surface-light;
   /* @alternate */
-  background: var(--theme-surface-color, $surface-color-light);
+  background: var(--fu-theme-surface, $surface-light);
 }
 
 /* Style modifiers

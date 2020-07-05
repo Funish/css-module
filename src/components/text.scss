@@ -4,22 +4,13 @@
 /* Link
    ========================================================================== */
 a {
-  color: $default-color;
-  color: var(--theme-default-color-primary, $default-color);
+  color: $default-light;
+  color: var(--fu-theme-default-variant, $default-light);
 
   &:not(:hover) {
     text-decoration: none;
   }
 }
-
-/* Text Color
-   ========================================================================== */
-
-.fu-color-fade {
-  color: $middle-color;
-}
-
-/*  */
 
 /* Title
    ========================================================================== */

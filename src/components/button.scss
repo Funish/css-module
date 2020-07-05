@@ -2,6 +2,7 @@
      Component: Button
    ========================================================================== */
 .fu-button {
+  height: 36px;
   padding: 0 8px;
   text-transform: uppercase;
   user-select: none;
@@ -9,9 +10,9 @@
   &:not(:disabled) {
     cursor: pointer;
 
-    color: $default-color;
+    color: $default-light;
     /* @alternate */
-    color: var(--theme-default-color-primary, $default-color);
+    color: var(--fu-theme-default-variant, $default-light);
     background: transparent;
   }
 
@@ -29,9 +30,9 @@
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
-    background: $default-color;
+    background: $default-light;
     /* @alternate */
-    background: var(--theme-default-color-primary, $default-color);
+    background: var(--fu-theme-default-variant, $default-light);
   }
 
   &::after {
@@ -39,13 +40,13 @@
   }
 
   &:hover::before {
-    opacity: 0.04;
+    opacity: 0.08;
   }
 
   &:focus::before,
   &:active::after {
     transition-duration: 75ms;
-    opacity: 0.12;
+    opacity: 0.24;
   }
 }
 
@@ -68,65 +69,53 @@
 
 .fu-button-outlined {
   padding: 0 15px;
-  border: 1px solid $default-color;
+  border: 1px solid $default-light;
   /* @alternate */
-  border-color: var(--theme-default-color-primary, $default-color);
+  border: var(--fu-theme-default-variant, $default-light);
 
-  &:hover::before {
-    opacity: 0.06;
-  }
-
-  &:focus::before,
-  &:active::after {
-    opacity: 0.18;
+  &:disabled {
+    border: $disabled-light;
+    /* @alternate */
+    border: var(--fu-theme-disabled, $disabled-light);
   }
 }
 
 .fu-button-contained {
   &:not(:disabled) {
-    color: $on-surface-color-dark;
-    background: $default-color;
+    color: $on-surface-dark;
+    background: $default-light;
     /* @alternate */
-    background: var(--theme-default-color-primary, $default-color);
+    background: var(--fu-theme-default-variant, $default-light);
   }
 
   &::before,
   &::after {
-    background: $surface-color-light;
-  }
-
-  &:hover::before {
-    opacity: 0.08;
-  }
-
-  &:focus::before,
-  &:active::after {
-    opacity: 0.24;
+    background: $surface-light;
   }
 }
 
 .fu-button-fade {
-  border-color: $on-surface-color-light;
+  border: $on-surface-light;
   /* @alternate */
-  border-color: var(--theme-on-surface-color, $on-surface-color-light);
+  border: var(--fu-theme-on-surface, $on-surface-light);
 
   &:not(:disabled) {
-    color: $on-surface-color-light;
+    color: $on-surface-light;
     /* @alternate */
-    color: var(--theme-on-surface-color, $on-surface-color-light);
+    color: var(--fu-theme-on-surface, $on-surface-light);
   }
 
-  &.fu-button-contained:not(:disabled) {
-    background: $variant-color-light;
+  &.fu-button-contained {
+    background: $surface-variant-light;
     /* @alternate */
-    background: var(--theme-variant-color, $variant-color-light);
+    background: var(--fu-theme-surface-variant, $surface-variant-light);
   }
 
   &::before,
   &::after {
-    background: $on-surface-color-light;
+    background: $on-surface-light;
     /* @alternate */
-    background: var(--theme-on-surface-color, $on-surface-color-light);
+    background: var(--fu-theme-on-surface, $on-surface-light);
   }
 }
 
@@ -215,8 +204,8 @@ svg.fu-button-icon {
     }
 
     .fu-button:not(:first-child) {
-      border-left-color: $on-surface-color-light;
-      border-left-color: var(--theme-on-surface-color, $on-surface-color-light);
+      border-left: $on-surface-light;
+      border-left: var(--fu-theme-on-surface, $on-surface-light);
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }

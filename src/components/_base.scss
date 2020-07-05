@@ -1,17 +1,23 @@
 /* ========================================================================
      Component: Base
    ========================================================================== */
-@media (prefers-color-scheme: no-preference) and (prefers-color-scheme: light) {
+:root {
+  @each $scale, $color in $base {
+    --fu-theme-#{$scale}: #{$color};
+  }
+}
+
+@media (prefers-scheme: no-preference) and (prefers-scheme: light) {
   :root {
-    @each $scale, $color in $light-colors {
-      --theme-#{$scale}: #{$color};
+    @each $scale, $color in $lights {
+      --fu-theme-#{$scale}: #{$color};
     }
   }
 }
 
 .fu-theme-light {
-  @each $scale, $color in $light-colors {
-    --theme-#{$scale}: #{$color};
+  @each $scale, $color in $lights {
+    --fu-theme-#{$scale}: #{$color};
   }
 }
 
@@ -22,25 +28,17 @@
   * Theme
   */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-scheme: dark) {
   :root {
-    @each $scale, $color in $dark-colors {
-      --theme-#{$scale}: #{$color};
+    @each $scale, $color in $darks {
+      --fu-theme-#{$scale}: #{$color};
     }
   }
 }
 
 .fu-theme-dark {
-  /* Visual */
-  color: $on-surface-color-light;
-  /* @alternate */
-  color: var(--theme-on-surface-color, $on-surface-color-light);
-  background: $background-color-light;
-  /* @alternate */
-  background: var(--theme-background-color, $background-color-light);
-
-  @each $scale, $color in $dark-colors {
-    --theme-#{$scale}: #{$color};
+  @each $scale, $color in $darks {
+    --fu-theme-#{$scale}: #{$color};
   }
 }
 
@@ -55,7 +53,7 @@
   /* 1 */
   outline: none;
   /* 2 */
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight: transparent;
 }
 
 /* Element modifiers
@@ -65,26 +63,26 @@ body {
   /* Layout */
   overflow-y: scroll;
 
-  /* Visual */
-  color: $on-surface-color-light;
-  /* @alternate */
-  color: var(--theme-on-surface-color, $on-surface-color-light);
-  background: $background-color-light;
-  /* @alternate */
-  background: var(--theme-background-color, $background-color-light);
-
   /* Text */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.25;
   word-wrap: break-word;
+
+  /* Visual */
+  color: $on-surface-light;
+  /* @alternate */
+  color: var(--fu-theme-on-surface, $on-surface-light);
+  background: $background-light;
+  /* @alternate */
+  background: var(--fu-theme-background, $background-light);
 }
 
 hr {
   height: 2px;
   border: 0;
-  background: $variant-color-light;
+  background: $surface-variant-light;
   /* @alternate */
-  background: var(--theme-variant-color, $variant-color-light);
+  background: var(--fu-theme-surface-variant, $surface-variant-light);
 }

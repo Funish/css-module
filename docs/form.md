@@ -14,14 +14,6 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input class="fu-form" />
 ```
 
-## 褪色
-
-通过应用类选择器 `.fu-form-fade` 为表单设置褪色颜色。
-
-```html
-<input class="fu-form fu-form-fade" />
-```
-
 ## 上传
 
 ```html

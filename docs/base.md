@@ -8,25 +8,25 @@
 
 通过自定义属性可以调整界面主题。
 
-| 类名                              | 描述                               |
-|-----------------------------------|------------------------------------|
-| `--theme-background-color`        | 背景颜色                           |
-| `--theme-surface-color`           | 面板颜色（用于控件）               |
-| `--theme-on-surface-color`        | 文本颜色（白色或者黑色）           |
-| `--theme-variant-color`           | 聚焦颜色（通常为褪色后的面板颜色） |
-| `--theme-middle-color`            | 中间色（用于浅色和深色切换）       |
-| `--theme-default-color-primary`   | 默认色的主要颜色                   |
-| `--theme-default-color-secondary` | 默认色的次要颜色                   |
-| `--theme-danger-color-primary`    | 危险色的主要颜色                   |
-| `--theme-danger-color-secondary`  | 危险色的次要颜色                   |
-| `--theme-success-color-primary`   | 成功色的主要颜色                   |
-| `--theme-success-color-secondar`  | 成功色的次要颜色                   |
-| `--theme-disabled-color`          | 禁用时使用的颜色                   |
+| 类名                      | 描述                               |
+|---------------------------|------------------------------------|
+| `--fu-theme-on-surface`      | 文本颜色（白色或者黑色）           |
+| `--fu-theme-background`      | 背景颜色                           |
+| `--fu-theme-surface`         | 面板颜色（用于控件）               |
+| `--fu-theme-surface-variant` | 聚焦颜色（通常为褪色后的面板颜色） |
+| `--fu-theme-disabled`        | 禁用时使用的颜色                   |
+| `--fu-theme-middle`          | 中间色（用于浅色和深色切换）       |
+| `--fu-theme-default`         | 默认色的主要颜色                   |
+| `--fu-theme-default-variant` | 默认色的次要颜色                   |
+| `--fu-theme-warning`         | 危险色的主要颜色                   |
+| `--fu-theme-warning-variant` | 危险色的次要颜色                   |
+| `--fu-theme-success`         | 成功色的主要颜色                   |
+| `--fu-theme-success-variant` | 成功色的次要颜色                   |
 
 ```html
 <style>
   :root{
-    --theme-surface-color: #fff;
+    --fu-theme-surface: #fff;
     /* ... */
   }
 </style>

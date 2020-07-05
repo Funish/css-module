@@ -10,18 +10,18 @@
   padding: 0.5em;
 
   /* Visual */
-  color: $on-surface-color-light;
+  color: $on-surface-light;
   /* @alternate */
-  color: var(--theme-on-surface-color, $on-surface-color-light);
-  background: $surface-color-light;
+  color: var(--fu-theme-on-surface, $on-surface-light);
+  background: $surface-light;
   /* @alternate */
-  background: var(--theme-surface-color, $surface-color-light);
+  background: var(--fu-theme-surface, $surface-light);
 }
 
 .hljs-comment,
 .hljs-quote,
 .hljs-variable {
-  color: $success-color-dark;
+  color: $success-dark;
 }
 
 .hljs-built_in,
@@ -29,7 +29,7 @@
 .hljs-name,
 .hljs-selector-tag,
 .hljs-tag {
-  color: $success-color;
+  color: $success;
 }
 
 .hljs-addition,
@@ -41,28 +41,28 @@
 .hljs-template-variable,
 .hljs-title,
 .hljs-type {
-  color: $danger-color;
+  color: $warning;
 }
 
 .hljs-deletion,
 .hljs-meta,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: $success-color;
+  color: $success;
 }
 
 .hljs-doctag {
-  color: $variant-color-dark;
+  color: $surface-variant-dark;
 }
 
 .hljs-attr {
-  color: $default-color;
+  color: $default-light;
 }
 
 .hljs-bullet,
 .hljs-link,
 .hljs-symbol {
-  color: $default-color-dark;
+  color: $default-dark;
 }
 
 .hljs-emphasis {

@@ -28,9 +28,9 @@ Utility 模块是实用性工具的集合。
 
 | 类名                         | 描述               |
 |------------------------------|--------------------|
-| `.fu-background`             | 背景颜色随状态调整 |
-| `.fu-background-fade`        | 褪色的背景颜色     |
+| `.fu-background`             | 背景颜色随主题调整 |
 | `.fu-background-transparent` | 背景颜色显示为透明 |
+| `.fu-surface`                | 背景颜色设为面板色 |
 
 ## 浮动
 

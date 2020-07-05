@@ -2,71 +2,78 @@
    ========================================================================== */
 
 /* Middle */
-$middle-color: #808080;
-
-/* Background */
-$background-color-light: #fff;
-$background-color-dark: #212121;
-
-/* Surface */
-$surface-color-light: #fafafa;
-$surface-color-dark: #303030;
+$middle: #808080;
 
 /* On surface */
-$on-surface-color-light: #000;
-$on-surface-color-dark: #fff;
+$on-surface-light: #000;
+$on-surface-dark: #fff;
+
+/* Background */
+$background-light: #fff;
+$background-dark: #121212;
+
+/* Surface */
+$surface-light: #fafafa;
+$surface-dark: #212121;
 
 /* Variant */
-$variant-color-light: #f2f2f2;
-$variant-color-dark: #292929;
+$surface-variant-light: #f2f2f2;
+$surface-variant-dark: #292929;
 
 /* Disabled */
-$disabled-color-light: #d9d9d9;
-$disabled-color-dark: #424242;
+$disabled-light: #d9d9d9;
+$disabled-dark: #424242;
 
 /* Box shadow color */
-$box-shadow-color: rgba(0, 0, 0, 0.37);
+$box-shadow: rgba(0, 0, 0, 0.37);
 
 /* Default */
-$default-color: #0366d6;
-$default-color-light: #c8e1ff;
-$default-color-dark: #005cc5;
+$default: #0366d6;
+
+$default-light: #6093ff;
+$default-dark: #7f39fb;
 
 /* Danger */
-$danger-color: #d73a49;
-$danger-color-light: #cea0a5;
-$danger-color-dark: #cb2431;
+$warning: #d73a49;
+
+$warning-light: #ff6f74;
+$warning-dark: #9f0022;
 
 /* Success */
-$success-color: #34d058;
-$success-color-light: #a2cbac;
-$success-color-dark: #28a745;
+$success: #28a745;
+
+$success-light: #64da73;
+$success-dark: #007717;
 
 /* Theme */
-$light-colors: (
-   background-color: $background-color-light,
-   surface-color: $surface-color-light,
-   on-surface-color: $on-surface-color-light,
-   variant-color: $variant-color-light,
-   middle-color: $middle-color,
-   default-color-primary: $default-color,
-   default-color-secondary: $default-color-light,
-   danger-color-primary: $danger-color,
-   danger-color-secondary: $danger-color-light,
-   success-color-primary: $success-color,
-   success-color-secondary: $success-color-light,
-   disabled-color: $disabled-color-light,
+$base: (
+   middle: $middle,
+   default: $default,
+   warning: $warning,
+   success: $success,
+   box-shadow: $box-shadow,
 ) !default;
 
-$dark-colors: (
-   background-color: $background-color-dark,
-   surface-color: $surface-color-dark,
-   on-surface-color: $on-surface-color-dark,
-   variant-color: $variant-color-dark,
-   default-color-secondary: $default-color-dark,
-   danger-color-secondary: $danger-color-dark,
-   success-color-secondary: $success-color-dark,
-   disabled-color: $disabled-color-dark,
+$lights: (
+   on-surface: $on-surface-light,
+   background: $background-light,
+   surface: $surface-light,
+   surface-variant: $surface-variant-light,
+   disabled: $disabled-light,
+   default-variant: $default-light,
+   warning-variant: $warning-light,
+   success-variant: $success-light,
+) !default;
+
+$darks: (
+   on-surface: $on-surface-dark,
+   background: $background-dark,
+   surface: $surface-dark,
+   surface-variant: $surface-variant-dark,
+   disabled: $disabled-dark,
+   default-variant: $default-dark,
+   warning-variant: $warning-dark,
+   success-variant: $success-dark,
 ) !default;
 
 /* Breakpoints

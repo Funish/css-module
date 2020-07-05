@@ -10,7 +10,7 @@
   border-radius: 6px;
   width: 100%;
   max-width: 344px;
-  box-shadow: 0 1px 4px -1px $box-shadow-color;
+  box-shadow: 0 1px 4px -1px $box-shadow;
 
   /* Text */
   line-height: 1.5;
@@ -18,9 +18,12 @@
   text-overflow: ellipsis;
 
   /* Visual */
-  background: $surface-color-light;
+  color: $on-surface-light;
   /* @alternate */
-  background: var(--theme-surface-color, $surface-color-light);
+  color: var(--fu-theme-on-surface, $on-surface-light);
+  background: $surface-light;
+  /* @alternate */
+  background: var(--fu-theme-surface, $surface-light);
 
   img {
     width: 100%;
@@ -78,9 +81,9 @@
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
-    background: $on-surface-color-light;
+    background: $on-surface-light;
     /* @alternate */
-    background: var(--theme-on-surface-color, $on-surface-color-light);
+    background: var(--fu-theme-on-surface, $on-surface-light);
   }
 
   &::after {

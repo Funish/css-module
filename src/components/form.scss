@@ -12,7 +12,6 @@
   /* Box model */
   border: none;
   border-radius: 4px;
-  height: 36px;
   min-width: 64px;
 
   /* Text */
@@ -27,67 +26,43 @@
     cursor: default;
     pointer-events: none;
 
-    color: $middle-color;
-    border-color: $disabled-color-light;
+    color: $middle;
+    background: $disabled-light;
     /* @alternate */
-    border-color: var(--theme-disabled-color, $disabled-color-light);
-    background: $disabled-color-light;
-    /* @alternate */
-    background: var(--theme-disabled-color, $disabled-color-light);
+    background: var(--fu-theme-disabled, $disabled-light);
   }
 }
 
 .fu-form {
   /* Box model */
-  border: 1px solid;
-  padding: 0 12px;
+  height: 48px;
+  width: 100%;
+  max-width: 280px;
+  padding: 0 16px;
 
-  &:not(:disabled) {
-    color: $default-color;
-    /* @alternate */
-    color: var(--theme-default-color-primary, $default-color);
-    border-color: $default-color;
-    /* @alternate */
-    border-color: var(--theme-default-color-primary, $default-color);
-    background: $background-color-light;
-    /* @alternate */
-    background: var(--theme-background-color, $background-color-light);
+  /* Visual */
+  color: $on-surface-light;
+  /* @alternate */
+  color: var(--fu-theme-on-surface, $on-surface-light);
+  background: $surface-light;
+  /* @alternate */
+  background: var(--fu-theme-surface, $surface-light);
 
-    &::placeholder {
-      color: inherit;
-      opacity: 0.75;
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 4px -1px $box-shadow;
+  }
+
+  &::placeholder {
+    color: $middle;
   }
 }
 
 textarea.fu-form {
   /* Box model */
-  padding: 12px;
-  height: 72px;
+  padding: 16px;
+  height: 96px;
   resize: none;
-}
-
-.fu-form-fade {
-  &:not(:disabled) {
-    border-color: $surface-color-light;
-    /* @alternate */
-    border-color: var(--theme-surface-color, $surface-color-light);
-    /* Visual */
-    color: $on-surface-color-light;
-    /* @alternate */
-    color: var(--theme-on-surface-color, $on-surface-color-light);
-    background: $surface-color-light;
-    /* @alternate */
-    background: var(--theme-surface-color, $surface-color-light);
-    transition: background-color 75ms linear;
-  }
-
-  &:hover,
-  &:focus {
-    background: $variant-color-light;
-    /* @alternate */
-    background: var(--theme-variant-color, $variant-color-light);
-  }
 }
 
 /* `.fu-checkbox`, `.fu-radio`, `.fu-range`
@@ -142,7 +117,7 @@ textarea.fu-form {
   left: 0;
 
   /* 2 */
-  width: 36px;
+  width: 48px;
 
   /* 3 */
   display: inline-flex;
@@ -150,9 +125,9 @@ textarea.fu-form {
   align-items: center;
 
   /* 4 */
-  color: $default-color;
+  color: $on-surface-light;
   /* @alternate */
-  color: var(--theme-default-color-primary, $default-color);
+  color: var(--fu-theme-on-surface, $on-surface-light);
 
   &:not(a):not(button):not(input) {
     pointer-events: none;
@@ -160,7 +135,7 @@ textarea.fu-form {
 
   &:not([dir="rtl"]) ~ .fu-form {
     position: initial;
-    padding-left: 36px;
+    padding-left: 48px;
   }
 }
 
@@ -170,7 +145,7 @@ textarea.fu-form {
 
   ~ .fu-form {
     position: initial;
-    padding-left: 12px;
-    padding-right: 36px;
+    padding-left: 16px;
+    padding-right: 48px;
   }
 }

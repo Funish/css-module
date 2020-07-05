@@ -18,7 +18,7 @@
 .fu-menu-header {
   display: block;
   padding: 4px 16px;
-  color: $middle-color;
+  color: $middle;
 }
 
 .fu-menu-item {
@@ -33,16 +33,16 @@
   white-space: nowrap;
 
   /* Visual */
-  color: $on-surface-color-light;
+  color: $on-surface-light;
   /* @alternate */
-  color: var(--theme-on-surface-color, $on-surface-color-light);
+  color: var(--fu-theme-on-surface, $on-surface-light);
 
   &:hover,
   &:focus {
     /* Visual */
-    color: $on-surface-color-dark;
-    background: $default-color;
+    color: $on-surface-dark;
+    background: $default-light;
     /* @alternate */
-    background: var(--theme-default-color-primary, $default-color);
+    background: var(--fu-theme-default-variant, $default-light);
   }
 }

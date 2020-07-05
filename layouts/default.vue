@@ -1,14 +1,12 @@
 <template>
   <div
-    class="fu-flex fu-flex-column"
+    class="fu-flex fu-flex-column fu-background"
     v-bind:class="{ 'fu-theme-dark': dark }"
     style="min-height:100vh;"
   >
     <Header></Header>
     <div class="fu-padding-horizontal-auto fu-flex-1">
-      <div class="fu-flex fu-flex-wrap fu-main-center fu-cross-center">
-        <Testheader></Testheader>
-      </div>
+      <Testheader></Testheader>
       <nuxt />
     </div>
     <div class="fu-position-fixed fu-position-bottom-right fu-margin-medium">

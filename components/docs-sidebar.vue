@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="fu-margin-medium fu-padding-vertical-medium fu-width-small fu-background-surface fu-border-large fu-height-1-1 fu-shadow-small"
+    class="fu-margin-medium fu-padding-vertical-medium fu-width-small fu-surface fu-border-large fu-height-1-1 fu-shadow-small"
   >
     <div class="fu-menu">
       <nuxt-link
