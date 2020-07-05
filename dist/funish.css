@@ -1040,7 +1040,7 @@ textarea.fu-form { /* Box model */ padding: 16px; height: 96px; resize: none; }
 /* Style modifiers ========================================================================== */
 .fu-button-outlined, .fu-button-contained { padding: 0 16px; }
 
-.fu-button-outlined { padding: 0 15px; border: 1px solid #6093ff; /* @alternate */ border: var(--fu-theme-default-variant, #6093ff); }
+.fu-button-outlined { padding: 0 15px; border: 1px solid #6093ff; /* @alternate */ border-color: var(--fu-theme-default-variant, #6093ff); }
 
 .fu-button-outlined:disabled { border: #d9d9d9; /* @alternate */ border: var(--fu-theme-disabled, #d9d9d9); }
 
@@ -1048,7 +1048,7 @@ textarea.fu-form { /* Box model */ padding: 16px; height: 96px; resize: none; }
 
 .fu-button-contained::before, .fu-button-contained::after { background: #fafafa; }
 
-.fu-button-fade { border: #000; /* @alternate */ border: var(--fu-theme-on-surface, #000); }
+.fu-button-fade { border-color: #000; /* @alternate */ border-color: var(--fu-theme-on-surface, #000); }
 
 .fu-button-fade:not(:disabled) { color: #000; /* @alternate */ color: var(--fu-theme-on-surface, #000); }
 
@@ -1097,7 +1097,7 @@ svg.fu-button-icon { fill: currentColor; }
 .fu-menu-item:hover, .fu-menu-item:focus { /* Visual */ color: #fff; background: #6093ff; /* @alternate */ background: var(--fu-theme-default-variant, #6093ff); }
 
 /* ======================================================================== Component: Nav ========================================================================== */
-.fu-navbar { /* Layout */ display: flex; z-index: 999; align-items: center; flex-wrap: wrap; /* Box model */ padding: 16px; box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.37); /* Text */ font-size: 14px; /* Visual */ background: #fff; /* @alternate */ background: var(--fu-theme-background, #fff); }
+.fu-navbar { /* Layout */ display: flex; z-index: 999; align-items: center; flex-wrap: wrap; /* Box model */ padding: 16px; box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.37); /* Text */ font-size: 14px; /* Visual */ background: #fff; /* @alternate */ background: var(--fu-theme-background, #fff); }
 
 .fu-navbar a { text-decoration: none; }
 

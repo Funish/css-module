@@ -71,7 +71,7 @@
   padding: 0 15px;
   border: 1px solid $default-light;
   /* @alternate */
-  border: var(--fu-theme-default-variant, $default-light);
+  border-color: var(--fu-theme-default-variant, $default-light);
 
   &:disabled {
     border: $disabled-light;
@@ -95,9 +95,9 @@
 }
 
 .fu-button-fade {
-  border: $on-surface-light;
+  border-color: $on-surface-light;
   /* @alternate */
-  border: var(--fu-theme-on-surface, $on-surface-light);
+  border-color: var(--fu-theme-on-surface, $on-surface-light);
 
   &:not(:disabled) {
     color: $on-surface-light;
