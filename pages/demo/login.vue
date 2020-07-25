@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Login Form</h1>
-    <form class="fu-flex fu-flex-column fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
+    <form
+      class="fu-flex fu-flex-column fu-flex-wrap fu-grid-row-medium fu-grid-column-medium"
+    >
       <input class="fu-form" placeholder="Placeholder" />
       <select class="fu-form">
         <option>Option1</option>

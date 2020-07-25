@@ -8,18 +8,20 @@
           <div class="fu-text-title">Box</div>
           <div class="fu-text-subtitle">Subtitle</div>
         </div>
-        <div
-          class="fu-box-content"
-        >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="fu-box-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
       </div>
       <div class="fu-box fu-box-action">
         <div class="fu-box-header">
           <div class="fu-text-title">Box with action</div>
           <div class="fu-text-subtitle">Subtitle</div>
         </div>
-        <div
-          class="fu-box-content"
-        >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="fu-box-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
       </div>
       <div class="fu-box">
         <div class="fu-box-action">
@@ -27,9 +29,10 @@
             <div class="fu-text-title">Box with footer</div>
             <div class="fu-text-subtitle">Subtitle</div>
           </div>
-          <div
-            class="fu-box-content"
-          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div class="fu-box-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
         </div>
         <div class="fu-box-footer fu-flex fu-main-end">
           <button class="fu-button fu-icon-button">

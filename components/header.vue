@@ -11,7 +11,11 @@
         <nuxt-link to="/test/" class="fu-navbar-link">测试</nuxt-link>
       </div>
       <div class="fu-navbar-item">
-        <a target="_blank" href="https://github.com/Funish/css-module" class="fu-navbar-link">
+        <a
+          target="_blank"
+          href="https://github.com/Funish/css-module"
+          class="fu-navbar-link"
+        >
           <i class="fab fa-github"></i>
         </a>
       </div>

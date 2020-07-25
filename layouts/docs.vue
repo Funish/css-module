@@ -12,15 +12,15 @@
 </template>
 
 <script>
-import Header from "~/components/header.vue";
-import Footer from "~/components/footer.vue";
-import Sidebar from "~/components/docs-sidebar.vue";
+import Header from '~/components/header.vue';
+import Footer from '~/components/footer.vue';
+import Sidebar from '~/components/docs-sidebar.vue';
 
 export default {
   components: {
     Header,
     Footer,
-    Sidebar
-  }
+    Sidebar,
+  },
 };
 </script>

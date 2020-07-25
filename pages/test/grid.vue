@@ -62,7 +62,7 @@
         <div class="fu-box-content">Item3</div>
       </div>
     </div>
-        <h2>.fu-grid-column-small</h2>
+    <h2>.fu-grid-column-small</h2>
     <div class="fu-gridfu-flex-wrap fu-grid-column-small">
       <div class="fu-box">
         <div class="fu-box-content">Item1</div>

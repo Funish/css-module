@@ -55,7 +55,9 @@
       </details>
       <details class="fu-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Left button at the bottom</div>
+          <div class="fu-button fu-button-outlined">
+            Left button at the bottom
+          </div>
         </summary>
         <div class="fu-dropdown-menu fu-dropdown-menu-bottom-left">
           <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
@@ -65,7 +67,9 @@
       </details>
       <details class="fu-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Right button at the bottom</div>
+          <div class="fu-button fu-button-outlined">
+            Right button at the bottom
+          </div>
         </summary>
         <div class="fu-dropdown-menu fu-dropdown-menu-bottom-right">
           <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>

@@ -4,6 +4,6 @@ Funish CSS 是 [Thus.Fun](https://thus.fun) 团队开发的 `Funish` 项目的�
 
 ## 参考
 
-* [Material Components for the web](https://github.com/material-components/material-components-web) - under the MIT license
-* [UIKit](https://github.com/uikit/uikit) - under the MIT license
-* [Primer CSS](https://github.com/primer/css) - under the MIT license
+- [Material Components for the web](https://github.com/material-components/material-components-web) - under the MIT license
+- [UIKit](https://github.com/uikit/uikit) - under the MIT license
+- [Primer CSS](https://github.com/primer/css) - under the MIT license

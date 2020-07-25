@@ -11,8 +11,12 @@
     <h2>Fade button</h2>
     <div>
       <button class="fu-button fu-button-fade">Button</button>
-      <button class="fu-button fu-button-outlined fu-button-fade">Outlined</button>
-      <button class="fu-button fu-button-contained fu-button-fade">Contained</button>
+      <button class="fu-button fu-button-outlined fu-button-fade">
+        Outlined
+      </button>
+      <button class="fu-button fu-button-contained fu-button-fade">
+        Contained
+      </button>
     </div>
     <h2>Disabled button</h2>
     <div>
@@ -23,14 +27,22 @@
     <h3>Dense button</h3>
     <div>
       <button class="fu-button fu-button-dense">Button</button>
-      <button class="fu-button fu-button-outlined fu-button-dense">Outlined</button>
-      <button class="fu-button fu-button-contained fu-button-dense">Contained</button>
+      <button class="fu-button fu-button-outlined fu-button-dense">
+        Outlined
+      </button>
+      <button class="fu-button fu-button-contained fu-button-dense">
+        Contained
+      </button>
     </div>
     <h3>Loose button</h3>
     <div>
       <button class="fu-button fu-button-loose">Button</button>
-      <button class="fu-button fu-button-outlined fu-button-loose">Outlined</button>
-      <button class="fu-button fu-button-contained fu-button-loose">Contained</button>
+      <button class="fu-button fu-button-outlined fu-button-loose">
+        Outlined
+      </button>
+      <button class="fu-button fu-button-contained fu-button-loose">
+        Contained
+      </button>
     </div>
     <h2>Button with icon</h2>
     <div>

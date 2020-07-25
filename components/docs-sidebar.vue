@@ -71,103 +71,103 @@ export default {
     return {
       home_items: [
         {
-          title: "简介",
-          to: "/docs/"
+          title: '简介',
+          to: '/docs/',
         },
         {
-          title: "设计",
-          to: "/docs/design"
+          title: '设计',
+          to: '/docs/design',
         },
         {
-          title: "基础",
-          to: "/docs/base"
+          title: '基础',
+          to: '/docs/base',
         },
         {
-          title: "关于",
-          to: "/docs/about"
-        }
+          title: '关于',
+          to: '/docs/about',
+        },
       ],
       layouts_items: [
         {
-          title: "Flex",
-          to: "/docs/flex"
+          title: 'Flex',
+          to: '/docs/flex',
         },
         {
-          title: "Grid",
-          to: "/docs/grid"
+          title: 'Grid',
+          to: '/docs/grid',
         },
         {
-          title: "Position",
-          to: "/docs/position"
+          title: 'Position',
+          to: '/docs/position',
         },
         {
-          title: "Visibility",
-          to: "/docs/visibility"
-        }
+          title: 'Visibility',
+          to: '/docs/visibility',
+        },
       ],
       box_model_items: [
         {
-          title: "Margin",
-          to: "/docs/margin"
+          title: 'Margin',
+          to: '/docs/margin',
         },
         {
-          title: "Padding",
-          to: "/docs/padding"
+          title: 'Padding',
+          to: '/docs/padding',
         },
         {
-          title: "Width",
-          to: "/docs/width"
+          title: 'Width',
+          to: '/docs/width',
         },
         {
-          title: "Height",
-          to: "/docs/height"
-        }
+          title: 'Height',
+          to: '/docs/height',
+        },
       ],
       text_items: [
         {
-          title: "Text",
-          to: "/docs/text"
+          title: 'Text',
+          to: '/docs/text',
         },
         {
-          title: "Markdown",
-          to: "/docs/markdown"
+          title: 'Markdown',
+          to: '/docs/markdown',
         },
         {
-          title: "Highlight.js",
-          to: "/docs/highlight"
-        }
+          title: 'Highlight.js',
+          to: '/docs/highlight',
+        },
       ],
       controls_items: [
         {
-          title: "Box",
-          to: "/docs/box"
+          title: 'Box',
+          to: '/docs/box',
         },
         {
-          title: "Button",
-          to: "/docs/button"
+          title: 'Button',
+          to: '/docs/button',
         },
         {
-          title: "Dropdown",
-          to: "/docs/dropdown"
+          title: 'Dropdown',
+          to: '/docs/dropdown',
         },
         {
-          title: "Form",
-          to: "/docs/form"
+          title: 'Form',
+          to: '/docs/form',
         },
         {
-          title: "Menu",
-          to: "/docs/menu"
+          title: 'Menu',
+          to: '/docs/menu',
         },
         {
-          title: "Navbar",
-          to: "/docs/navbar"
+          title: 'Navbar',
+          to: '/docs/navbar',
         },
         {
-          title: "Utility",
-          to: "/docs/utility"
-        }
-      ]
+          title: 'Utility',
+          to: '/docs/utility',
+        },
+      ],
     };
-  }
+  },
 };
 </script>

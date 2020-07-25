@@ -7,38 +7,38 @@
 
 ### A concise front-end CSS framework.
 
-Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project developed by the team, one of the development components of the web front-end interface was developed to `CSS` exists in a simple form, designed to implement `Funish` in a way that utilizes pure `CSS` code.  Front-end design concepts.
+Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project developed by the team, one of the development components of the web front-end interface was developed to `CSS` exists in a simple form, designed to implement `Funish` in a way that utilizes pure `CSS` code. Front-end design concepts.
 
 ## Components
 
 ### Layouts
 
-* [Flex](/docs/flex.md)
-* [Grid](/docs/grid.md)
-* [Position](/docs/position.md)
-* [Visibility](/docs/visibility.md)
+- [Flex](/docs/flex.md)
+- [Grid](/docs/grid.md)
+- [Position](/docs/position.md)
+- [Visibility](/docs/visibility.md)
 
 ### Box model
 
-* [Margin](/docs/margin.md)
-* [Padding](/docs/padding.md)
-* [Width](/docs/width.md)
-* [Height](/docs/height.md)
+- [Margin](/docs/margin.md)
+- [Padding](/docs/padding.md)
+- [Width](/docs/width.md)
+- [Height](/docs/height.md)
 
 ### Text
 
-* [Text](/docs/text.md)
-* [Markdown](/docs/markdown.md)
+- [Text](/docs/text.md)
+- [Markdown](/docs/markdown.md)
 
 ### Controls
 
-* [Box](/docs/box.md)
-* [Button](/docs/button.md)
-* [Dropdown](/docs/dropdown.md)
-* [Form](/docs/form.md)
-* [Menu](/docs/menu.md)
-* [Navbar](/docs/navbar.md)
-* [Utility](/docs/utility.md)
+- [Box](/docs/box.md)
+- [Button](/docs/button.md)
+- [Dropdown](/docs/dropdown.md)
+- [Form](/docs/form.md)
+- [Menu](/docs/menu.md)
+- [Navbar](/docs/navbar.md)
+- [Utility](/docs/utility.md)
 
 ## Usage
 
@@ -47,7 +47,10 @@ Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project devel
 Recommended for faster global response times from the Jsdelivr CDN.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@funish/css@latest/dist/funish.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@funish/css@latest/dist/funish.min.css"
+/>
 ```
 
 ### NPM / Yarn
@@ -63,7 +66,7 @@ $ yarn add @funish/css
 You can import the `@funish/css` style files from the `node_modules` directory.
 
 ```scss
-@import "@funish/src/funish.scss";
+@import '@funish/src/funish.scss';
 ```
 
 ## Build
@@ -90,11 +93,11 @@ For a detailed description of how it works, see [nuxt.js docs](https://nuxtjs.or
 
 ## Reference
 
-* [Material Components for the web](https://github.com/material-components/material-components-web) - under the MIT license
-* [UIKit](https://github.com/uikit/uikit) - under the MIT license
-* [Primer CSS](https://github.com/primer/css) - under the MIT license
+- [Material Components for the web](https://github.com/material-components/material-components-web) - under the MIT license
+- [UIKit](https://github.com/uikit/uikit) - under the MIT license
+- [Primer CSS](https://github.com/primer/css) - under the MIT license
 
 ## License
 
-* Code - [MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
-* Documentation - [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) &copy; [Funish.net](https://funish.net/)
+- Code - [MIT](LICENSE) &copy; [Funish.net](https://funish.net/)
+- Documentation - [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) &copy; [Funish.net](https://funish.net/)

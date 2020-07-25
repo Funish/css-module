@@ -16,6 +16,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "format": "prettier --write \"./**/*.{vue,js,json,md}\"",
     "complete": "node-sass src/funish.scss dist/funish.css --output-style compact",
     "compressed": "node-sass src/funish.scss dist/funish.min.css --output-style compressed",
     "highlight": "node-sass src/highlight.js.scss dist/funish-hl.css --output-style compressed",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "prettier": "2.0.5"
   }
 }
