@@ -89,7 +89,7 @@ $ yarn generate
 $ yarn output
 ```
 
-有关工作原理的详细说明，请查看[Nuxt.js docs](https://nuxtjs.org)和[node-sass](https://github.com/sass/node-sass)。
+有关工作原理的详细说明，请查看[Nuxt.js docs](https://nuxtjs.org)和[dart-sass](https://github.com/sass/dart-sass)。
 
 ## 参考
 

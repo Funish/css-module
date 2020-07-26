@@ -17,11 +17,12 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "format": "prettier --write \"./**/*.{vue,js,json,md}\"",
-    "complete": "node-sass src/funish.scss dist/funish.css --output-style compact",
-    "compressed": "node-sass src/funish.scss dist/funish.min.css --output-style compressed",
-    "highlight": "node-sass src/highlight.js.scss dist/funish-hl.css --output-style compressed",
-    "output": "yarn complete & yarn compressed & yarn highlight",
-    "test": "yarn generate & yarn output",
+    "complete": "sass src/funish.scss dist/funish.css --no-source-map",
+    "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
+    "highlight": "sass src/highlight.js.scss dist/funish-hl.css --style=compressed --no-source-map",
+    "output": "yarn complete && yarn compressed && yarn highlight",
+    "test": "yarn generate && yarn output",
+    "prepublish": "yarn output",
     "prerelease": "yarn output & yarn version --new-version prerelease & yarn publish"
   },
   "repository": {
@@ -43,7 +44,7 @@
   },
   "homepage": "https://css.funish.net",
   "dependencies": {
-    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
     "sass-loader": "^8.0.2"
   },
   "devDependencies": {
