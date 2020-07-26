@@ -23,7 +23,14 @@
     "output": "yarn complete && yarn compressed && yarn highlight",
     "test": "yarn generate && yarn output",
     "prepublish": "yarn output",
-    "prerelease": "yarn output & yarn version --new-version prerelease & yarn publish"
+    "prerelease": "yarn format && yarn output",
+    "precommit": "yarn format && yarn output && lint-staged"
+  },
+  "lint-staged": {
+    "*.{vue,js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -44,13 +51,14 @@
   },
   "homepage": "https://css.funish.net",
   "dependencies": {
-    "sass": "^1.26.10",
-    "sass-loader": "^8.0.2"
+    "sass": "^1.26.10"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
+    "lint-staged": "^10.2.11",
     "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2",
     "prettier": "2.0.5"
   }
 }
