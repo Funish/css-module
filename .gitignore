@@ -91,4 +91,4 @@ sw.*
 
 # npm or yarn lock file
 package-lock.json
-yarn.lock
+# yarn.lock

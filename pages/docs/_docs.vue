@@ -8,9 +8,9 @@ export default {
     if (payload) return {docs: payload};
     else
       return {
-        docs: await require(`~/docs/${params.docs}.md`),
+        docs: await require(`~/docs/${params.docs}.md`)
       };
   },
-  layout: 'docs',
+  layout: 'docs'
 };
 </script>

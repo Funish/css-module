@@ -30,14 +30,14 @@ export default {
   components: {
     Header,
     Footer,
-    Testheader,
+    Testheader
   },
   data() {
     return {
       dark: false,
       sun: true,
-      moon: false,
+      moon: false
     };
-  },
+  }
 };
 </script>

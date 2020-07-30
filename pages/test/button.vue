@@ -21,8 +21,12 @@
     <h2>Disabled button</h2>
     <div>
       <button class="fu-button" disabled>Button</button>
-      <button class="fu-button fu-button-outlined" disabled>Outlined</button>
-      <button class="fu-button fu-button-contained" disabled>Contained</button>
+      <button class="fu-button fu-button-outlined" disabled>
+        Outlined
+      </button>
+      <button class="fu-button fu-button-contained" disabled>
+        Contained
+      </button>
     </div>
     <h3>Dense button</h3>
     <div>

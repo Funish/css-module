@@ -72,102 +72,102 @@ export default {
       home_items: [
         {
           title: '简介',
-          to: '/docs/',
+          to: '/docs/'
         },
         {
           title: '设计',
-          to: '/docs/design',
+          to: '/docs/design'
         },
         {
           title: '基础',
-          to: '/docs/base',
+          to: '/docs/base'
         },
         {
           title: '关于',
-          to: '/docs/about',
-        },
+          to: '/docs/about'
+        }
       ],
       layouts_items: [
         {
           title: 'Flex',
-          to: '/docs/flex',
+          to: '/docs/flex'
         },
         {
           title: 'Grid',
-          to: '/docs/grid',
+          to: '/docs/grid'
         },
         {
           title: 'Position',
-          to: '/docs/position',
+          to: '/docs/position'
         },
         {
           title: 'Visibility',
-          to: '/docs/visibility',
-        },
+          to: '/docs/visibility'
+        }
       ],
       box_model_items: [
         {
           title: 'Margin',
-          to: '/docs/margin',
+          to: '/docs/margin'
         },
         {
           title: 'Padding',
-          to: '/docs/padding',
+          to: '/docs/padding'
         },
         {
           title: 'Width',
-          to: '/docs/width',
+          to: '/docs/width'
         },
         {
           title: 'Height',
-          to: '/docs/height',
-        },
+          to: '/docs/height'
+        }
       ],
       text_items: [
         {
           title: 'Text',
-          to: '/docs/text',
+          to: '/docs/text'
         },
         {
           title: 'Markdown',
-          to: '/docs/markdown',
+          to: '/docs/markdown'
         },
         {
           title: 'Highlight.js',
-          to: '/docs/highlight',
-        },
+          to: '/docs/highlight'
+        }
       ],
       controls_items: [
         {
           title: 'Box',
-          to: '/docs/box',
+          to: '/docs/box'
         },
         {
           title: 'Button',
-          to: '/docs/button',
+          to: '/docs/button'
         },
         {
           title: 'Dropdown',
-          to: '/docs/dropdown',
+          to: '/docs/dropdown'
         },
         {
           title: 'Form',
-          to: '/docs/form',
+          to: '/docs/form'
         },
         {
           title: 'Menu',
-          to: '/docs/menu',
+          to: '/docs/menu'
         },
         {
           title: 'Navbar',
-          to: '/docs/navbar',
+          to: '/docs/navbar'
         },
         {
           title: 'Utility',
-          to: '/docs/utility',
-        },
-      ],
+          to: '/docs/utility'
+        }
+      ]
     };
-  },
+  }
 };
 </script>

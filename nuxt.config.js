@@ -20,7 +20,7 @@ function returnRoutes() {
     {
       match: /.md$/,
       shortName: true,
-      exclude: /^\./,
+      exclude: /^\./
     },
     function (err, content, next) {
       if (err) throw err;
@@ -57,10 +57,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'A concise front-end CSS framework.',
-      },
+        content: 'A concise front-end CSS framework.'
+      }
     ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
   },
   /*
    ** Customize the progress-bar color
@@ -68,7 +68,7 @@ export default {
   loading: false,
 
   render: {
-    resourceHints: false,
+    resourceHints: false
   },
   /*
    ** Global CSS
@@ -76,7 +76,7 @@ export default {
   css: [
     '~/src/funish.scss',
     '~/src/highlight.js.scss',
-    '@fortawesome/fontawesome-free/css/all.min.css',
+    '@fortawesome/fontawesome-free/css/all.min.css'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -94,7 +94,7 @@ export default {
   markdownit: {
     injected: true,
     linkify: true,
-    typographer: true,
+    typographer: true
   },
   /*
    ** Build configuration
@@ -103,13 +103,13 @@ export default {
     dir: 'public',
     routes: function () {
       return files.map(getSlugs);
-    },
+    }
   },
   build: {
     /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-    extractCSS: true,
-  },
+    extractCSS: true
+  }
 };

@@ -47,33 +47,33 @@ $success-dark: #007717;
 
 /* Theme */
 $base: (
-   middle: $middle,
-   default: $default,
-   warning: $warning,
-   success: $success,
-   box-shadow: $box-shadow,
+  middle: $middle,
+  default: $default,
+  warning: $warning,
+  success: $success,
+  box-shadow: $box-shadow,
 ) !default;
 
 $lights: (
-   on-surface: $on-surface-light,
-   background: $background-light,
-   surface: $surface-light,
-   surface-variant: $surface-variant-light,
-   disabled: $disabled-light,
-   default-variant: $default-light,
-   warning-variant: $warning-light,
-   success-variant: $success-light,
+  on-surface: $on-surface-light,
+  background: $background-light,
+  surface: $surface-light,
+  surface-variant: $surface-variant-light,
+  disabled: $disabled-light,
+  default-variant: $default-light,
+  warning-variant: $warning-light,
+  success-variant: $success-light,
 ) !default;
 
 $darks: (
-   on-surface: $on-surface-dark,
-   background: $background-dark,
-   surface: $surface-dark,
-   surface-variant: $surface-variant-dark,
-   disabled: $disabled-dark,
-   default-variant: $default-dark,
-   warning-variant: $warning-dark,
-   success-variant: $success-dark,
+  on-surface: $on-surface-dark,
+  background: $background-dark,
+  surface: $surface-dark,
+  surface-variant: $surface-variant-dark,
+  disabled: $disabled-dark,
+  default-variant: $default-dark,
+  warning-variant: $warning-dark,
+  success-variant: $success-dark,
 ) !default;
 
 /* Breakpoints
@@ -81,41 +81,41 @@ $darks: (
 $breakpoints: (\@s: 640px, \@m: 960px, \@l: 1200px, \@xl: 1600px) !default;
 
 $margin-spacings: (
-   small: 10px,
-   medium: 20px,
-   large: 40px,
-   xlarge: 70px,
-   auto: auto,
-   remove: 0,
+  small: 10px,
+  medium: 20px,
+  large: 40px,
+  xlarge: 70px,
+  auto: auto,
+  remove: 0,
 ) !default;
 
 $padding-spacings: (
-   small: 10px,
-   medium: 20px,
-   large: 40px,
-   remove: 0,
+  small: 10px,
+  medium: 20px,
+  large: 40px,
+  remove: 0,
 ) !default;
 
 $grid-spacings: (
-   small: 15px,
-   medium: 30px,
-   large: 45px,
-   xlarge: 60px,
-   remove: 0,
+  small: 15px,
+  medium: 30px,
+  large: 45px,
+  xlarge: 60px,
+  remove: 0,
 ) !default;
 
 $heights: (
-   xsmall: 150px,
-   small: 300px,
-   medium: 450px,
-   large: 600px,
-   xlarge: 750px,
+  xsmall: 150px,
+  small: 300px,
+  medium: 450px,
+  large: 600px,
+  xlarge: 750px,
 ) !default;
 
 $widths: (
-   xsmall: 150px,
-   small: 300px,
-   medium: 450px,
-   large: 600px,
-   xlarge: 750px,
+  xsmall: 150px,
+  small: 300px,
+  medium: 450px,
+  large: 600px,
+  xlarge: 750px,
 ) !default;

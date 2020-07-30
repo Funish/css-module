@@ -11,6 +11,6 @@
 
 <script>
 export default {
-  layout: 'home',
+  layout: 'home'
 };
 </script>

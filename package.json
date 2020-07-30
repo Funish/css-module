@@ -26,6 +26,11 @@
     "prerelease": "yarn format && yarn output",
     "precommit": "yarn format && yarn output && lint-staged"
   },
+  "prettier": {
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "trailingComma": "none"
+  },
   "lint-staged": {
     "*.{vue,js,json,md}": [
       "prettier --write",

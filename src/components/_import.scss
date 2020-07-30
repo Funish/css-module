@@ -1,31 +1,31 @@
 /* Reset CSS */
-@import "./normalize";
+@import './normalize';
 
 /* Global variables */
-@import "./base";
+@import './base';
 
 /* Layouts */
-@import "./flex.scss";
-@import "./grid.scss";
-@import "./position.scss";
-@import "./visibility.scss";
+@import './flex.scss';
+@import './grid.scss';
+@import './position.scss';
+@import './visibility.scss';
 
 /* Box model */
-@import "./margin.scss";
-@import "./padding.scss";
-@import "./height.scss";
-@import "./width.scss";
+@import './margin.scss';
+@import './padding.scss';
+@import './height.scss';
+@import './width.scss';
 
 /* Text */
-@import "./markdown.scss";
-@import "./text.scss";
+@import './markdown.scss';
+@import './text.scss';
 
 /* Controls */
-@import "./box.scss";
-@import "./dropdown.scss";
-@import "./form.scss";
-@import "./button.scss";
-@import "./menu.scss";
-@import "./navbar.scss";
-@import "./progress.scss";
-@import "./utility.scss";
+@import './box.scss';
+@import './dropdown.scss';
+@import './form.scss';
+@import './button.scss';
+@import './menu.scss';
+@import './navbar.scss';
+@import './progress.scss';
+@import './utility.scss';
