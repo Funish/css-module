@@ -4,8 +4,7 @@
 /* Link
    ========================================================================== */
 a {
-  color: $default-light;
-  color: var(--fu-theme-default-variant, $default-light);
+  color: $secondary;
 
   &:not(:hover) {
     text-decoration: none;

@@ -56,25 +56,37 @@
       <details class="fu-dropdown">
         <summary>
           <div class="fu-button fu-button-outlined">
-            Left button at the bottom
+            Bottom Left
           </div>
         </summary>
         <div class="fu-dropdown-menu fu-dropdown-menu-bottom-left">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+          <nuxt-link to="#1" class="fu-menu-item"
+            >Item1 - Hello World</nuxt-link
+          >
+          <nuxt-link to="#2" class="fu-menu-item"
+            >Item2 - Hello World</nuxt-link
+          >
+          <nuxt-link to="#3" class="fu-menu-item"
+            >Item3 - Hello World</nuxt-link
+          >
         </div>
       </details>
       <details class="fu-dropdown">
         <summary>
           <div class="fu-button fu-button-outlined">
-            Right button at the bottom
+            Bottom Right
           </div>
         </summary>
         <div class="fu-dropdown-menu fu-dropdown-menu-bottom-right">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+          <nuxt-link to="#1" class="fu-menu-item"
+            >Item1 - Hello World</nuxt-link
+          >
+          <nuxt-link to="#2" class="fu-menu-item"
+            >Item2 - Hello World</nuxt-link
+          >
+          <nuxt-link to="#3" class="fu-menu-item"
+            >Item3 - Hello World</nuxt-link
+          >
         </div>
       </details>
     </div>

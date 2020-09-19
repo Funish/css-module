@@ -15,22 +15,11 @@ Utility 模块是实用性工具的集合。
 <button class="fu-button fu-border-pill">button</button>
 ```
 
-## 边框阴影
-
-| 类名                | 描述               |
-| ------------------- | ------------------ |
-| `.fu-shadow-none`   | 移除边框阴影       |
-| `.fu-shadow-small`  | 创建较小的边框阴影 |
-| `.fu-shadow-medium` | 创建中等的边框阴影 |
-| `.fu-shadow-large`  | 创建较大的边框阴影 |
-
 ## 背景颜色
 
 | 类名                         | 描述               |
 | ---------------------------- | ------------------ |
-| `.fu-background`             | 背景颜色随主题调整 |
 | `.fu-background-transparent` | 背景颜色显示为透明 |
-| `.fu-surface`                | 背景颜色设为面板色 |
 
 ## 浮动
 

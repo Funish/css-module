@@ -2,7 +2,8 @@
   <aside
     class="fu-margin-medium fu-padding-vertical-medium fu-width-small fu-surface fu-border-large fu-height-1-1 fu-shadow-small"
   >
-    <div class="fu-menu">
+    <div class="fu-box fu-menu fu-padding-vertical-medium">
+      <div class="fu-menu-header fu-text-subtitle">Funish CSS</div>
       <nuxt-link
         v-for="(item, i) in home_items"
         :key="i"

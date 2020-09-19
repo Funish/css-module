@@ -10,9 +10,7 @@
   &:not(:disabled) {
     cursor: pointer;
 
-    color: $default-light;
-    /* @alternate */
-    color: var(--fu-theme-default-variant, $default-light);
+    color: $default-text;
     background: transparent;
   }
 
@@ -30,9 +28,7 @@
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
-    background: $default-light;
-    /* @alternate */
-    background: var(--fu-theme-default-variant, $default-light);
+    background: $default-text;
   }
 
   &::after {
@@ -61,61 +57,38 @@
 
 /* Style modifiers
    ========================================================================== */
-
-.fu-button-outlined,
-.fu-button-contained {
-  padding: 0 16px;
-}
-
 .fu-button-outlined {
   padding: 0 15px;
-  border: 1px solid $default-light;
-  /* @alternate */
-  border-color: var(--fu-theme-default-variant, $default-light);
 
-  &:disabled {
-    border: $disabled-light;
-    /* @alternate */
-    border: var(--fu-theme-disabled, $disabled-light);
+  &:not(:disabled) {
+    border: 1px solid $primary-dark;
   }
 }
 
-.fu-button-contained {
+.fu-button-contained,
+.fu-button-fade {
+  padding: 0 16px;
+
   &:not(:disabled) {
-    color: $on-surface-dark;
-    background: $default-light;
-    /* @alternate */
-    background: var(--fu-theme-default-variant, $default-light);
+    color: $primary-text;
+    background: $primary-dark;
   }
 
   &::before,
   &::after {
-    background: $surface-light;
+    background: $primary-text;
   }
 }
 
 .fu-button-fade {
-  border-color: $on-surface-light;
-  /* @alternate */
-  border-color: var(--fu-theme-on-surface, $on-surface-light);
-
   &:not(:disabled) {
-    color: $on-surface-light;
-    /* @alternate */
-    color: var(--fu-theme-on-surface, $on-surface-light);
-  }
-
-  &.fu-button-contained {
-    background: $surface-variant-light;
-    /* @alternate */
-    background: var(--fu-theme-surface-variant, $surface-variant-light);
+    color: $default-text;
+    background: $default-dark;
   }
 
   &::before,
   &::after {
-    background: $on-surface-light;
-    /* @alternate */
-    background: var(--fu-theme-on-surface, $on-surface-light);
+    background: $primary-dark;
   }
 }
 
@@ -204,8 +177,6 @@ svg.fu-button-icon {
     }
 
     .fu-button:not(:first-child) {
-      border-left: $on-surface-light;
-      border-left: var(--fu-theme-on-surface, $on-surface-light);
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }

@@ -2,17 +2,11 @@
 /*! Funish CSS 0.0.1 | https://funish.net | © Funish.net | MIT License */
 /* Color modifiers
    ========================================================================== */
-/* Middle */
-/* On surface */
-/* Background */
-/* Surface */
-/* Variant */
-/* Disabled */
-/* Box shadow color */
 /* Default */
+/* Primary */
+/* Secondary */
 /* Danger */
 /* Success */
-/* Theme */
 /* Breakpoints
    ========================================================================== */
 /* Reset CSS */
@@ -347,65 +341,6 @@ template,
 /* ========================================================================
      Component: Base
    ========================================================================== */
-:root {
-  --fu-theme-middle: #808080;
-  --fu-theme-default: #0366d6;
-  --fu-theme-warning: #d73a49;
-  --fu-theme-success: #28a745;
-  --fu-theme-box-shadow: rgba(0, 0, 0, 0.37);
-}
-
-@media (prefers-scheme: no-preference) and (prefers-scheme: light) {
-  :root {
-    --fu-theme-on-surface: #000;
-    --fu-theme-background: #fff;
-    --fu-theme-surface: #fafafa;
-    --fu-theme-surface-variant: #f2f2f2;
-    --fu-theme-disabled: #d9d9d9;
-    --fu-theme-default-variant: #6093ff;
-    --fu-theme-warning-variant: #ff6f74;
-    --fu-theme-success-variant: #64da73;
-  }
-}
-.fu-theme-light {
-  --fu-theme-on-surface: #000;
-  --fu-theme-background: #fff;
-  --fu-theme-surface: #fafafa;
-  --fu-theme-surface-variant: #f2f2f2;
-  --fu-theme-disabled: #d9d9d9;
-  --fu-theme-default-variant: #6093ff;
-  --fu-theme-warning-variant: #ff6f74;
-  --fu-theme-success-variant: #64da73;
-}
-
-/* Style modifiers
-   ========================================================================== */
-/** 
-  * Theme
-  */
-@media (prefers-scheme: dark) {
-  :root {
-    --fu-theme-on-surface: #fff;
-    --fu-theme-background: #121212;
-    --fu-theme-surface: #212121;
-    --fu-theme-surface-variant: #292929;
-    --fu-theme-disabled: #424242;
-    --fu-theme-default-variant: #7f39fb;
-    --fu-theme-warning-variant: #9f0022;
-    --fu-theme-success-variant: #007717;
-  }
-}
-.fu-theme-dark {
-  --fu-theme-on-surface: #fff;
-  --fu-theme-background: #121212;
-  --fu-theme-surface: #212121;
-  --fu-theme-surface-variant: #292929;
-  --fu-theme-disabled: #424242;
-  --fu-theme-default-variant: #7f39fb;
-  --fu-theme-warning-variant: #9f0022;
-  --fu-theme-success-variant: #007717;
-}
-
 /* Universal style
    ========================================================================== */
 /**
@@ -429,21 +364,13 @@ body {
   font-size: 16px;
   line-height: 1.25;
   word-wrap: break-word;
-  /* Visual */
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
-  background: #fff;
-  /* @alternate */
-  background: var(--fu-theme-background, #fff);
 }
 
 hr {
-  height: 2px;
   border: 0;
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  height: 2px;
+  padding: 0;
+  background-color: #e1e4e8;
 }
 
 /* Layouts */
@@ -1164,6 +1091,36 @@ hr {
 .fu-padding-vertical-large {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.fu-padding-xlarge {
+  padding: 70px;
+}
+
+.fu-padding-top-xlarge {
+  padding-top: 70px;
+}
+
+.fu-padding-left-xlarge {
+  padding-left: 70px;
+}
+
+.fu-padding-bottom-xlarge {
+  padding-bottom: 70px;
+}
+
+.fu-padding-right-xlarge {
+  padding-right: 70px;
+}
+
+.fu-padding-horizontal-xlarge {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.fu-padding-vertical-xlarge {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .fu-padding-remove {
@@ -1941,22 +1898,24 @@ hr {
 /* ========================================================================
      Component: Markdown
    ========================================================================== */
+.fu-markdown-body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
 .fu-markdown-body kbd {
-  /* Layout */
   display: inline-block;
-  /* Box model */
   padding: 3px 5px;
-  border: 1px solid #808080;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #fff;
-  /* Text */
   font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   line-height: 10px;
+  color: #444d56;
   vertical-align: middle;
-  /* Visual */
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #d1d5da;
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
 }
 .fu-markdown-body::before {
   display: table;
@@ -1968,14 +1927,26 @@ hr {
   content: "";
 }
 .fu-markdown-body > *:first-child {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .fu-markdown-body > *:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .fu-markdown-body a:not([href]) {
   color: inherit;
   text-decoration: none;
+}
+.fu-markdown-body .absent {
+  color: #cb2431;
+}
+.fu-markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+.fu-markdown-body .anchor:focus {
+  outline: none;
 }
 .fu-markdown-body p,
 .fu-markdown-body blockquote,
@@ -1992,17 +1963,13 @@ hr {
   height: 0.25em;
   padding: 0;
   margin: 24px 0;
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  background-color: #e1e4e8;
   border: 0;
 }
 .fu-markdown-body blockquote {
   padding: 0 1em;
-  color: #808080;
-  border-left: 0.25em solid #f2f2f2;
-  /* @alternate */
-  border-color: var(--fu-theme-surface-variant, #f2f2f2);
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
 }
 .fu-markdown-body blockquote > :first-child {
   margin-top: 0;
@@ -2020,6 +1987,32 @@ hr {
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
+}
+.fu-markdown-body h1 .octicon-link,
+.fu-markdown-body h2 .octicon-link,
+.fu-markdown-body h3 .octicon-link,
+.fu-markdown-body h4 .octicon-link,
+.fu-markdown-body h5 .octicon-link,
+.fu-markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.fu-markdown-body h1:hover .anchor,
+.fu-markdown-body h2:hover .anchor,
+.fu-markdown-body h3:hover .anchor,
+.fu-markdown-body h4:hover .anchor,
+.fu-markdown-body h5:hover .anchor,
+.fu-markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+.fu-markdown-body h1:hover .anchor .octicon-link,
+.fu-markdown-body h2:hover .anchor .octicon-link,
+.fu-markdown-body h3:hover .anchor .octicon-link,
+.fu-markdown-body h4:hover .anchor .octicon-link,
+.fu-markdown-body h5:hover .anchor .octicon-link,
+.fu-markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
 }
 .fu-markdown-body h1 tt,
 .fu-markdown-body h1 code {
@@ -2048,16 +2041,12 @@ hr {
 .fu-markdown-body h1 {
   padding-bottom: 0.3em;
   font-size: 2em;
-  border-bottom: 1px solid #d9d9d9;
-  /* @alternate */
-  border-color: var(--fu-theme-disabled, #d9d9d9);
+  border-bottom: 1px solid #eaecef;
 }
 .fu-markdown-body h2 {
   padding-bottom: 0.3em;
   font-size: 1.5em;
-  border-bottom: 1px solid #d9d9d9;
-  /* @alternate */
-  border-color: var(--fu-theme-disabled, #d9d9d9);
+  border-bottom: 1px solid #eaecef;
 }
 .fu-markdown-body h3 {
   font-size: 1.25em;
@@ -2070,7 +2059,7 @@ hr {
 }
 .fu-markdown-body h6 {
   font-size: 0.85em;
-  opacity: 0.85;
+  color: #6a737d;
 }
 .fu-markdown-body ul,
 .fu-markdown-body ol {
@@ -2117,36 +2106,35 @@ hr {
 .fu-markdown-body table {
   display: block;
   width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
   overflow: auto;
 }
 .fu-markdown-body table th {
   font-weight: 600;
   padding: 6px 13px;
-  border: 1px solid #d9d9d9;
-  border-color: var(--fu-theme-disabled, #d9d9d9);
+  border: 1px solid #dfe2e5;
 }
 .fu-markdown-body table td {
   padding: 6px 13px;
-  border: 1px solid #d9d9d9;
-  /* @alternate */
-  border-color: var(--fu-theme-disabled, #d9d9d9);
+  border: 1px solid #dfe2e5;
 }
 .fu-markdown-body table tr {
-  border-top: 1px solid #d9d9d9;
-  /* @alternate */
-  border-color: var(--fu-theme-disabled, #d9d9d9);
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
 }
 .fu-markdown-body table tr:nth-child(2n) {
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
+  background-color: #f6f8fa;
 }
 .fu-markdown-body table img {
-  background: transparent;
+  background-color: transparent;
 }
 .fu-markdown-body img {
   max-width: 100%;
   box-sizing: content-box;
+  background-color: #fff;
 }
 .fu-markdown-body img[align=right] {
   padding-left: 20px;
@@ -2154,15 +2142,92 @@ hr {
 .fu-markdown-body img[align=left] {
   padding-right: 20px;
 }
+.fu-markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+.fu-markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+.fu-markdown-body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #dfe2e5;
+}
+.fu-markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+.fu-markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #24292e;
+}
+.fu-markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.fu-markdown-body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+.fu-markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.fu-markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.fu-markdown-body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+.fu-markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.fu-markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+.fu-markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+.fu-markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+.fu-markdown-body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
 .fu-markdown-body code,
 .fu-markdown-body tt {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  border-radius: 3px;
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 6px;
 }
 .fu-markdown-body code br,
 .fu-markdown-body tt br {
@@ -2173,7 +2238,6 @@ hr {
 }
 .fu-markdown-body pre {
   word-wrap: normal;
-  word-break: normal;
 }
 .fu-markdown-body pre > code {
   padding: 0;
@@ -2184,19 +2248,29 @@ hr {
   background: transparent;
   border: 0;
 }
-
-pre {
+.fu-markdown-body .highlight {
+  margin-bottom: 16px;
+}
+.fu-markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
   padding: 16px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background: #fafafa;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
-  border-radius: 3px;
+  background-color: #f6f8fa;
+  border-radius: 6px;
 }
-pre code,
-pre tt {
+.fu-markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+.fu-markdown-body pre code,
+.fu-markdown-body pre tt {
   display: inline;
   max-width: auto;
   padding: 0;
@@ -2204,7 +2278,7 @@ pre tt {
   overflow: visible;
   line-height: inherit;
   word-wrap: normal;
-  background: transparent;
+  background-color: transparent;
   border: 0;
 }
 
@@ -2214,8 +2288,7 @@ pre tt {
 /* Link
    ========================================================================== */
 a {
-  color: #6093ff;
-  color: var(--fu-theme-default-variant, #6093ff);
+  color: #0366d6;
 }
 a:not(:hover) {
   text-decoration: none;
@@ -2363,7 +2436,7 @@ a:not(:hover) {
   position: relative;
   /* Box model */
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 4px;
   width: 100%;
   max-width: 344px;
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.37);
@@ -2372,12 +2445,7 @@ a:not(:hover) {
   word-break: break-word;
   text-overflow: ellipsis;
   /* Visual */
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
-  background: #fafafa;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
+  background: #fff;
 }
 .fu-box img {
   width: 100%;
@@ -2407,8 +2475,8 @@ a:not(:hover) {
   position: relative;
   overflow: hidden;
   /* Box model */
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   /* Visual */
   cursor: pointer;
   user-select: none;
@@ -2426,8 +2494,6 @@ a:not(:hover) {
   width: 200%;
   height: 200%;
   background: #000;
-  /* @alternate */
-  background: var(--fu-theme-on-surface, #000);
 }
 .fu-box-action::after {
   transition: opacity 150ms linear;
@@ -2482,10 +2548,6 @@ a:not(:hover) {
   margin-top: 2px;
   min-width: 100%;
   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.37);
-  /* Visual */
-  background: #fafafa;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
 }
 
 /* Style modifiers
@@ -2555,10 +2617,8 @@ a:not(:hover) {
 .fu-form:disabled {
   cursor: default;
   pointer-events: none;
-  color: #808080;
-  background: #d9d9d9;
-  /* @alternate */
-  background: var(--fu-theme-disabled, #d9d9d9);
+  border-color: #c7c7c7;
+  background: #c7c7c7;
 }
 
 .fu-form {
@@ -2567,19 +2627,29 @@ a:not(:hover) {
   width: 100%;
   max-width: 280px;
   padding: 0 16px;
+  border: 1px solid;
   /* Visual */
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
+  color: #212121;
+  border-color: #000;
+  background: transparent;
+}
+
+.fu-form-underlined {
+  border-radius: 0;
+  border: transparent;
+  border-bottom: 1px solid #000;
+}
+.fu-form-underlined:focus {
+  border: transparent;
+}
+
+.fu-form-contained {
+  border-color: #fafafa;
   background: #fafafa;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
 }
-.fu-form:hover, .fu-form:focus {
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.37);
-}
-.fu-form::placeholder {
-  color: #808080;
+
+select.fu-form {
+  color: #484848;
 }
 
 textarea.fu-form {
@@ -2589,11 +2659,6 @@ textarea.fu-form {
   resize: none;
 }
 
-/* `.fu-checkbox`, `.fu-radio`, `.fu-range`
-   ========================================================================== */
-/**
-  * Still in plan
-  */
 /* Form for file
    ========================================================================== */
 .fu-form-file {
@@ -2601,6 +2666,9 @@ textarea.fu-form {
 }
 .fu-form-file input[type=file] {
   display: none;
+}
+.fu-form-file .fu-form {
+  color: #484848;
 }
 
 /* Icon form
@@ -2641,9 +2709,7 @@ textarea.fu-form {
   justify-content: center;
   align-items: center;
   /* 4 */
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
+  color: #484848;
 }
 .fu-form-icon:not(a):not(button):not(input) {
   pointer-events: none;
@@ -2674,9 +2740,7 @@ textarea.fu-form {
 }
 .fu-button:not(:disabled) {
   cursor: pointer;
-  color: #6093ff;
-  /* @alternate */
-  color: var(--fu-theme-default-variant, #6093ff);
+  color: #000;
   background: transparent;
 }
 .fu-button::before, .fu-button::after {
@@ -2690,9 +2754,7 @@ textarea.fu-form {
   left: calc(50% - 100%);
   width: 200%;
   height: 200%;
-  background: #6093ff;
-  /* @alternate */
-  background: var(--fu-theme-default-variant, #6093ff);
+  background: #000;
 }
 .fu-button::after {
   transition: opacity 150ms linear;
@@ -2716,52 +2778,34 @@ textarea.fu-form {
 
 /* Style modifiers
    ========================================================================== */
-.fu-button-outlined,
-.fu-button-contained {
-  padding: 0 16px;
-}
-
 .fu-button-outlined {
   padding: 0 15px;
-  border: 1px solid #6093ff;
-  /* @alternate */
-  border-color: var(--fu-theme-default-variant, #6093ff);
 }
-.fu-button-outlined:disabled {
-  border: #d9d9d9;
-  /* @alternate */
-  border: var(--fu-theme-disabled, #d9d9d9);
+.fu-button-outlined:not(:disabled) {
+  border: 1px solid #000;
 }
 
-.fu-button-contained:not(:disabled) {
-  color: #fff;
-  background: #6093ff;
-  /* @alternate */
-  background: var(--fu-theme-default-variant, #6093ff);
-}
-.fu-button-contained::before, .fu-button-contained::after {
-  background: #fafafa;
-}
-
+.fu-button-contained,
 .fu-button-fade {
-  border-color: #000;
-  /* @alternate */
-  border-color: var(--fu-theme-on-surface, #000);
+  padding: 0 16px;
 }
+.fu-button-contained:not(:disabled),
+.fu-button-fade:not(:disabled) {
+  color: #fff;
+  background: #000;
+}
+.fu-button-contained::before, .fu-button-contained::after,
+.fu-button-fade::before,
+.fu-button-fade::after {
+  background: #fff;
+}
+
 .fu-button-fade:not(:disabled) {
   color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
-}
-.fu-button-fade.fu-button-contained {
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  background: #c7c7c7;
 }
 .fu-button-fade::before, .fu-button-fade::after {
   background: #000;
-  /* @alternate */
-  background: var(--fu-theme-on-surface, #000);
 }
 
 /* Icon button
@@ -2840,8 +2884,6 @@ svg.fu-button-icon {
   border-radius: 4px;
 }
 .fu-button-group > .fu-button:not(:first-child) {
-  border-left: #000;
-  border-left: var(--fu-theme-on-surface, #000);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -2855,8 +2897,9 @@ svg.fu-button-icon {
    ========================================================================== */
 .fu-menu,
 .fu-dropdown-menu {
-  /* Layout */
   overflow: hidden;
+  background: #fff;
+  background: var(--theme-light, #fff);
 }
 .fu-menu li,
 .fu-dropdown-menu li {
@@ -2870,7 +2913,7 @@ svg.fu-button-icon {
 .fu-menu-header {
   display: block;
   padding: 4px 16px;
-  color: #808080;
+  font-size: large;
 }
 
 .fu-menu-item {
@@ -2883,15 +2926,11 @@ svg.fu-button-icon {
   white-space: nowrap;
   /* Visual */
   color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
 }
 .fu-menu-item:hover, .fu-menu-item:focus {
   /* Visual */
   color: #fff;
-  background: #6093ff;
-  /* @alternate */
-  background: var(--fu-theme-default-variant, #6093ff);
+  background: #212121;
 }
 
 /* ========================================================================
@@ -2905,13 +2944,11 @@ svg.fu-button-icon {
   flex-wrap: wrap;
   /* Box model */
   padding: 16px;
-  box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.37);
   /* Text */
   font-size: 14px;
   /* Visual */
-  background: #fff;
-  /* @alternate */
-  background: var(--fu-theme-background, #fff);
+  color: #fff;
+  background: #212121;
 }
 .fu-navbar a {
   text-decoration: none;
@@ -2930,11 +2967,10 @@ svg.fu-button-icon {
 .fu-navbar-link {
   white-space: nowrap;
   font-weight: 600;
-  color: #000;
-  color: var(--fu-theme-on-surface, #000);
+  color: #fff;
 }
 .fu-navbar-link:hover, .fu-navbar-link:focus {
-  opacity: 0.5;
+  color: #c7c7c7;
 }
 
 /* ========================================================================
@@ -2947,14 +2983,10 @@ svg.fu-button-icon {
   height: 4px;
 }
 .fu-progress::-webkit-progress-bar {
-  background: #f2f2f2;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, #f2f2f2);
+  background: #c7c7c7;
 }
 .fu-progress::-webkit-progress-value {
   background: #000;
-  /* @alternate */
-  background: var(--fu-theme-on-surface, #000);
 }
 
 /* ========================================================================
@@ -2985,46 +3017,10 @@ svg.fu-button-icon {
   border-radius: 50%;
 }
 
-/* Box shadow
-   ========================================================================== */
-.fu-shadow-none {
-  box-shadow: none;
-}
-
-.fu-shadow-small {
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.37);
-}
-
-.fu-shadow-medium {
-  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.37);
-}
-
-.fu-shadow-large {
-  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.37);
-}
-
 /* Background color
    ========================================================================== */
-.fu-background {
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
-  background: #fff;
-  /* @alternate */
-  background: var(--fu-theme-background, #fff);
-}
-
 .fu-background-transparent {
   background: transparent;
-}
-
-.fu-surface {
-  color: #000;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, #000);
-  background: #fafafa;
-  /* @alternate */
-  background: var(--fu-theme-surface, #fafafa);
 }
 
 /* Float

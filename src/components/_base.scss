@@ -1,47 +1,6 @@
 /* ========================================================================
      Component: Base
    ========================================================================== */
-:root {
-  @each $scale, $color in $base {
-    --fu-theme-#{$scale}: #{$color};
-  }
-}
-
-@media (prefers-scheme: no-preference) and (prefers-scheme: light) {
-  :root {
-    @each $scale, $color in $lights {
-      --fu-theme-#{$scale}: #{$color};
-    }
-  }
-}
-
-.fu-theme-light {
-  @each $scale, $color in $lights {
-    --fu-theme-#{$scale}: #{$color};
-  }
-}
-
-/* Style modifiers
-   ========================================================================== */
-
-/** 
-  * Theme
-  */
-
-@media (prefers-scheme: dark) {
-  :root {
-    @each $scale, $color in $darks {
-      --fu-theme-#{$scale}: #{$color};
-    }
-  }
-}
-
-.fu-theme-dark {
-  @each $scale, $color in $darks {
-    --fu-theme-#{$scale}: #{$color};
-  }
-}
-
 /* Universal style
    ========================================================================== */
 /**
@@ -69,20 +28,11 @@ body {
   font-size: 16px;
   line-height: 1.25;
   word-wrap: break-word;
-
-  /* Visual */
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
-  background: $background-light;
-  /* @alternate */
-  background: var(--fu-theme-background, $background-light);
 }
 
 hr {
-  height: 2px;
   border: 0;
-  background: $surface-variant-light;
-  /* @alternate */
-  background: var(--fu-theme-surface-variant, $surface-variant-light);
+  height: 2px;
+  padding: 0;
+  background-color: #e1e4e8;
 }

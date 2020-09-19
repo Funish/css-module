@@ -6,12 +6,16 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 使用类选择器 `.fu-form` 应用样式。为统一视觉上的观感，`button`、`input`、`select`、`textarea` 将共用大部分样式。
 
-| 类名       | 描述                                                        |
-| ---------- | ----------------------------------------------------------- |
-| `.fu-form` | 将此类添加到 `input`、`select`、`textarea` 标签上以应用样式 |
+| 类名                  | 描述                                                          |
+| --------------------- | ------------------------------------------------------------- |
+| `.fu-form`            | 将此类添加到 `input`、`select`、`textarea` 等标签上以应用样式 |
+| `.fu-form-underlined` | 为表单添加下划线样式                                          |
+| `.fu-form-contained`  | 为表单添加块状容器样式                                        |
 
 ```html
 <input class="fu-form" />
+<input class="fu-form fu-form-underlined" />
+<input class="fu-form fu-form-contained" />
 ```
 
 ## 上传

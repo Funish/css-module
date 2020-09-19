@@ -60,7 +60,15 @@ export default {
         content: 'A concise front-end CSS framework.'
       }
     ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
+    link: [
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/github.css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -75,7 +83,7 @@ export default {
    */
   css: [
     '~/src/funish.scss',
-    '~/src/highlight.js.scss',
+    // '~/src/highlight.js.scss',
     '@fortawesome/fontawesome-free/css/all.min.css'
   ],
   /*

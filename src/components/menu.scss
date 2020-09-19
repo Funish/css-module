@@ -3,8 +3,9 @@
    ========================================================================== */
 .fu-menu,
 .fu-dropdown-menu {
-  /* Layout */
   overflow: hidden;
+  background: $default-light;
+  background: var(--theme-light, $default-light);
 
   li {
     list-style: none;
@@ -18,7 +19,7 @@
 .fu-menu-header {
   display: block;
   padding: 4px 16px;
-  color: $middle;
+  font-size: large;
 }
 
 .fu-menu-item {
@@ -33,16 +34,12 @@
   white-space: nowrap;
 
   /* Visual */
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
+  color: $default-text;
 
   &:hover,
   &:focus {
     /* Visual */
-    color: $on-surface-dark;
-    background: $default-light;
-    /* @alternate */
-    background: var(--fu-theme-default-variant, $default-light);
+    color: $primary-text;
+    background: $primary;
   }
 }

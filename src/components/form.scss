@@ -25,11 +25,8 @@
   &:disabled {
     cursor: default;
     pointer-events: none;
-
-    color: $middle;
-    background: $disabled-light;
-    /* @alternate */
-    background: var(--fu-theme-disabled, $disabled-light);
+    border-color: $default-dark;
+    background: $default-dark;
   }
 }
 
@@ -39,23 +36,31 @@
   width: 100%;
   max-width: 280px;
   padding: 0 16px;
+  border: 1px solid;
 
   /* Visual */
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
-  background: $surface-light;
-  /* @alternate */
-  background: var(--fu-theme-surface, $surface-light);
+  color: $primary;
+  border-color: $primary-dark;
+  background: transparent;
+}
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 1px 4px -1px $box-shadow;
-  }
+.fu-form-underlined {
+  border-radius: 0;
+  border: transparent;
+  border-bottom: 1px solid $primary-dark;
 
-  &::placeholder {
-    color: $middle;
+  &:focus{
+    border: transparent;
   }
+}
+
+.fu-form-contained {
+  border-color: $default;
+  background: $default;
+}
+
+select.fu-form {
+  color: $primary-light;
 }
 
 textarea.fu-form {
@@ -65,12 +70,6 @@ textarea.fu-form {
   resize: none;
 }
 
-/* `.fu-checkbox`, `.fu-radio`, `.fu-range`
-   ========================================================================== */
-/**
-  * Still in plan
-  */
-
 /* Form for file
    ========================================================================== */
 
@@ -79,6 +78,10 @@ textarea.fu-form {
 
   input[type='file'] {
     display: none;
+  }
+
+  .fu-form {
+    color: $primary-light;
   }
 }
 
@@ -125,9 +128,7 @@ textarea.fu-form {
   align-items: center;
 
   /* 4 */
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
+  color: $primary-light;
 
   &:not(a):not(button):not(input) {
     pointer-events: none;

@@ -1,37 +1,24 @@
 /* Color modifiers
    ========================================================================== */
-
-/* Middle */
-$middle: #808080;
-
-/* On surface */
-$on-surface-light: #000;
-$on-surface-dark: #fff;
-
-/* Background */
-$background-light: #fff;
-$background-dark: #121212;
-
-/* Surface */
-$surface-light: #fafafa;
-$surface-dark: #212121;
-
-/* Variant */
-$surface-variant-light: #f2f2f2;
-$surface-variant-dark: #292929;
-
-/* Disabled */
-$disabled-light: #d9d9d9;
-$disabled-dark: #424242;
-
-/* Box shadow color */
-$box-shadow: rgba(0, 0, 0, 0.37);
-
 /* Default */
-$default: #0366d6;
+$default: #fafafa;
 
-$default-light: #6093ff;
-$default-dark: #7f39fb;
+$default-light: #fff;
+$default-dark: #c7c7c7;
+$default-text: #000;
+
+/* Primary */
+$primary: #212121;
+
+$primary-light: #484848;
+$primary-dark: #000;
+$primary-text: #fff;
+
+/* Secondary */
+$secondary: #0366d6;
+
+$secondary-light: #6093ff;
+$secondary-dark: #003da4;
 
 /* Danger */
 $warning: #d73a49;
@@ -45,37 +32,6 @@ $success: #28a745;
 $success-light: #64da73;
 $success-dark: #007717;
 
-/* Theme */
-$base: (
-  middle: $middle,
-  default: $default,
-  warning: $warning,
-  success: $success,
-  box-shadow: $box-shadow,
-) !default;
-
-$lights: (
-  on-surface: $on-surface-light,
-  background: $background-light,
-  surface: $surface-light,
-  surface-variant: $surface-variant-light,
-  disabled: $disabled-light,
-  default-variant: $default-light,
-  warning-variant: $warning-light,
-  success-variant: $success-light,
-) !default;
-
-$darks: (
-  on-surface: $on-surface-dark,
-  background: $background-dark,
-  surface: $surface-dark,
-  surface-variant: $surface-variant-dark,
-  disabled: $disabled-dark,
-  default-variant: $default-dark,
-  warning-variant: $warning-dark,
-  success-variant: $success-dark,
-) !default;
-
 /* Breakpoints
    ========================================================================== */
 $breakpoints: (\@s: 640px, \@m: 960px, \@l: 1200px, \@xl: 1600px) !default;
@@ -86,14 +42,15 @@ $margin-spacings: (
   large: 40px,
   xlarge: 70px,
   auto: auto,
-  remove: 0,
+  remove: 0
 ) !default;
 
 $padding-spacings: (
   small: 10px,
   medium: 20px,
   large: 40px,
-  remove: 0,
+  xlarge: 70px,
+  remove: 0
 ) !default;
 
 $grid-spacings: (
@@ -101,7 +58,7 @@ $grid-spacings: (
   medium: 30px,
   large: 45px,
   xlarge: 60px,
-  remove: 0,
+  remove: 0
 ) !default;
 
 $heights: (
@@ -109,7 +66,7 @@ $heights: (
   small: 300px,
   medium: 450px,
   large: 600px,
-  xlarge: 750px,
+  xlarge: 750px
 ) !default;
 
 $widths: (
@@ -117,5 +74,5 @@ $widths: (
   small: 300px,
   medium: 450px,
   large: 600px,
-  xlarge: 750px,
+  xlarge: 750px
 ) !default;

@@ -8,13 +8,9 @@
   height: 4px;
 
   &::-webkit-progress-bar {
-    background: $surface-variant-light;
-    /* @alternate */
-    background: var(--fu-theme-surface-variant, $surface-variant-light);
+    background: $default-dark;
   }
   &::-webkit-progress-value {
-    background: $on-surface-light;
-    /* @alternate */
-    background: var(--fu-theme-on-surface, $on-surface-light);
+    background: $default-text;
   }
 }

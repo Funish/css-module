@@ -27,47 +27,10 @@
   border-radius: 50%;
 }
 
-/* Box shadow
-   ========================================================================== */
-
-.fu-shadow-none {
-  box-shadow: none;
-}
-
-.fu-shadow-small {
-  box-shadow: 0 1px 4px -1px $box-shadow;
-}
-
-.fu-shadow-medium {
-  box-shadow: 0 1px 6px -1px $box-shadow;
-}
-
-.fu-shadow-large {
-  box-shadow: 0 2px 12px -2px $box-shadow;
-}
-
 /* Background color
    ========================================================================== */
-.fu-background {
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
-  background: $background-light;
-  /* @alternate */
-  background: var(--fu-theme-background, $background-light);
-}
-
 .fu-background-transparent {
   background: transparent;
-}
-
-.fu-surface {
-  color: $on-surface-light;
-  /* @alternate */
-  color: var(--fu-theme-on-surface, $on-surface-light);
-  background: $surface-light;
-  /* @alternate */
-  background: var(--fu-theme-surface, $surface-light);
 }
 
 /* Float

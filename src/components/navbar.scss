@@ -10,15 +10,13 @@
 
   /* Box model */
   padding: 16px;
-  box-shadow: 0 1px 10px -4px $box-shadow;
 
   /* Text */
   font-size: 14px;
 
   /* Visual */
-  background: $background-light;
-  /* @alternate */
-  background: var(--fu-theme-background, $background-light);
+  color: $default-light;
+  background: $primary;
 
   a {
     text-decoration: none;
@@ -39,11 +37,10 @@
 .fu-navbar-link {
   white-space: nowrap;
   font-weight: 600;
-  color: $on-surface-light;
-  color: var(--fu-theme-on-surface, $on-surface-light);
+  color: $default-light;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    color: $default-dark;
   }
 }
