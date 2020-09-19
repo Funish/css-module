@@ -2639,9 +2639,6 @@ a:not(:hover) {
   border: transparent;
   border-bottom: 1px solid #000;
 }
-.fu-form-underlined:focus {
-  border: transparent;
-}
 
 .fu-form-contained {
   border-color: #fafafa;
