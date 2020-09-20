@@ -351,7 +351,7 @@ template,
   /* 1 */
   outline: none;
   /* 2 */
-  -webkit-tap-highlight: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Element modifiers
