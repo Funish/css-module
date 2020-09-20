@@ -58,10 +58,10 @@
 /* Style modifiers
    ========================================================================== */
 .fu-button-outlined {
-  padding: 0 15px;
+  padding: 0 16px;
 
   &:not(:disabled) {
-    border: 1px solid $primary-dark;
+    border: 1px solid $default-text;
   }
 }
 

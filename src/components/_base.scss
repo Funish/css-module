@@ -17,7 +17,6 @@
 
 /* Element modifiers
    ========================================================================== */
-
 body {
   /* Layout */
   overflow-y: scroll;
@@ -28,6 +27,8 @@ body {
   font-size: 16px;
   line-height: 1.25;
   word-wrap: break-word;
+  color: $default-text;
+  background: $default;
 }
 
 hr {

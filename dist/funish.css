@@ -364,6 +364,8 @@ body {
   font-size: 16px;
   line-height: 1.25;
   word-wrap: break-word;
+  color: #000;
+  background: #fafafa;
 }
 
 hr {
@@ -2776,7 +2778,7 @@ textarea.fu-form {
 /* Style modifiers
    ========================================================================== */
 .fu-button-outlined {
-  padding: 0 15px;
+  padding: 0 16px;
 }
 .fu-button-outlined:not(:disabled) {
   border: 1px solid #000;

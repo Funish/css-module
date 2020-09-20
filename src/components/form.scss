@@ -40,14 +40,14 @@
 
   /* Visual */
   color: $primary;
-  border-color: $primary-dark;
+  border-color: $default-text;
   background: transparent;
 }
 
 .fu-form-underlined {
   border-radius: 0;
   border: transparent;
-  border-bottom: 1px solid $primary-dark;
+  border-bottom: 1px solid $default-text;
 }
 
 .fu-form-contained {
