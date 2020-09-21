@@ -36,18 +36,28 @@
   width: 100%;
   max-width: 280px;
   padding: 0 16px;
-  border: 1px solid;
 
   /* Visual */
   color: $primary;
   border-color: $default-text;
-  background: transparent;
+  background: inherit;
+}
+
+.fu-form-outlined {
+  border: 1px solid;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $default-text;
+  }
 }
 
 .fu-form-underlined {
   border-radius: 0;
-  border: transparent;
   border-bottom: 1px solid $default-text;
+
+  &:focus {
+    box-shadow: 0 1px $default-text;
+  }
 }
 
 .fu-form-contained {

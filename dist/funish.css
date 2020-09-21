@@ -365,7 +365,6 @@ body {
   line-height: 1.25;
   word-wrap: break-word;
   color: #000;
-  background: #fafafa;
 }
 
 hr {
@@ -2260,7 +2259,7 @@ hr {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f6f6;
+  background-color: #f6f8fa;
   border-radius: 6px;
 }
 .fu-markdown-body pre {
@@ -2268,7 +2267,7 @@ hr {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f6f6;
+  background-color: #f6f8fa;
   border-radius: 6px;
 }
 .fu-markdown-body pre code,
@@ -2546,6 +2545,7 @@ a:not(:hover) {
   z-index: 100;
   /* Box model */
   box-sizing: border-box;
+  border-radius: 4px;
   padding: 4px;
   margin-top: 2px;
   min-width: 100%;
@@ -2629,17 +2629,25 @@ a:not(:hover) {
   width: 100%;
   max-width: 280px;
   padding: 0 16px;
-  border: 1px solid;
   /* Visual */
   color: #212121;
   border-color: #000;
-  background: transparent;
+  background: inherit;
+}
+
+.fu-form-outlined {
+  border: 1px solid;
+}
+.fu-form-outlined:focus {
+  box-shadow: 0 0 0 1px #000;
 }
 
 .fu-form-underlined {
   border-radius: 0;
-  border: transparent;
   border-bottom: 1px solid #000;
+}
+.fu-form-underlined:focus {
+  box-shadow: 0 1px #000;
 }
 
 .fu-form-contained {

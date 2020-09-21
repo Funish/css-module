@@ -22,10 +22,10 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 同时使用类选择器 `.fu-button` 和 `.fu-button-*` 以应用样式。
 
-| 类名                   | 描述                                       |
-| ---------------------- | ------------------------------------------ |
-| `.fu-button-outlined`  | 添加此类以应用一个与 `.fu-form` 相似的样式 |
-| `.fu-button-contained` | 添加此类以应用一个容器类按钮               |
+| 类名                   | 描述                         |
+| ---------------------- | ---------------------------- |
+| `.fu-button-outlined`  | 添加此类以实现一个轮廓       |
+| `.fu-button-contained` | 添加此类以应用一个容器类按钮 |
 
 ```html
 <button class="fu-button fu-button-outlined">Button</button>

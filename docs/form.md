@@ -9,11 +9,12 @@ Form 模块使您可以轻松创建漂亮的表单。
 | 类名                  | 描述                                                          |
 | --------------------- | ------------------------------------------------------------- |
 | `.fu-form`            | 将此类添加到 `input`、`select`、`textarea` 等标签上以应用样式 |
+| `.fu-form-outlined`   | 添加此类以实现一个轮廓                                        |
 | `.fu-form-underlined` | 为表单添加下划线样式                                          |
 | `.fu-form-contained`  | 为表单添加块状容器样式                                        |
 
 ```html
-<input class="fu-form" />
+<input class="fu-form fu-form-outlined" />
 <input class="fu-form fu-form-underlined" />
 <input class="fu-form fu-form-contained" />
 ```

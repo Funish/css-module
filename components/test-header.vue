@@ -3,7 +3,7 @@
     class="fu-padding-vertical-medium fu-flex fu-flex-wrap fu-main-center fu-cross-center fu-grid-row-small fu-grid-column-small"
   >
     <select
-      class="fu-form"
+      class="fu-form fu-form-outlined"
       onchange="self.location.href=options[selectedIndex].value"
     >
       <option selected disabled>Layouts</option>
@@ -13,7 +13,7 @@
       <option value="/test/visibility">Visibility</option>
     </select>
     <select
-      class="fu-form"
+      class="fu-form fu-form-outlined"
       onchange="self.location.href=options[selectedIndex].value"
     >
       <option selected disabled>Box model</option>
@@ -23,7 +23,7 @@
       <option value="/test/height">Height</option>
     </select>
     <select
-      class="fu-form"
+      class="fu-form fu-form-outlined"
       onchange="self.location.href=options[selectedIndex].value"
     >
       <option selected disabled>Text Components</option>
@@ -31,7 +31,7 @@
       <option value="/test/markdown">Markdown</option>
     </select>
     <select
-      class="fu-form"
+      class="fu-form fu-form-outlined"
       onchange="self.location.href=options[selectedIndex].value"
     >
       <option selected disabled>Controls</option>
