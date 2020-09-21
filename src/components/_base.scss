@@ -28,11 +28,12 @@ body {
   line-height: 1.25;
   word-wrap: break-word;
   color: $default-text;
+  background: $default-light;
 }
 
 hr {
-  border: 0;
-  height: 2px;
+  border: none;
+  height: 0.15em;
   padding: 0;
   background-color: #e1e4e8;
 }

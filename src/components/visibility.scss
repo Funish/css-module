@@ -16,7 +16,6 @@
 
 /* Responsive visibility
    ========================================================================== */
-
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: #{$width}) {
     .fu-hidden#{$breakpoint} {
@@ -35,7 +34,6 @@
 
 /* Touch
    ========================================================================== */
-
 .fu-hidden-touch {
   display: block;
 }

@@ -38,7 +38,7 @@
   padding: 0 16px;
 
   /* Visual */
-  color: $primary;
+  color: $default-text;
   border-color: $default-text;
   background: inherit;
 }
@@ -65,10 +65,6 @@
   background: $default;
 }
 
-select.fu-form {
-  color: $primary-light;
-}
-
 textarea.fu-form {
   /* Box model */
   padding: 16px;
@@ -78,7 +74,6 @@ textarea.fu-form {
 
 /* Form for file
    ========================================================================== */
-
 .fu-form-file {
   display: inline-flex;
 
@@ -93,7 +88,6 @@ textarea.fu-form {
 
 /* Icon form
    ========================================================================== */
-
 /**
   * 1. Container fits its content
   * 2. Create position context

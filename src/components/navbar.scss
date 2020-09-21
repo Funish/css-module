@@ -4,23 +4,21 @@
 .fu-navbar {
   /* Layout */
   display: flex;
-  z-index: 999;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  white-space: nowrap;
+  z-index: 999;
 
   /* Box model */
-  padding: 16px;
+  padding: 0 16px;
+  box-shadow: 0 1px 4px -1px $default-dark;
 
   /* Text */
   font-size: 14px;
 
   /* Visual */
-  color: $default-light;
-  background: $primary;
-
-  a {
-    text-decoration: none;
-  }
+  background: $default-light;
 }
 
 .fu-navbar-item {
@@ -32,15 +30,10 @@
 
   /* Box model */
   margin-right: 16px;
+  padding: 16px 0;
+  height: 100%;
 }
 
-.fu-navbar-link {
-  white-space: nowrap;
-  font-weight: 600;
-  color: $default-light;
-
-  &:hover,
-  &:focus {
-    color: $default-dark;
-  }
+.fu-navbar-link::after {
+  border: none;
 }

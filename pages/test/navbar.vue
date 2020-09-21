@@ -15,6 +15,9 @@
             <nuxt-link to="#2" class="fu-navbar-link">Item2</nuxt-link>
           </div>
         </div>
+        <div>
+          <input class="fu-form fu-form-underlined" placeholder="搜索" />
+        </div>
         <div class="fu-navbar-item">
           <details class="fu-dropdown">
             <summary>

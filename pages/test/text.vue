@@ -6,7 +6,8 @@
     <div class="fu-grid-row-medium">
       <div class="fu-box">
         <div class="fu-box-content">
-          <nuxt-link to="#">Link</nuxt-link>
+          <nuxt-link to="#">A Label</nuxt-link>
+          <nuxt-link to="#" class="fu-link">A Link</nuxt-link>
         </div>
       </div>
     </div>

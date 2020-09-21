@@ -16,7 +16,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "format": "prettier --write \"./**/*.{vue,js,json,md}\"",
+    "format": "prettier --write \"./**/*.{vue,js,json,md,scss}\"",
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",
     "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
     "output": "yarn complete && yarn compressed",
@@ -31,7 +31,7 @@
     "trailingComma": "none"
   },
   "lint-staged": {
-    "*.{vue,js,json,md}": [
+    "*.{vue,js,json,md,scss}": [
       "prettier --write",
       "git add"
     ]

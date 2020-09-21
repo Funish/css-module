@@ -13,7 +13,6 @@
 
 /* Relative widths
    ========================================================================== */
-
 @for $width from 1 through 6 {
   .fu-width-1-#{$width} {
     width: #{100% / $width};
@@ -42,7 +41,6 @@
 
 /* Child widths
    ========================================================================== */
-
 [class*='fu-child-width'] > * {
   box-sizing: border-box;
   width: 100%;
@@ -56,7 +54,6 @@
 
 /* Auto and expand
    ========================================================================== */
-
 /* Auto */
 .fu-width-auto {
   width: auto;
@@ -75,7 +72,6 @@
 
 /* Responsive width
    ========================================================================== */
-
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: #{$width}) {
     @each $width, $spacing in $widths {

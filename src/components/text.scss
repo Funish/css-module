@@ -4,16 +4,50 @@
 /* Link
    ========================================================================== */
 a {
-  color: $secondary;
+  box-sizing: border-box;
+  position: relative;
 
-  &:not(:hover) {
-    text-decoration: none;
+  /* Text */
+  color: $default-text;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fu-link,
+.fu-navbar-link {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid $default-text;
+    transition: 150ms all linear;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid $default-text;
+    transition: 150ms all linear;
+  }
+
+  &:hover::before {
+    width: 100%;
+    top: 0;
+    right: 0;
+    transition-delay: 75ms;
+    border-bottom-color: #000;
   }
 }
 
 /* Title
    ========================================================================== */
-
 .fu-text-title {
   font-size: 1.25rem;
   font-weight: 500;
@@ -29,7 +63,6 @@ a {
 
 /* Text alignment
    ========================================================================== */
-
 .fu-text-start {
   text-align: left;
 }
@@ -60,7 +93,6 @@ a {
 
 /* Text transform
    ========================================================================== */
-
 .fu-text-capitalize {
   text-transform: capitalize;
 }
@@ -75,7 +107,6 @@ a {
 
 /* Text size
    ========================================================================== */
-
 .fu-text-xxsmall {
   font-size: xx-small;
 }
@@ -114,7 +145,6 @@ a {
 
 /* Text weight
    ========================================================================== */
-
 .fu-text-light {
   font-weight: 300;
 }
@@ -137,7 +167,6 @@ a {
 
 /* Text wrap
    ========================================================================== */
-
 .fu-text-nowrap {
   word-break: keep-all;
 }
