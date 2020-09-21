@@ -10,7 +10,7 @@ Menu 模块用于创建菜单。
 | ----------------- | -------------- |
 | `.fu-menu`        | 创建菜单容器   |
 | `.fu-menu-header` | 创建菜单标题   |
-| `.fu-menu`        | 创建菜单子项目 |
+| `.fu-menu-item`   | 创建菜单子项目 |
 
 ```html
 <div class="fu-menu">

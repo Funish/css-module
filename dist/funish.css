@@ -2260,7 +2260,7 @@ hr {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: #f6f6f6;
   border-radius: 6px;
 }
 .fu-markdown-body pre {
@@ -2268,7 +2268,7 @@ hr {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: #f6f6f6;
   border-radius: 6px;
 }
 .fu-markdown-body pre code,
