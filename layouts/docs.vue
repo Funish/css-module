@@ -2,8 +2,8 @@
   <div class="fu-flex fu-flex-column">
     <Header></Header>
     <div class="fu-flex fu-flex-1">
-      <Sidebar class="fu-visible@m"></Sidebar>
-      <div class="fu-markdown-body fu-padding-horizontal-auto fu-width-1-1">
+      <Sidebar></Sidebar>
+      <div class="fu-markdown-body fu-padding-horizontal-medium fu-width-1-1">
         <nuxt />
       </div>
     </div>

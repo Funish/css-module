@@ -2,23 +2,16 @@
      Component: Box
    ========================================================================== */
 .fu-box {
-  /* Layout */
   position: relative;
-
-  /* Box model */
   box-sizing: border-box;
-  border-radius: 4px;
   width: 100%;
   max-width: 344px;
-  box-shadow: 0 1px 4px -1px $default-dark;
-
-  /* Text */
-  line-height: 1.5;
-  word-break: break-word;
   text-overflow: ellipsis;
-
-  /* Visual */
+  word-break: break-word;
+  border-radius: 4px;
   background: $default-light;
+  box-shadow: 0 1px 4px -1px $default-dark;
+  line-height: 1.5;
 
   img {
     width: 100%;
@@ -48,34 +41,26 @@
 }
 
 .fu-box-action {
-  /* Layout */
-  display: block;
   position: relative;
+  display: block;
   overflow: hidden;
-
-  /* Box model */
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-
-  /* Visual */
   cursor: pointer;
   user-select: none;
   transition: background-color 150ms linear;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 
   &::before,
   &::after {
     position: absolute;
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
-    content: '';
-
     top: calc(50% - 100%);
-
-    /* @noflip */
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
+    content: '';
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 50%;
     background: $default-text;
   }
 

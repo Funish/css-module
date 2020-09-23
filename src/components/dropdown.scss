@@ -1,9 +1,9 @@
 /* ========================================================================
-     Component: Base
+     Component: Dropdown 
    ========================================================================== */
-.fu-dropdown {
-  position: relative;
-
+.fu-dropdown,
+.fu-navbar-dropdown,
+.fu-navbar-drawer {
   summary {
     cursor: pointer;
     user-select: none;
@@ -19,33 +19,34 @@
   }
 
   &[open] > summary::before {
-    display: block;
     position: fixed;
+    z-index: 80;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 80;
-    cursor: default;
+    display: block;
     content: ' ';
+    cursor: default;
     background: transparent;
   }
 }
 
+.fu-dropdown {
+  position: relative;
+}
+
 .fu-dropdown-menu,
 .fu-dropdown-menu-bottom-left {
-  /* Layout */
   position: absolute;
+  z-index: 100;
   top: 100%;
   left: 0;
-  z-index: 100;
-
-  /* Box model */
   box-sizing: border-box;
-  border-radius: 4px;
-  padding: 4px;
-  margin-top: 2px;
   min-width: 100%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
   box-shadow: 0 1px 4px -1px $default-dark;
 }
 

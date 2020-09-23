@@ -1,14 +1,12 @@
 @charset "UTF-8";
 /*! Funish CSS 0.0.1 | https://funish.net | © Funish.net | MIT License */
-/* Color modifiers
-   ========================================================================== */
+/* Color modifiers   ========================================================================== */
 /* Default */
 /* Primary */
 /* Secondary */
 /* Danger */
 /* Success */
-/* Breakpoints
-   ========================================================================== */
+/* Breakpoints   ========================================================================== */
 /* Reset CSS */
 /* ========================================================================
      Component: Normalize
@@ -357,15 +355,13 @@ template,
 /* Element modifiers
    ========================================================================== */
 body {
-  /* Layout */
   overflow-y: scroll;
-  /* Text */
-  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
-  line-height: 1.25;
   word-wrap: break-word;
   color: #000;
   background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.25;
 }
 @media (max-width: 959px) {
   body {
@@ -374,9 +370,9 @@ body {
 }
 
 hr {
-  border: none;
   height: 0.15em;
   padding: 0;
+  border: none;
   background-color: #e1e4e8;
 }
 
@@ -823,7 +819,6 @@ hr {
     display: block;
   }
 }
-/* Box model */
 /* ========================================================================
      Component: Margin
    ========================================================================== */
@@ -848,8 +843,8 @@ hr {
 }
 
 .fu-margin-horizontal-small {
-  margin-left: 10px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .fu-margin-vertical-small {
@@ -878,8 +873,8 @@ hr {
 }
 
 .fu-margin-horizontal-medium {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .fu-margin-vertical-medium {
@@ -908,8 +903,8 @@ hr {
 }
 
 .fu-margin-horizontal-large {
-  margin-left: 40px;
   margin-right: 40px;
+  margin-left: 40px;
 }
 
 .fu-margin-vertical-large {
@@ -938,8 +933,8 @@ hr {
 }
 
 .fu-margin-horizontal-xlarge {
-  margin-left: 70px;
   margin-right: 70px;
+  margin-left: 70px;
 }
 
 .fu-margin-vertical-xlarge {
@@ -968,8 +963,8 @@ hr {
 }
 
 .fu-margin-horizontal-auto {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .fu-margin-vertical-auto {
@@ -998,8 +993,8 @@ hr {
 }
 
 .fu-margin-horizontal-remove {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 }
 
 .fu-margin-vertical-remove {
@@ -1901,7 +1896,6 @@ hr {
   width: fit-content;
 }
 
-/* Text */
 /* ========================================================================
      Component: Markdown
    ========================================================================== */
@@ -1911,15 +1905,15 @@ hr {
 .fu-markdown-body kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  line-height: 10px;
-  color: #444d56;
   vertical-align: middle;
-  background-color: #fafbfc;
+  color: #444d56;
   border: solid 1px #d1d5da;
   border-bottom-color: #d1d5da;
   border-radius: 6px;
+  background-color: #fafbfc;
   box-shadow: inset 0 -1px 0 #d1d5da;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  line-height: 10px;
 }
 .fu-markdown-body::before {
   display: table;
@@ -1937,16 +1931,16 @@ hr {
   margin-bottom: 0 !important;
 }
 .fu-markdown-body a:not([href]) {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 .fu-markdown-body .absent {
   color: #cb2431;
 }
 .fu-markdown-body .anchor {
   float: left;
-  padding-right: 4px;
   margin-left: -20px;
+  padding-right: 4px;
   line-height: 1;
 }
 .fu-markdown-body .anchor:focus {
@@ -1965,10 +1959,10 @@ hr {
 }
 .fu-markdown-body hr {
   height: 0.25em;
-  padding: 0;
   margin: 24px 0;
-  background-color: #e1e4e8;
+  padding: 0;
   border: 0;
+  background-color: #e1e4e8;
 }
 .fu-markdown-body blockquote {
   padding: 0 1em;
@@ -1998,9 +1992,9 @@ hr {
 .fu-markdown-body h4 .octicon-link,
 .fu-markdown-body h5 .octicon-link,
 .fu-markdown-body h6 .octicon-link {
-  color: #1b1f23;
-  vertical-align: middle;
   visibility: hidden;
+  vertical-align: middle;
+  color: #1b1f23;
 }
 .fu-markdown-body h1:hover .anchor,
 .fu-markdown-body h2:hover .anchor,
@@ -2044,13 +2038,13 @@ hr {
 }
 .fu-markdown-body h1 {
   padding-bottom: 0.3em;
-  font-size: 2em;
   border-bottom: 1px solid #eaecef;
+  font-size: 2em;
 }
 .fu-markdown-body h2 {
   padding-bottom: 0.3em;
-  font-size: 1.5em;
   border-bottom: 1px solid #eaecef;
+  font-size: 1.5em;
 }
 .fu-markdown-body h3 {
   font-size: 1.25em;
@@ -2062,8 +2056,8 @@ hr {
   font-size: 0.875em;
 }
 .fu-markdown-body h6 {
-  font-size: 0.85em;
   color: #6a737d;
+  font-size: 0.85em;
 }
 .fu-markdown-body ul,
 .fu-markdown-body ol {
@@ -2097,37 +2091,37 @@ hr {
   padding: 0;
 }
 .fu-markdown-body dl dt {
-  padding: 0;
   margin-top: 16px;
+  padding: 0;
   font-size: 1em;
-  font-style: italic;
   font-weight: 600;
+  font-style: italic;
 }
 .fu-markdown-body dl dd {
-  padding: 0 16px;
   margin-bottom: 16px;
+  padding: 0 16px;
 }
 .fu-markdown-body table {
   display: block;
+  overflow: auto;
   width: 100%;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
-  overflow: auto;
 }
 .fu-markdown-body table th {
-  font-weight: 600;
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+  font-weight: 600;
 }
 .fu-markdown-body table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
 .fu-markdown-body table tr {
-  background-color: #fff;
   border-top: 1px solid #c6cbd1;
+  background-color: #fff;
 }
 .fu-markdown-body table tr:nth-child(2n) {
   background-color: #f6f8fa;
@@ -2136,8 +2130,8 @@ hr {
   background-color: transparent;
 }
 .fu-markdown-body img {
-  max-width: 100%;
   box-sizing: content-box;
+  max-width: 100%;
   background-color: #fff;
 }
 .fu-markdown-body img[align=right] {
@@ -2158,10 +2152,10 @@ hr {
 .fu-markdown-body span.frame > span {
   display: block;
   float: left;
-  width: auto;
-  padding: 7px;
-  margin: 13px 0 0;
   overflow: hidden;
+  width: auto;
+  margin: 13px 0 0;
+  padding: 7px;
   border: 1px solid #dfe2e5;
 }
 .fu-markdown-body span.frame span img {
@@ -2170,19 +2164,19 @@ hr {
 }
 .fu-markdown-body span.frame span span {
   display: block;
-  padding: 5px 0 0;
   clear: both;
+  padding: 5px 0 0;
   color: #24292e;
 }
 .fu-markdown-body span.align-center {
   display: block;
-  overflow: hidden;
   clear: both;
+  overflow: hidden;
 }
 .fu-markdown-body span.align-center > span {
   display: block;
-  margin: 13px auto 0;
   overflow: hidden;
+  margin: 13px auto 0;
   text-align: center;
 }
 .fu-markdown-body span.align-center span img {
@@ -2191,13 +2185,13 @@ hr {
 }
 .fu-markdown-body span.align-right {
   display: block;
-  overflow: hidden;
   clear: both;
+  overflow: hidden;
 }
 .fu-markdown-body span.align-right > span {
   display: block;
-  margin: 13px 0 0;
   overflow: hidden;
+  margin: 13px 0 0;
   text-align: right;
 }
 .fu-markdown-body span.align-right span img {
@@ -2207,8 +2201,8 @@ hr {
 .fu-markdown-body span.float-left {
   display: block;
   float: left;
-  margin-right: 13px;
   overflow: hidden;
+  margin-right: 13px;
 }
 .fu-markdown-body span.float-left span {
   margin: 13px 0 0;
@@ -2216,22 +2210,22 @@ hr {
 .fu-markdown-body span.float-right {
   display: block;
   float: right;
-  margin-left: 13px;
   overflow: hidden;
+  margin-left: 13px;
 }
 .fu-markdown-body span.float-right > span {
   display: block;
-  margin: 13px auto 0;
   overflow: hidden;
+  margin: 13px auto 0;
   text-align: right;
 }
 .fu-markdown-body code,
 .fu-markdown-body tt {
-  padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 85%;
-  background-color: rgba(27, 31, 35, 0.05);
+  padding: 0.2em 0.4em;
   border-radius: 6px;
+  background-color: rgba(27, 31, 35, 0.05);
+  font-size: 85%;
 }
 .fu-markdown-body code br,
 .fu-markdown-body tt br {
@@ -2244,46 +2238,46 @@ hr {
   word-wrap: normal;
 }
 .fu-markdown-body pre > code {
-  padding: 0;
   margin: 0;
-  font-size: 100%;
-  word-break: normal;
+  padding: 0;
   white-space: pre;
-  background: transparent;
+  word-break: normal;
   border: 0;
+  background: transparent;
+  font-size: 100%;
 }
 .fu-markdown-body .highlight {
   margin-bottom: 16px;
 }
 .fu-markdown-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-  padding: 16px;
   overflow: auto;
+  margin-bottom: 0;
+  padding: 16px;
+  word-break: normal;
+  border-radius: 6px;
+  background-color: #f6f8fa;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 6px;
 }
 .fu-markdown-body pre {
-  padding: 16px;
   overflow: auto;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #f6f8fa;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 6px;
 }
 .fu-markdown-body pre code,
 .fu-markdown-body pre tt {
   display: inline;
-  max-width: auto;
-  padding: 0;
-  margin: 0;
   overflow: visible;
-  line-height: inherit;
+  max-width: auto;
+  margin: 0;
+  padding: 0;
   word-wrap: normal;
-  background-color: transparent;
   border: 0;
+  background-color: transparent;
+  line-height: inherit;
 }
 
 /* ========================================================================
@@ -2303,31 +2297,31 @@ a {
 }
 .fu-text-link::after,
 .fu-navbar-link::after {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  border-bottom: 1px solid #000;
+  height: 100%;
+  content: "";
   transition: 150ms all linear;
+  border-bottom: 1px solid #000;
 }
 .fu-text-link::before,
 .fu-navbar-link::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  border-bottom: 2px solid #000;
+  content: "";
   transition: 150ms all linear;
+  border-bottom: 2px solid #000;
 }
 .fu-text-link:hover::before,
 .fu-navbar-link:hover::before {
-  width: 100%;
   top: 0;
   right: 0;
+  width: 100%;
   transition-delay: 75ms;
   border-bottom-color: #000;
 }
@@ -2335,16 +2329,16 @@ a {
 /* Title
    ========================================================================== */
 .fu-text-title {
+  letter-spacing: 0.0125em;
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: 0.0125em;
 }
 
 .fu-text-subtitle {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 500;
   letter-spacing: 0.0071428571em;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.375rem;
 }
 
 /* Text alignment
@@ -2470,20 +2464,16 @@ a {
      Component: Box
    ========================================================================== */
 .fu-box {
-  /* Layout */
   position: relative;
-  /* Box model */
   box-sizing: border-box;
-  border-radius: 4px;
   width: 100%;
   max-width: 344px;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-  /* Text */
-  line-height: 1.5;
-  word-break: break-word;
   text-overflow: ellipsis;
-  /* Visual */
+  word-break: break-word;
+  border-radius: 4px;
   background: #fff;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+  line-height: 1.5;
 }
 .fu-box img {
   width: 100%;
@@ -2508,29 +2498,25 @@ a {
 }
 
 .fu-box-action {
-  /* Layout */
-  display: block;
   position: relative;
+  display: block;
   overflow: hidden;
-  /* Box model */
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  /* Visual */
   cursor: pointer;
   user-select: none;
   transition: background-color 150ms linear;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .fu-box-action::before, .fu-box-action::after {
   position: absolute;
-  border-radius: 50%;
-  opacity: 0;
-  pointer-events: none;
-  content: "";
   top: calc(50% - 100%);
-  /* @noflip */
   left: calc(50% - 100%);
   width: 200%;
   height: 200%;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
   background: #000;
 }
 .fu-box-action::after {
@@ -2545,47 +2531,56 @@ a {
 }
 
 /* ========================================================================
-     Component: Base
+     Component: Dropdown 
    ========================================================================== */
-.fu-dropdown {
-  position: relative;
-}
-.fu-dropdown summary {
+.fu-dropdown summary,
+.fu-navbar-dropdown summary,
+.fu-navbar-drawer summary {
   cursor: pointer;
   user-select: none;
 }
-.fu-dropdown summary::before, .fu-dropdown summary::-webkit-details-marker {
+.fu-dropdown summary::before, .fu-dropdown summary::-webkit-details-marker,
+.fu-navbar-dropdown summary::before,
+.fu-navbar-dropdown summary::-webkit-details-marker,
+.fu-navbar-drawer summary::before,
+.fu-navbar-drawer summary::-webkit-details-marker {
   display: none;
 }
-.fu-dropdown:not([open]) > *:not(summary) {
+.fu-dropdown:not([open]) > *:not(summary),
+.fu-navbar-dropdown:not([open]) > *:not(summary),
+.fu-navbar-drawer:not([open]) > *:not(summary) {
   display: none;
 }
-.fu-dropdown[open] > summary::before {
-  display: block;
+.fu-dropdown[open] > summary::before,
+.fu-navbar-dropdown[open] > summary::before,
+.fu-navbar-drawer[open] > summary::before {
   position: fixed;
+  z-index: 80;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 80;
-  cursor: default;
+  display: block;
   content: " ";
+  cursor: default;
   background: transparent;
+}
+
+.fu-dropdown {
+  position: relative;
 }
 
 .fu-dropdown-menu,
 .fu-dropdown-menu-bottom-left {
-  /* Layout */
   position: absolute;
+  z-index: 100;
   top: 100%;
   left: 0;
-  z-index: 100;
-  /* Box model */
   box-sizing: border-box;
-  border-radius: 4px;
-  padding: 4px;
-  margin-top: 2px;
   min-width: 100%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
   box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 
@@ -2789,8 +2784,8 @@ textarea.fu-form {
 .fu-button {
   height: 36px;
   padding: 0 8px;
-  text-transform: uppercase;
   user-select: none;
+  text-transform: uppercase;
 }
 .fu-button:not(:disabled) {
   cursor: pointer;
@@ -2799,15 +2794,14 @@ textarea.fu-form {
 }
 .fu-button::before, .fu-button::after {
   position: absolute;
-  border-radius: 50%;
-  opacity: 0;
-  pointer-events: none;
-  content: "";
   top: calc(50% - 100%);
-  /* @noflip */
   left: calc(50% - 100%);
   width: 200%;
   height: 200%;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
   background: #000;
 }
 .fu-button::after {
@@ -2830,8 +2824,7 @@ textarea.fu-form {
   height: 40px;
 }
 
-/* Style modifiers
-   ========================================================================== */
+/* Style modifiers   ========================================================================== */
 .fu-button-outlined {
   padding: 0 16px;
 }
@@ -2862,28 +2855,21 @@ textarea.fu-form {
   background: #000;
 }
 
-/* Icon button
-   ========================================================================== */
+/* Icon button   ========================================================================== */
 .fu-button-icon {
-  /* Layout */
   display: inline-block;
-  /* Box model */
   width: 18px;
   height: 18px;
-  /* @noflip */
-  margin-left: 0;
   margin-right: 8px;
-  /* Text */
-  font-size: 18px;
-  /* Visual */
+  margin-left: 0;
   color: inherit;
+  font-size: 18px;
 }
 
-[dir=rtl] .fu-button .fu-button-icon,
-[dir=rtl].fu-button .fu-button-icon {
-  /* @noflip */
-  margin-left: 8px;
+.fu-button-reverse .fu-button .fu-button-icon,
+.fu-button-reverse.fu-button .fu-button-icon {
   margin-right: 0;
+  margin-left: 8px;
 }
 
 svg.fu-button-icon {
@@ -2892,18 +2878,16 @@ svg.fu-button-icon {
 
 .fu-button-contained .fu-button-icon,
 .fu-button-outlined .fu-button-icon {
-  /* @noflip */
-  margin-left: -4px;
   margin-right: 8px;
+  margin-left: -4px;
 }
 
-[dir=rtl] .fu-button-contained .fu-button-icon,
-[dir=rtl] .fu-button-outlined .fu-button-icon,
-[dir=rtl].fu-button-contained .fu-button-icon,
-[dir=rtl].fu-button-outlined .fu-button-icon {
-  /* @noflip */
-  margin-left: 8px;
+.fu-button-reverse .fu-button-contained .fu-button-icon,
+.fu-button-reverse .fu-button-outlined .fu-button-icon,
+.fu-button-reverse.fu-button-contained .fu-button-icon,
+.fu-button-reverse.fu-button-outlined .fu-button-icon {
   margin-right: -4px;
+  margin-left: 8px;
 }
 
 .fu-icon-button {
@@ -2918,20 +2902,15 @@ svg.fu-button-icon {
   min-width: 40px;
 }
 
-/* Group
- ========================================================================== */
+/* Group ========================================================================== */
 /*
- * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements
- * 2. Behave like button
- * 3. Create position context
+ * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
+ * 2. Behave like button * 3. Create position context 
  */
 .fu-button-group {
-  /* 1 */
-  display: inline-flex;
-  /* 2 */
-  vertical-align: middle;
-  /* 3 */
   position: relative;
+  display: inline-flex;
+  vertical-align: middle;
 }
 .fu-button-group > .fu-button:first-child,
 .fu-button-group > .fu-button:last-child {
@@ -2950,13 +2929,14 @@ svg.fu-button-icon {
      Component: Markdown
    ========================================================================== */
 .fu-menu,
-.fu-dropdown-menu {
+.fu-dropdown-menu,
+.fu-navbar-dropdown > :not(summary) {
   overflow: hidden;
   background: #fff;
-  background: var(--theme-light, #fff);
 }
 .fu-menu li,
-.fu-dropdown-menu li {
+.fu-dropdown-menu li,
+.fu-navbar-dropdown > :not(summary) li {
   list-style: none;
 }
 
@@ -2967,66 +2947,88 @@ svg.fu-button-icon {
 }
 
 .fu-menu-item {
-  /* Layout */
   display: block;
-  /* Box model */
   padding: 4px 16px;
-  /* Text */
-  text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
-  /* Visual */
+  text-overflow: ellipsis;
   color: #000;
 }
 .fu-menu-item:hover, .fu-menu-item:focus {
-  /* Visual */
   color: #fff;
   background: #212121;
 }
 
 /* ========================================================================
-     Component: Nav
+     Component: Navbar
    ========================================================================== */
 .fu-navbar-top,
 .fu-navbar-bottom {
-  /* Layout */
-  display: flex;
   position: sticky;
-  z-index: 999;
-  /* Text */
+  z-index: 998;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   white-space: nowrap;
+  background: #fff;
+  line-height: 100%;
 }
 
 .fu-navbar-top {
   top: 0;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-  background: #fff;
   padding: 0 16px;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 
 .fu-navbar-bottom {
   bottom: 0;
-  box-shadow: 0 -1px 4px -1px #c7c7c7;
-  background: #fff;
   padding: 16px;
+  box-shadow: 0 -1px 4px -1px #c7c7c7;
 }
 
 .fu-navbar-item {
-  /* Layout */
   display: inline-block;
-  align-self: stretch;
   align-items: center;
+  align-self: stretch;
   flex-wrap: nowrap;
-  /* Box model */
+  height: 100%;
   margin-right: 16px;
   padding: 16px 0;
-  height: 100%;
 }
 
 .fu-navbar-link::after {
   border: none;
+}
+
+.fu-navbar-dropdown > :not(summary) {
+  position: absolute;
+  z-index: 998;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  min-width: 100%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+}
+
+.fu-navbar-drawer > :not(summary) {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 1px 0 4px -1px #c7c7c7;
+}
+
+.fu-navbar-drawer-reverse > :not(summary) {
+  right: 0;
+  left: auto;
 }
 
 /* ========================================================================

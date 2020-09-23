@@ -1,46 +1,71 @@
 /* ========================================================================
-     Component: Nav
+     Component: Navbar
    ========================================================================== */
 .fu-navbar-top,
 .fu-navbar-bottom {
-  /* Layout */
-  display: flex;
   position: sticky;
-  z-index: 999;
-
-  /* Text */
+  z-index: 998;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   white-space: nowrap;
+  background: $default-light;
+  line-height: 100%;
 }
 
 .fu-navbar-top {
   top: 0;
-  box-shadow: 0 1px 4px -1px $default-dark;
-  background: $default-light;
   padding: 0 16px;
+  box-shadow: 0 1px 4px -1px $default-dark;
 }
 
 .fu-navbar-bottom {
   bottom: 0;
-  box-shadow: 0 -1px 4px -1px $default-dark;
-  background: $default-light;
   padding: 16px;
+  box-shadow: 0 -1px 4px -1px $default-dark;
 }
 
 .fu-navbar-item {
-  /* Layout */
   display: inline-block;
-  align-self: stretch;
   align-items: center;
+  align-self: stretch;
   flex-wrap: nowrap;
-
-  /* Box model */
+  height: 100%;
   margin-right: 16px;
   padding: 16px 0;
-  height: 100%;
 }
 
 .fu-navbar-link::after {
   border: none;
+}
+
+.fu-navbar-dropdown > :not(summary) {
+  position: absolute;
+  z-index: 998;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  min-width: 100%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px -1px $default-dark;
+}
+
+.fu-navbar-drawer > :not(summary) {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  min-width: 300px;
+  height: 100%;
+  background: $default-light;
+  box-shadow: 1px 0 4px -1px $default-dark;
+}
+
+.fu-navbar-drawer-reverse > :not(summary) {
+  right: 0;
+  left: auto;
 }

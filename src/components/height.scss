@@ -12,7 +12,6 @@
 .fu-height-viewport {
   height: 100vh;
 }
-
 @each $height, $spacing in $heights {
   .fu-height-#{$height} {
     height: $spacing;

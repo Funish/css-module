@@ -4,12 +4,11 @@
 .fu-button {
   height: 36px;
   padding: 0 8px;
-  text-transform: uppercase;
   user-select: none;
+  text-transform: uppercase;
 
   &:not(:disabled) {
     cursor: pointer;
-
     color: $default-text;
     background: transparent;
   }
@@ -17,17 +16,14 @@
   &::before,
   &::after {
     position: absolute;
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
-    content: '';
-
     top: calc(50% - 100%);
-
-    /* @noflip */
     left: calc(50% - 100%);
     width: 200%;
     height: 200%;
+    content: '';
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 50%;
     background: $default-text;
   }
 
@@ -55,8 +51,7 @@
   height: 40px;
 }
 
-/* Style modifiers
-   ========================================================================== */
+/* Style modifiers   ========================================================================== */
 .fu-button-outlined {
   padding: 0 16px;
 
@@ -92,32 +87,21 @@
   }
 }
 
-/* Icon button
-   ========================================================================== */
-
+/* Icon button   ========================================================================== */
 .fu-button-icon {
-  /* Layout */
   display: inline-block;
-
-  /* Box model */
   width: 18px;
   height: 18px;
-  /* @noflip */
-  margin-left: 0;
   margin-right: 8px;
-
-  /* Text */
-  font-size: 18px;
-
-  /* Visual */
+  margin-left: 0;
   color: inherit;
+  font-size: 18px;
 }
 
-[dir='rtl'] .fu-button .fu-button-icon,
-[dir='rtl'].fu-button .fu-button-icon {
-  /* @noflip */
-  margin-left: 8px;
+.fu-button-reverse .fu-button .fu-button-icon,
+.fu-button-reverse.fu-button .fu-button-icon {
   margin-right: 0;
+  margin-left: 8px;
 }
 
 svg.fu-button-icon {
@@ -126,18 +110,16 @@ svg.fu-button-icon {
 
 .fu-button-contained .fu-button-icon,
 .fu-button-outlined .fu-button-icon {
-  /* @noflip */
-  margin-left: -4px;
   margin-right: 8px;
+  margin-left: -4px;
 }
 
-[dir='rtl'] .fu-button-contained .fu-button-icon,
-[dir='rtl'] .fu-button-outlined .fu-button-icon,
-[dir='rtl'].fu-button-contained .fu-button-icon,
-[dir='rtl'].fu-button-outlined .fu-button-icon {
-  /* @noflip */
-  margin-left: 8px;
+.fu-button-reverse .fu-button-contained .fu-button-icon,
+.fu-button-reverse .fu-button-outlined .fu-button-icon,
+.fu-button-reverse.fu-button-contained .fu-button-icon,
+.fu-button-reverse.fu-button-outlined .fu-button-icon {
   margin-right: -4px;
+  margin-left: 8px;
 }
 
 .fu-icon-button {
@@ -154,21 +136,15 @@ svg.fu-button-icon {
   }
 }
 
-/* Group
- ========================================================================== */
+/* Group ========================================================================== */
 /*
- * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements
- * 2. Behave like button
- * 3. Create position context
+ * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
+ * 2. Behave like button * 3. Create position context 
  */
-
 .fu-button-group {
-  /* 1 */
-  display: inline-flex;
-  /* 2 */
-  vertical-align: middle;
-  /* 3 */
   position: relative;
+  display: inline-flex;
+  vertical-align: middle;
 
   > {
     .fu-button:first-child,

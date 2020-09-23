@@ -23,8 +23,8 @@
   }
 
   .fu-margin-horizontal-#{$margin} {
-    margin-left: #{$length};
     margin-right: #{$length};
+    margin-left: #{$length};
   }
 
   .fu-margin-vertical-#{$margin} {

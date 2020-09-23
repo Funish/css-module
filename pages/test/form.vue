@@ -67,6 +67,44 @@
     <div class="fu-grid fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-icon-form">
         <i class="fas fa-user fu-form-icon"></i>
+        <input class="fu-form fu-form-outlined" placeholder="Placeholder" />
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
+        <select class="fu-form fu-form-outlined">
+          <option>Option1</option>
+          <option>Option2</option>
+          <option>Option3</option>
+        </select>
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
+        <textarea
+          class="fu-form fu-form-outlined"
+          placeholder="Placeholder"
+        ></textarea>
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
+        <input class="fu-form fu-form-underlined" placeholder="Placeholder" />
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
+        <select class="fu-form fu-form-underlined">
+          <option>Option1</option>
+          <option>Option2</option>
+          <option>Option3</option>
+        </select>
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
+        <textarea
+          class="fu-form fu-form-underlined"
+          placeholder="Placeholder"
+        ></textarea>
+      </div>
+      <div class="fu-icon-form">
+        <i class="fas fa-user fu-form-icon"></i>
         <input class="fu-form fu-form-contained" placeholder="Placeholder" />
       </div>
       <div class="fu-icon-form">

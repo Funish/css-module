@@ -16,7 +16,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "format": "prettier --write \"./**/*.{vue,js,json,md,scss}\"",
+    "csscomb": "csscomb src/",
+    "prettier": "prettier --write \"./**/*.{vue,js,json,md,scss}\"",
+    "format": "yarn csscomb && yarn prettier",
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",
     "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
     "output": "yarn complete && yarn compressed",
@@ -60,6 +62,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
+    "csscomb": "^4.3.0",
     "lint-staged": "^10.2.11",
     "nuxt": "^2.0.0",
     "prettier": "2.0.5",

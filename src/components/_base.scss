@@ -18,17 +18,14 @@
 /* Element modifiers
    ========================================================================== */
 body {
-  /* Layout */
   overflow-y: scroll;
-
-  /* Text */
+  word-wrap: break-word;
+  color: $default-text;
+  background: $default-light;
   font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 16px;
   line-height: 1.25;
-  word-wrap: break-word;
-  color: $default-text;
-  background: $default-light;
 
   @media (max-width: 959px) {
     background: $default;
@@ -36,8 +33,8 @@ body {
 }
 
 hr {
-  border: none;
   height: 0.15em;
   padding: 0;
+  border: none;
   background-color: #e1e4e8;
 }

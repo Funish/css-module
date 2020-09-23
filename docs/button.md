@@ -60,3 +60,7 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
   <i class="fas fa-user"></i></button
 >>
 ```
+
+## 反转
+
+通过在父节点和子节点应用类选择器 `.fu-button-reverse` 以使按钮模块反转。

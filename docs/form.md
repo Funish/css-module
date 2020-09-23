@@ -46,3 +46,7 @@ Form 模块使您可以轻松创建漂亮的表单。
   <input class="fu-form" />
 </div>
 ```
+
+## 反转
+
+通过在父节点和子节点应用类选择器 `.fu-form-reverse` 以使表单模块反转。

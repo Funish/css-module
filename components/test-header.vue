@@ -40,7 +40,7 @@
       <option value="/test/dropdown">Dropdown</option>
       <option value="/test/form">Form</option>
       <option value="/test/menu">Menu</option>
-      <option value="/test/navbar">Navbar</option>
+      <option value="/test/navbar">Navbar and Sidebar</option>
       <option value="/test/progress">Progress</option>
       <option value="/test/utility">Utility</option>
     </select>

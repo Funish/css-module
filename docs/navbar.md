@@ -17,3 +17,34 @@ Narbar 模块用于创建顶部导航栏。
   <a href="" class="fu-navbar-item fu-navbar-link"></a>
 </div>
 ```
+
+## 下拉栏
+
+| 类名                  | 描述           |
+| --------------------- | -------------- |
+| `.fu-navbar-dropdown` | 创建一个下拉栏 |
+
+```html
+<div class="fu-navbar-top">
+  <details class="fu-navbar-dropdown">
+    <summary>Toggle</summary>
+    <div>...</div>
+  </details>
+</div>
+```
+
+## 侧边栏
+
+| 类名                        | 描述                                       |
+| --------------------------- | ------------------------------------------ |
+| `.fu-navbar-drawer`         | 创建一个侧边栏                             |
+| `.fu-navbar-drawer-reverse` | 添加此类以使创建的侧边栏反转（通常为右侧） |
+
+```html
+<div class="fu-navbar-top">
+  <details class="fu-navbar-drawer">
+    <summary>Toggle</summary>
+    <div>...</div>
+  </details>
+</div>
+```

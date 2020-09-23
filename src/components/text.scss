@@ -14,31 +14,31 @@ a {
   text-decoration: none;
 
   &::after {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    border-bottom: 1px solid $default-text;
+    height: 100%;
+    content: '';
     transition: 150ms all linear;
+    border-bottom: 1px solid $default-text;
   }
 
   &::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    border-bottom: 2px solid $default-text;
+    content: '';
     transition: 150ms all linear;
+    border-bottom: 2px solid $default-text;
   }
 
   &:hover::before {
-    width: 100%;
     top: 0;
     right: 0;
+    width: 100%;
     transition-delay: 75ms;
     border-bottom-color: #000;
   }
@@ -47,16 +47,16 @@ a {
 /* Title
    ========================================================================== */
 .fu-text-title {
+  letter-spacing: 0.0125em;
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: 0.0125em;
 }
 
 .fu-text-subtitle {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 500;
   letter-spacing: 0.0071428571em;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.375rem;
 }
 
 /* Text alignment

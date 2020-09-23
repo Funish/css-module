@@ -10,20 +10,15 @@
       >
     </div>
     <div class="fu-position-center-right">
-      <a
-        target="_blank"
-        href="https://github.com/Funish/css-module"
-        class="fu-navbar-item"
-      >
-        <i class="fab fa-github"></i>
-      </a>
-      <a
-        target="_blank"
-        href="https://github.com/Funish/css-module"
-        class="fu-navbar-item"
-      >
-        <i class="fas fa-bars"></i>
-      </a>
+      <div class="fu-navbar-item">
+        <a
+          target="_blank"
+          href="https://github.com/Funish/css-module"
+          class="fu-button fu-icon-button"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
   </header>
 </template>

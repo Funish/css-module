@@ -2,10 +2,10 @@
      Component: Markdown
    ========================================================================== */
 .fu-menu,
-.fu-dropdown-menu {
+.fu-dropdown-menu,
+.fu-navbar-dropdown > :not(summary) {
   overflow: hidden;
   background: $default-light;
-  background: var(--theme-light, $default-light);
 
   li {
     list-style: none;
@@ -19,23 +19,15 @@
 }
 
 .fu-menu-item {
-  /* Layout */
   display: block;
-
-  /* Box model */
   padding: 4px 16px;
-
-  /* Text */
-  text-overflow: ellipsis;
   white-space: nowrap;
   text-decoration: none;
-
-  /* Visual */
+  text-overflow: ellipsis;
   color: $default-text;
 
   &:hover,
   &:focus {
-    /* Visual */
     color: $primary-text;
     background: $primary;
   }
