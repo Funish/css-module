@@ -64,9 +64,13 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {
         rel: 'stylesheet',
-        type: 'text/css',
         href:
           'https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/github.css'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap'
       }
     ]
   },

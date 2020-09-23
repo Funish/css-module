@@ -7,7 +7,7 @@
       <div class="fu-box">
         <div class="fu-box-content">
           <nuxt-link to="#">A Label</nuxt-link>
-          <nuxt-link to="#" class="fu-link">A Link</nuxt-link>
+          <nuxt-link to="#" class="fu-text-link">A Link</nuxt-link>
         </div>
       </div>
     </div>

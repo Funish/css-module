@@ -315,7 +315,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>JavasScript</td>
+          <td>JavaScript</td>
           <td>
             <code>var foo = "bar";</code>
           </td>

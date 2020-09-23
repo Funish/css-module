@@ -32,7 +32,7 @@
   }
 
   &::after {
-    transition: opacity 150ms linear;
+    transition: all 150ms linear;
   }
 
   &:hover::before {

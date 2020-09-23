@@ -4,7 +4,7 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ## 用法
 
-使用类选择器 `.fu-form` 应用样式。为统一视觉上的观感，`button`、`input`、`select`、`textarea` 将共用大部分样式。
+使用类选择器 `.fu-form` 和 `fu-form-*` 应用样式。为统一视觉上的观感，`button`、`input`、`select`、`textarea` 将共用大部分样式。
 
 | 类名                  | 描述                                                          |
 | --------------------- | ------------------------------------------------------------- |
@@ -17,6 +17,16 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input class="fu-form fu-form-outlined" />
 <input class="fu-form fu-form-underlined" />
 <input class="fu-form fu-form-contained" />
+```
+
+## 单选框和复选框
+
+仅使用类选择器 `.fu-form` 应用样式。
+
+```html
+<input type="radio" name="radio1" class="fu-form" />
+<input type="radio" name="radio1" class="fu-form" />
+<input type="checkbox" class="fu-form" />
 ```
 
 ## 上传

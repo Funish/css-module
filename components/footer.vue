@@ -1,9 +1,11 @@
 <template>
   <footer class="fu-text-center fu-padding-medium">
-    <span>Powered by Funish</span>
-    <span>
-      <i>&copy;</i>
-      <a href="https://funish.net/">Funish.net</a>
-    </span>
+    <div class="fu-flex fu-main-center fu-width-1-1">
+      <span>
+        <i>&copy;</i>
+        Powered by
+        <a href="https://funish.net/" class="fu-text-link">Funish.net</a>
+      </span>
+    </div>
   </footer>
 </template>

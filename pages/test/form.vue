@@ -14,6 +14,11 @@
         class="fu-form fu-form-outlined"
         placeholder="Placeholder"
       ></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="checkbox" class="fu-form" />
+      </div>
     </div>
     <h2>Underlined</h2>
     <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">

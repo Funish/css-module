@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="fu-flex fu-flex-column fu-background"
-    v-bind:class="{'fu-theme-dark': dark}"
-    style="min-height: 100vh;"
-  >
+  <div class="fu-flex fu-flex-column" style="min-height: 100vh;">
     <Header></Header>
     <div class="fu-padding-horizontal-auto fu-flex-1">
       <Testheader></Testheader>

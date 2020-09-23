@@ -1,29 +1,36 @@
 /* ========================================================================
      Component: Nav
    ========================================================================== */
-.fu-navbar {
+.fu-navbar-top,
+.fu-navbar-bottom {
   /* Layout */
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  white-space: nowrap;
+  position: sticky;
   z-index: 999;
 
-  /* Box model */
-  padding: 0 16px;
-  box-shadow: 0 1px 4px -1px $default-dark;
-
   /* Text */
-  font-size: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
 
-  /* Visual */
+.fu-navbar-top {
+  top: 0;
+  box-shadow: 0 1px 4px -1px $default-dark;
   background: $default-light;
+  padding: 0 16px;
+}
+
+.fu-navbar-bottom {
+  bottom: 0;
+  box-shadow: 0 -1px 4px -1px $default-dark;
+  background: $default-light;
+  padding: 16px;
 }
 
 .fu-navbar-item {
   /* Layout */
-  display: inline-flex;
+  display: inline-block;
   align-self: stretch;
   align-items: center;
   flex-wrap: nowrap;

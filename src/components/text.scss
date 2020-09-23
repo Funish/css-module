@@ -4,17 +4,15 @@
 /* Link
    ========================================================================== */
 a {
-  box-sizing: border-box;
-  position: relative;
-
-  /* Text */
   color: $default-text;
-  font-weight: 600;
-  text-decoration: none;
 }
 
-.fu-link,
+.fu-text-link,
 .fu-navbar-link {
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+
   &::after {
     content: '';
     position: absolute;
