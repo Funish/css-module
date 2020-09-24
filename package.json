@@ -22,9 +22,8 @@
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",
     "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
     "output": "yarn complete && yarn compressed",
-    "test": "yarn generate && yarn output",
-    "prepublish": "yarn output",
-    "prerelease": "yarn format && yarn output",
+    "prepublish": "yarn output && yarn generate",
+    "prerelease": "yarn version --prerelease --preid alpha",
     "precommit": "yarn format && yarn output && lint-staged"
   },
   "prettier": {
