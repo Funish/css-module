@@ -12,7 +12,7 @@
           <nuxt-link to="#2" class="fu-navbar-item fu-navbar-link"
             >Item2</nuxt-link
           >
-          <div style="padding: 4px;">
+          <div class="fu-visible@m" style="padding: 4px;">
             <input
               class="fu-form fu-form-contained"
               style="height: 100%;"

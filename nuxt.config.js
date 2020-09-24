@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-/**
- * Markdown documents route
+/*
+ ** Markdown documents route
  */
 
 var files = fs.readdirSync('./docs');
@@ -45,7 +45,6 @@ function getSlugs(post, index) {
 }
 
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
