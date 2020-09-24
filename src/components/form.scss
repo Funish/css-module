@@ -143,14 +143,14 @@ textarea.fu-form {
     pointer-events: none;
   }
 
-  &:not([dir='rtl']) ~ .fu-form {
+  &:not(.fu-form-reverse) ~ .fu-form {
     position: initial;
 
     padding-left: 48px;
   }
 }
 
-[dir='rtl'] .fu-form-icon {
+.fu-form-reverse .fu-form-icon {
   right: 0;
   left: auto;
 

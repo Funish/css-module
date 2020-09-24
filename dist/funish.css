@@ -2750,16 +2750,16 @@ textarea.fu-form {
 .fu-form-icon:not(a):not(button):not(input) {
   pointer-events: none;
 }
-.fu-form-icon:not([dir=rtl]) ~ .fu-form {
+.fu-form-icon:not(.fu-form-reverse) ~ .fu-form {
   position: initial;
   padding-left: 48px;
 }
 
-[dir=rtl] .fu-form-icon {
+.fu-form-reverse .fu-form-icon {
   right: 0;
   left: auto;
 }
-[dir=rtl] .fu-form-icon ~ .fu-form {
+.fu-form-reverse .fu-form-icon ~ .fu-form {
   position: initial;
   padding-right: 48px;
   padding-left: 16px;
