@@ -32,8 +32,8 @@
 }
 
 .fu-form {
-  width: 100%;
-  max-width: 280px;
+  width: 280px;
+  max-width: 100%;
   height: 48px;
   padding: 0 16px;
 
@@ -45,7 +45,8 @@
   background: inherit;
 }
 
-.fu-form-outlined {
+.fu-form-outlined.fu-form,
+.fu-form-outlined .fu-form {
   border: 1px solid;
 
   &:focus {
@@ -53,7 +54,8 @@
   }
 }
 
-.fu-form-underlined {
+.fu-form-underlined.fu-form,
+.fu-form-underlined .fu-form {
   border-bottom: 1px solid $default-text;
   border-radius: 0;
 
@@ -62,12 +64,13 @@
   }
 }
 
-.fu-form-contained {
+.fu-form-contained.fu-form,
+.fu-form-contained .fu-form {
   border-color: $default;
   background: $default;
 
   @media (max-width: 959px) {
-    box-shadow: 0 1px 4px $default-dark;
+    box-shadow: 0 1px 4px -1px $default-dark;
   }
 }
 
@@ -102,12 +105,16 @@ textarea.fu-form {
 
 /* Icon form
    ========================================================================== */
-/**
-  * 1. Container fits its content
-  * 2. Create position context
-  * 3. Prevent content overflow
-  * 4. Behave like most inline-block elements
-  */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Behave like most inline-block elements
+ * 5. Force hardware acceleration without creating a new stacking context
+ *    to fix 1px glitch when combined with overlays and transitions in Webkit
+ * 6. Clip child elements
+ */
+
 .fu-icon-form {
   position: relative;
 
@@ -116,17 +123,19 @@ textarea.fu-form {
   max-width: 100%;
 
   vertical-align: middle;
+
+  backface-visibility: hidden;
 }
 
-/**
-  * 1. Set position
-  * 2. Set width
-  * 3. Center icon vertically and horizontally
-  * 4. Style
-  */
+/*
+ * 1. Set position
+ * 2. Set width
+ * 3. Center icon vertically and horizontally
+ */
 
 .fu-form-icon {
   position: absolute;
+  z-index: 1;
   top: 0;
   bottom: 0;
   left: 0;
@@ -135,29 +144,33 @@ textarea.fu-form {
   align-items: center;
   justify-content: center;
 
-  width: 48px;
-
-  color: $primary-light;
+  width: 40px;
 
   &:not(a):not(button):not(input) {
     pointer-events: none;
   }
+}
 
-  &:not(.fu-form-reverse) ~ .fu-form {
-    position: initial;
+:not(.fu-form-reverse).fu-icon-form,
+:not(.fu-form-reverse) .fu-icon-form {
+  .fu-form {
+    padding-left: 40px;
 
-    padding-left: 48px;
+    appearance: none;
   }
 }
 
-.fu-form-reverse .fu-form-icon {
-  right: 0;
-  left: auto;
+.fu-form-reverse.fu-icon-form,
+.fu-form-reverse .fu-icon-form {
+  .fu-form-icon {
+    right: 0;
+    left: auto;
+  }
 
-  ~ .fu-form {
-    position: initial;
-
-    padding-right: 48px;
+  .fu-form {
+    padding-right: 40px;
     padding-left: 16px;
+
+    appearance: none;
   }
 }
