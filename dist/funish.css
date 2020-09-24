@@ -2653,8 +2653,8 @@ a {
 }
 
 .fu-form {
-  width: 100%;
-  max-width: 280px;
+  width: 280px;
+  max-width: 100%;
   height: 48px;
   padding: 0 16px;
   transition: all 75ms linear;
@@ -2664,28 +2664,34 @@ a {
   background: inherit;
 }
 
-.fu-form-outlined {
+.fu-form-outlined.fu-form,
+.fu-form-outlined .fu-form {
   border: 1px solid;
 }
-.fu-form-outlined:focus {
+.fu-form-outlined.fu-form:focus,
+.fu-form-outlined .fu-form:focus {
   box-shadow: inset 0 0 0 1px #000;
 }
 
-.fu-form-underlined {
+.fu-form-underlined.fu-form,
+.fu-form-underlined .fu-form {
   border-bottom: 1px solid #000;
   border-radius: 0;
 }
-.fu-form-underlined:focus {
+.fu-form-underlined.fu-form:focus,
+.fu-form-underlined .fu-form:focus {
   box-shadow: inset 0 -1px #000;
 }
 
-.fu-form-contained {
+.fu-form-contained.fu-form,
+.fu-form-contained .fu-form {
   border-color: #fafafa;
   background: #fafafa;
 }
 @media (max-width: 959px) {
-  .fu-form-contained {
-    box-shadow: 0 1px 4px #c7c7c7;
+  .fu-form-contained.fu-form,
+.fu-form-contained .fu-form {
+    box-shadow: 0 1px 4px -1px #c7c7c7;
   }
 }
 
@@ -2717,52 +2723,59 @@ textarea.fu-form {
 
 /* Icon form
    ========================================================================== */
-/**
-  * 1. Container fits its content
-  * 2. Create position context
-  * 3. Prevent content overflow
-  * 4. Behave like most inline-block elements
-  */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Behave like most inline-block elements
+ * 5. Force hardware acceleration without creating a new stacking context
+ *    to fix 1px glitch when combined with overlays and transitions in Webkit
+ * 6. Clip child elements
+ */
 .fu-icon-form {
   position: relative;
   display: inline-block;
   max-width: 100%;
   vertical-align: middle;
+  backface-visibility: hidden;
 }
 
-/**
-  * 1. Set position
-  * 2. Set width
-  * 3. Center icon vertically and horizontally
-  * 4. Style
-  */
+/*
+ * 1. Set position
+ * 2. Set width
+ * 3. Center icon vertically and horizontally
+ */
 .fu-form-icon {
   position: absolute;
+  z-index: 1;
   top: 0;
   bottom: 0;
   left: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  color: #484848;
+  width: 40px;
 }
 .fu-form-icon:not(a):not(button):not(input) {
   pointer-events: none;
 }
-.fu-form-icon:not(.fu-form-reverse) ~ .fu-form {
-  position: initial;
-  padding-left: 48px;
+
+:not(.fu-form-reverse).fu-icon-form .fu-form,
+:not(.fu-form-reverse) .fu-icon-form .fu-form {
+  padding-left: 40px;
+  appearance: none;
 }
 
-.fu-form-reverse .fu-form-icon {
+.fu-form-reverse.fu-icon-form .fu-form-icon,
+.fu-form-reverse .fu-icon-form .fu-form-icon {
   right: 0;
   left: auto;
 }
-.fu-form-reverse .fu-form-icon ~ .fu-form {
-  position: initial;
-  padding-right: 48px;
+.fu-form-reverse.fu-icon-form .fu-form,
+.fu-form-reverse .fu-icon-form .fu-form {
+  padding-right: 40px;
   padding-left: 16px;
+  appearance: none;
 }
 
 /* ========================================================================
