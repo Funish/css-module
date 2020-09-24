@@ -20,24 +20,22 @@
             />
           </div>
         </div>
-        <div class="fu-navbar-item">
-          <details class="fu-navbar-drawer fu-navbar-drawer-reverse">
-            <summary>
-              <span class="fu-button fu-icon-button">
-                <i class="fas fa-align-right"></i>
-              </span>
-            </summary>
-            <div class="fu-padding-medium">
-              <div class="fu-icon-form">
-                <i class="fas fa-search fu-form-icon"></i>
-                <input
-                  class="fu-form fu-form-contained"
-                  placeholder="Search..."
-                />
-              </div>
+        <details class="fu-navbar-drawer fu-navbar-drawer-reverse">
+          <summary>
+            <span class="fu-button fu-icon-button">
+              <i class="fas fa-align-right"></i>
+            </span>
+          </summary>
+          <div class="fu-padding-medium">
+            <div class="fu-icon-form">
+              <i class="fas fa-search fu-form-icon"></i>
+              <input
+                class="fu-form fu-form-contained"
+                placeholder="Search..."
+              />
             </div>
-          </details>
-        </div>
+          </div>
+        </details>
       </header>
     </div>
   </div>
