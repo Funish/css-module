@@ -22,7 +22,7 @@
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",
     "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
     "output": "yarn complete && yarn compressed",
-    "prepublish": "yarn output && yarn generate",
+    "prepublish": "yarn output",
     "prerelease": "yarn version --prerelease --preid alpha",
     "precommit": "yarn format && yarn output && lint-staged"
   },
