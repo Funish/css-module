@@ -5,27 +5,33 @@
   line-height: 1.5;
 
   kbd {
+    font: 11px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    line-height: 10px;
+
     display: inline-block;
+
     padding: 3px 5px;
+
     vertical-align: middle;
+
     color: #444d56;
     border: solid 1px #d1d5da;
     border-bottom-color: #d1d5da;
     border-radius: 6px;
     background-color: #fafbfc;
     box-shadow: inset 0 -1px 0 #d1d5da;
-    font: 11px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-    line-height: 10px;
   }
 
   &::before {
     display: table;
+
     content: '';
   }
 
   &::after {
     display: table;
     clear: both;
+
     content: '';
   }
 
@@ -41,6 +47,7 @@
 
   a:not([href]) {
     text-decoration: none;
+
     color: inherit;
   }
 
@@ -49,10 +56,12 @@
   }
 
   .anchor {
+    line-height: 1;
+
     float: left;
+
     margin-left: -20px;
     padding-right: 4px;
-    line-height: 1;
 
     &:focus {
       outline: none;
@@ -75,12 +84,14 @@
     height: 0.25em;
     margin: 24px 0;
     padding: 0;
+
     border: 0;
     background-color: #e1e4e8;
   }
 
   blockquote {
     padding: 0 1em;
+
     color: #6a737d;
     border-left: 0.25em solid #dfe2e5;
 
@@ -101,10 +112,11 @@
   h4,
   h5,
   h6 {
-    margin-top: 24px;
-    margin-bottom: 16px;
     font-weight: 600;
     line-height: 1.25;
+
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 
   h1 .octicon-link,
@@ -114,7 +126,9 @@
   h5 .octicon-link,
   h6 .octicon-link {
     visibility: hidden;
+
     vertical-align: middle;
+
     color: #1b1f23;
   }
 
@@ -179,15 +193,19 @@
   }
 
   h1 {
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #eaecef;
     font-size: 2em;
+
+    padding-bottom: 0.3em;
+
+    border-bottom: 1px solid #eaecef;
   }
 
   h2 {
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #eaecef;
     font-size: 1.5em;
+
+    padding-bottom: 0.3em;
+
+    border-bottom: 1px solid #eaecef;
   }
 
   h3 {
@@ -203,8 +221,9 @@
   }
 
   h6 {
-    color: #6a737d;
     font-size: 0.85em;
+
+    color: #6a737d;
   }
 
   ul,
@@ -215,6 +234,7 @@
   ul.no-list,
   ol.no-list {
     padding: 0;
+
     list-style-type: none;
   }
 
@@ -250,11 +270,12 @@
     padding: 0;
 
     dt {
-      margin-top: 16px;
-      padding: 0;
       font-size: 1em;
       font-weight: 600;
       font-style: italic;
+
+      margin-top: 16px;
+      padding: 0;
     }
 
     dd {
@@ -266,6 +287,7 @@
   table {
     display: block;
     overflow: auto;
+
     width: 100%;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -273,13 +295,16 @@
     max-width: 100%;
 
     th {
-      padding: 6px 13px;
-      border: 1px solid #dfe2e5;
       font-weight: 600;
+
+      padding: 6px 13px;
+
+      border: 1px solid #dfe2e5;
     }
 
     td {
       padding: 6px 13px;
+
       border: 1px solid #dfe2e5;
     }
 
@@ -300,6 +325,7 @@
   img {
     box-sizing: content-box;
     max-width: 100%;
+
     background-color: #fff;
 
     &[align='right'] {
@@ -313,7 +339,9 @@
 
   .emoji {
     max-width: none;
+
     vertical-align: text-top;
+
     background-color: transparent;
   }
 
@@ -326,9 +354,11 @@
         display: block;
         float: left;
         overflow: hidden;
+
         width: auto;
         margin: 13px 0 0;
         padding: 7px;
+
         border: 1px solid #dfe2e5;
       }
 
@@ -341,7 +371,9 @@
         span {
           display: block;
           clear: both;
+
           padding: 5px 0 0;
+
           color: #24292e;
         }
       }
@@ -355,12 +387,15 @@
       > span {
         display: block;
         overflow: hidden;
+
         margin: 13px auto 0;
+
         text-align: center;
       }
 
       span img {
         margin: 0 auto;
+
         text-align: center;
       }
     }
@@ -373,12 +408,15 @@
       > span {
         display: block;
         overflow: hidden;
+
         margin: 13px 0 0;
+
         text-align: right;
       }
 
       span img {
         margin: 0;
+
         text-align: right;
       }
     }
@@ -387,6 +425,7 @@
       display: block;
       float: left;
       overflow: hidden;
+
       margin-right: 13px;
 
       span {
@@ -398,12 +437,15 @@
       display: block;
       float: right;
       overflow: hidden;
+
       margin-left: 13px;
 
       > span {
         display: block;
         overflow: hidden;
+
         margin: 13px auto 0;
+
         text-align: right;
       }
     }
@@ -411,11 +453,13 @@
 
   code,
   tt {
+    font-size: 85%;
+
     margin: 0;
     padding: 0.2em 0.4em;
+
     border-radius: 6px;
     background-color: rgba(27, 31, 35, 0.05);
-    font-size: 85%;
   }
 
   code br,
@@ -431,13 +475,16 @@
     word-wrap: normal;
 
     > code {
+      font-size: 100%;
+
       margin: 0;
       padding: 0;
+
       white-space: pre;
       word-break: normal;
+
       border: 0;
       background: transparent;
-      font-size: 100%;
     }
   }
 
@@ -445,36 +492,47 @@
     margin-bottom: 16px;
 
     pre {
-      overflow: auto;
-      margin-bottom: 0;
-      padding: 16px;
-      word-break: normal;
-      border-radius: 6px;
-      background-color: #f6f8fa;
       font-size: 85%;
       line-height: 1.45;
+
+      overflow: auto;
+
+      margin-bottom: 0;
+      padding: 16px;
+
+      word-break: normal;
+
+      border-radius: 6px;
+      background-color: #f6f8fa;
     }
   }
 
   pre {
-    overflow: auto;
-    padding: 16px;
-    border-radius: 6px;
-    background-color: #f6f8fa;
     font-size: 85%;
     line-height: 1.45;
 
+    overflow: auto;
+
+    padding: 16px;
+
+    border-radius: 6px;
+    background-color: #f6f8fa;
+
     code,
     tt {
+      line-height: inherit;
+
       display: inline;
       overflow: visible;
+
       max-width: auto;
       margin: 0;
       padding: 0;
+
       word-wrap: normal;
+
       border: 0;
       background-color: transparent;
-      line-height: inherit;
     }
   }
 }

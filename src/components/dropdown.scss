@@ -25,9 +25,12 @@
     right: 0;
     bottom: 0;
     left: 0;
+
     display: block;
+
     content: ' ';
     cursor: default;
+
     background: transparent;
   }
 }
@@ -42,10 +45,12 @@
   z-index: 100;
   top: 100%;
   left: 0;
+
   box-sizing: border-box;
   min-width: 100%;
   margin-top: 2px;
   padding: 4px;
+
   border-radius: 4px;
   box-shadow: 0 1px 4px -1px $default-dark;
 }
@@ -56,6 +61,7 @@
   top: auto;
   bottom: 100%;
   left: 0;
+
   margin-bottom: 3px;
 
   &::before,
@@ -68,6 +74,7 @@
 .fu-dropdown-menu-bottom {
   right: 50%;
   left: auto;
+
   transform: translateX(50%);
 }
 
@@ -80,6 +87,7 @@
   top: 0;
   right: 100%;
   left: auto;
+
   width: auto;
   margin-top: 0;
   margin-right: 8px;
@@ -88,6 +96,7 @@
 .fu-dropdown-menu-right {
   top: 0;
   left: 100%;
+
   width: auto;
   margin-top: 0;
   margin-left: 8px;

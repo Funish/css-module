@@ -23,8 +23,8 @@
   }
 
   .fu-padding-horizontal-#{$padding} {
-    padding-left: #{$length};
     padding-right: #{$length};
+    padding-left: #{$length};
   }
 
   .fu-padding-vertical-#{$padding} {
@@ -55,8 +55,8 @@
   }
 
   .fu-padding-horizontal-auto {
-    padding-left: #{$length};
     padding-right: #{$length};
+    padding-left: #{$length};
   }
 
   .fu-padding-vertical-auto {
@@ -89,8 +89,8 @@
       }
 
       .fu-padding-horizontal-auto {
-        padding-left: #{$length};
         padding-right: #{$length};
+        padding-left: #{$length};
       }
 
       .fu-padding-vertical-auto {

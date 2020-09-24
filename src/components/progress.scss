@@ -2,10 +2,11 @@
    Component: Progress
    ========================================================================== */
 .fu-progress {
-  appearance: none;
   box-sizing: border-box;
   width: 100%;
   height: 4px;
+
+  appearance: none;
 
   &::-webkit-progress-bar {
     background: $default-dark;

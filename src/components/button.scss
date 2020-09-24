@@ -4,11 +4,13 @@
 .fu-button {
   height: 36px;
   padding: 0 8px;
+
   user-select: none;
   text-transform: uppercase;
 
   &:not(:disabled) {
     cursor: pointer;
+
     color: $default-text;
     background: transparent;
   }
@@ -18,10 +20,13 @@
     position: absolute;
     top: calc(50% - 100%);
     left: calc(50% - 100%);
+
     width: 200%;
     height: 200%;
+
     content: '';
     pointer-events: none;
+
     opacity: 0;
     border-radius: 50%;
     background: $default-text;
@@ -38,13 +43,15 @@
   &:focus::before,
   &:active::after {
     transition-duration: 75ms;
+
     opacity: 0.24;
   }
 }
 
 .fu-button-dense {
-  height: 32px;
   font-size: 0.8125rem;
+
+  height: 32px;
 }
 
 .fu-button-loose {
@@ -89,13 +96,16 @@
 
 /* Icon button   ========================================================================== */
 .fu-button-icon {
+  font-size: 18px;
+
   display: inline-block;
+
   width: 18px;
   height: 18px;
   margin-right: 8px;
   margin-left: 0;
+
   color: inherit;
-  font-size: 18px;
 }
 
 .fu-button-reverse .fu-button .fu-button-icon,
@@ -125,6 +135,7 @@ svg.fu-button-icon {
 .fu-icon-button {
   min-width: 36px;
   padding: 0;
+
   border-radius: 500px;
 
   &.fu-button-dense {
@@ -143,7 +154,9 @@ svg.fu-button-icon {
  */
 .fu-button-group {
   position: relative;
+
   display: inline-flex;
+
   vertical-align: middle;
 
   > {

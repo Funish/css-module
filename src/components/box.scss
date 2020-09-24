@@ -2,16 +2,20 @@
      Component: Box
    ========================================================================== */
 .fu-box {
+  line-height: 1.5;
+
   position: relative;
+
   box-sizing: border-box;
   width: 100%;
   max-width: 344px;
+
   text-overflow: ellipsis;
   word-break: break-word;
+
   border-radius: 4px;
   background: $default-light;
   box-shadow: 0 1px 4px -1px $default-dark;
-  line-height: 1.5;
 
   img {
     width: 100%;
@@ -37,16 +41,20 @@
 
 .fu-box-media {
   overflow: hidden;
+
   height: 194px;
 }
 
 .fu-box-action {
   position: relative;
+
   display: block;
   overflow: hidden;
+
   cursor: pointer;
   user-select: none;
   transition: background-color 150ms linear;
+
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 
@@ -55,10 +63,13 @@
     position: absolute;
     top: calc(50% - 100%);
     left: calc(50% - 100%);
+
     width: 200%;
     height: 200%;
+
     content: '';
     pointer-events: none;
+
     opacity: 0;
     border-radius: 50%;
     background: $default-text;
@@ -75,6 +86,7 @@
   &:focus::before,
   &:active::after {
     transition-duration: 75ms;
+
     opacity: 0.12;
   }
 }

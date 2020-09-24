@@ -13,8 +13,8 @@
 [class*='fu-position-left'],
 [class*='fu-position-center'] {
   position: absolute;
-
   /* 1 */
+
   max-width: 100%;
 }
 
@@ -24,20 +24,20 @@
 
 .fu-position-top {
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
 }
 
 .fu-position-right {
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 .fu-position-bottom {
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
 }
 
 .fu-position-left {
@@ -54,12 +54,13 @@
 .fu-position-center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
+  box-sizing: border-box;
   /* 1 */
   width: max-content;
   max-width: 100%;
-  box-sizing: border-box;
+
+  transform: translate(-50%, -50%);
 }
 
 /* Corners
@@ -80,8 +81,8 @@
 }
 
 .fu-position-bottom-right {
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 /* Vertical */
@@ -89,6 +90,7 @@
 [class*='fu-position-center-left'],
 [class*='fu-position-center-right'] {
   top: 50%;
+
   transform: translateY(-50%);
 }
 
@@ -105,12 +107,13 @@
 .fu-position-top-center,
 .fu-position-bottom-center {
   left: 50%;
-  transform: translateX(-50%);
 
+  box-sizing: border-box;
   /* 1 */
   width: max-content;
   max-width: 100%;
-  box-sizing: border-box;
+
+  transform: translateX(-50%);
 }
 
 .fu-position-top-center {
@@ -126,9 +129,9 @@
 .fu-position-cover {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
 }
 
 /* Utility

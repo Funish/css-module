@@ -5,6 +5,7 @@
 .fu-dropdown-menu,
 .fu-navbar-dropdown > :not(summary) {
   overflow: hidden;
+
   background: $default-light;
 
   li {
@@ -13,17 +14,22 @@
 }
 
 .fu-menu-header {
-  display: block;
-  padding: 4px 16px;
   font-size: large;
+
+  display: block;
+
+  padding: 4px 16px;
 }
 
 .fu-menu-item {
   display: block;
+
   padding: 4px 16px;
+
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
+
   color: $default-text;
 
   &:hover,
