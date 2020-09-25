@@ -20,6 +20,18 @@
             />
           </div>
         </div>
+        <details class="fu-navbar-dropdown">
+          <summary>
+            <span class="fu-button fu-icon-button">
+              <i class="fas fa-align-right"></i>
+            </span>
+          </summary>
+          <div class="fu-menu">
+            <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
+            <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
+            <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+          </div>
+        </details>
         <details class="fu-navbar-drawer fu-navbar-drawer-reverse">
           <summary>
             <span class="fu-button fu-icon-button">
@@ -37,9 +49,11 @@
             </div>
             <div class="fu-menu fu-padding-vertical-small">
               <div class="fu-menu-header">Menu</div>
-              <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-              <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-              <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+              <ul>
+                <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
+                <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
+                <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+              </ul>
             </div>
           </div>
         </details>

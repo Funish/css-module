@@ -2581,6 +2581,7 @@ a {
   margin-top: 2px;
   padding: 4px;
   border-radius: 4px;
+  background: #fafafa;
   box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 
@@ -2970,12 +2971,20 @@ svg.fu-button-icon {
    ========================================================================== */
 .fu-menu,
 .fu-dropdown-menu,
-.fu-navbar-dropdown > :not(summary) {
+.fu-navbar-dropdown {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.fu-menu ul,
+.fu-dropdown-menu ul,
+.fu-navbar-dropdown ul {
+  margin: 0;
+  padding: 0;
 }
 .fu-menu li,
 .fu-dropdown-menu li,
-.fu-navbar-dropdown > :not(summary) li {
+.fu-navbar-dropdown li {
   list-style: none;
 }
 
@@ -2993,7 +3002,7 @@ svg.fu-button-icon {
   text-overflow: ellipsis;
   color: #000;
 }
-.fu-menu-item:hover, .fu-menu-item:focus {
+.fu-menu-item:hover {
   color: #fff;
   background: #212121;
 }
@@ -3051,9 +3060,8 @@ svg.fu-button-icon {
   left: 0;
   box-sizing: border-box;
   min-width: 100%;
-  margin-top: 2px;
-  padding: 4px;
   border-radius: 4px;
+  background: #fff;
   box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 

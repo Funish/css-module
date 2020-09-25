@@ -18,13 +18,14 @@
     "generate": "nuxt generate",
     "csscomb": "csscomb src/",
     "prettier": "prettier --write \"./**/*.{vue,js,json,md,scss}\"",
-    "format": "yarn csscomb && yarn prettier",
+    "format": "yarn csscomb & yarn prettier",
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",
     "compressed": "sass src/funish.scss dist/funish.min.css --style=compressed --no-source-map",
-    "output": "yarn complete && yarn compressed",
-    "prepublish": "yarn output",
+    "output": "yarn complete & yarn compressed",
+    "prepare": "yarn output",
+    "prepublishOnly": "yarn format & yarn output",
     "prerelease": "yarn version --prerelease --preid alpha",
-    "precommit": "yarn format && yarn output && lint-staged"
+    "precommit": "yarn format & yarn output & lint-staged"
   },
   "prettier": {
     "singleQuote": true,

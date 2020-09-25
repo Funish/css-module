@@ -3,8 +3,16 @@
    ========================================================================== */
 .fu-menu,
 .fu-dropdown-menu,
-.fu-navbar-dropdown > :not(summary) {
+.fu-navbar-dropdown {
   overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
   li {
     list-style: none;
@@ -30,8 +38,7 @@
 
   color: $default-text;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $primary-text;
     background: $primary;
   }
