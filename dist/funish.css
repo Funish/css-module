@@ -2972,7 +2972,6 @@ svg.fu-button-icon {
 .fu-dropdown-menu,
 .fu-navbar-dropdown > :not(summary) {
   overflow: hidden;
-  background: #fff;
 }
 .fu-menu li,
 .fu-dropdown-menu li,
