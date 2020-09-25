@@ -12,11 +12,13 @@ Form 模块使您可以轻松创建漂亮的表单。
 | `.fu-form-outlined`   | 添加此类以实现一个轮廓                                        |
 | `.fu-form-underlined` | 为表单添加下划线样式                                          |
 | `.fu-form-contained`  | 为表单添加块状容器样式                                        |
+| `.fu-form-action`     | 为表单添加可激活容器样式                                      |
 
 ```html
 <input class="fu-form fu-form-outlined" />
 <input class="fu-form fu-form-underlined" />
 <input class="fu-form fu-form-contained" />
+<input class="fu-form fu-form-action" />
 ```
 
 ## 单选框和复选框
