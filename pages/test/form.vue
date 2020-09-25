@@ -30,6 +30,11 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="checkbox" class="fu-form" />
+      </div>
     </div>
     <h2>Contained</h2>
     <div
@@ -42,6 +47,11 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="checkbox" class="fu-form" />
+      </div>
     </div>
     <h2>Disabled form</h2>
     <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
@@ -52,6 +62,11 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder" disabled></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-form" disabled />
+        <input type="radio" name="radio1" class="fu-form" disabled />
+        <input type="checkbox" class="fu-form" disabled />
+      </div>
     </div>
     <h2>Upload</h2>
     <div
@@ -63,9 +78,7 @@
       </div>
     </div>
     <h2>Form with icon</h2>
-    <div
-      class="fu-grid fu-grid-row-medium fu-grid-column-medium fu-form-reverse"
-    >
+    <div class="fu-grid fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-form-outlined">
         <div class="fu-icon-form">
           <i class="fas fa-user fu-form-icon"></i>

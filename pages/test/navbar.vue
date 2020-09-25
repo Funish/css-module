@@ -26,13 +26,20 @@
               <i class="fas fa-align-right"></i>
             </span>
           </summary>
-          <div class="fu-padding-medium">
-            <div class="fu-icon-form">
+          <div>
+            <div class="fu-icon-form fu-width-1-1">
               <i class="fas fa-search fu-form-icon"></i>
               <input
                 class="fu-form fu-form-contained"
                 placeholder="Search..."
+                style="box-shadow: none;"
               />
+            </div>
+            <div class="fu-menu fu-padding-vertical-small">
+              <div class="fu-menu-header">Menu</div>
+              <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
+              <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
+              <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
             </div>
           </div>
         </details>

@@ -25,9 +25,6 @@
   &:disabled {
     cursor: default;
     pointer-events: none;
-
-    border-color: $default-dark;
-    background: $default-dark;
   }
 }
 
@@ -38,11 +35,16 @@
   padding: 0 16px;
 
   transition: all 75ms linear;
-  /* Visual */
 
-  color: $default-text;
-  border-color: $default-text;
-  background: inherit;
+  &:not(:disabled) {
+    color: $default-text;
+    border-color: $default-text;
+    background: inherit;
+  }
+}
+
+select:disabled {
+  background: #f5f5f5;
 }
 
 .fu-form-outlined.fu-form,
@@ -87,6 +89,16 @@ textarea.fu-form {
 .fu-form[type='checkbox'] {
   width: 18px;
   height: 18px;
+
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  @media (max-width: 959px) {
+    box-shadow: none;
+  }
 }
 
 /* Form for file
@@ -125,6 +137,10 @@ textarea.fu-form {
   vertical-align: middle;
 
   backface-visibility: hidden;
+
+  .fu-form {
+    width: 100%;
+  }
 }
 
 /*
