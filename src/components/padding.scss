@@ -65,38 +65,36 @@
   }
 }
 
-@each $width in (960px, 1200px) {
-  @each $length in (40px, 70px) {
-    @media (min-width: #{$width}) {
-      .fu-padding-auto {
-        padding: #{$length};
-      }
+@each $width, $length in (960px, 40px), (1200px, 70px) {
+  @media (min-width: #{$width}) {
+    .fu-padding-auto {
+      padding: #{$length};
+    }
 
-      .fu-padding-top-auto {
-        padding-top: #{$length};
-      }
+    .fu-padding-top-auto {
+      padding-top: #{$length};
+    }
 
-      .fu-padding-left-auto {
-        padding-left: #{$length};
-      }
+    .fu-padding-left-auto {
+      padding-left: #{$length};
+    }
 
-      .fu-padding-bottom-auto {
-        padding-bottom: #{$length};
-      }
+    .fu-padding-bottom-auto {
+      padding-bottom: #{$length};
+    }
 
-      .fu-padding-right-auto {
-        padding-right: #{$length};
-      }
+    .fu-padding-right-auto {
+      padding-right: #{$length};
+    }
 
-      .fu-padding-horizontal-auto {
-        padding-right: #{$length};
-        padding-left: #{$length};
-      }
+    .fu-padding-horizontal-auto {
+      padding-right: #{$length};
+      padding-left: #{$length};
+    }
 
-      .fu-padding-vertical-auto {
-        padding-top: #{$length};
-        padding-bottom: #{$length};
-      }
+    .fu-padding-vertical-auto {
+      padding-top: #{$length};
+      padding-bottom: #{$length};
     }
   }
 }

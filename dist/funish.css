@@ -1273,68 +1273,6 @@ hr {
     padding-bottom: 40px;
   }
 }
-@media (min-width: 960px) {
-  .fu-padding-auto {
-    padding: 70px;
-  }
-
-  .fu-padding-top-auto {
-    padding-top: 70px;
-  }
-
-  .fu-padding-left-auto {
-    padding-left: 70px;
-  }
-
-  .fu-padding-bottom-auto {
-    padding-bottom: 70px;
-  }
-
-  .fu-padding-right-auto {
-    padding-right: 70px;
-  }
-
-  .fu-padding-horizontal-auto {
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-
-  .fu-padding-vertical-auto {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-}
-@media (min-width: 1200px) {
-  .fu-padding-auto {
-    padding: 40px;
-  }
-
-  .fu-padding-top-auto {
-    padding-top: 40px;
-  }
-
-  .fu-padding-left-auto {
-    padding-left: 40px;
-  }
-
-  .fu-padding-bottom-auto {
-    padding-bottom: 40px;
-  }
-
-  .fu-padding-right-auto {
-    padding-right: 40px;
-  }
-
-  .fu-padding-horizontal-auto {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  .fu-padding-vertical-auto {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
 @media (min-width: 1200px) {
   .fu-padding-auto {
     padding: 70px;
