@@ -1,11 +1,11 @@
 <template>
   <header class="fu-navbar-top">
     <div class="fu-flex fu-main-center fu-width-1-1">
-      <nuxt-link to="/" class="fu-navbar-item fu-navbar-link">首页</nuxt-link>
-      <nuxt-link to="/docs/" class="fu-navbar-item fu-navbar-link"
+      <nuxt-link to="/" class="fu-navbar-item fu-text-link">首页</nuxt-link>
+      <nuxt-link to="/docs/" class="fu-navbar-item fu-text-link"
         >文档</nuxt-link
       >
-      <nuxt-link to="/test/" class="fu-navbar-item fu-navbar-link"
+      <nuxt-link to="/test/" class="fu-navbar-item fu-text-link"
         >测试</nuxt-link
       >
     </div>

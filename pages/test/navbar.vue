@@ -6,10 +6,10 @@
       <header class="fu-navbar-top">
         <div class="fu-flex fu-main-start fu-flex-auto">
           <div class="fu-navbar-item fu-text-title">Navbar</div>
-          <nuxt-link to="#1" class="fu-navbar-item fu-navbar-link"
+          <nuxt-link to="#1" class="fu-navbar-item fu-text-link"
             >Item1</nuxt-link
           >
-          <nuxt-link to="#2" class="fu-navbar-item fu-navbar-link"
+          <nuxt-link to="#2" class="fu-navbar-item fu-text-link"
             >Item2</nuxt-link
           >
           <div class="fu-visible@m" style="padding: 4px;">

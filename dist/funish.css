@@ -2289,14 +2289,14 @@ a {
   color: #000;
 }
 
-.fu-text-link,
-.fu-navbar-link {
+.fu-text-linked,
+.fu-text-link {
   position: relative;
   box-sizing: border-box;
   text-decoration: none;
 }
-.fu-text-link::after,
-.fu-navbar-link::after {
+.fu-text-linked::after,
+.fu-text-link::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2306,8 +2306,8 @@ a {
   transition: 150ms all linear;
   border-bottom: 1px solid #000;
 }
-.fu-text-link::before,
-.fu-navbar-link::before {
+.fu-text-linked::before,
+.fu-text-link::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -2317,8 +2317,8 @@ a {
   transition: 150ms all linear;
   border-bottom: 2px solid #000;
 }
-.fu-text-link:hover::before,
-.fu-navbar-link:hover::before {
+.fu-text-linked:hover::before,
+.fu-text-link:hover::before {
   top: 0;
   right: 0;
   width: 100%;
@@ -3044,7 +3044,7 @@ svg.fu-button-icon {
   padding: 16px 0;
 }
 
-.fu-navbar-link::after {
+.fu-text-link::after {
   border: none;
 }
 

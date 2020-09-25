@@ -4,7 +4,7 @@
       <span>
         <i>&copy;</i>
         Powered by
-        <a href="https://funish.net/" class="fu-text-link">Funish.net</a>
+        <a href="https://funish.net/" class="fu-text-linked">Funish.net</a>
       </span>
     </div>
   </footer>
