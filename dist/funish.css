@@ -146,11 +146,68 @@ sup {
 
 /* Embedded content
    ========================================================================== */
-/**
-  * Remove the border on images inside links in IE 10.
+/*
+ * Remove the gap between embedded content and the bottom of their containers.
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+  * 1. Add responsiveness.
+  * 2. Auto-scale the height. Only needed if `height` attribute is present.
+  * 3. Corrects responsive `max-width` behavior if padding and border are used.
+  * 4. Exclude SVGs for IE11 because they don't preserve their aspect ratio.
   */
-img {
-  border-style: none;
+canvas,
+img,
+video {
+  /* 3 */
+  box-sizing: border-box;
+  /* 1 */
+  max-width: 100%;
+  /* 2 */
+  height: auto;
+}
+
+/* 4 */
+@supports (display: block) {
+  svg {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*
+  * Hide the overflow in IE.
+  */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+  * 1. Fix lazy loading images if parent element is set to `display: inline` and has `overflow: hidden`.
+  * 2. Hide `alt` text for lazy loading images.
+  * Note: Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
+  */
+img:not([src]) {
+  /* 2 */
+  visibility: hidden;
+  /* 1 */
+  min-width: 1px;
+}
+
+/*
+  * Iframe
+  * Remove border in all browsers
+  */
+iframe {
+  border: 0;
 }
 
 /* Forms
@@ -3000,7 +3057,6 @@ svg.fu-button-icon {
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
-  color: #000;
 }
 .fu-menu-item:hover {
   color: #fff;
