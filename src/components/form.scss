@@ -68,11 +68,32 @@ select:disabled {
 
 .fu-form-contained.fu-form,
 .fu-form-contained .fu-form {
-  border-color: $default;
+  border: 1px solid $default;
   background: $default;
 
   @media (max-width: 959px) {
     box-shadow: 0 1px 4px -1px $default-dark;
+  }
+}
+
+.fu-form-action.fu-form,
+.fu-form-action .fu-form {
+  border: 1px solid $default;
+  background: $default;
+
+  @media (max-width: 959px) {
+    box-shadow: 0 1px 4px -1px $default-dark;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid;
+    border-color: $default-text;
+    background: inherit;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px $default-text;
   }
 }
 
@@ -139,7 +160,7 @@ textarea.fu-form {
   backface-visibility: hidden;
 
   .fu-form {
-    width: 100%;
+    min-width: 100%;
   }
 }
 

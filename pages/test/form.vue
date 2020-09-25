@@ -53,6 +53,23 @@
         <input type="checkbox" class="fu-form" />
       </div>
     </div>
+    <h2>Action</h2>
+    <div
+      class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium fu-form-action"
+    >
+      <input class="fu-form" placeholder="Placeholder" />
+      <select class="fu-form">
+        <option>Option1</option>
+        <option>Option2</option>
+        <option>Option3</option>
+      </select>
+      <textarea class="fu-form" placeholder="Placeholder"></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="radio" name="radio1" class="fu-form" />
+        <input type="checkbox" class="fu-form" />
+      </div>
+    </div>
     <h2>Disabled form</h2>
     <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
       <input class="fu-form" placeholder="Placeholder" disabled />
@@ -116,6 +133,24 @@
         </div>
       </div>
       <div class="fu-form-contained">
+        <div class="fu-icon-form">
+          <i class="fas fa-user fu-form-icon"></i>
+          <input class="fu-form" placeholder="Placeholder" />
+        </div>
+        <div class="fu-icon-form">
+          <i class="fas fa-user fu-form-icon"></i>
+          <select class="fu-form">
+            <option>Option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+          </select>
+        </div>
+        <div class="fu-icon-form">
+          <i class="fas fa-user fu-form-icon"></i>
+          <textarea class="fu-form" placeholder="Placeholder"></textarea>
+        </div>
+      </div>
+      <div class="fu-form-action">
         <div class="fu-icon-form">
           <i class="fas fa-user fu-form-icon"></i>
           <input class="fu-form" placeholder="Placeholder" />
