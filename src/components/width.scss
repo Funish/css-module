@@ -11,6 +11,12 @@
   }
 }
 
+@each $width, $spacing in $widths {
+  .fu-max-width-#{$width} {
+    max-width: #{$spacing};
+  }
+}
+
 /* Relative widths
    ========================================================================== */
 @for $width from 1 through 6 {

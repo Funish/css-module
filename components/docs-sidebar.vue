@@ -72,66 +72,68 @@
         </span>
       </summary>
 
-      <div class="fu-menu fu-padding-vertical-medium">
-        <div class="fu-menu-header fu-text-subtitle">Funish CSS</div>
-        <nuxt-link
-          v-for="(item, i) in home_items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="fu-menu-item"
-        >
-          <div v-text="item.title"></div>
-        </nuxt-link>
-        <hr />
-        <div class="fu-menu-header fu-text-subtitle">布局</div>
-        <nuxt-link
-          v-for="(item, i) in layouts_items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="fu-menu-item"
-        >
-          <div v-text="item.title"></div>
-        </nuxt-link>
-        <hr />
-        <div class="fu-menu-header fu-text-subtitle">盒模型</div>
-        <nuxt-link
-          v-for="(item, i) in box_model_items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="fu-menu-item"
-        >
-          <div v-text="item.title"></div>
-        </nuxt-link>
-        <hr />
-        <div class="fu-menu-header fu-text-subtitle">文本</div>
-        <nuxt-link
-          v-for="(item, i) in text_items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="fu-menu-item"
-        >
-          <div v-text="item.title"></div>
-        </nuxt-link>
-        <hr />
-        <div class="fu-menu-header fu-text-subtitle">控件</div>
-        <nuxt-link
-          v-for="(item, i) in controls_items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-          class="fu-menu-item"
-        >
-          <div v-text="item.title"></div>
-        </nuxt-link>
+      <div class="fu-menu">
+        <div class="fu-padding-vertical-medium">
+          <div class="fu-menu-header fu-text-subtitle">Funish CSS</div>
+          <nuxt-link
+            v-for="(item, i) in home_items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            class="fu-menu-item"
+          >
+            <div v-text="item.title"></div>
+          </nuxt-link>
+          <hr />
+          <div class="fu-menu-header fu-text-subtitle">布局</div>
+          <nuxt-link
+            v-for="(item, i) in layouts_items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            class="fu-menu-item"
+          >
+            <div v-text="item.title"></div>
+          </nuxt-link>
+          <hr />
+          <div class="fu-menu-header fu-text-subtitle">盒模型</div>
+          <nuxt-link
+            v-for="(item, i) in box_model_items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            class="fu-menu-item"
+          >
+            <div v-text="item.title"></div>
+          </nuxt-link>
+          <hr />
+          <div class="fu-menu-header fu-text-subtitle">文本</div>
+          <nuxt-link
+            v-for="(item, i) in text_items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            class="fu-menu-item"
+          >
+            <div v-text="item.title"></div>
+          </nuxt-link>
+          <hr />
+          <div class="fu-menu-header fu-text-subtitle">控件</div>
+          <nuxt-link
+            v-for="(item, i) in controls_items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+            class="fu-menu-item"
+          >
+            <div v-text="item.title"></div>
+          </nuxt-link>
+        </div>
       </div>
     </details>
   </aside>

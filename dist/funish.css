@@ -1386,6 +1386,26 @@ hr {
   width: 750px;
 }
 
+.fu-max-width-xsmall {
+  max-width: 150px;
+}
+
+.fu-max-width-small {
+  max-width: 300px;
+}
+
+.fu-max-width-medium {
+  max-width: 450px;
+}
+
+.fu-max-width-large {
+  max-width: 600px;
+}
+
+.fu-max-width-xlarge {
+  max-width: 750px;
+}
+
 /* Relative widths
    ========================================================================== */
 .fu-width-1-1 {

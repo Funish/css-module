@@ -14,6 +14,18 @@ Width 模块用于定义元素宽度。
 | `.fu-width-large`  | 设置宽度为 `600px` |
 | `.fu-width-xlarge` | 设置宽度为 `750px` |
 
+## 最大宽度
+
+使用类选择器 `.fu-max-width-*` 以应用样式。
+
+| 类名                   | 描述                   |
+| ---------------------- | ---------------------- |
+| `.fu-max-width-xsmall` | 设置最大宽度为 `150px` |
+| `.fu-max-width-small`  | 设置最大宽度为 `300px` |
+| `.fu-max-width-medium` | 设置最大宽度为 `450px` |
+| `.fu-max-width-large`  | 设置最大宽度为 `600px` |
+| `.fu-max-width-xlarge` | 设置最大宽度为 `750px` |
+
 ## 相对宽度
 
 | 类名            | 描述                         |
