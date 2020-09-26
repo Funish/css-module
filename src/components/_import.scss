@@ -4,6 +4,23 @@
 /* Global variables */
 @import './base';
 
+/* Controls */
+@import './box.scss';
+
+@import './dropdown.scss';
+
+@import './form.scss';
+
+@import './button.scss';
+
+@import './menu.scss';
+
+@import './navbar.scss';
+
+@import './progress.scss';
+
+@import './utility.scss';
+
 /* Layouts */
 @import './flex.scss';
 
@@ -24,20 +41,3 @@
 @import './markdown.scss';
 
 @import './text.scss';
-
-/* Controls */
-@import './box.scss';
-
-@import './dropdown.scss';
-
-@import './form.scss';
-
-@import './button.scss';
-
-@import './menu.scss';
-
-@import './navbar.scss';
-
-@import './progress.scss';
-
-@import './utility.scss';

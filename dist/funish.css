@@ -433,6 +433,707 @@ hr {
   background-color: #e1e4e8;
 }
 
+/* Controls */
+/* ========================================================================
+     Component: Box
+   ========================================================================== */
+.fu-box {
+  line-height: 1.5;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 344px;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+}
+.fu-box img {
+  width: 100%;
+  height: auto;
+}
+.fu-box .fu-box-header {
+  padding: 15px 15px 5px;
+}
+.fu-box .fu-box-content {
+  padding: 10px 15px;
+}
+.fu-box .fu-box-content:last-child {
+  padding-bottom: 15px;
+}
+.fu-box .fu-box-footer {
+  padding: 5px 15px 5px;
+}
+
+.fu-box-media {
+  overflow: hidden;
+  height: 194px;
+}
+
+.fu-box-action {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 150ms linear;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.fu-box-action::before, .fu-box-action::after {
+  position: absolute;
+  top: calc(50% - 100%);
+  left: calc(50% - 100%);
+  width: 200%;
+  height: 200%;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
+  background: #000;
+}
+.fu-box-action::after {
+  transition: opacity 150ms linear;
+}
+.fu-box-action:hover::before {
+  opacity: 0.04;
+}
+.fu-box-action:focus::before, .fu-box-action:active::after {
+  transition-duration: 75ms;
+  opacity: 0.12;
+}
+
+/* ========================================================================
+     Component: Dropdown 
+   ========================================================================== */
+.fu-dropdown summary,
+.fu-navbar-dropdown summary,
+.fu-navbar-drawer summary {
+  cursor: pointer;
+  user-select: none;
+}
+.fu-dropdown summary::before, .fu-dropdown summary::-webkit-details-marker,
+.fu-navbar-dropdown summary::before,
+.fu-navbar-dropdown summary::-webkit-details-marker,
+.fu-navbar-drawer summary::before,
+.fu-navbar-drawer summary::-webkit-details-marker {
+  display: none;
+}
+.fu-dropdown:not([open]) > *:not(summary),
+.fu-navbar-dropdown:not([open]) > *:not(summary),
+.fu-navbar-drawer:not([open]) > *:not(summary) {
+  display: none;
+}
+.fu-dropdown[open] > summary::before,
+.fu-navbar-dropdown[open] > summary::before,
+.fu-navbar-drawer[open] > summary::before {
+  position: fixed;
+  z-index: 80;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  cursor: default;
+  background: transparent;
+}
+
+.fu-dropdown {
+  position: relative;
+}
+
+.fu-dropdown-menu,
+.fu-dropdown-menu-bottom-left {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  min-width: 100%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
+  background: #fafafa;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+}
+
+/* Style modifiers
+   ========================================================================== */
+.fu-dropdown-menu-top {
+  top: auto;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 3px;
+}
+.fu-dropdown-menu-top::before, .fu-dropdown-menu-top::after {
+  top: auto;
+  right: auto;
+}
+
+.fu-dropdown-menu-bottom {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+.fu-dropdown-menu-bottom-right {
+  right: 0;
+  left: auto;
+}
+
+.fu-dropdown-menu-left {
+  top: 0;
+  right: 100%;
+  left: auto;
+  width: auto;
+  margin-top: 0;
+  margin-right: 8px;
+}
+
+.fu-dropdown-menu-right {
+  top: 0;
+  left: 100%;
+  width: auto;
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+/* ========================================================================
+     Component: Form
+   ========================================================================== */
+.fu-button,
+.fu-form {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 64px;
+  vertical-align: middle;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.fu-button:disabled,
+.fu-form:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.fu-form {
+  width: 280px;
+  max-width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  transition: all 75ms linear;
+}
+.fu-form:not(:disabled) {
+  color: #000;
+  border-color: #000;
+  background: inherit;
+}
+
+select:disabled {
+  background: #f5f5f5;
+}
+
+.fu-form-outlined.fu-form,
+.fu-form-outlined .fu-form {
+  border: 1px solid;
+}
+.fu-form-outlined.fu-form:focus,
+.fu-form-outlined .fu-form:focus {
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+.fu-form-underlined.fu-form,
+.fu-form-underlined .fu-form {
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+.fu-form-underlined.fu-form:focus,
+.fu-form-underlined .fu-form:focus {
+  box-shadow: inset 0 -1px #000;
+}
+
+.fu-form-contained.fu-form,
+.fu-form-contained .fu-form {
+  border: 1px solid #fafafa;
+  background: #fafafa;
+}
+@media (max-width: 959px) {
+  .fu-form-contained.fu-form,
+.fu-form-contained .fu-form {
+    box-shadow: 0 1px 4px -1px #c7c7c7;
+  }
+}
+
+.fu-form-action.fu-form,
+.fu-form-action .fu-form {
+  border: 1px solid #fafafa;
+  background: #fafafa;
+}
+@media (max-width: 959px) {
+  .fu-form-action.fu-form,
+.fu-form-action .fu-form {
+    box-shadow: 0 1px 4px -1px #c7c7c7;
+  }
+}
+.fu-form-action.fu-form:hover, .fu-form-action.fu-form:focus,
+.fu-form-action .fu-form:hover,
+.fu-form-action .fu-form:focus {
+  border: 1px solid;
+  border-color: #000;
+  background: inherit;
+}
+.fu-form-action.fu-form:focus,
+.fu-form-action .fu-form:focus {
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+textarea.fu-form {
+  height: 96px;
+  padding: 16px;
+  resize: none;
+}
+
+/* Radio and Checkbox
+   ========================================================================== */
+.fu-form[type=radio],
+.fu-form[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+.fu-form[type=radio]:focus,
+.fu-form[type=checkbox]:focus {
+  box-shadow: none;
+}
+@media (max-width: 959px) {
+  .fu-form[type=radio],
+.fu-form[type=checkbox] {
+    box-shadow: none;
+  }
+}
+
+/* Form for file
+   ========================================================================== */
+.fu-form-file {
+  display: inline-flex;
+}
+.fu-form-file input[type=file] {
+  display: none;
+}
+.fu-form-file .fu-form {
+  color: #484848;
+}
+
+/* Icon form
+   ========================================================================== */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Behave like most inline-block elements
+ * 5. Force hardware acceleration without creating a new stacking context
+ *    to fix 1px glitch when combined with overlays and transitions in Webkit
+ * 6. Clip child elements
+ */
+.fu-icon-form {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  backface-visibility: hidden;
+}
+.fu-icon-form .fu-form {
+  min-width: 100%;
+}
+
+/*
+ * 1. Set position
+ * 2. Set width
+ * 3. Center icon vertically and horizontally
+ */
+.fu-form-icon {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+.fu-form-icon:not(a):not(button):not(input) {
+  pointer-events: none;
+}
+
+:not(.fu-form-reverse).fu-icon-form .fu-form,
+:not(.fu-form-reverse) .fu-icon-form .fu-form {
+  padding-left: 40px;
+  appearance: none;
+}
+
+.fu-form-reverse.fu-icon-form .fu-form-icon,
+.fu-form-reverse .fu-icon-form .fu-form-icon {
+  right: 0;
+  left: auto;
+}
+.fu-form-reverse.fu-icon-form .fu-form,
+.fu-form-reverse .fu-icon-form .fu-form {
+  padding-right: 40px;
+  padding-left: 16px;
+  appearance: none;
+}
+
+/* ========================================================================
+     Component: Button
+   ========================================================================== */
+.fu-button {
+  height: 36px;
+  padding: 0 8px;
+  user-select: none;
+  text-transform: uppercase;
+}
+.fu-button:not(:disabled) {
+  cursor: pointer;
+  color: #000;
+  background: transparent;
+}
+.fu-button::before, .fu-button::after {
+  position: absolute;
+  top: calc(50% - 100%);
+  left: calc(50% - 100%);
+  width: 200%;
+  height: 200%;
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 50%;
+  background: #000;
+}
+.fu-button::after {
+  transition: all 150ms linear;
+}
+.fu-button:hover::before {
+  opacity: 0.08;
+}
+.fu-button:focus::before, .fu-button:active::after {
+  transition-duration: 75ms;
+  opacity: 0.24;
+}
+
+.fu-button-dense {
+  font-size: 0.8125rem;
+  height: 32px;
+}
+
+.fu-button-loose {
+  height: 40px;
+}
+
+/* Style modifiers   ========================================================================== */
+.fu-button-outlined {
+  padding: 0 16px;
+}
+.fu-button-outlined:not(:disabled) {
+  border: 1px solid #000;
+}
+
+.fu-button-contained,
+.fu-button-fade {
+  padding: 0 16px;
+}
+.fu-button-contained:not(:disabled),
+.fu-button-fade:not(:disabled) {
+  color: #fff;
+  background: #000;
+}
+.fu-button-contained::before, .fu-button-contained::after,
+.fu-button-fade::before,
+.fu-button-fade::after {
+  background: #fff;
+}
+
+.fu-button-fade:not(:disabled) {
+  color: #000;
+  background: #c7c7c7;
+}
+.fu-button-fade::before, .fu-button-fade::after {
+  background: #000;
+}
+
+/* Icon button   ========================================================================== */
+.fu-button-icon {
+  font-size: 18px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  margin-left: 0;
+  color: inherit;
+}
+
+.fu-button-reverse .fu-button .fu-button-icon,
+.fu-button-reverse.fu-button .fu-button-icon {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+svg.fu-button-icon {
+  fill: currentColor;
+}
+
+.fu-button-contained .fu-button-icon,
+.fu-button-outlined .fu-button-icon {
+  margin-right: 8px;
+  margin-left: -4px;
+}
+
+.fu-button-reverse .fu-button-contained .fu-button-icon,
+.fu-button-reverse .fu-button-outlined .fu-button-icon,
+.fu-button-reverse.fu-button-contained .fu-button-icon,
+.fu-button-reverse.fu-button-outlined .fu-button-icon {
+  margin-right: -4px;
+  margin-left: 8px;
+}
+
+.fu-icon-button {
+  min-width: 36px;
+  padding: 0;
+  border-radius: 500px;
+}
+.fu-icon-button.fu-button-dense {
+  min-width: 32px;
+}
+.fu-icon-button.fu-button-loose {
+  min-width: 40px;
+}
+
+/* Group ========================================================================== */
+/*
+ * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
+ * 2. Behave like button * 3. Create position context 
+ */
+.fu-button-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.fu-button-group > .fu-button:first-child,
+.fu-button-group > .fu-button:last-child {
+  border-radius: 4px;
+}
+.fu-button-group > .fu-button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.fu-button-group > .fu-button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* ========================================================================
+     Component: Markdown
+   ========================================================================== */
+.fu-menu,
+.fu-dropdown-menu,
+.fu-navbar-dropdown {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.fu-menu ul,
+.fu-dropdown-menu ul,
+.fu-navbar-dropdown ul {
+  margin: 0;
+  padding: 0;
+}
+.fu-menu li,
+.fu-dropdown-menu li,
+.fu-navbar-dropdown li {
+  list-style: none;
+}
+
+.fu-menu-header {
+  font-size: large;
+  display: block;
+  padding: 4px 16px;
+}
+
+.fu-menu-item {
+  display: block;
+  padding: 4px 16px;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+.fu-menu-item:hover {
+  color: #fff;
+  background: #212121;
+}
+
+/* ========================================================================
+     Component: Navbar
+   ========================================================================== */
+.fu-navbar-top,
+.fu-navbar-bottom {
+  line-height: 100%;
+  position: sticky;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  background: #fff;
+}
+
+.fu-navbar-top {
+  top: 0;
+  padding: 0 16px;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+}
+
+.fu-navbar-bottom {
+  bottom: 0;
+  padding: 16px;
+  box-shadow: 0 -1px 4px -1px #c7c7c7;
+}
+
+.fu-navbar-item {
+  display: inline-block;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  height: 100%;
+  margin-right: 16px;
+  padding: 16px 0;
+}
+
+.fu-text-link::after {
+  border: none;
+}
+
+.fu-navbar-dropdown,
+.fu-navbar-drawer {
+  line-height: 1.5;
+}
+
+.fu-navbar-dropdown > :not(summary) {
+  position: absolute;
+  z-index: 998;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  min-width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 4px -1px #c7c7c7;
+}
+
+.fu-navbar-drawer > :not(summary) {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 1px 0 4px -1px #c7c7c7;
+}
+
+.fu-navbar-drawer-reverse > :not(summary) {
+  right: 0;
+  left: auto;
+}
+
+/* ========================================================================
+   Component: Progress
+   ========================================================================== */
+.fu-progress {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  appearance: none;
+}
+.fu-progress::-webkit-progress-bar {
+  background: #c7c7c7;
+}
+.fu-progress::-webkit-progress-value {
+  background: #000;
+}
+
+/* ========================================================================
+     Component: Utility
+   ========================================================================== */
+/* Border
+   ========================================================================== */
+[class*=fu-border] {
+  box-sizing: border-box;
+}
+
+/** 
+  * Border radius
+  */
+.fu-border-small {
+  border-radius: 4px;
+}
+
+.fu-border-large {
+  border-radius: 6px;
+}
+
+.fu-border-pill {
+  border-radius: 500px;
+}
+
+.fu-border-circle {
+  border-radius: 50%;
+}
+
+/* Background color
+   ========================================================================== */
+.fu-background-transparent {
+  background: transparent;
+}
+
+/* Float
+   ========================================================================== */
+.fu-float-start {
+  float: inline-start;
+}
+
+.fu-float-end {
+  float: inline-end;
+}
+
+.fu-float-none {
+  float: none;
+}
+
+/* Overflow
+   ========================================================================== */
+.fu-overflow-hidden {
+  overflow: hidden;
+}
+
+.fu-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.fu-overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 /* Layouts */
 /* ========================================================================
      Component: Flex
@@ -2472,705 +3173,4 @@ a {
 
 .fu-text-break-word {
   word-break: break-word;
-}
-
-/* Controls */
-/* ========================================================================
-     Component: Box
-   ========================================================================== */
-.fu-box {
-  line-height: 1.5;
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 344px;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-}
-.fu-box img {
-  width: 100%;
-  height: auto;
-}
-.fu-box .fu-box-header {
-  padding: 15px 15px 5px;
-}
-.fu-box .fu-box-content {
-  padding: 10px 15px;
-}
-.fu-box .fu-box-content:last-child {
-  padding-bottom: 15px;
-}
-.fu-box .fu-box-footer {
-  padding: 5px 15px 5px;
-}
-
-.fu-box-media {
-  overflow: hidden;
-  height: 194px;
-}
-
-.fu-box-action {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 150ms linear;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-.fu-box-action::before, .fu-box-action::after {
-  position: absolute;
-  top: calc(50% - 100%);
-  left: calc(50% - 100%);
-  width: 200%;
-  height: 200%;
-  content: "";
-  pointer-events: none;
-  opacity: 0;
-  border-radius: 50%;
-  background: #000;
-}
-.fu-box-action::after {
-  transition: opacity 150ms linear;
-}
-.fu-box-action:hover::before {
-  opacity: 0.04;
-}
-.fu-box-action:focus::before, .fu-box-action:active::after {
-  transition-duration: 75ms;
-  opacity: 0.12;
-}
-
-/* ========================================================================
-     Component: Dropdown 
-   ========================================================================== */
-.fu-dropdown summary,
-.fu-navbar-dropdown summary,
-.fu-navbar-drawer summary {
-  cursor: pointer;
-  user-select: none;
-}
-.fu-dropdown summary::before, .fu-dropdown summary::-webkit-details-marker,
-.fu-navbar-dropdown summary::before,
-.fu-navbar-dropdown summary::-webkit-details-marker,
-.fu-navbar-drawer summary::before,
-.fu-navbar-drawer summary::-webkit-details-marker {
-  display: none;
-}
-.fu-dropdown:not([open]) > *:not(summary),
-.fu-navbar-dropdown:not([open]) > *:not(summary),
-.fu-navbar-drawer:not([open]) > *:not(summary) {
-  display: none;
-}
-.fu-dropdown[open] > summary::before,
-.fu-navbar-dropdown[open] > summary::before,
-.fu-navbar-drawer[open] > summary::before {
-  position: fixed;
-  z-index: 80;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: " ";
-  cursor: default;
-  background: transparent;
-}
-
-.fu-dropdown {
-  position: relative;
-}
-
-.fu-dropdown-menu,
-.fu-dropdown-menu-bottom-left {
-  position: absolute;
-  z-index: 100;
-  top: 100%;
-  left: 0;
-  box-sizing: border-box;
-  min-width: 100%;
-  margin-top: 2px;
-  padding: 4px;
-  border-radius: 4px;
-  background: #fafafa;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-}
-
-/* Style modifiers
-   ========================================================================== */
-.fu-dropdown-menu-top {
-  top: auto;
-  bottom: 100%;
-  left: 0;
-  margin-bottom: 3px;
-}
-.fu-dropdown-menu-top::before, .fu-dropdown-menu-top::after {
-  top: auto;
-  right: auto;
-}
-
-.fu-dropdown-menu-bottom {
-  right: 50%;
-  left: auto;
-  transform: translateX(50%);
-}
-
-.fu-dropdown-menu-bottom-right {
-  right: 0;
-  left: auto;
-}
-
-.fu-dropdown-menu-left {
-  top: 0;
-  right: 100%;
-  left: auto;
-  width: auto;
-  margin-top: 0;
-  margin-right: 8px;
-}
-
-.fu-dropdown-menu-right {
-  top: 0;
-  left: 100%;
-  width: auto;
-  margin-top: 0;
-  margin-left: 8px;
-}
-
-/* ========================================================================
-     Component: Form
-   ========================================================================== */
-.fu-button,
-.fu-form {
-  position: relative;
-  display: inline-flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  min-width: 64px;
-  vertical-align: middle;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-.fu-button:disabled,
-.fu-form:disabled {
-  cursor: default;
-  pointer-events: none;
-}
-
-.fu-form {
-  width: 280px;
-  max-width: 100%;
-  height: 48px;
-  padding: 0 16px;
-  transition: all 75ms linear;
-}
-.fu-form:not(:disabled) {
-  color: #000;
-  border-color: #000;
-  background: inherit;
-}
-
-select:disabled {
-  background: #f5f5f5;
-}
-
-.fu-form-outlined.fu-form,
-.fu-form-outlined .fu-form {
-  border: 1px solid;
-}
-.fu-form-outlined.fu-form:focus,
-.fu-form-outlined .fu-form:focus {
-  box-shadow: inset 0 0 0 1px #000;
-}
-
-.fu-form-underlined.fu-form,
-.fu-form-underlined .fu-form {
-  border-bottom: 1px solid #000;
-  border-radius: 0;
-}
-.fu-form-underlined.fu-form:focus,
-.fu-form-underlined .fu-form:focus {
-  box-shadow: inset 0 -1px #000;
-}
-
-.fu-form-contained.fu-form,
-.fu-form-contained .fu-form {
-  border: 1px solid #fafafa;
-  background: #fafafa;
-}
-@media (max-width: 959px) {
-  .fu-form-contained.fu-form,
-.fu-form-contained .fu-form {
-    box-shadow: 0 1px 4px -1px #c7c7c7;
-  }
-}
-
-.fu-form-action.fu-form,
-.fu-form-action .fu-form {
-  border: 1px solid #fafafa;
-  background: #fafafa;
-}
-@media (max-width: 959px) {
-  .fu-form-action.fu-form,
-.fu-form-action .fu-form {
-    box-shadow: 0 1px 4px -1px #c7c7c7;
-  }
-}
-.fu-form-action.fu-form:hover, .fu-form-action.fu-form:focus,
-.fu-form-action .fu-form:hover,
-.fu-form-action .fu-form:focus {
-  border: 1px solid;
-  border-color: #000;
-  background: inherit;
-}
-.fu-form-action.fu-form:focus,
-.fu-form-action .fu-form:focus {
-  box-shadow: inset 0 0 0 1px #000;
-}
-
-textarea.fu-form {
-  height: 96px;
-  padding: 16px;
-  resize: none;
-}
-
-/* Radio and Checkbox
-   ========================================================================== */
-.fu-form[type=radio],
-.fu-form[type=checkbox] {
-  width: 18px;
-  height: 18px;
-  border: none;
-}
-.fu-form[type=radio]:focus,
-.fu-form[type=checkbox]:focus {
-  box-shadow: none;
-}
-@media (max-width: 959px) {
-  .fu-form[type=radio],
-.fu-form[type=checkbox] {
-    box-shadow: none;
-  }
-}
-
-/* Form for file
-   ========================================================================== */
-.fu-form-file {
-  display: inline-flex;
-}
-.fu-form-file input[type=file] {
-  display: none;
-}
-.fu-form-file .fu-form {
-  color: #484848;
-}
-
-/* Icon form
-   ========================================================================== */
-/*
- * 1. Container fits its content
- * 2. Create position context
- * 3. Prevent content overflow
- * 4. Behave like most inline-block elements
- * 5. Force hardware acceleration without creating a new stacking context
- *    to fix 1px glitch when combined with overlays and transitions in Webkit
- * 6. Clip child elements
- */
-.fu-icon-form {
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
-  vertical-align: middle;
-  backface-visibility: hidden;
-}
-.fu-icon-form .fu-form {
-  min-width: 100%;
-}
-
-/*
- * 1. Set position
- * 2. Set width
- * 3. Center icon vertically and horizontally
- */
-.fu-form-icon {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-}
-.fu-form-icon:not(a):not(button):not(input) {
-  pointer-events: none;
-}
-
-:not(.fu-form-reverse).fu-icon-form .fu-form,
-:not(.fu-form-reverse) .fu-icon-form .fu-form {
-  padding-left: 40px;
-  appearance: none;
-}
-
-.fu-form-reverse.fu-icon-form .fu-form-icon,
-.fu-form-reverse .fu-icon-form .fu-form-icon {
-  right: 0;
-  left: auto;
-}
-.fu-form-reverse.fu-icon-form .fu-form,
-.fu-form-reverse .fu-icon-form .fu-form {
-  padding-right: 40px;
-  padding-left: 16px;
-  appearance: none;
-}
-
-/* ========================================================================
-     Component: Button
-   ========================================================================== */
-.fu-button {
-  height: 36px;
-  padding: 0 8px;
-  user-select: none;
-  text-transform: uppercase;
-}
-.fu-button:not(:disabled) {
-  cursor: pointer;
-  color: #000;
-  background: transparent;
-}
-.fu-button::before, .fu-button::after {
-  position: absolute;
-  top: calc(50% - 100%);
-  left: calc(50% - 100%);
-  width: 200%;
-  height: 200%;
-  content: "";
-  pointer-events: none;
-  opacity: 0;
-  border-radius: 50%;
-  background: #000;
-}
-.fu-button::after {
-  transition: all 150ms linear;
-}
-.fu-button:hover::before {
-  opacity: 0.08;
-}
-.fu-button:focus::before, .fu-button:active::after {
-  transition-duration: 75ms;
-  opacity: 0.24;
-}
-
-.fu-button-dense {
-  font-size: 0.8125rem;
-  height: 32px;
-}
-
-.fu-button-loose {
-  height: 40px;
-}
-
-/* Style modifiers   ========================================================================== */
-.fu-button-outlined {
-  padding: 0 16px;
-}
-.fu-button-outlined:not(:disabled) {
-  border: 1px solid #000;
-}
-
-.fu-button-contained,
-.fu-button-fade {
-  padding: 0 16px;
-}
-.fu-button-contained:not(:disabled),
-.fu-button-fade:not(:disabled) {
-  color: #fff;
-  background: #000;
-}
-.fu-button-contained::before, .fu-button-contained::after,
-.fu-button-fade::before,
-.fu-button-fade::after {
-  background: #fff;
-}
-
-.fu-button-fade:not(:disabled) {
-  color: #000;
-  background: #c7c7c7;
-}
-.fu-button-fade::before, .fu-button-fade::after {
-  background: #000;
-}
-
-/* Icon button   ========================================================================== */
-.fu-button-icon {
-  font-size: 18px;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  margin-left: 0;
-  color: inherit;
-}
-
-.fu-button-reverse .fu-button .fu-button-icon,
-.fu-button-reverse.fu-button .fu-button-icon {
-  margin-right: 0;
-  margin-left: 8px;
-}
-
-svg.fu-button-icon {
-  fill: currentColor;
-}
-
-.fu-button-contained .fu-button-icon,
-.fu-button-outlined .fu-button-icon {
-  margin-right: 8px;
-  margin-left: -4px;
-}
-
-.fu-button-reverse .fu-button-contained .fu-button-icon,
-.fu-button-reverse .fu-button-outlined .fu-button-icon,
-.fu-button-reverse.fu-button-contained .fu-button-icon,
-.fu-button-reverse.fu-button-outlined .fu-button-icon {
-  margin-right: -4px;
-  margin-left: 8px;
-}
-
-.fu-icon-button {
-  min-width: 36px;
-  padding: 0;
-  border-radius: 500px;
-}
-.fu-icon-button.fu-button-dense {
-  min-width: 32px;
-}
-.fu-icon-button.fu-button-loose {
-  min-width: 40px;
-}
-
-/* Group ========================================================================== */
-/*
- * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
- * 2. Behave like button * 3. Create position context 
- */
-.fu-button-group {
-  position: relative;
-  display: inline-flex;
-  vertical-align: middle;
-}
-.fu-button-group > .fu-button:first-child,
-.fu-button-group > .fu-button:last-child {
-  border-radius: 4px;
-}
-.fu-button-group > .fu-button:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.fu-button-group > .fu-button:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* ========================================================================
-     Component: Markdown
-   ========================================================================== */
-.fu-menu,
-.fu-dropdown-menu,
-.fu-navbar-dropdown {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.fu-menu ul,
-.fu-dropdown-menu ul,
-.fu-navbar-dropdown ul {
-  margin: 0;
-  padding: 0;
-}
-.fu-menu li,
-.fu-dropdown-menu li,
-.fu-navbar-dropdown li {
-  list-style: none;
-}
-
-.fu-menu-header {
-  font-size: large;
-  display: block;
-  padding: 4px 16px;
-}
-
-.fu-menu-item {
-  display: block;
-  padding: 4px 16px;
-  white-space: nowrap;
-  text-decoration: none;
-  text-overflow: ellipsis;
-}
-.fu-menu-item:hover {
-  color: #fff;
-  background: #212121;
-}
-
-/* ========================================================================
-     Component: Navbar
-   ========================================================================== */
-.fu-navbar-top,
-.fu-navbar-bottom {
-  line-height: 100%;
-  position: sticky;
-  z-index: 998;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  white-space: nowrap;
-  background: #fff;
-}
-
-.fu-navbar-top {
-  top: 0;
-  padding: 0 16px;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-}
-
-.fu-navbar-bottom {
-  bottom: 0;
-  padding: 16px;
-  box-shadow: 0 -1px 4px -1px #c7c7c7;
-}
-
-.fu-navbar-item {
-  display: inline-block;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  height: 100%;
-  margin-right: 16px;
-  padding: 16px 0;
-}
-
-.fu-text-link::after {
-  border: none;
-}
-
-.fu-navbar-dropdown,
-.fu-navbar-drawer {
-  line-height: 1.5;
-}
-
-.fu-navbar-dropdown > :not(summary) {
-  position: absolute;
-  z-index: 998;
-  top: 100%;
-  left: 0;
-  box-sizing: border-box;
-  min-width: 100%;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
-}
-
-.fu-navbar-drawer > :not(summary) {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  box-sizing: border-box;
-  min-width: 300px;
-  height: 100%;
-  background: #fff;
-  box-shadow: 1px 0 4px -1px #c7c7c7;
-}
-
-.fu-navbar-drawer-reverse > :not(summary) {
-  right: 0;
-  left: auto;
-}
-
-/* ========================================================================
-   Component: Progress
-   ========================================================================== */
-.fu-progress {
-  box-sizing: border-box;
-  width: 100%;
-  height: 4px;
-  appearance: none;
-}
-.fu-progress::-webkit-progress-bar {
-  background: #c7c7c7;
-}
-.fu-progress::-webkit-progress-value {
-  background: #000;
-}
-
-/* ========================================================================
-     Component: Utility
-   ========================================================================== */
-/* Border
-   ========================================================================== */
-[class*=fu-border] {
-  box-sizing: border-box;
-}
-
-/** 
-  * Border radius
-  */
-.fu-border-small {
-  border-radius: 4px;
-}
-
-.fu-border-large {
-  border-radius: 6px;
-}
-
-.fu-border-pill {
-  border-radius: 500px;
-}
-
-.fu-border-circle {
-  border-radius: 50%;
-}
-
-/* Background color
-   ========================================================================== */
-.fu-background-transparent {
-  background: transparent;
-}
-
-/* Float
-   ========================================================================== */
-.fu-float-start {
-  float: inline-start;
-}
-
-.fu-float-end {
-  float: inline-end;
-}
-
-.fu-float-none {
-  float: none;
-}
-
-/* Overflow
-   ========================================================================== */
-.fu-overflow-hidden {
-  overflow: hidden;
-}
-
-.fu-overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.fu-overflow-y-scroll {
-  overflow-y: scroll;
 }
