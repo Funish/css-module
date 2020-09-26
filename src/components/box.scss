@@ -17,21 +17,12 @@
   background: $default-light;
   box-shadow: 0 1px 4px -1px $default-dark;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   .fu-box-header {
     padding: 15px 15px 5px;
   }
 
   .fu-box-content {
     padding: 10px 15px;
-  }
-
-  .fu-box-content:last-child {
-    padding-bottom: 15px;
   }
 
   .fu-box-footer {
