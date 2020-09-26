@@ -9,6 +9,17 @@ Text 模块是用于调整文本的样式集合。
 | `.fu-text-link`   | 创建一个动态链接 |
 | `.fu-text-linked` | 创建一个可视链接 |
 
+## 文本颜色
+
+| 类名                  | 描述             |
+| --------------------- | ---------------- |
+| `.fu-color-default`   | 显示默认文本颜色 |
+| `.fu-color-muted`     | 显示静音文本颜色 |
+| `.fu-color-primary`   | 显示主要文本颜色 |
+| `.fu-color-secondary` | 显示次要文本颜色 |
+| `.fu-color-warning`   | 显示警示文本颜色 |
+| `.fu-color-success`   | 显示成功文本颜色 |
+
 ## 标题
 
 | 类名                | 描述           |

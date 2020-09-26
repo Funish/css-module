@@ -57,6 +57,32 @@ a {
   }
 }
 
+/* Text color
+   ========================================================================== */
+.fu-text-default {
+  color: $default-text;
+}
+
+.fu-text-muted {
+  color: $primary-light;
+}
+
+.fu-text-primary {
+  color: $primary-text;
+}
+
+.fu-text-secondary {
+  color: $secondary;
+}
+
+.fu-text-warning {
+  color: $warning;
+}
+
+.fu-text-success {
+  color: $success;
+}
+
 /* Title
    ========================================================================== */
 .fu-text-title {

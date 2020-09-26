@@ -12,9 +12,7 @@
  */
 
 html {
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
 
   -webkit-text-size-adjust: 100%;
 }
@@ -58,9 +56,7 @@ h1 {
   */
 
 hr {
-  /* 2 */
   overflow: visible;
-  /* 1 */
 
   box-sizing: content-box;
   height: 0;
@@ -72,9 +68,7 @@ hr {
   */
 
 pre {
-  /* 1 */
   font-family: monospace, monospace;
-  /* 2 */
   font-size: 1em;
 }
 
@@ -95,10 +89,8 @@ a {
   */
 
 abbr[title] {
-  /* 2 */
   text-decoration: underline;
   text-decoration: underline dotted;
-  /* 1 */
 
   border-bottom: none;
 }
@@ -120,9 +112,7 @@ strong {
 code,
 kbd,
 samp {
-  /* 1 */
   font-family: monospace, monospace;
-  /* 2 */
   font-size: 1em;
 }
 
@@ -183,9 +173,7 @@ img,
 video {
   /* 3 */
   box-sizing: border-box;
-  /* 1 */
   max-width: 100%;
-  /* 2 */
   height: auto;
 }
 
@@ -211,9 +199,7 @@ svg:not(:root) {
   * Note: Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
   */
 img:not([src]) {
-  /* 2 */
   visibility: hidden;
-  /* 1 */
 
   min-width: 1px;
 }
@@ -239,11 +225,9 @@ input,
 optgroup,
 select,
 textarea {
-  /* 1 */
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  /* 2 */
 
   margin: 0;
 }
@@ -255,7 +239,6 @@ textarea {
 
 button,
 input {
-  /* 1 */
   overflow: visible;
 }
 
@@ -266,7 +249,6 @@ input {
 
 button,
 select {
-  /* 1 */
   text-transform: none;
 }
 
@@ -321,7 +303,6 @@ fieldset {
   */
 
 legend {
-  /* 1 */
   display: table;
 
   box-sizing: border-box;
@@ -330,7 +311,6 @@ legend {
   padding: 0;
 
   white-space: normal;
-  /* 2 */
 
   color: inherit;
 }
@@ -358,9 +338,7 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-  /* 1 */
   box-sizing: border-box;
-  /* 2 */
   padding: 0;
 }
 
@@ -381,9 +359,7 @@ textarea {
   */
 
 [type='search'] {
-  /* 2 */
   outline-offset: -2px;
-  /* 1 */
 
   -webkit-appearance: textfield;
 
@@ -402,9 +378,7 @@ textarea {
   */
 
 ::-webkit-file-upload-button {
-  /* 2 */
   font: inherit;
-  /* 1 */
 
   -webkit-appearance: button;
 }

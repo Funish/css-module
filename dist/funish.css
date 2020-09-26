@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /*! Funish CSS 0.0.1 | https://funish.net | © Funish.net | MIT License */
-/* Color modifiers   ========================================================================== */
+/* Color modifiers
+   ========================================================================== */
 /* Default */
 /* Primary */
 /* Secondary */
-/* Danger */
+/* Warning */
 /* Success */
-/* Breakpoints   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
 /* Reset CSS */
 /* ========================================================================
      Component: Normalize
@@ -19,9 +21,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -57,9 +57,7 @@ h1 {
   * 2. Show the overflow in Edge and IE.
   */
 hr {
-  /* 2 */
   overflow: visible;
-  /* 1 */
   box-sizing: content-box;
   height: 0;
 }
@@ -69,9 +67,7 @@ hr {
   * 2. Correct the odd `em` font sizing in all browsers.
   */
 pre {
-  /* 1 */
   font-family: monospace, monospace;
-  /* 2 */
   font-size: 1em;
 }
 
@@ -89,10 +85,8 @@ a {
   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
   */
 abbr[title] {
-  /* 2 */
   text-decoration: underline;
   text-decoration: underline dotted;
-  /* 1 */
   border-bottom: none;
 }
 
@@ -111,9 +105,7 @@ strong {
 code,
 kbd,
 samp {
-  /* 1 */
   font-family: monospace, monospace;
-  /* 2 */
   font-size: 1em;
 }
 
@@ -169,9 +161,7 @@ img,
 video {
   /* 3 */
   box-sizing: border-box;
-  /* 1 */
   max-width: 100%;
-  /* 2 */
   height: auto;
 }
 
@@ -196,9 +186,7 @@ svg:not(:root) {
   * Note: Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
   */
 img:not([src]) {
-  /* 2 */
   visibility: hidden;
-  /* 1 */
   min-width: 1px;
 }
 
@@ -221,11 +209,9 @@ input,
 optgroup,
 select,
 textarea {
-  /* 1 */
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  /* 2 */
   margin: 0;
 }
 
@@ -235,7 +221,6 @@ textarea {
   */
 button,
 input {
-  /* 1 */
   overflow: visible;
 }
 
@@ -245,7 +230,6 @@ input {
   */
 button,
 select {
-  /* 1 */
   text-transform: none;
 }
 
@@ -294,14 +278,12 @@ fieldset {
   *    `fieldset` elements in all browsers.
   */
 legend {
-  /* 1 */
   display: table;
   box-sizing: border-box;
   max-width: 100%;
   /* 3 */
   padding: 0;
   white-space: normal;
-  /* 2 */
   color: inherit;
 }
 
@@ -325,9 +307,7 @@ textarea {
   */
 [type=checkbox],
 [type=radio] {
-  /* 1 */
   box-sizing: border-box;
-  /* 2 */
   padding: 0;
 }
 
@@ -343,9 +323,7 @@ textarea {
   * 2. Correct the outline style in Safari.
   */
 [type=search] {
-  /* 2 */
   outline-offset: -2px;
-  /* 1 */
   -webkit-appearance: textfield;
 }
 [type=search]::-webkit-search-decoration {
@@ -360,9 +338,7 @@ textarea {
   * 2. Change font properties to `inherit` in Safari.
   */
 ::-webkit-file-upload-button {
-  /* 2 */
   font: inherit;
-  /* 1 */
   -webkit-appearance: button;
 }
 
@@ -1094,12 +1070,6 @@ svg.fu-button-icon {
 
 .fu-border-circle {
   border-radius: 50%;
-}
-
-/* Background color
-   ========================================================================== */
-.fu-background-transparent {
-  background: transparent;
 }
 
 /* Float
@@ -2197,23 +2167,23 @@ svg.fu-button-icon {
 /* Responsive width
    ========================================================================== */
 @media (min-width: 640px) {
-  .fu-width-xsmall {
+  .fu-width-xsmall\@s {
     width: 150px;
   }
 
-  .fu-width-small {
+  .fu-width-small\@s {
     width: 300px;
   }
 
-  .fu-width-medium {
+  .fu-width-medium\@s {
     width: 450px;
   }
 
-  .fu-width-large {
+  .fu-width-large\@s {
     width: 600px;
   }
 
-  .fu-width-xlarge {
+  .fu-width-xlarge\@s {
     width: 750px;
   }
 
@@ -2300,23 +2270,23 @@ svg.fu-button-icon {
 }
 
 @media (min-width: 960px) {
-  .fu-width-xsmall {
+  .fu-width-xsmall\@m {
     width: 150px;
   }
 
-  .fu-width-small {
+  .fu-width-small\@m {
     width: 300px;
   }
 
-  .fu-width-medium {
+  .fu-width-medium\@m {
     width: 450px;
   }
 
-  .fu-width-large {
+  .fu-width-large\@m {
     width: 600px;
   }
 
-  .fu-width-xlarge {
+  .fu-width-xlarge\@m {
     width: 750px;
   }
 
@@ -2403,23 +2373,23 @@ svg.fu-button-icon {
 }
 
 @media (min-width: 1200px) {
-  .fu-width-xsmall {
+  .fu-width-xsmall\@l {
     width: 150px;
   }
 
-  .fu-width-small {
+  .fu-width-small\@l {
     width: 300px;
   }
 
-  .fu-width-medium {
+  .fu-width-medium\@l {
     width: 450px;
   }
 
-  .fu-width-large {
+  .fu-width-large\@l {
     width: 600px;
   }
 
-  .fu-width-xlarge {
+  .fu-width-xlarge\@l {
     width: 750px;
   }
 
@@ -2506,23 +2476,23 @@ svg.fu-button-icon {
 }
 
 @media (min-width: 1600px) {
-  .fu-width-xsmall {
+  .fu-width-xsmall\@xl {
     width: 150px;
   }
 
-  .fu-width-small {
+  .fu-width-small\@xl {
     width: 300px;
   }
 
-  .fu-width-medium {
+  .fu-width-medium\@xl {
     width: 450px;
   }
 
-  .fu-width-large {
+  .fu-width-large\@xl {
     width: 600px;
   }
 
-  .fu-width-xlarge {
+  .fu-width-xlarge\@xl {
     width: 750px;
   }
 
@@ -3038,6 +3008,32 @@ a {
   border-bottom: 1px solid #000;
 }
 
+/* Text color
+   ========================================================================== */
+.fu-text-default {
+  color: #000;
+}
+
+.fu-text-muted {
+  color: #484848;
+}
+
+.fu-text-primary {
+  color: #fff;
+}
+
+.fu-text-secondary {
+  color: #0366d6;
+}
+
+.fu-text-warning {
+  color: #d73a49;
+}
+
+.fu-text-success {
+  color: #28a745;
+}
+
 /* Title
    ========================================================================== */
 .fu-text-title {
@@ -3169,4 +3165,138 @@ a {
 
 .fu-text-break-word {
   word-break: break-word;
+}
+
+/* ========================================================================
+     Component: Background
+   ========================================================================== */
+/* Background color
+   ========================================================================== */
+.fu-background-transparent {
+  background: transparent;
+}
+
+.fu-background-default {
+  background-color: #fafafa;
+}
+
+.fu-background-muted {
+  background-color: #484848;
+}
+
+.fu-background-primary {
+  background-color: #212121;
+}
+
+.fu-background-secondary {
+  background-color: #0366d6;
+}
+
+.fu-background-warning {
+  background-color: #d73a49;
+}
+
+.fu-background-success {
+  background-color: #28a745;
+}
+
+/* Size
+   ========================================================================== */
+.fu-background-cover,
+.fu-background-contain {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fu-background-cover {
+  background-size: cover;
+}
+
+.fu-background-contain {
+  background-size: contain;
+}
+
+/* Position
+   ========================================================================== */
+.fu-background-top-left {
+  background-position: 0 0;
+}
+
+.fu-background-top-center {
+  background-position: 50% 0;
+}
+
+.fu-background-top-right {
+  background-position: 100% 0;
+}
+
+.fu-background-center-left {
+  background-position: 0 50%;
+}
+
+.fu-background-center-center {
+  background-position: 50% 50%;
+}
+
+.fu-background-center-right {
+  background-position: 100% 50%;
+}
+
+.fu-background-bottom-left {
+  background-position: 0 100%;
+}
+
+.fu-background-bottom-center {
+  background-position: 50% 100%;
+}
+
+.fu-background-bottom-right {
+  background-position: 100% 100%;
+}
+
+/* Repeat
+   ========================================================================== */
+.fu-background-norepeat {
+  background-repeat: no-repeat;
+}
+
+/* Attachment
+   ========================================================================== */
+/*
+  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+  */
+.fu-background-fixed {
+  background-attachment: fixed;
+  backface-visibility: hidden;
+}
+
+/*
+  * Exclude touch devices because `fixed` doesn't work on iOS and Android
+  */
+@media (pointer: coarse) {
+  .fu-background-fixed {
+    background-attachment: scroll;
+  }
+}
+/* Image
+   ========================================================================== */
+@media (max-width: 639px) {
+  .fu-background-image\@s {
+    background-image: none;
+  }
+}
+@media (max-width: 959px) {
+  .fu-background-image\@m {
+    background-image: none;
+  }
+}
+@media (max-width: 1199px) {
+  .fu-background-image\@l {
+    background-image: none;
+  }
+}
+@media (max-width: 1599px) {
+  .fu-background-image\@xl {
+    background-image: none;
+  }
 }

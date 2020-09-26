@@ -15,12 +15,6 @@ Utility 模块是实用性工具的集合。
 <button class="fu-button fu-border-pill">button</button>
 ```
 
-## 背景颜色
-
-| 类名                         | 描述               |
-| ---------------------------- | ------------------ |
-| `.fu-background-transparent` | 背景颜色显示为透明 |
-
 ## 浮动
 
 | 类名              | 描述               |

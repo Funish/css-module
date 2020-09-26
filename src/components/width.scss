@@ -82,7 +82,7 @@
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: #{$width}) {
     @each $width, $spacing in $widths {
-      .fu-width-#{$width} {
+      .fu-width-#{$width}#{$breakpoint} {
         width: #{$spacing};
       }
     }

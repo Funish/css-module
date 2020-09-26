@@ -69,7 +69,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap'
+          'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap'
       }
     ]
   },

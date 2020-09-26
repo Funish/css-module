@@ -1,21 +1,34 @@
-/* Color modifiers   ========================================================================== */ /* Default */
+/* Color modifiers
+   ========================================================================== */
+/* Default */
 $default: #fafafa;
 $default-light: #fff;
 $default-dark: #c7c7c7;
-$default-text: #000; /* Primary */
+$default-text: #000;
+
+/* Primary */
 $primary: #212121;
 $primary-light: #484848;
 $primary-dark: #000;
-$primary-text: #fff; /* Secondary */
+$primary-text: #fff;
+
+/* Secondary */
 $secondary: #0366d6;
 $secondary-light: #6093ff;
-$secondary-dark: #003da4; /* Danger */
+$secondary-dark: #003da4;
+
+/* Warning */
 $warning: #d73a49;
 $warning-light: #ff6f74;
-$warning-dark: #9f0022; /* Success */
+$warning-dark: #9f0022;
+
+/* Success */
 $success: #28a745;
 $success-light: #64da73;
-$success-dark: #007717; /* Breakpoints   ========================================================================== */
+$success-dark: #007717;
+
+/* Breakpoints
+   ========================================================================== */
 $breakpoints: (\@s: 640px, \@m: 960px, \@l: 1200px, \@xl: 1600px) !default;
 $margin-spacings: (
   small: 10px,

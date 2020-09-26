@@ -1,0 +1,121 @@
+/* ========================================================================
+     Component: Background
+   ========================================================================== */
+/* Background color
+   ========================================================================== */
+.fu-background-transparent {
+  background: transparent;
+}
+
+.fu-background-default {
+  background-color: $default;
+}
+
+.fu-background-muted {
+  background-color: $primary-light;
+}
+
+.fu-background-primary {
+  background-color: $primary;
+}
+
+.fu-background-secondary {
+  background-color: $secondary;
+}
+
+.fu-background-warning {
+  background-color: $warning;
+}
+
+.fu-background-success {
+  background-color: $success;
+}
+
+/* Size
+   ========================================================================== */
+.fu-background-cover,
+.fu-background-contain {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fu-background-cover {
+  background-size: cover;
+}
+
+.fu-background-contain {
+  background-size: contain;
+}
+
+/* Position
+   ========================================================================== */
+.fu-background-top-left {
+  background-position: 0 0;
+}
+
+.fu-background-top-center {
+  background-position: 50% 0;
+}
+
+.fu-background-top-right {
+  background-position: 100% 0;
+}
+
+.fu-background-center-left {
+  background-position: 0 50%;
+}
+
+.fu-background-center-center {
+  background-position: 50% 50%;
+}
+
+.fu-background-center-right {
+  background-position: 100% 50%;
+}
+
+.fu-background-bottom-left {
+  background-position: 0 100%;
+}
+
+.fu-background-bottom-center {
+  background-position: 50% 100%;
+}
+
+.fu-background-bottom-right {
+  background-position: 100% 100%;
+}
+
+/* Repeat
+   ========================================================================== */
+.fu-background-norepeat {
+  background-repeat: no-repeat;
+}
+
+/* Attachment
+   ========================================================================== */
+/*
+  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+  */
+.fu-background-fixed {
+  background-attachment: fixed;
+
+  backface-visibility: hidden;
+}
+
+/*
+  * Exclude touch devices because `fixed` doesn't work on iOS and Android
+  */
+@media (pointer: coarse) {
+  .fu-background-fixed {
+    background-attachment: scroll;
+  }
+}
+/* Image
+   ========================================================================== */
+@each $breakpoint, $width in $breakpoints {
+  @media (max-width: #{$width - 1px}) {
+    .fu-background-image#{$breakpoint} {
+      background-image: none;
+    }
+  }
+}
