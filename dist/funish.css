@@ -467,7 +467,7 @@ hr {
   pointer-events: none;
   opacity: 0;
   border-radius: 50%;
-  background: #000;
+  background: currentColor;
 }
 .fu-box-action::after {
   transition: opacity 150ms linear;
@@ -780,7 +780,7 @@ textarea.fu-form {
 }
 .fu-button:not(:disabled) {
   cursor: pointer;
-  color: #000;
+  color: currentColor;
   background: transparent;
 }
 .fu-button::before, .fu-button::after {
@@ -793,7 +793,7 @@ textarea.fu-form {
   pointer-events: none;
   opacity: 0;
   border-radius: 50%;
-  background: #000;
+  background: currentColor;
 }
 .fu-button::after {
   transition: all 150ms linear;
@@ -820,7 +820,7 @@ textarea.fu-form {
   padding: 0 16px;
 }
 .fu-button-outlined:not(:disabled) {
-  border: 1px solid #000;
+  border: 1px solid currentColor;
 }
 
 .fu-button-contained,

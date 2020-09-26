@@ -11,7 +11,7 @@
   &:not(:disabled) {
     cursor: pointer;
 
-    color: $default-text;
+    color: currentColor;
     background: transparent;
   }
 
@@ -29,7 +29,7 @@
 
     opacity: 0;
     border-radius: 50%;
-    background: $default-text;
+    background: currentColor;
   }
 
   &::after {
@@ -63,7 +63,7 @@
   padding: 0 16px;
 
   &:not(:disabled) {
-    border: 1px solid $default-text;
+    border: 1px solid currentColor;
   }
 }
 
