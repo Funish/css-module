@@ -37,8 +37,8 @@
   transition: all 75ms linear;
 
   &:not(:disabled) {
-    color: $default-text;
-    border-color: $default-text;
+    color: currentColor;
+    border-color: currentColor;
     background: inherit;
   }
 }
@@ -52,17 +52,17 @@ select:disabled {
   border: 1px solid;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px $default-text;
+    box-shadow: inset 0 0 0 1px currentColor;
   }
 }
 
 .fu-form-underlined.fu-form,
 .fu-form-underlined .fu-form {
-  border-bottom: 1px solid $default-text;
+  border-bottom: 1px solid currentColor;
   border-radius: 0;
 
   &:focus {
-    box-shadow: inset 0 -1px $default-text;
+    box-shadow: inset 0 -1px currentColor;
   }
 }
 
@@ -93,7 +93,7 @@ select:disabled {
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 1px $default-text;
+    box-shadow: inset 0 0 0 1px currentColor;
   }
 }
 

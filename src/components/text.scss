@@ -4,7 +4,7 @@
 /* Link
    ========================================================================== */
 a {
-  color: $default-text;
+  color: inherit;
 }
 
 .fu-text-linked,
@@ -26,7 +26,7 @@ a {
     content: '';
     transition: 150ms all linear;
 
-    border-bottom: 2px solid $default-text;
+    border-bottom: 2px solid currentColor;
   }
 
   &:hover::before {
@@ -36,8 +36,6 @@ a {
     width: 100%;
 
     transition-delay: 75ms;
-
-    border-bottom-color: #000;
   }
 }
 
@@ -53,7 +51,7 @@ a {
     content: '';
     transition: 150ms all linear;
 
-    border-bottom: 1px solid $default-text;
+    border-bottom: 1px solid currentColor;
   }
 }
 
