@@ -1,6 +1,6 @@
 {
   "name": "@funish/css",
-  "version": "0.0.1-alpha.38",
+  "version": "0.0.1-alpha.39",
   "description": "A concise front-end CSS framework.",
   "main": "dist/funish.min.css",
   "files": [
