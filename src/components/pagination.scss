@@ -1,0 +1,21 @@
+/* ========================================================================
+     Component: Pagination
+   ========================================================================== */
+.fu-pagination {
+  a,
+  span,
+  em {
+    font-style: normal;
+
+    display: inline-block;
+
+    min-width: 32px;
+    height: 100%;
+    padding: 5px 10px;
+
+    text-align: center;
+    white-space: nowrap;
+
+    @extend .fu-button;
+  }
+}

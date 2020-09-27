@@ -572,7 +572,9 @@ hr {
 /* ========================================================================
      Component: Form
    ========================================================================== */
-.fu-button,
+.fu-button, .fu-pagination a,
+.fu-pagination span,
+.fu-pagination em,
 .fu-form {
   position: relative;
   display: inline-flex;
@@ -588,7 +590,9 @@ hr {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.fu-button:disabled,
+.fu-button:disabled, .fu-pagination a:disabled,
+.fu-pagination span:disabled,
+.fu-pagination em:disabled,
 .fu-form:disabled {
   cursor: default;
   pointer-events: none;
@@ -765,18 +769,26 @@ textarea.fu-form {
 /* ========================================================================
      Component: Button
    ========================================================================== */
-.fu-button {
+.fu-button, .fu-pagination a,
+.fu-pagination span,
+.fu-pagination em {
   height: 36px;
   padding: 0 8px;
   user-select: none;
   text-transform: uppercase;
 }
-.fu-button:not(:disabled) {
+.fu-button:not(:disabled), .fu-pagination a:not(:disabled),
+.fu-pagination span:not(:disabled),
+.fu-pagination em:not(:disabled) {
   cursor: pointer;
   color: currentColor;
   background: transparent;
 }
-.fu-button::before, .fu-button::after {
+.fu-button::before, .fu-pagination a::before,
+.fu-pagination span::before,
+.fu-pagination em::before, .fu-button::after, .fu-pagination a::after,
+.fu-pagination span::after,
+.fu-pagination em::after {
   position: absolute;
   top: calc(50% - 100%);
   left: calc(50% - 100%);
@@ -788,13 +800,21 @@ textarea.fu-form {
   border-radius: 50%;
   background: currentColor;
 }
-.fu-button::after {
+.fu-button::after, .fu-pagination a::after,
+.fu-pagination span::after,
+.fu-pagination em::after {
   transition: all 150ms linear;
 }
-.fu-button:hover::before {
+.fu-button:hover::before, .fu-pagination a:hover::before,
+.fu-pagination span:hover::before,
+.fu-pagination em:hover::before {
   opacity: 0.08;
 }
-.fu-button:focus::before, .fu-button:active::after {
+.fu-button:focus::before, .fu-pagination a:focus::before,
+.fu-pagination span:focus::before,
+.fu-pagination em:focus::before, .fu-button:active::after, .fu-pagination a:active::after,
+.fu-pagination span:active::after,
+.fu-pagination em:active::after {
   transition-duration: 75ms;
   opacity: 0.24;
 }
@@ -850,8 +870,15 @@ textarea.fu-form {
   color: inherit;
 }
 
-.fu-button-reverse .fu-button .fu-button-icon,
-.fu-button-reverse.fu-button .fu-button-icon {
+.fu-button-reverse .fu-button .fu-button-icon, .fu-button-reverse .fu-pagination a .fu-button-icon, .fu-pagination .fu-button-reverse a .fu-button-icon,
+.fu-button-reverse .fu-pagination span .fu-button-icon,
+.fu-pagination .fu-button-reverse span .fu-button-icon,
+.fu-button-reverse .fu-pagination em .fu-button-icon,
+.fu-pagination .fu-button-reverse em .fu-button-icon,
+.fu-button-reverse.fu-button .fu-button-icon,
+.fu-pagination a.fu-button-reverse .fu-button-icon,
+.fu-pagination span.fu-button-reverse .fu-button-icon,
+.fu-pagination em.fu-button-reverse .fu-button-icon {
   margin-right: 0;
   margin-left: 8px;
 }
@@ -896,15 +923,24 @@ svg.fu-button-icon {
   display: inline-flex;
   vertical-align: middle;
 }
-.fu-button-group > .fu-button:first-child,
-.fu-button-group > .fu-button:last-child {
+.fu-button-group > .fu-button:first-child, .fu-pagination .fu-button-group > a:first-child,
+.fu-pagination .fu-button-group > span:first-child,
+.fu-pagination .fu-button-group > em:first-child,
+.fu-button-group > .fu-button:last-child,
+.fu-pagination .fu-button-group > a:last-child,
+.fu-pagination .fu-button-group > span:last-child,
+.fu-pagination .fu-button-group > em:last-child {
   border-radius: 4px;
 }
-.fu-button-group > .fu-button:not(:first-child) {
+.fu-button-group > .fu-button:not(:first-child), .fu-pagination .fu-button-group > a:not(:first-child),
+.fu-pagination .fu-button-group > span:not(:first-child),
+.fu-pagination .fu-button-group > em:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.fu-button-group > .fu-button:not(:last-child) {
+.fu-button-group > .fu-button:not(:last-child), .fu-pagination .fu-button-group > a:not(:last-child),
+.fu-pagination .fu-button-group > span:not(:last-child),
+.fu-pagination .fu-button-group > em:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -1019,6 +1055,21 @@ svg.fu-button-icon {
 .fu-navbar-drawer-reverse > :not(summary) {
   right: 0;
   left: auto;
+}
+
+/* ========================================================================
+     Component: Pagination
+   ========================================================================== */
+.fu-pagination a,
+.fu-pagination span,
+.fu-pagination em {
+  font-style: normal;
+  display: inline-block;
+  min-width: 32px;
+  height: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* ========================================================================
