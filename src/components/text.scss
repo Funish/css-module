@@ -4,6 +4,8 @@
 /* Link
    ========================================================================== */
 a {
+  text-decoration: inherit;
+
   color: inherit;
 }
 
@@ -12,6 +14,7 @@ a {
   position: relative;
 
   box-sizing: border-box;
+  width: fit-content;
 
   text-decoration: none;
 

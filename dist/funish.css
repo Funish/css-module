@@ -2961,6 +2961,7 @@ svg.fu-button-icon {
 /* Link
    ========================================================================== */
 a {
+  text-decoration: inherit;
   color: inherit;
 }
 
@@ -2968,6 +2969,7 @@ a {
 .fu-text-link {
   position: relative;
   box-sizing: border-box;
+  width: fit-content;
   text-decoration: none;
 }
 .fu-text-linked::before,
