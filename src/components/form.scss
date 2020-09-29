@@ -52,13 +52,13 @@ select:disabled {
   border: 1px solid;
 
   &:focus {
-    box-shadow: inset 0 0 0 1px currentColor;
+    box-shadow: inset 0 0 0 0.5px currentColor;
   }
 }
 
 .fu-form-underlined.fu-form,
 .fu-form-underlined .fu-form {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid;
   border-radius: 0;
 
   &:focus {
