@@ -666,7 +666,7 @@ select:disabled {
 }
 .fu-form-action.fu-form:focus,
 .fu-form-action .fu-form:focus {
-  box-shadow: inset 0 0 0 1px currentColor;
+  box-shadow: inset 0 0 0 0.5px currentColor;
 }
 
 textarea.fu-form {
