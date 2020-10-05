@@ -32,7 +32,7 @@
             <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
           </div>
         </details>
-        <details class="fu-navbar-drawer fu-navbar-drawer-reverse">
+        <details class="fu-navbar-drawer">
           <summary>
             <span class="fu-button fu-icon-button">
               <i class="fas fa-align-right"></i>

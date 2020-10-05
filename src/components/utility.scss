@@ -29,6 +29,20 @@
 
 /* Float
    ========================================================================== */
+.fu-display-none {
+  display: none;
+}
+
+.fu-display-block {
+  display: block;
+}
+
+.fu-display-inline {
+  display: inline-block;
+}
+
+/* Float
+   ========================================================================== */
 .fu-float-start {
   float: inline-start;
 }

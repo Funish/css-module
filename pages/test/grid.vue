@@ -2,6 +2,18 @@
   <div>
     <h1>Grid</h1>
     <hr />
+    <h2>.fu-grid-row-xsmall</h2>
+    <div class="fu-flex fu-flex-wrap fu-grid-row-xsmall">
+      <div class="fu-box">
+        <div class="fu-box-content">Item1</div>
+      </div>
+      <div class="fu-box">
+        <div class="fu-box-content">Item2</div>
+      </div>
+      <div class="fu-box">
+        <div class="fu-box-content">Item3</div>
+      </div>
+    </div>
     <h2>.fu-grid-row-small</h2>
     <div class="fu-flex fu-flex-wrap fu-grid-row-small">
       <div class="fu-box">

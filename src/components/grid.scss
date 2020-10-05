@@ -14,13 +14,13 @@
 
 @each $grid, $spacing in $grid-spacings {
   .fu-grid-row-#{$grid} > * {
-    margin-right: #{$spacing/2};
-    margin-left: #{$spacing/2};
+    margin-right: #{$spacing};
+    margin-left: #{$spacing};
   }
 
   .fu-grid-column-#{$grid} > * {
-    margin-top: #{$spacing/2};
-    margin-bottom: #{$spacing/2};
+    margin-top: #{$spacing};
+    margin-bottom: #{$spacing};
   }
 }
 

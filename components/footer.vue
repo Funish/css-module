@@ -1,5 +1,5 @@
 <template>
-  <footer class="fu-text-center fu-padding-medium fu-text-secondary">
+  <footer class="fu-text-center fu-padding-medium">
     <div class="fu-flex fu-main-center fu-width-1-1">
       <span>
         <i>&copy;</i>

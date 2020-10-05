@@ -16,6 +16,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
 /* Element modifiers
    ========================================================================== */
 body {

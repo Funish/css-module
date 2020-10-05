@@ -13,11 +13,13 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
-      <div>
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="checkbox" class="fu-form" />
-      </div>
+    </div>
+    <h2>Form Selection</h2>
+    <div>
+      <input type="radio" name="radio1" class="fu-form" />
+      <input type="radio" name="radio1" class="fu-form" />
+      <input type="checkbox" class="fu-form" />
+      <input type="checkbox" class="fu-switch" />
     </div>
     <h2>Underlined</h2>
     <div
@@ -30,11 +32,6 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
-      <div>
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="checkbox" class="fu-form" />
-      </div>
     </div>
     <h2>Contained</h2>
     <div
@@ -47,11 +44,6 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
-      <div>
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="checkbox" class="fu-form" />
-      </div>
     </div>
     <h2>Action</h2>
     <div
@@ -64,11 +56,6 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
-      <div>
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="radio" name="radio1" class="fu-form" />
-        <input type="checkbox" class="fu-form" />
-      </div>
     </div>
     <h2>Disabled form</h2>
     <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
@@ -83,6 +70,7 @@
         <input type="radio" name="radio1" class="fu-form" disabled />
         <input type="radio" name="radio1" class="fu-form" disabled />
         <input type="checkbox" class="fu-form" disabled />
+        <input type="checkbox" class="fu-switch" disabled />
       </div>
     </div>
     <h2>Upload</h2>
