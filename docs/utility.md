@@ -15,6 +15,19 @@ Utility 模块是实用性工具的集合。
 <button class="fu-button fu-border-pill">button</button>
 ```
 
+## 边框阴影
+
+| 类名                | 描述               |
+| ------------------- | ------------------ |
+| `.fu-shadow-none`   | 不创建阴影         |
+| `.fu-shadow-small`  | 创建一个较小的阴影 |
+| `.fu-shadow-medium` | 创建一个中等的阴影 |
+| `.fu-shadow-large`  | 创建一个较大的阴影 |
+
+```html
+<div class="fu-shadow-medium"></div>
+```
+
 ## 浮动
 
 | 类名              | 描述               |

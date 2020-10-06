@@ -23,15 +23,12 @@
 
 @import './utility.scss';
 
-/* Layouts */
-@import './flex.scss';
+/* Text */
+@import './markdown.scss';
 
-@import './grid.scss';
+@import './text.scss';
 
-@import './position.scss';
-
-@import './visibility.scss';
-
+/* Box model */
 @import './margin.scss';
 
 @import './padding.scss';
@@ -40,8 +37,13 @@
 
 @import './width.scss';
 
-@import './markdown.scss';
+/* Layouts */
+@import './flex.scss';
 
-@import './text.scss';
+@import './grid.scss';
+
+@import './position.scss';
+
+@import './visibility.scss';
 
 @import './backgroud.scss';

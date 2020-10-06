@@ -86,7 +86,7 @@ export default {
    */
   css: [
     '~/src/funish.scss',
-    // '~/src/highlight.js.scss',
+    '~/assets/style.scss',
     '@fortawesome/fontawesome-free/css/all.min.css'
   ],
   /*

@@ -23,6 +23,7 @@ a {
     top: 0;
     left: 0;
 
+    box-sizing: border-box;
     width: 0;
     height: 100%;
 
@@ -48,6 +49,7 @@ a {
     top: 0;
     left: 0;
 
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
 
@@ -65,7 +67,7 @@ a {
 }
 
 .fu-text-muted {
-  color: $primary-light;
+  color: $default-light;
 }
 
 .fu-text-primary {

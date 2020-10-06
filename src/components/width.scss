@@ -123,12 +123,12 @@
   }
 
   /* Auto */
-  .uk-width-auto#{$breakpoint} {
+  .fu-width-auto#{$breakpoint} {
     width: auto;
   }
 
   /* Expand */
-  .uk-width-expand#{$breakpoint} {
+  .fu-width-expand#{$breakpoint} {
     flex: 1;
 
     min-width: 1px;

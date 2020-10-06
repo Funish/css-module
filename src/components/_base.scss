@@ -9,9 +9,7 @@
   */
 
 * {
-  /* 1 */
   outline: none;
-  /* 2 */
 
   -webkit-tap-highlight-color: transparent;
 }
@@ -35,10 +33,6 @@ body {
 
   color: $default-text;
   background: $default-light;
-
-  @media (max-width: 959px) {
-    background: $default;
-  }
 }
 
 hr {

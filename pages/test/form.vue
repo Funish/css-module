@@ -15,23 +15,15 @@
       <textarea class="fu-form" placeholder="Placeholder"></textarea>
     </div>
     <h2>Form Selection</h2>
-    <div>
-      <input type="radio" name="radio1" class="fu-form" />
-      <input type="radio" name="radio1" class="fu-form" />
-      <input type="checkbox" class="fu-form" />
-      <input type="checkbox" class="fu-switch" />
-    </div>
-    <h2>Underlined</h2>
     <div
-      class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium fu-form-underlined"
+      class="fu-flex fu-cross-center fu-flex-wrap fu-grid-row-medium fu-grid-column-medium fu-form-outlined"
     >
-      <input class="fu-form" placeholder="Placeholder" />
-      <select class="fu-form">
-        <option>Option1</option>
-        <option>Option2</option>
-        <option>Option3</option>
-      </select>
-      <textarea class="fu-form" placeholder="Placeholder"></textarea>
+      <div>
+        <input type="radio" name="radio1" class="fu-radio" />
+        <input type="radio" name="radio1" class="fu-radio" />
+      </div>
+      <input type="checkbox" class="fu-checkbox" />
+      <input type="checkbox" class="fu-switch" />
     </div>
     <h2>Contained</h2>
     <div
@@ -67,9 +59,9 @@
       </select>
       <textarea class="fu-form" placeholder="Placeholder" disabled></textarea>
       <div>
-        <input type="radio" name="radio1" class="fu-form" disabled />
-        <input type="radio" name="radio1" class="fu-form" disabled />
-        <input type="checkbox" class="fu-form" disabled />
+        <input type="radio" name="radio1" class="fu-radio" disabled />
+        <input type="radio" name="radio1" class="fu-radio" disabled />
+        <input type="checkbox" class="fu-checkbox" disabled />
         <input type="checkbox" class="fu-switch" disabled />
       </div>
     </div>
@@ -85,24 +77,6 @@
     <h2>Form with icon</h2>
     <div class="fu-grid fu-grid-row-medium fu-grid-column-medium">
       <div class="fu-form-outlined">
-        <div class="fu-icon-form">
-          <i class="fas fa-user fu-form-icon"></i>
-          <input class="fu-form" placeholder="Placeholder" />
-        </div>
-        <div class="fu-icon-form">
-          <i class="fas fa-user fu-form-icon"></i>
-          <select class="fu-form">
-            <option>Option1</option>
-            <option>Option2</option>
-            <option>Option3</option>
-          </select>
-        </div>
-        <div class="fu-icon-form">
-          <i class="fas fa-user fu-form-icon"></i>
-          <textarea class="fu-form" placeholder="Placeholder"></textarea>
-        </div>
-      </div>
-      <div class="fu-form-underlined">
         <div class="fu-icon-form">
           <i class="fas fa-user fu-form-icon"></i>
           <input class="fu-form" placeholder="Placeholder" />
