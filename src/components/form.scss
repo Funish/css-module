@@ -181,6 +181,36 @@ textarea.fu-form {
   }
 }
 
+/* Range
+   ========================================================================== */
+.fu-range {
+  appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+
+    border-radius: 500px;
+    background: $default-dark;
+  }
+
+  &::-webkit-slider-thumb {
+    top: 50%;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    transform: translate(0, -50%);
+
+    border: 1px solid $default-dark;
+    border-radius: 50%;
+    background: $default-light;
+
+    appearance: none;
+  }
+}
+
 /* Form for file
    ========================================================================== */
 .fu-form-file {

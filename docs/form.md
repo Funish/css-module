@@ -21,12 +21,10 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ## 单选框和复选框
 
-仅使用类选择器 `.fu-form` 即可应用样式。
-
 ```html
-<input type="radio" name="radio1" class="fu-form" />
-<input type="radio" name="radio1" class="fu-form" />
-<input type="checkbox" class="fu-form" />
+<input type="radio" name="radio1" class="fu-radio" />
+<input type="radio" name="radio1" class="fu-radio" />
+<input type="checkbox" class="fu-checkbox" />
 ```
 
 ## 开关
@@ -35,6 +33,14 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ```html
 <input type="checkbox" class="fu-switch" />
+```
+
+## 开关
+
+通过使用类选择器 `fu-range` 应用样式
+
+```html
+<input type="range" class="fu-range" />
 ```
 
 ## 上传

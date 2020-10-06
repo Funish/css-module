@@ -16,7 +16,7 @@
     </div>
     <h2>Form Selection</h2>
     <div
-      class="fu-flex fu-cross-center fu-flex-wrap fu-grid-row-medium fu-grid-column-medium fu-form-outlined"
+      class="fu-flex fu-cross-center fu-flex-wrap fu-grid-row-small fu-grid-column-small fu-form-outlined"
     >
       <div>
         <input type="radio" name="radio1" class="fu-radio" />
@@ -24,6 +24,7 @@
       </div>
       <input type="checkbox" class="fu-checkbox" />
       <input type="checkbox" class="fu-switch" />
+      <input type="range" class="fu-range" />
     </div>
     <h2>Contained</h2>
     <div
@@ -58,11 +59,14 @@
         <option>Option3</option>
       </select>
       <textarea class="fu-form" placeholder="Placeholder" disabled></textarea>
-      <div>
+      <div
+        class="fu-flex fu-cross-center fu-grid-row-small fu-grid-column-small"
+      >
         <input type="radio" name="radio1" class="fu-radio" disabled />
         <input type="radio" name="radio1" class="fu-radio" disabled />
         <input type="checkbox" class="fu-checkbox" disabled />
         <input type="checkbox" class="fu-switch" disabled />
+        <input type="range" class="fu-range" disabled />
       </div>
     </div>
     <h2>Upload</h2>
