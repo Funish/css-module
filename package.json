@@ -56,7 +56,9 @@
     "url": "https://github.com/Funish/css-module/issues"
   },
   "homepage": "https://css.funish.net",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.26.12"
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@nuxtjs/markdownit": "^1.2.9",
