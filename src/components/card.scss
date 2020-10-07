@@ -1,7 +1,7 @@
 /* ========================================================================
-     Component: Box
+     Component: Card
    ========================================================================== */
-.fu-box {
+.fun-card {
   line-height: 1.5;
 
   position: relative;
@@ -18,26 +18,26 @@
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
-  .fu-box-header {
+  .fun-card-header {
     padding: 15px 15px 5px;
   }
 
-  .fu-box-content {
+  .fun-card-content {
     padding: 10px 15px;
   }
 
-  .fu-box-footer {
+  .fun-card-footer {
     padding: 5px 15px 5px;
   }
 }
 
-.fu-box-media {
+.fun-card-media {
   overflow: hidden;
 
   height: 194px;
 }
 
-.fu-box-action {
+.fun-card-action {
   position: relative;
 
   display: block;

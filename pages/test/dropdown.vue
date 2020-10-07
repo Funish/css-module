@@ -2,89 +2,91 @@
   <div>
     <h1>Dropdown</h1>
     <hr />
-    <div class="fu-flex fu-flex-wrap fu-grid-row-medium fu-grid-column-medium">
-      <details class="fu-dropdown">
+    <div
+      class="fun-flex fun-flex-wrap fun-grid-row-medium fun-grid-column-medium"
+    >
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Dropdown</div>
+          <div class="fun-button fun-button-outlined">Dropdown</div>
         </summary>
-        <div class="fu-dropdown-menu">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+        <div class="fun-dropdown-menu">
+          <nuxt-link to="#1" class="fun-menu-item">Item1</nuxt-link>
+          <nuxt-link to="#2" class="fun-menu-item">Item2</nuxt-link>
+          <nuxt-link to="#3" class="fun-menu-item">Item3</nuxt-link>
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Left menu</div>
+          <div class="fun-button fun-button-outlined">Left menu</div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-left">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+        <div class="fun-dropdown-menu fun-dropdown-menu-left">
+          <nuxt-link to="#1" class="fun-menu-item">Item1</nuxt-link>
+          <nuxt-link to="#2" class="fun-menu-item">Item2</nuxt-link>
+          <nuxt-link to="#3" class="fun-menu-item">Item3</nuxt-link>
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Right menu</div>
+          <div class="fun-button fun-button-outlined">Right menu</div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-right">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+        <div class="fun-dropdown-menu fun-dropdown-menu-right">
+          <nuxt-link to="#1" class="fun-menu-item">Item1</nuxt-link>
+          <nuxt-link to="#2" class="fun-menu-item">Item2</nuxt-link>
+          <nuxt-link to="#3" class="fun-menu-item">Item3</nuxt-link>
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Top menu</div>
+          <div class="fun-button fun-button-outlined">Top menu</div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-top">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+        <div class="fun-dropdown-menu fun-dropdown-menu-top">
+          <nuxt-link to="#1" class="fun-menu-item">Item1</nuxt-link>
+          <nuxt-link to="#2" class="fun-menu-item">Item2</nuxt-link>
+          <nuxt-link to="#3" class="fun-menu-item">Item3</nuxt-link>
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">Bottom menu</div>
+          <div class="fun-button fun-button-outlined">Bottom menu</div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-bottom">
-          <nuxt-link to="#1" class="fu-menu-item">Item1</nuxt-link>
-          <nuxt-link to="#2" class="fu-menu-item">Item2</nuxt-link>
-          <nuxt-link to="#3" class="fu-menu-item">Item3</nuxt-link>
+        <div class="fun-dropdown-menu fun-dropdown-menu-bottom">
+          <nuxt-link to="#1" class="fun-menu-item">Item1</nuxt-link>
+          <nuxt-link to="#2" class="fun-menu-item">Item2</nuxt-link>
+          <nuxt-link to="#3" class="fun-menu-item">Item3</nuxt-link>
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">
+          <div class="fun-button fun-button-outlined">
             Bottom Left
           </div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-bottom-left">
-          <nuxt-link to="#1" class="fu-menu-item"
+        <div class="fun-dropdown-menu fun-dropdown-menu-bottom-left">
+          <nuxt-link to="#1" class="fun-menu-item"
             >Item1 - Hello World</nuxt-link
           >
-          <nuxt-link to="#2" class="fu-menu-item"
+          <nuxt-link to="#2" class="fun-menu-item"
             >Item2 - Hello World</nuxt-link
           >
-          <nuxt-link to="#3" class="fu-menu-item"
+          <nuxt-link to="#3" class="fun-menu-item"
             >Item3 - Hello World</nuxt-link
           >
         </div>
       </details>
-      <details class="fu-dropdown">
+      <details class="fun-dropdown">
         <summary>
-          <div class="fu-button fu-button-outlined">
+          <div class="fun-button fun-button-outlined">
             Bottom Right
           </div>
         </summary>
-        <div class="fu-dropdown-menu fu-dropdown-menu-bottom-right">
-          <nuxt-link to="#1" class="fu-menu-item"
+        <div class="fun-dropdown-menu fun-dropdown-menu-bottom-right">
+          <nuxt-link to="#1" class="fun-menu-item"
             >Item1 - Hello World</nuxt-link
           >
-          <nuxt-link to="#2" class="fu-menu-item"
+          <nuxt-link to="#2" class="fun-menu-item"
             >Item2 - Hello World</nuxt-link
           >
-          <nuxt-link to="#3" class="fu-menu-item"
+          <nuxt-link to="#3" class="fun-menu-item"
             >Item3 - Hello World</nuxt-link
           >
         </div>

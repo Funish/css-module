@@ -2,15 +2,15 @@
      Component: Visibility
    ========================================================================== */
 [hidden],
-.fu-hidden {
+.fun-hidden {
   display: none;
 }
 
-.fu-invisible {
+.fun-invisible {
   visibility: hidden;
 }
 
-.fu-visible {
+.fun-visible {
   visibility: visible;
 }
 
@@ -18,7 +18,7 @@
    ========================================================================== */
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: #{$width}) {
-    .fu-hidden#{$breakpoint} {
+    .fun-hidden#{$breakpoint} {
       display: none;
     }
   }
@@ -26,7 +26,7 @@
 
 @each $breakpoint, $width in $breakpoints {
   @media (max-width: #{$width - 1px}) {
-    .fu-visible#{$breakpoint} {
+    .fun-visible#{$breakpoint} {
       display: none;
     }
   }
@@ -34,22 +34,22 @@
 
 /* Touch
    ========================================================================== */
-.fu-hidden-touch {
+.fun-hidden-touch {
   display: block;
 }
 
 @media (pointer: coarse) {
-  .fu-hidden-touch {
+  .fun-hidden-touch {
     display: none;
   }
 }
 
-.fu-hidden-notouch {
+.fun-hidden-notouch {
   display: none;
 }
 
 @media (pointer: coarse) {
-  .fu-hidden-notouch {
+  .fun-hidden-notouch {
     display: block;
   }
 }

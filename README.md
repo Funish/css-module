@@ -32,8 +32,9 @@ Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project devel
 
 ### Controls
 
-- [Box](/docs/box.md)
+- [Background](/docs/background)
 - [Button](/docs/button.md)
+- [Card](/docs/card.md)
 - [Dropdown](/docs/dropdown.md)
 - [Form](/docs/form.md)
 - [Menu](/docs/menu.md)

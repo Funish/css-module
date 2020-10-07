@@ -1,7 +1,7 @@
 /* ========================================================================
      Component: Pagination
    ========================================================================== */
-.fu-pagination {
+.fun-pagination {
   a,
   span,
   em {
@@ -16,6 +16,6 @@
     text-align: center;
     white-space: nowrap;
 
-    @extend .fu-button;
+    @extend .fun-button;
   }
 }

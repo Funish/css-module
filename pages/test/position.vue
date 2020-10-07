@@ -2,22 +2,22 @@
   <div>
     <h1>Position</h1>
     <hr />
-    <div class="fu-width-1-1 fu-height-xlarge fu-position-relative">
-      <div class="fu-position-top-left">.fu-position-top-left</div>
-      <div class="fu-position-top-right">.fu-position-top-right</div>
-      <div class="fu-position-top-center">.fu-position-top-center</div>
-      <div class="fu-position-bottom-left">.fu-position-bottom-left</div>
-      <div class="fu-position-bottom-right">
-        .fu-position-bottom-right
+    <div class="fun-width-1-1 fun-height-xlarge fun-position-relative">
+      <div class="fun-position-top-left">.fun-position-top-left</div>
+      <div class="fun-position-top-right">.fun-position-top-right</div>
+      <div class="fun-position-top-center">.fun-position-top-center</div>
+      <div class="fun-position-bottom-left">.fun-position-bottom-left</div>
+      <div class="fun-position-bottom-right">
+        .fun-position-bottom-right
       </div>
-      <div class="fu-position-bottom-center">
-        .fu-position-bottom-center
+      <div class="fun-position-bottom-center">
+        .fun-position-bottom-center
       </div>
-      <div class="fu-position-center-left">.fu-position-center-left</div>
-      <div class="fu-position-center-right">
-        .fu-position-center-right
+      <div class="fun-position-center-left">.fun-position-center-left</div>
+      <div class="fun-position-center-right">
+        .fun-position-center-right
       </div>
-      <div class="fu-position-center">.fu-position-center</div>
+      <div class="fun-position-center">.fun-position-center</div>
     </div>
   </div>
 </template>

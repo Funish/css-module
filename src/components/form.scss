@@ -1,8 +1,8 @@
 /* ========================================================================
      Component: Form
    ========================================================================== */
-.fu-button,
-.fu-form {
+.fun-button,
+.fun-form {
   position: relative;
 
   display: inline-flex;
@@ -23,7 +23,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.fu-form {
+.fun-form {
   width: 280px;
   max-width: 100%;
   height: 48px;
@@ -38,8 +38,8 @@
   }
 }
 
-.fu-form-outlined.fu-form,
-.fu-form-outlined .fu-form {
+.fun-form-outlined.fun-form,
+.fun-form-outlined .fun-form {
   border: 1px solid;
 
   &:focus {
@@ -47,20 +47,20 @@
   }
 }
 
-.fu-form-contained.fu-form,
-.fu-form-contained .fu-form {
+.fun-form-contained.fun-form,
+.fun-form-contained .fun-form {
   border: 1px solid $default;
   background: $default;
 }
 
-.fu-form-action.fu-form,
-.fu-form-action .fu-form {
+.fun-form-action.fun-form,
+.fun-form-action .fun-form {
   border: 1px solid $default;
   background: $default;
 
   &:hover,
   &:focus {
-    border: 1px solid;
+    border: 0.5px solid;
     border-color: $default-text;
     background: inherit;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-textarea.fu-form {
+textarea.fun-form {
   height: 96px;
   padding: 16px;
 
@@ -79,8 +79,8 @@ textarea.fu-form {
 
 /* Radio and Checkbox
    ========================================================================== */
-.fu-radio,
-.fu-checkbox {
+.fun-radio,
+.fun-checkbox {
   position: relative;
 
   width: 20px;
@@ -104,7 +104,7 @@ textarea.fu-form {
   }
 }
 
-.fu-radio {
+.fun-radio {
   border-radius: 50%;
 
   &:checked {
@@ -125,7 +125,7 @@ textarea.fu-form {
   }
 }
 
-.fu-checkbox:checked {
+.fun-checkbox:checked {
   background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A');
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -133,7 +133,7 @@ textarea.fu-form {
 
 /* Switch
    ========================================================================== */
-.fu-switch {
+.fun-switch {
   position: relative;
 
   width: 38px;
@@ -183,7 +183,7 @@ textarea.fu-form {
 
 /* Range
    ========================================================================== */
-.fu-range {
+.fun-range {
   appearance: none;
 
   &::-webkit-slider-runnable-track {
@@ -213,14 +213,14 @@ textarea.fu-form {
 
 /* Form for file
    ========================================================================== */
-.fu-form-file {
+.fun-form-file {
   display: inline-flex;
 
   input[type='file'] {
     display: none;
   }
 
-  .fu-form {
+  .fun-form {
     color: $primary-light;
   }
 }
@@ -237,7 +237,7 @@ textarea.fu-form {
  * 6. Clip child elements
  */
 
-.fu-icon-form {
+.fun-icon-form {
   position: relative;
 
   display: inline-block;
@@ -248,7 +248,7 @@ textarea.fu-form {
 
   backface-visibility: hidden;
 
-  .fu-form {
+  .fun-form {
     min-width: 100%;
   }
 }
@@ -259,7 +259,7 @@ textarea.fu-form {
  * 3. Center icon vertically and horizontally
  */
 
-.fu-form-icon {
+.fun-form-icon {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -277,23 +277,23 @@ textarea.fu-form {
   }
 }
 
-:not(.fu-form-reverse).fu-icon-form,
-:not(.fu-form-reverse) .fu-icon-form {
-  .fu-form {
+:not(.fun-form-reverse).fun-icon-form,
+:not(.fun-form-reverse) .fun-icon-form {
+  .fun-form {
     padding-left: 40px;
 
     appearance: none;
   }
 }
 
-.fu-form-reverse.fu-icon-form,
-.fu-form-reverse .fu-icon-form {
-  .fu-form-icon {
+.fun-form-reverse.fun-icon-form,
+.fun-form-reverse .fun-icon-form {
+  .fun-form-icon {
     right: 0;
     left: auto;
   }
 
-  .fu-form {
+  .fun-form {
     padding-right: 40px;
     padding-left: 16px;
 

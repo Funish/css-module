@@ -1,11 +1,11 @@
 /* ========================================================================
      Component: Flex
    ========================================================================== */
-.fu-flex {
+.fun-flex {
   display: flex;
 }
 
-.fu-flex-inline {
+.fun-flex-inline {
   display: inline-flex;
 }
 
@@ -13,14 +13,14 @@
   * Remove the pseudo-element created by micro clearfix as a precaution
   */
 
-.fu-flex {
+.fun-flex {
   &::before,
   &::after {
     display: none;
   }
 }
 
-.fu-flex-inline {
+.fun-flex-inline {
   &::before,
   &::after {
     display: none;
@@ -30,93 +30,93 @@
 /* Direction
    ========================================================================== */
 
-.fu-flex-row {
+.fun-flex-row {
   flex-direction: row;
 }
 
-.fu-flex-row-reverse {
+.fun-flex-row-reverse {
   flex-direction: row-reverse;
 }
 
-.fu-flex-column {
+.fun-flex-column {
   flex-direction: column;
 }
 
-.fu-flex-column-reverse {
+.fun-flex-column-reverse {
   flex-direction: column-reverse;
 }
 
 /* Wrap
    ========================================================================== */
 
-.fu-flex-nowrap {
+.fun-flex-nowrap {
   flex-wrap: nowrap;
 }
 
-.fu-flex-wrap {
+.fun-flex-wrap {
   flex-wrap: wrap;
 }
 
-.fu-flex-wrap-reverse {
+.fun-flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
 /* Alignments of main axis
    ========================================================================== */
 
-.fu-main-start {
+.fun-main-start {
   justify-content: flex-start;
 }
 
-.fu-main-end {
+.fun-main-end {
   justify-content: flex-end;
 }
 
-.fu-main-center {
+.fun-main-center {
   justify-content: center;
 }
 
-.fu-main-between {
+.fun-main-between {
   justify-content: space-between;
 }
 
-.fu-main-around {
+.fun-main-around {
   justify-content: space-around;
 }
 
 /* Alignments of cross axis
    ========================================================================== */
 
-.fu-cross-stretch {
+.fun-cross-stretch {
   align-items: stretch;
 }
 
-.fu-cross-start {
+.fun-cross-start {
   align-items: flex-start;
 }
 
-.fu-cross-end {
+.fun-cross-end {
   align-items: flex-end;
 }
 
-.fu-cross-center {
+.fun-cross-center {
   align-items: center;
 }
 
 /* Allocate child space
    ========================================================================== */
 
-.fu-flex-auto {
+.fun-flex-auto {
   /* Ratio */
   flex: auto;
 }
 
-.fu-flex-none {
+.fun-flex-none {
   /* Fit */
   flex: none;
 }
 
-.fu-flex-1 {
+.fun-flex-1 {
   /* Equal */
   flex: 1;
 }

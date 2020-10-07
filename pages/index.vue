@@ -1,12 +1,12 @@
 <template>
-  <div class="fu-padding-auto">
-    <div class="fu-padding-bottom-xlarge">
+  <div class="fun-padding-auto">
+    <div class="fun-padding-bottom-xlarge">
       <h1>Funish CSS</h1>
       <h2>一款简洁的前端CSS框架</h2>
-      <nuxt-link to="/docs/" class="fu-button fu-button-contained"
+      <nuxt-link to="/docs/" class="fun-button fun-button-contained"
         >Get Started</nuxt-link
       >
-      <nuxt-link to="/test/" class="fu-button">Demo</nuxt-link>
+      <nuxt-link to="/test/" class="fun-button">Demo</nuxt-link>
     </div>
   </div>
 </template>

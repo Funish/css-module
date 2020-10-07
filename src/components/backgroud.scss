@@ -3,91 +3,91 @@
    ========================================================================== */
 /* Background color
    ========================================================================== */
-.fu-background-transparent {
+.fun-background-transparent {
   background: transparent;
 }
 
-.fu-background-default {
+.fun-background-default {
   background-color: $default-light;
 }
 
-.fu-background-muted {
+.fun-background-muted {
   background-color: $default;
 }
 
-.fu-background-primary {
+.fun-background-primary {
   background-color: $primary;
 }
 
-.fu-background-secondary {
+.fun-background-secondary {
   background-color: $secondary;
 }
 
-.fu-background-warning {
+.fun-background-warning {
   background-color: $warning;
 }
 
-.fu-background-success {
+.fun-background-success {
   background-color: $success;
 }
 
 /* Size
    ========================================================================== */
-.fu-background-cover,
-.fu-background-contain {
+.fun-background-cover,
+.fun-background-contain {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.fu-background-cover {
+.fun-background-cover {
   background-size: cover;
 }
 
-.fu-background-contain {
+.fun-background-contain {
   background-size: contain;
 }
 
 /* Position
    ========================================================================== */
-.fu-background-top-left {
+.fun-background-top-left {
   background-position: 0 0;
 }
 
-.fu-background-top-center {
+.fun-background-top-center {
   background-position: 50% 0;
 }
 
-.fu-background-top-right {
+.fun-background-top-right {
   background-position: 100% 0;
 }
 
-.fu-background-center-left {
+.fun-background-center-left {
   background-position: 0 50%;
 }
 
-.fu-background-center-center {
+.fun-background-center-center {
   background-position: 50% 50%;
 }
 
-.fu-background-center-right {
+.fun-background-center-right {
   background-position: 100% 50%;
 }
 
-.fu-background-bottom-left {
+.fun-background-bottom-left {
   background-position: 0 100%;
 }
 
-.fu-background-bottom-center {
+.fun-background-bottom-center {
   background-position: 50% 100%;
 }
 
-.fu-background-bottom-right {
+.fun-background-bottom-right {
   background-position: 100% 100%;
 }
 
 /* Repeat
    ========================================================================== */
-.fu-background-norepeat {
+.fun-background-norepeat {
   background-repeat: no-repeat;
 }
 
@@ -96,7 +96,7 @@
 /*
   * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
   */
-.fu-background-fixed {
+.fun-background-fixed {
   background-attachment: fixed;
 
   backface-visibility: hidden;
@@ -106,7 +106,7 @@
   * Exclude touch devices because `fixed` doesn't work on iOS and Android
   */
 @media (pointer: coarse) {
-  .fu-background-fixed {
+  .fun-background-fixed {
     background-attachment: scroll;
   }
 }
@@ -114,7 +114,7 @@
    ========================================================================== */
 @each $breakpoint, $width in $breakpoints {
   @media (max-width: #{$width - 1px}) {
-    .fu-background-image#{$breakpoint} {
+    .fun-background-image#{$breakpoint} {
       background-image: none;
     }
   }

@@ -3,7 +3,7 @@
    ========================================================================== */
 /* Border
    ========================================================================== */
-[class*='fu-border'] {
+[class*='fun-border'] {
   box-sizing: border-box;
 }
 
@@ -11,81 +11,81 @@
   * Border radius
   */
 
-.fu-border-small {
+.fun-border-small {
   border-radius: 4px;
 }
 
-.fu-border-large {
+.fun-border-large {
   border-radius: 6px;
 }
 
-.fu-border-pill {
+.fun-border-pill {
   border-radius: 500px;
 }
 
-.fu-border-circle {
+.fun-border-circle {
   border-radius: 50%;
 }
 
 /* Box shadow
    ========================================================================== */
-.fu-shadow-none {
+.fun-shadow-none {
   box-shadow: none;
 }
 
-.fu-shadow-small {
+.fun-shadow-small {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.fu-shadow-medium {
+.fun-shadow-medium {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.fu-shadow-large {
+.fun-shadow-large {
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
     0 1px 8px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* Float
    ========================================================================== */
-.fu-display-none {
+.fun-display-none {
   display: none;
 }
 
-.fu-display-block {
+.fun-display-block {
   display: block;
 }
 
-.fu-display-inline {
+.fun-display-inline {
   display: inline-block;
 }
 
 /* Float
    ========================================================================== */
-.fu-float-start {
+.fun-float-start {
   float: inline-start;
 }
 
-.fu-float-end {
+.fun-float-end {
   float: inline-end;
 }
 
-.fu-float-none {
+.fun-float-none {
   float: none;
 }
 
 /* Overflow
    ========================================================================== */
-.fu-overflow-hidden {
+.fun-overflow-hidden {
   overflow: hidden;
 }
 
-.fu-overflow-x-scroll {
+.fun-overflow-x-scroll {
   overflow-x: scroll;
 }
 
-.fu-overflow-y-scroll {
+.fun-overflow-y-scroll {
   overflow-y: scroll;
 }

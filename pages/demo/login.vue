@@ -2,18 +2,18 @@
   <div>
     <h1>Login Form</h1>
     <form
-      class="fu-flex fu-flex-column fu-flex-wrap fu-grid-row-medium fu-grid-column-medium"
+      class="fun-flex fun-flex-column fun-flex-wrap fun-grid-row-medium fun-grid-column-medium"
     >
-      <input class="fu-form" placeholder="Placeholder" />
-      <select class="fu-form">
+      <input class="fun-form" placeholder="Placeholder" />
+      <select class="fun-form">
         <option>Option1</option>
         <option>Option2</option>
         <option>Option3</option>
       </select>
-      <textarea class="fu-form" placeholder="Placeholder"></textarea>
-      <div class="fu-main-center fu-cross-center">
-        <button class="fu-button">Button</button>
-        <button class="fu-button fu-button-contained">Contained</button>
+      <textarea class="fun-form" placeholder="Placeholder"></textarea>
+      <div class="fun-main-center fun-cross-center">
+        <button class="fun-button">Button</button>
+        <button class="fun-button fun-button-contained">Contained</button>
       </div>
     </form>
   </div>

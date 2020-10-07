@@ -2,32 +2,32 @@
      Component: Margin
    ========================================================================== */
 @each $margin, $length in $margin-spacings {
-  .fu-margin-#{$margin} {
+  .fun-margin-#{$margin} {
     margin: #{$length};
   }
 
-  .fu-margin-top-#{$margin} {
+  .fun-margin-top-#{$margin} {
     margin-top: #{$length};
   }
 
-  .fu-margin-left-#{$margin} {
+  .fun-margin-left-#{$margin} {
     margin-left: #{$length};
   }
 
-  .fu-margin-bottom-#{$margin} {
+  .fun-margin-bottom-#{$margin} {
     margin-bottom: #{$length};
   }
 
-  .fu-margin-right-#{$margin} {
+  .fun-margin-right-#{$margin} {
     margin-right: #{$length};
   }
 
-  .fu-margin-horizontal-#{$margin} {
+  .fun-margin-horizontal-#{$margin} {
     margin-right: #{$length};
     margin-left: #{$length};
   }
 
-  .fu-margin-vertical-#{$margin} {
+  .fun-margin-vertical-#{$margin} {
     margin-top: #{$length};
     margin-bottom: #{$length};
   }

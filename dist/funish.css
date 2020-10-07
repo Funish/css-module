@@ -409,9 +409,142 @@ hr {
 
 /* Controls */
 /* ========================================================================
-     Component: Box
+     Component: Background
    ========================================================================== */
-.fu-box {
+/* Background color
+   ========================================================================== */
+.fun-background-transparent {
+  background: transparent;
+}
+
+.fun-background-default {
+  background-color: #fff;
+}
+
+.fun-background-muted {
+  background-color: #fafafa;
+}
+
+.fun-background-primary {
+  background-color: #212121;
+}
+
+.fun-background-secondary {
+  background-color: #0366d6;
+}
+
+.fun-background-warning {
+  background-color: #d73a49;
+}
+
+.fun-background-success {
+  background-color: #28a745;
+}
+
+/* Size
+   ========================================================================== */
+.fun-background-cover,
+.fun-background-contain {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fun-background-cover {
+  background-size: cover;
+}
+
+.fun-background-contain {
+  background-size: contain;
+}
+
+/* Position
+   ========================================================================== */
+.fun-background-top-left {
+  background-position: 0 0;
+}
+
+.fun-background-top-center {
+  background-position: 50% 0;
+}
+
+.fun-background-top-right {
+  background-position: 100% 0;
+}
+
+.fun-background-center-left {
+  background-position: 0 50%;
+}
+
+.fun-background-center-center {
+  background-position: 50% 50%;
+}
+
+.fun-background-center-right {
+  background-position: 100% 50%;
+}
+
+.fun-background-bottom-left {
+  background-position: 0 100%;
+}
+
+.fun-background-bottom-center {
+  background-position: 50% 100%;
+}
+
+.fun-background-bottom-right {
+  background-position: 100% 100%;
+}
+
+/* Repeat
+   ========================================================================== */
+.fun-background-norepeat {
+  background-repeat: no-repeat;
+}
+
+/* Attachment
+   ========================================================================== */
+/*
+  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+  */
+.fun-background-fixed {
+  background-attachment: fixed;
+  backface-visibility: hidden;
+}
+
+/*
+  * Exclude touch devices because `fixed` doesn't work on iOS and Android
+  */
+@media (pointer: coarse) {
+  .fun-background-fixed {
+    background-attachment: scroll;
+  }
+}
+/* Image
+   ========================================================================== */
+@media (max-width: 639px) {
+  .fun-background-image\@s {
+    background-image: none;
+  }
+}
+@media (max-width: 959px) {
+  .fun-background-image\@m {
+    background-image: none;
+  }
+}
+@media (max-width: 1199px) {
+  .fun-background-image\@l {
+    background-image: none;
+  }
+}
+@media (max-width: 1599px) {
+  .fun-background-image\@xl {
+    background-image: none;
+  }
+}
+/* ========================================================================
+     Component: Card
+   ========================================================================== */
+.fun-card {
   line-height: 1.5;
   position: relative;
   box-sizing: border-box;
@@ -423,22 +556,22 @@ hr {
   background: #fff;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-.fu-box .fu-box-header {
+.fun-card .fun-card-header {
   padding: 15px 15px 5px;
 }
-.fu-box .fu-box-content {
+.fun-card .fun-card-content {
   padding: 10px 15px;
 }
-.fu-box .fu-box-footer {
+.fun-card .fun-card-footer {
   padding: 5px 15px 5px;
 }
 
-.fu-box-media {
+.fun-card-media {
   overflow: hidden;
   height: 194px;
 }
 
-.fu-box-action {
+.fun-card-action {
   position: relative;
   display: block;
   overflow: hidden;
@@ -448,7 +581,7 @@ hr {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.fu-box-action::before, .fu-box-action::after {
+.fun-card-action::before, .fun-card-action::after {
   position: absolute;
   top: calc(50% - 100%);
   left: calc(50% - 100%);
@@ -460,13 +593,13 @@ hr {
   border-radius: 50%;
   background: currentColor;
 }
-.fu-box-action::after {
+.fun-card-action::after {
   transition: opacity 150ms linear;
 }
-.fu-box-action:hover::before {
+.fun-card-action:hover::before {
   opacity: 0.04;
 }
-.fu-box-action:focus::before, .fu-box-action:active::after {
+.fun-card-action:focus::before, .fun-card-action:active::after {
   transition-duration: 75ms;
   opacity: 0.12;
 }
@@ -474,27 +607,27 @@ hr {
 /* ========================================================================
      Component: Dropdown 
    ========================================================================== */
-.fu-dropdown summary,
-.fu-navbar-dropdown summary,
-.fu-navbar-drawer summary {
+.fun-dropdown summary,
+.fun-navbar-dropdown summary,
+.fun-navbar-drawer summary {
   cursor: pointer;
   user-select: none;
 }
-.fu-dropdown summary::before, .fu-dropdown summary::-webkit-details-marker,
-.fu-navbar-dropdown summary::before,
-.fu-navbar-dropdown summary::-webkit-details-marker,
-.fu-navbar-drawer summary::before,
-.fu-navbar-drawer summary::-webkit-details-marker {
+.fun-dropdown summary::before, .fun-dropdown summary::-webkit-details-marker,
+.fun-navbar-dropdown summary::before,
+.fun-navbar-dropdown summary::-webkit-details-marker,
+.fun-navbar-drawer summary::before,
+.fun-navbar-drawer summary::-webkit-details-marker {
   display: none;
 }
-.fu-dropdown:not([open]) > *:not(summary),
-.fu-navbar-dropdown:not([open]) > *:not(summary),
-.fu-navbar-drawer:not([open]) > *:not(summary) {
+.fun-dropdown:not([open]) > *:not(summary),
+.fun-navbar-dropdown:not([open]) > *:not(summary),
+.fun-navbar-drawer:not([open]) > *:not(summary) {
   display: none;
 }
-.fu-dropdown[open] > summary::before,
-.fu-navbar-dropdown[open] > summary::before,
-.fu-navbar-drawer[open] > summary::before {
+.fun-dropdown[open] > summary::before,
+.fun-navbar-dropdown[open] > summary::before,
+.fun-navbar-drawer[open] > summary::before {
   position: fixed;
   z-index: 80;
   top: 0;
@@ -507,12 +640,12 @@ hr {
   background: transparent;
 }
 
-.fu-dropdown {
+.fun-dropdown {
   position: relative;
 }
 
-.fu-dropdown-menu,
-.fu-dropdown-menu-bottom-left {
+.fun-dropdown-menu,
+.fun-dropdown-menu-bottom-left {
   position: absolute;
   z-index: 100;
   top: 100%;
@@ -528,29 +661,29 @@ hr {
 
 /* Style modifiers
    ========================================================================== */
-.fu-dropdown-menu-top {
+.fun-dropdown-menu-top {
   top: auto;
   bottom: 100%;
   left: 0;
   margin-bottom: 3px;
 }
-.fu-dropdown-menu-top::before, .fu-dropdown-menu-top::after {
+.fun-dropdown-menu-top::before, .fun-dropdown-menu-top::after {
   top: auto;
   right: auto;
 }
 
-.fu-dropdown-menu-bottom {
+.fun-dropdown-menu-bottom {
   right: 50%;
   left: auto;
   transform: translateX(50%);
 }
 
-.fu-dropdown-menu-bottom-right {
+.fun-dropdown-menu-bottom-right {
   right: 0;
   left: auto;
 }
 
-.fu-dropdown-menu-left {
+.fun-dropdown-menu-left {
   top: 0;
   right: 100%;
   left: auto;
@@ -559,7 +692,7 @@ hr {
   margin-right: 8px;
 }
 
-.fu-dropdown-menu-right {
+.fun-dropdown-menu-right {
   top: 0;
   left: 100%;
   width: auto;
@@ -570,10 +703,10 @@ hr {
 /* ========================================================================
      Component: Form
    ========================================================================== */
-.fu-button, .fu-pagination a,
-.fu-pagination span,
-.fu-pagination em,
-.fu-form {
+.fun-button, .fun-pagination a,
+.fun-pagination span,
+.fun-pagination em,
+.fun-form {
   position: relative;
   display: inline-flex;
   overflow: hidden;
@@ -589,52 +722,52 @@ hr {
   -webkit-font-smoothing: antialiased;
 }
 
-.fu-form {
+.fun-form {
   width: 280px;
   max-width: 100%;
   height: 48px;
   padding: 0 16px;
   transition: all 75ms linear;
 }
-.fu-form:not(:disabled) {
+.fun-form:not(:disabled) {
   color: currentColor;
   border-color: currentColor;
   background: inherit;
 }
 
-.fu-form-outlined.fu-form,
-.fu-form-outlined .fu-form {
+.fun-form-outlined.fun-form,
+.fun-form-outlined .fun-form {
   border: 1px solid;
 }
-.fu-form-outlined.fu-form:focus,
-.fu-form-outlined .fu-form:focus {
+.fun-form-outlined.fun-form:focus,
+.fun-form-outlined .fun-form:focus {
   box-shadow: inset 0 0 0 0.5px currentColor;
 }
 
-.fu-form-contained.fu-form,
-.fu-form-contained .fu-form {
+.fun-form-contained.fun-form,
+.fun-form-contained .fun-form {
   border: 1px solid #fafafa;
   background: #fafafa;
 }
 
-.fu-form-action.fu-form,
-.fu-form-action .fu-form {
+.fun-form-action.fun-form,
+.fun-form-action .fun-form {
   border: 1px solid #fafafa;
   background: #fafafa;
 }
-.fu-form-action.fu-form:hover, .fu-form-action.fu-form:focus,
-.fu-form-action .fu-form:hover,
-.fu-form-action .fu-form:focus {
-  border: 1px solid;
+.fun-form-action.fun-form:hover, .fun-form-action.fun-form:focus,
+.fun-form-action .fun-form:hover,
+.fun-form-action .fun-form:focus {
+  border: 0.5px solid;
   border-color: #000;
   background: inherit;
 }
-.fu-form-action.fu-form:focus,
-.fu-form-action .fu-form:focus {
+.fun-form-action.fun-form:focus,
+.fun-form-action .fun-form:focus {
   box-shadow: inset 0 0 0 0.5px currentColor;
 }
 
-textarea.fu-form {
+textarea.fun-form {
   height: 96px;
   padding: 16px;
   resize: none;
@@ -642,8 +775,8 @@ textarea.fu-form {
 
 /* Radio and Checkbox
    ========================================================================== */
-.fu-radio,
-.fu-checkbox {
+.fun-radio,
+.fun-checkbox {
   position: relative;
   width: 20px;
   height: 20px;
@@ -653,20 +786,20 @@ textarea.fu-form {
   border: 1px solid #c7c7c7;
   appearance: none;
 }
-.fu-radio:checked,
-.fu-checkbox:checked {
+.fun-radio:checked,
+.fun-checkbox:checked {
   border-color: #212121;
   background: #212121;
 }
-.fu-radio:disabled,
-.fu-checkbox:disabled {
+.fun-radio:disabled,
+.fun-checkbox:disabled {
   background: #fafafa;
 }
 
-.fu-radio {
+.fun-radio {
   border-radius: 50%;
 }
-.fu-radio:checked::after {
+.fun-radio:checked::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -678,7 +811,7 @@ textarea.fu-form {
   background: #fff;
 }
 
-.fu-checkbox:checked {
+.fun-checkbox:checked {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -686,7 +819,7 @@ textarea.fu-form {
 
 /* Switch
    ========================================================================== */
-.fu-switch {
+.fun-switch {
   position: relative;
   width: 38px;
   height: 18px;
@@ -696,7 +829,7 @@ textarea.fu-form {
   background: #c7c7c7;
   appearance: none;
 }
-.fu-switch::after {
+.fun-switch::after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -709,30 +842,30 @@ textarea.fu-form {
   background: #fff;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-.fu-switch:checked {
+.fun-switch:checked {
   background: #484848;
 }
-.fu-switch:checked::after {
+.fun-switch:checked::after {
   transform: translate(100%, -50%);
   background: #212121;
 }
-.fu-switch:disabled::after {
+.fun-switch:disabled::after {
   border: 1px solid #c7c7c7;
   box-shadow: none;
 }
 
 /* Range
    ========================================================================== */
-.fu-range {
+.fun-range {
   appearance: none;
 }
-.fu-range::-webkit-slider-runnable-track {
+.fun-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   border-radius: 500px;
   background: #c7c7c7;
 }
-.fu-range::-webkit-slider-thumb {
+.fun-range::-webkit-slider-thumb {
   top: 50%;
   left: 0;
   width: 16px;
@@ -746,13 +879,13 @@ textarea.fu-form {
 
 /* Form for file
    ========================================================================== */
-.fu-form-file {
+.fun-form-file {
   display: inline-flex;
 }
-.fu-form-file input[type=file] {
+.fun-form-file input[type=file] {
   display: none;
 }
-.fu-form-file .fu-form {
+.fun-form-file .fun-form {
   color: #484848;
 }
 
@@ -767,14 +900,14 @@ textarea.fu-form {
  *    to fix 1px glitch when combined with overlays and transitions in Webkit
  * 6. Clip child elements
  */
-.fu-icon-form {
+.fun-icon-form {
   position: relative;
   display: inline-block;
   max-width: 100%;
   vertical-align: middle;
   backface-visibility: hidden;
 }
-.fu-icon-form .fu-form {
+.fun-icon-form .fun-form {
   min-width: 100%;
 }
 
@@ -783,7 +916,7 @@ textarea.fu-form {
  * 2. Set width
  * 3. Center icon vertically and horizontally
  */
-.fu-form-icon {
+.fun-form-icon {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -794,23 +927,23 @@ textarea.fu-form {
   justify-content: center;
   width: 40px;
 }
-.fu-form-icon:not(a):not(button):not(input) {
+.fun-form-icon:not(a):not(button):not(input) {
   pointer-events: none;
 }
 
-:not(.fu-form-reverse).fu-icon-form .fu-form,
-:not(.fu-form-reverse) .fu-icon-form .fu-form {
+:not(.fun-form-reverse).fun-icon-form .fun-form,
+:not(.fun-form-reverse) .fun-icon-form .fun-form {
   padding-left: 40px;
   appearance: none;
 }
 
-.fu-form-reverse.fu-icon-form .fu-form-icon,
-.fu-form-reverse .fu-icon-form .fu-form-icon {
+.fun-form-reverse.fun-icon-form .fun-form-icon,
+.fun-form-reverse .fun-icon-form .fun-form-icon {
   right: 0;
   left: auto;
 }
-.fu-form-reverse.fu-icon-form .fu-form,
-.fu-form-reverse .fu-icon-form .fu-form {
+.fun-form-reverse.fun-icon-form .fun-form,
+.fun-form-reverse .fun-icon-form .fun-form {
   padding-right: 40px;
   padding-left: 16px;
   appearance: none;
@@ -819,26 +952,26 @@ textarea.fu-form {
 /* ========================================================================
      Component: Button
    ========================================================================== */
-.fu-button, .fu-pagination a,
-.fu-pagination span,
-.fu-pagination em {
+.fun-button, .fun-pagination a,
+.fun-pagination span,
+.fun-pagination em {
   height: 36px;
   padding: 0 8px;
   user-select: none;
   text-transform: uppercase;
 }
-.fu-button:not(:disabled), .fu-pagination a:not(:disabled),
-.fu-pagination span:not(:disabled),
-.fu-pagination em:not(:disabled) {
+.fun-button:not(:disabled), .fun-pagination a:not(:disabled),
+.fun-pagination span:not(:disabled),
+.fun-pagination em:not(:disabled) {
   cursor: pointer;
   color: currentColor;
   background: transparent;
 }
-.fu-button::before, .fu-pagination a::before,
-.fu-pagination span::before,
-.fu-pagination em::before, .fu-button::after, .fu-pagination a::after,
-.fu-pagination span::after,
-.fu-pagination em::after {
+.fun-button::before, .fun-pagination a::before,
+.fun-pagination span::before,
+.fun-pagination em::before, .fun-button::after, .fun-pagination a::after,
+.fun-pagination span::after,
+.fun-pagination em::after {
   position: absolute;
   top: calc(50% - 100%);
   left: calc(50% - 100%);
@@ -850,66 +983,66 @@ textarea.fu-form {
   border-radius: 50%;
   background: currentColor;
 }
-.fu-button::after, .fu-pagination a::after,
-.fu-pagination span::after,
-.fu-pagination em::after {
+.fun-button::after, .fun-pagination a::after,
+.fun-pagination span::after,
+.fun-pagination em::after {
   transition: all 150ms linear;
 }
-.fu-button:hover::before, .fu-pagination a:hover::before,
-.fu-pagination span:hover::before,
-.fu-pagination em:hover::before {
+.fun-button:hover::before, .fun-pagination a:hover::before,
+.fun-pagination span:hover::before,
+.fun-pagination em:hover::before {
   opacity: 0.08;
 }
-.fu-button:focus::before, .fu-pagination a:focus::before,
-.fu-pagination span:focus::before,
-.fu-pagination em:focus::before, .fu-button:active::after, .fu-pagination a:active::after,
-.fu-pagination span:active::after,
-.fu-pagination em:active::after {
+.fun-button:focus::before, .fun-pagination a:focus::before,
+.fun-pagination span:focus::before,
+.fun-pagination em:focus::before, .fun-button:active::after, .fun-pagination a:active::after,
+.fun-pagination span:active::after,
+.fun-pagination em:active::after {
   transition-duration: 75ms;
   opacity: 0.24;
 }
 
-.fu-button-dense {
+.fun-button-dense {
   font-size: 0.8125rem;
   height: 32px;
 }
 
-.fu-button-loose {
+.fun-button-loose {
   height: 40px;
 }
 
 /* Style modifiers   ========================================================================== */
-.fu-button-outlined {
+.fun-button-outlined {
   padding: 0 16px;
 }
-.fu-button-outlined:not(:disabled) {
+.fun-button-outlined:not(:disabled) {
   border: 1px solid currentColor;
 }
 
-.fu-button-contained, .fu-button-raised {
+.fun-button-contained, .fun-button-raised {
   padding: 0 16px;
 }
-.fu-button-contained:not(:disabled), .fu-button-raised:not(:disabled) {
+.fun-button-contained:not(:disabled), .fun-button-raised:not(:disabled) {
   color: #fff;
   background: #000;
 }
-.fu-button-contained::before, .fu-button-raised::before, .fu-button-contained::after, .fu-button-raised::after {
+.fun-button-contained::before, .fun-button-raised::before, .fun-button-contained::after, .fun-button-raised::after {
   background: currentColor;
 }
 
-.fu-button-raised:not(:disabled) {
+.fun-button-raised:not(:disabled) {
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
-.fu-button-raised:hover, .fu-button-raised:focus {
+.fun-button-raised:hover, .fun-button-raised:focus {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.fu-button-raised:active {
+.fun-button-raised:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Icon button   ========================================================================== */
-.fu-button-icon {
+.fun-button-icon {
   font-size: 18px;
   display: inline-block;
   width: 18px;
@@ -919,47 +1052,47 @@ textarea.fu-form {
   color: inherit;
 }
 
-.fu-button-reverse .fu-button .fu-button-icon, .fu-button-reverse .fu-pagination a .fu-button-icon, .fu-pagination .fu-button-reverse a .fu-button-icon,
-.fu-button-reverse .fu-pagination span .fu-button-icon,
-.fu-pagination .fu-button-reverse span .fu-button-icon,
-.fu-button-reverse .fu-pagination em .fu-button-icon,
-.fu-pagination .fu-button-reverse em .fu-button-icon,
-.fu-button-reverse.fu-button .fu-button-icon,
-.fu-pagination a.fu-button-reverse .fu-button-icon,
-.fu-pagination span.fu-button-reverse .fu-button-icon,
-.fu-pagination em.fu-button-reverse .fu-button-icon {
+.fun-button-reverse .fun-button .fun-button-icon, .fun-button-reverse .fun-pagination a .fun-button-icon, .fun-pagination .fun-button-reverse a .fun-button-icon,
+.fun-button-reverse .fun-pagination span .fun-button-icon,
+.fun-pagination .fun-button-reverse span .fun-button-icon,
+.fun-button-reverse .fun-pagination em .fun-button-icon,
+.fun-pagination .fun-button-reverse em .fun-button-icon,
+.fun-button-reverse.fun-button .fun-button-icon,
+.fun-pagination a.fun-button-reverse .fun-button-icon,
+.fun-pagination span.fun-button-reverse .fun-button-icon,
+.fun-pagination em.fun-button-reverse .fun-button-icon {
   margin-right: 0;
   margin-left: 8px;
 }
 
-svg.fu-button-icon {
+svg.fun-button-icon {
   fill: currentColor;
 }
 
-.fu-button-contained .fu-button-icon, .fu-button-raised .fu-button-icon,
-.fu-button-outlined .fu-button-icon {
+.fun-button-contained .fun-button-icon, .fun-button-raised .fun-button-icon,
+.fun-button-outlined .fun-button-icon {
   margin-right: 8px;
   margin-left: -4px;
 }
 
-.fu-button-reverse .fu-button-contained .fu-button-icon, .fu-button-reverse .fu-button-raised .fu-button-icon,
-.fu-button-reverse .fu-button-outlined .fu-button-icon,
-.fu-button-reverse.fu-button-contained .fu-button-icon,
-.fu-button-reverse.fu-button-raised .fu-button-icon,
-.fu-button-reverse.fu-button-outlined .fu-button-icon {
+.fun-button-reverse .fun-button-contained .fun-button-icon, .fun-button-reverse .fun-button-raised .fun-button-icon,
+.fun-button-reverse .fun-button-outlined .fun-button-icon,
+.fun-button-reverse.fun-button-contained .fun-button-icon,
+.fun-button-reverse.fun-button-raised .fun-button-icon,
+.fun-button-reverse.fun-button-outlined .fun-button-icon {
   margin-right: -4px;
   margin-left: 8px;
 }
 
-.fu-icon-button {
+.fun-icon-button {
   min-width: 36px;
   padding: 0;
   border-radius: 500px;
 }
-.fu-icon-button.fu-button-dense {
+.fun-icon-button.fun-button-dense {
   min-width: 32px;
 }
-.fu-icon-button.fu-button-loose {
+.fun-icon-button.fun-button-loose {
   min-width: 40px;
 }
 
@@ -968,29 +1101,29 @@ svg.fu-button-icon {
  * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
  * 2. Behave like button * 3. Create position context 
  */
-.fu-button-group {
+.fun-button-group {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
 }
-.fu-button-group > .fu-button:first-child, .fu-pagination .fu-button-group > a:first-child,
-.fu-pagination .fu-button-group > span:first-child,
-.fu-pagination .fu-button-group > em:first-child,
-.fu-button-group > .fu-button:last-child,
-.fu-pagination .fu-button-group > a:last-child,
-.fu-pagination .fu-button-group > span:last-child,
-.fu-pagination .fu-button-group > em:last-child {
+.fun-button-group > .fun-button:first-child, .fun-pagination .fun-button-group > a:first-child,
+.fun-pagination .fun-button-group > span:first-child,
+.fun-pagination .fun-button-group > em:first-child,
+.fun-button-group > .fun-button:last-child,
+.fun-pagination .fun-button-group > a:last-child,
+.fun-pagination .fun-button-group > span:last-child,
+.fun-pagination .fun-button-group > em:last-child {
   border-radius: 4px;
 }
-.fu-button-group > .fu-button:not(:first-child), .fu-pagination .fu-button-group > a:not(:first-child),
-.fu-pagination .fu-button-group > span:not(:first-child),
-.fu-pagination .fu-button-group > em:not(:first-child) {
+.fun-button-group > .fun-button:not(:first-child), .fun-pagination .fun-button-group > a:not(:first-child),
+.fun-pagination .fun-button-group > span:not(:first-child),
+.fun-pagination .fun-button-group > em:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.fu-button-group > .fu-button:not(:last-child), .fu-pagination .fu-button-group > a:not(:last-child),
-.fu-pagination .fu-button-group > span:not(:last-child),
-.fu-pagination .fu-button-group > em:not(:last-child) {
+.fun-button-group > .fun-button:not(:last-child), .fun-pagination .fun-button-group > a:not(:last-child),
+.fun-pagination .fun-button-group > span:not(:last-child),
+.fun-pagination .fun-button-group > em:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -998,39 +1131,39 @@ svg.fu-button-icon {
 /* ========================================================================
      Component: Markdown
    ========================================================================== */
-.fu-menu,
-.fu-dropdown-menu,
-.fu-navbar-dropdown {
+.fun-menu,
+.fun-dropdown-menu,
+.fun-navbar-dropdown {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.fu-menu ul,
-.fu-dropdown-menu ul,
-.fu-navbar-dropdown ul {
+.fun-menu ul,
+.fun-dropdown-menu ul,
+.fun-navbar-dropdown ul {
   margin: 0;
   padding: 0;
 }
-.fu-menu li,
-.fu-dropdown-menu li,
-.fu-navbar-dropdown li {
+.fun-menu li,
+.fun-dropdown-menu li,
+.fun-navbar-dropdown li {
   list-style: none;
 }
 
-.fu-menu-header {
+.fun-menu-header {
   font-size: large;
   display: block;
   padding: 4px 16px;
 }
 
-.fu-menu-item {
+.fun-menu-item {
   display: block;
   padding: 4px 16px;
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
 }
-.fu-menu-item:hover {
+.fun-menu-item:hover {
   color: #fff;
   background: #212121;
 }
@@ -1038,46 +1171,43 @@ svg.fu-button-icon {
 /* ========================================================================
      Component: Navbar
    ========================================================================== */
-.fu-navbar-top,
-.fu-navbar-bottom {
-  line-height: 100%;
+.fun-navbar-top,
+.fun-navbar-bottom {
+  line-height: 48px;
   position: sticky;
   z-index: 998;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  height: 48px;
+  user-select: none;
   white-space: nowrap;
   background: #fff;
 }
 
-.fu-navbar-top {
+.fun-navbar-top {
   top: 0;
-  padding: 0 16px;
+  padding: 0 8px;
   box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 
-.fu-navbar-bottom {
+.fun-navbar-container {
+  display: inline-flex;
+  align-items: center;
+  flex: auto;
+}
+.fun-navbar-container > * {
+  margin: 0 8px;
+}
+
+.fun-navbar-bottom {
   bottom: 0;
   padding: 16px;
   box-shadow: 0 -1px 4px -1px #c7c7c7;
 }
 
-.fu-navbar-item {
-  display: inline-block;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-  height: 100%;
-  margin-right: 16px;
-  padding: 16px 0;
-}
-
-.fu-navbar-dropdown,
-.fu-navbar-drawer {
+.fun-navbar-dropdown > :not(summary) {
   line-height: 1.5;
-}
-
-.fu-navbar-dropdown > :not(summary) {
   position: absolute;
   z-index: 998;
   top: 100%;
@@ -1089,7 +1219,8 @@ svg.fu-button-icon {
   box-shadow: 0 1px 4px -1px #c7c7c7;
 }
 
-.fu-navbar-drawer > :not(summary) {
+.fun-navbar-drawer > :not(summary) {
+  line-height: 1.5;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -1102,7 +1233,7 @@ svg.fu-button-icon {
   box-shadow: 1px 0 4px -1px #c7c7c7;
 }
 
-.fu-navbar-drawer-reverse > :not(summary) {
+.fun-navbar-drawer-reverse > :not(summary) {
   right: 0;
   left: auto;
 }
@@ -1110,9 +1241,9 @@ svg.fu-button-icon {
 /* ========================================================================
      Component: Pagination
    ========================================================================== */
-.fu-pagination a,
-.fu-pagination span,
-.fu-pagination em {
+.fun-pagination a,
+.fun-pagination span,
+.fun-pagination em {
   font-style: normal;
   display: inline-block;
   min-width: 32px;
@@ -1125,16 +1256,16 @@ svg.fu-button-icon {
 /* ========================================================================
    Component: Progress
    ========================================================================== */
-.fu-progress {
+.fun-progress {
   box-sizing: border-box;
   width: 100%;
   height: 4px;
   appearance: none;
 }
-.fu-progress::-webkit-progress-bar {
+.fun-progress::-webkit-progress-bar {
   background: #c7c7c7;
 }
-.fu-progress::-webkit-progress-value {
+.fun-progress::-webkit-progress-value {
   background: #000;
 }
 
@@ -1143,86 +1274,86 @@ svg.fu-button-icon {
    ========================================================================== */
 /* Border
    ========================================================================== */
-[class*=fu-border] {
+[class*=fun-border] {
   box-sizing: border-box;
 }
 
 /** 
   * Border radius
   */
-.fu-border-small {
+.fun-border-small {
   border-radius: 4px;
 }
 
-.fu-border-large {
+.fun-border-large {
   border-radius: 6px;
 }
 
-.fu-border-pill {
+.fun-border-pill {
   border-radius: 500px;
 }
 
-.fu-border-circle {
+.fun-border-circle {
   border-radius: 50%;
 }
 
 /* Box shadow
    ========================================================================== */
-.fu-shadow-none {
+.fun-shadow-none {
   box-shadow: none;
 }
 
-.fu-shadow-small {
+.fun-shadow-small {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.fu-shadow-medium {
+.fun-shadow-medium {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.fu-shadow-large {
+.fun-shadow-large {
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* Float
    ========================================================================== */
-.fu-display-none {
+.fun-display-none {
   display: none;
 }
 
-.fu-display-block {
+.fun-display-block {
   display: block;
 }
 
-.fu-display-inline {
+.fun-display-inline {
   display: inline-block;
 }
 
 /* Float
    ========================================================================== */
-.fu-float-start {
+.fun-float-start {
   float: inline-start;
 }
 
-.fu-float-end {
+.fun-float-end {
   float: inline-end;
 }
 
-.fu-float-none {
+.fun-float-none {
   float: none;
 }
 
 /* Overflow
    ========================================================================== */
-.fu-overflow-hidden {
+.fun-overflow-hidden {
   overflow: hidden;
 }
 
-.fu-overflow-x-scroll {
+.fun-overflow-x-scroll {
   overflow-x: scroll;
 }
 
-.fu-overflow-y-scroll {
+.fun-overflow-y-scroll {
   overflow-y: scroll;
 }
 
@@ -1230,10 +1361,10 @@ svg.fu-button-icon {
 /* ========================================================================
      Component: Markdown
    ========================================================================== */
-.fu-markdown-body {
+.fun-markdown-body {
   line-height: 1.5;
 }
-.fu-markdown-body kbd {
+.fun-markdown-body kbd {
   font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   line-height: 10px;
   display: inline-block;
@@ -1246,193 +1377,193 @@ svg.fu-button-icon {
   background-color: #fafbfc;
   box-shadow: inset 0 -1px 0 #d1d5da;
 }
-.fu-markdown-body::before {
+.fun-markdown-body::before {
   display: table;
   content: "";
 }
-.fu-markdown-body::after {
+.fun-markdown-body::after {
   display: table;
   clear: both;
   content: "";
 }
-.fu-markdown-body > *:first-child {
+.fun-markdown-body > *:first-child {
   margin-top: 0 !important;
 }
-.fu-markdown-body > *:last-child {
+.fun-markdown-body > *:last-child {
   margin-bottom: 0 !important;
 }
-.fu-markdown-body a:not([href]) {
+.fun-markdown-body a:not([href]) {
   text-decoration: none;
   color: inherit;
 }
-.fu-markdown-body .absent {
+.fun-markdown-body .absent {
   color: #cb2431;
 }
-.fu-markdown-body .anchor {
+.fun-markdown-body .anchor {
   line-height: 1;
   float: left;
   margin-left: -20px;
   padding-right: 4px;
 }
-.fu-markdown-body .anchor:focus {
+.fun-markdown-body .anchor:focus {
   outline: none;
 }
-.fu-markdown-body p,
-.fu-markdown-body blockquote,
-.fu-markdown-body ul,
-.fu-markdown-body ol,
-.fu-markdown-body dl,
-.fu-markdown-body table,
-.fu-markdown-body pre,
-.fu-markdown-body details {
+.fun-markdown-body p,
+.fun-markdown-body blockquote,
+.fun-markdown-body ul,
+.fun-markdown-body ol,
+.fun-markdown-body dl,
+.fun-markdown-body table,
+.fun-markdown-body pre,
+.fun-markdown-body details {
   margin-top: 0;
   margin-bottom: 16px;
 }
-.fu-markdown-body hr {
+.fun-markdown-body hr {
   height: 0.25em;
   margin: 24px 0;
   padding: 0;
   border: 0;
   background-color: #e1e4e8;
 }
-.fu-markdown-body blockquote {
+.fun-markdown-body blockquote {
   padding: 0 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
 }
-.fu-markdown-body blockquote > :first-child {
+.fun-markdown-body blockquote > :first-child {
   margin-top: 0;
 }
-.fu-markdown-body blockquote > :last-child {
+.fun-markdown-body blockquote > :last-child {
   margin-bottom: 0;
 }
-.fu-markdown-body h1,
-.fu-markdown-body h2,
-.fu-markdown-body h3,
-.fu-markdown-body h4,
-.fu-markdown-body h5,
-.fu-markdown-body h6 {
+.fun-markdown-body h1,
+.fun-markdown-body h2,
+.fun-markdown-body h3,
+.fun-markdown-body h4,
+.fun-markdown-body h5,
+.fun-markdown-body h6 {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 24px;
   margin-bottom: 16px;
 }
-.fu-markdown-body h1 .octicon-link,
-.fu-markdown-body h2 .octicon-link,
-.fu-markdown-body h3 .octicon-link,
-.fu-markdown-body h4 .octicon-link,
-.fu-markdown-body h5 .octicon-link,
-.fu-markdown-body h6 .octicon-link {
+.fun-markdown-body h1 .octicon-link,
+.fun-markdown-body h2 .octicon-link,
+.fun-markdown-body h3 .octicon-link,
+.fun-markdown-body h4 .octicon-link,
+.fun-markdown-body h5 .octicon-link,
+.fun-markdown-body h6 .octicon-link {
   visibility: hidden;
   vertical-align: middle;
   color: #1b1f23;
 }
-.fu-markdown-body h1:hover .anchor,
-.fu-markdown-body h2:hover .anchor,
-.fu-markdown-body h3:hover .anchor,
-.fu-markdown-body h4:hover .anchor,
-.fu-markdown-body h5:hover .anchor,
-.fu-markdown-body h6:hover .anchor {
+.fun-markdown-body h1:hover .anchor,
+.fun-markdown-body h2:hover .anchor,
+.fun-markdown-body h3:hover .anchor,
+.fun-markdown-body h4:hover .anchor,
+.fun-markdown-body h5:hover .anchor,
+.fun-markdown-body h6:hover .anchor {
   text-decoration: none;
 }
-.fu-markdown-body h1:hover .anchor .octicon-link,
-.fu-markdown-body h2:hover .anchor .octicon-link,
-.fu-markdown-body h3:hover .anchor .octicon-link,
-.fu-markdown-body h4:hover .anchor .octicon-link,
-.fu-markdown-body h5:hover .anchor .octicon-link,
-.fu-markdown-body h6:hover .anchor .octicon-link {
+.fun-markdown-body h1:hover .anchor .octicon-link,
+.fun-markdown-body h2:hover .anchor .octicon-link,
+.fun-markdown-body h3:hover .anchor .octicon-link,
+.fun-markdown-body h4:hover .anchor .octicon-link,
+.fun-markdown-body h5:hover .anchor .octicon-link,
+.fun-markdown-body h6:hover .anchor .octicon-link {
   visibility: visible;
 }
-.fu-markdown-body h1 tt,
-.fu-markdown-body h1 code {
+.fun-markdown-body h1 tt,
+.fun-markdown-body h1 code {
   font-size: inherit;
 }
-.fu-markdown-body h2 tt,
-.fu-markdown-body h2 code {
+.fun-markdown-body h2 tt,
+.fun-markdown-body h2 code {
   font-size: inherit;
 }
-.fu-markdown-body h3 tt,
-.fu-markdown-body h3 code {
+.fun-markdown-body h3 tt,
+.fun-markdown-body h3 code {
   font-size: inherit;
 }
-.fu-markdown-body h4 tt,
-.fu-markdown-body h4 code {
+.fun-markdown-body h4 tt,
+.fun-markdown-body h4 code {
   font-size: inherit;
 }
-.fu-markdown-body h5 tt,
-.fu-markdown-body h5 code {
+.fun-markdown-body h5 tt,
+.fun-markdown-body h5 code {
   font-size: inherit;
 }
-.fu-markdown-body h6 tt,
-.fu-markdown-body h6 code {
+.fun-markdown-body h6 tt,
+.fun-markdown-body h6 code {
   font-size: inherit;
 }
-.fu-markdown-body h1 {
+.fun-markdown-body h1 {
   font-size: 2em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #eaecef;
 }
-.fu-markdown-body h2 {
+.fun-markdown-body h2 {
   font-size: 1.5em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #eaecef;
 }
-.fu-markdown-body h3 {
+.fun-markdown-body h3 {
   font-size: 1.25em;
 }
-.fu-markdown-body h4 {
+.fun-markdown-body h4 {
   font-size: 1em;
 }
-.fu-markdown-body h5 {
+.fun-markdown-body h5 {
   font-size: 0.875em;
 }
-.fu-markdown-body h6 {
+.fun-markdown-body h6 {
   font-size: 0.85em;
   color: #6a737d;
 }
-.fu-markdown-body ul,
-.fu-markdown-body ol {
+.fun-markdown-body ul,
+.fun-markdown-body ol {
   padding-left: 2em;
 }
-.fu-markdown-body ul.no-list,
-.fu-markdown-body ol.no-list {
+.fun-markdown-body ul.no-list,
+.fun-markdown-body ol.no-list {
   padding: 0;
   list-style-type: none;
 }
-.fu-markdown-body ul ul,
-.fu-markdown-body ul ol {
+.fun-markdown-body ul ul,
+.fun-markdown-body ul ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-.fu-markdown-body ol ol,
-.fu-markdown-body ol ul {
+.fun-markdown-body ol ol,
+.fun-markdown-body ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-.fu-markdown-body li {
+.fun-markdown-body li {
   word-wrap: break-all;
 }
-.fu-markdown-body li > p {
+.fun-markdown-body li > p {
   margin-top: 16px;
 }
-.fu-markdown-body li + li {
+.fun-markdown-body li + li {
   margin-top: 0.25em;
 }
-.fu-markdown-body dl {
+.fun-markdown-body dl {
   padding: 0;
 }
-.fu-markdown-body dl dt {
+.fun-markdown-body dl dt {
   font-size: 1em;
   font-weight: 600;
   font-style: italic;
   margin-top: 16px;
   padding: 0;
 }
-.fu-markdown-body dl dd {
+.fun-markdown-body dl dd {
   margin-bottom: 16px;
   padding: 0 16px;
 }
-.fu-markdown-body table {
+.fun-markdown-body table {
   display: block;
   overflow: auto;
   width: 100%;
@@ -1441,46 +1572,46 @@ svg.fu-button-icon {
   width: max-content;
   max-width: 100%;
 }
-.fu-markdown-body table th {
+.fun-markdown-body table th {
   font-weight: 600;
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
-.fu-markdown-body table td {
+.fun-markdown-body table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
-.fu-markdown-body table tr {
+.fun-markdown-body table tr {
   border-top: 1px solid #c6cbd1;
   background-color: #fff;
 }
-.fu-markdown-body table tr:nth-child(2n) {
+.fun-markdown-body table tr:nth-child(2n) {
   background-color: #f6f8fa;
 }
-.fu-markdown-body table img {
+.fun-markdown-body table img {
   background-color: transparent;
 }
-.fu-markdown-body img {
+.fun-markdown-body img {
   box-sizing: content-box;
   max-width: 100%;
   background-color: #fff;
 }
-.fu-markdown-body img[align=right] {
+.fun-markdown-body img[align=right] {
   padding-left: 20px;
 }
-.fu-markdown-body img[align=left] {
+.fun-markdown-body img[align=left] {
   padding-right: 20px;
 }
-.fu-markdown-body .emoji {
+.fun-markdown-body .emoji {
   max-width: none;
   vertical-align: text-top;
   background-color: transparent;
 }
-.fu-markdown-body span.frame {
+.fun-markdown-body span.frame {
   display: block;
   overflow: hidden;
 }
-.fu-markdown-body span.frame > span {
+.fun-markdown-body span.frame > span {
   display: block;
   float: left;
   overflow: hidden;
@@ -1489,86 +1620,86 @@ svg.fu-button-icon {
   padding: 7px;
   border: 1px solid #dfe2e5;
 }
-.fu-markdown-body span.frame span img {
+.fun-markdown-body span.frame span img {
   display: block;
   float: left;
 }
-.fu-markdown-body span.frame span span {
+.fun-markdown-body span.frame span span {
   display: block;
   clear: both;
   padding: 5px 0 0;
   color: #24292e;
 }
-.fu-markdown-body span.align-center {
+.fun-markdown-body span.align-center {
   display: block;
   clear: both;
   overflow: hidden;
 }
-.fu-markdown-body span.align-center > span {
+.fun-markdown-body span.align-center > span {
   display: block;
   overflow: hidden;
   margin: 13px auto 0;
   text-align: center;
 }
-.fu-markdown-body span.align-center span img {
+.fun-markdown-body span.align-center span img {
   margin: 0 auto;
   text-align: center;
 }
-.fu-markdown-body span.align-right {
+.fun-markdown-body span.align-right {
   display: block;
   clear: both;
   overflow: hidden;
 }
-.fu-markdown-body span.align-right > span {
+.fun-markdown-body span.align-right > span {
   display: block;
   overflow: hidden;
   margin: 13px 0 0;
   text-align: right;
 }
-.fu-markdown-body span.align-right span img {
+.fun-markdown-body span.align-right span img {
   margin: 0;
   text-align: right;
 }
-.fu-markdown-body span.float-left {
+.fun-markdown-body span.float-left {
   display: block;
   float: left;
   overflow: hidden;
   margin-right: 13px;
 }
-.fu-markdown-body span.float-left span {
+.fun-markdown-body span.float-left span {
   margin: 13px 0 0;
 }
-.fu-markdown-body span.float-right {
+.fun-markdown-body span.float-right {
   display: block;
   float: right;
   overflow: hidden;
   margin-left: 13px;
 }
-.fu-markdown-body span.float-right > span {
+.fun-markdown-body span.float-right > span {
   display: block;
   overflow: hidden;
   margin: 13px auto 0;
   text-align: right;
 }
-.fu-markdown-body code,
-.fu-markdown-body tt {
+.fun-markdown-body code,
+.fun-markdown-body tt {
   font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
   border-radius: 6px;
   background-color: rgba(27, 31, 35, 0.05);
 }
-.fu-markdown-body code br,
-.fu-markdown-body tt br {
+.fun-markdown-body code br,
+.fun-markdown-body tt br {
   display: none;
 }
-.fu-markdown-body del code {
+.fun-markdown-body del code {
   text-decoration: inherit;
 }
-.fu-markdown-body pre {
+.fun-markdown-body pre {
   word-wrap: normal;
 }
-.fu-markdown-body pre > code {
+.fun-markdown-body pre > code {
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -1577,10 +1708,10 @@ svg.fu-button-icon {
   border: 0;
   background: transparent;
 }
-.fu-markdown-body .highlight {
+.fun-markdown-body .highlight {
   margin-bottom: 16px;
 }
-.fu-markdown-body .highlight pre {
+.fun-markdown-body .highlight pre {
   font-size: 85%;
   line-height: 1.45;
   overflow: auto;
@@ -1590,7 +1721,7 @@ svg.fu-button-icon {
   border-radius: 6px;
   background-color: #f6f8fa;
 }
-.fu-markdown-body pre {
+.fun-markdown-body pre {
   font-size: 85%;
   line-height: 1.45;
   overflow: auto;
@@ -1598,8 +1729,8 @@ svg.fu-button-icon {
   border-radius: 6px;
   background-color: #f6f8fa;
 }
-.fu-markdown-body pre code,
-.fu-markdown-body pre tt {
+.fun-markdown-body pre code,
+.fun-markdown-body pre tt {
   line-height: inherit;
   display: inline;
   overflow: visible;
@@ -1621,15 +1752,15 @@ a {
   color: inherit;
 }
 
-.fu-text-linked,
-.fu-text-link {
+.fun-text-linked,
+.fun-text-link {
   position: relative;
   box-sizing: border-box;
   width: fit-content;
   text-decoration: none;
 }
-.fu-text-linked::before,
-.fu-text-link::before {
+.fun-text-linked::before,
+.fun-text-link::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1640,15 +1771,15 @@ a {
   transition: 150ms all linear;
   border-bottom: 2px solid currentColor;
 }
-.fu-text-linked:hover::before,
-.fu-text-link:hover::before {
+.fun-text-linked:hover::before,
+.fun-text-link:hover::before {
   top: 0;
   right: 0;
   width: 100%;
   transition-delay: 75ms;
 }
 
-.fu-text-linked::after {
+.fun-text-linked::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -1662,39 +1793,39 @@ a {
 
 /* Text color
    ========================================================================== */
-.fu-text-default {
+.fun-text-default {
   color: #000;
 }
 
-.fu-text-muted {
+.fun-text-muted {
   color: #fff;
 }
 
-.fu-text-primary {
+.fun-text-primary {
   color: #fff;
 }
 
-.fu-text-secondary {
+.fun-text-secondary {
   color: #0366d6;
 }
 
-.fu-text-warning {
+.fun-text-warning {
   color: #d73a49;
 }
 
-.fu-text-success {
+.fun-text-success {
   color: #28a745;
 }
 
 /* Title
    ========================================================================== */
-.fu-text-title {
+.fun-text-title {
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.0125em;
 }
 
-.fu-text-subtitle {
+.fun-text-subtitle {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.375rem;
@@ -1703,119 +1834,119 @@ a {
 
 /* Text alignment
    ========================================================================== */
-.fu-text-start {
+.fun-text-start {
   text-align: left;
 }
 
-[dir=rtl] .fu-text-start {
+[dir=rtl] .fun-text-start {
   text-align: right;
 }
 
-.fu-text-end {
+.fun-text-end {
   text-align: right;
 }
 
-[dir=rtl] .fu-text-end {
+[dir=rtl] .fun-text-end {
   text-align: left;
 }
 
-.fu-text-center {
+.fun-text-center {
   text-align: center;
 }
 
-.fu-text-justify {
+.fun-text-justify {
   text-align: justify;
 }
 
-.fu-text-justify-all {
+.fun-text-justify-all {
   text-align: justify-all;
 }
 
 /* Text transform
    ========================================================================== */
-.fu-text-capitalize {
+.fun-text-capitalize {
   text-transform: capitalize;
 }
 
-.fu-text-uppercase {
+.fun-text-uppercase {
   text-transform: uppercase;
 }
 
-.fu-text-lowercase {
+.fun-text-lowercase {
   text-transform: lowercase;
 }
 
 /* Text size
    ========================================================================== */
-.fu-text-xxsmall {
+.fun-text-xxsmall {
   font-size: xx-small;
 }
 
-.fu-text-xsmall {
+.fun-text-xsmall {
   font-size: x-small;
 }
 
-.fu-text-small {
+.fun-text-small {
   font-size: small;
 }
 
-.fu-text-medium {
+.fun-text-medium {
   font-size: medium;
 }
 
-.fu-text-large {
+.fun-text-large {
   font-size: large;
 }
 
-.fu-text-xlarge {
+.fun-text-xlarge {
   font-size: x-large;
 }
 
-.fu-text-xxlarge {
+.fun-text-xxlarge {
   font-size: xx-large;
 }
 
-.fu-text-smaller {
+.fun-text-smaller {
   font-size: smaller;
 }
 
-.fu-text-larger {
+.fun-text-larger {
   font-size: larger;
 }
 
 /* Text weight
    ========================================================================== */
-.fu-text-light {
+.fun-text-light {
   font-weight: 300;
 }
 
-.fu-text-normal {
+.fun-text-normal {
   font-weight: normal;
 }
 
-.fu-text-bold {
+.fun-text-bold {
   font-weight: bold;
 }
 
-.fu-text-lighter {
+.fun-text-lighter {
   font-weight: lighter;
 }
 
-.fu-text-bolder {
+.fun-text-bolder {
   font-weight: bolder;
 }
 
 /* Text wrap
    ========================================================================== */
-.fu-text-nowrap {
+.fun-text-nowrap {
   word-break: keep-all;
 }
 
-.fu-text-break-all {
+.fun-text-break-all {
   word-break: break-all;
 }
 
-.fu-text-break-word {
+.fun-text-break-word {
   word-break: break-word;
 }
 
@@ -1823,182 +1954,182 @@ a {
 /* ========================================================================
      Component: Margin
    ========================================================================== */
-.fu-margin-small {
+.fun-margin-small {
   margin: 10px;
 }
 
-.fu-margin-top-small {
+.fun-margin-top-small {
   margin-top: 10px;
 }
 
-.fu-margin-left-small {
+.fun-margin-left-small {
   margin-left: 10px;
 }
 
-.fu-margin-bottom-small {
+.fun-margin-bottom-small {
   margin-bottom: 10px;
 }
 
-.fu-margin-right-small {
+.fun-margin-right-small {
   margin-right: 10px;
 }
 
-.fu-margin-horizontal-small {
+.fun-margin-horizontal-small {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.fu-margin-vertical-small {
+.fun-margin-vertical-small {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.fu-margin-medium {
+.fun-margin-medium {
   margin: 20px;
 }
 
-.fu-margin-top-medium {
+.fun-margin-top-medium {
   margin-top: 20px;
 }
 
-.fu-margin-left-medium {
+.fun-margin-left-medium {
   margin-left: 20px;
 }
 
-.fu-margin-bottom-medium {
+.fun-margin-bottom-medium {
   margin-bottom: 20px;
 }
 
-.fu-margin-right-medium {
+.fun-margin-right-medium {
   margin-right: 20px;
 }
 
-.fu-margin-horizontal-medium {
+.fun-margin-horizontal-medium {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.fu-margin-vertical-medium {
+.fun-margin-vertical-medium {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.fu-margin-large {
+.fun-margin-large {
   margin: 40px;
 }
 
-.fu-margin-top-large {
+.fun-margin-top-large {
   margin-top: 40px;
 }
 
-.fu-margin-left-large {
+.fun-margin-left-large {
   margin-left: 40px;
 }
 
-.fu-margin-bottom-large {
+.fun-margin-bottom-large {
   margin-bottom: 40px;
 }
 
-.fu-margin-right-large {
+.fun-margin-right-large {
   margin-right: 40px;
 }
 
-.fu-margin-horizontal-large {
+.fun-margin-horizontal-large {
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.fu-margin-vertical-large {
+.fun-margin-vertical-large {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.fu-margin-xlarge {
+.fun-margin-xlarge {
   margin: 70px;
 }
 
-.fu-margin-top-xlarge {
+.fun-margin-top-xlarge {
   margin-top: 70px;
 }
 
-.fu-margin-left-xlarge {
+.fun-margin-left-xlarge {
   margin-left: 70px;
 }
 
-.fu-margin-bottom-xlarge {
+.fun-margin-bottom-xlarge {
   margin-bottom: 70px;
 }
 
-.fu-margin-right-xlarge {
+.fun-margin-right-xlarge {
   margin-right: 70px;
 }
 
-.fu-margin-horizontal-xlarge {
+.fun-margin-horizontal-xlarge {
   margin-right: 70px;
   margin-left: 70px;
 }
 
-.fu-margin-vertical-xlarge {
+.fun-margin-vertical-xlarge {
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
-.fu-margin-auto {
+.fun-margin-auto {
   margin: auto;
 }
 
-.fu-margin-top-auto {
+.fun-margin-top-auto {
   margin-top: auto;
 }
 
-.fu-margin-left-auto {
+.fun-margin-left-auto {
   margin-left: auto;
 }
 
-.fu-margin-bottom-auto {
+.fun-margin-bottom-auto {
   margin-bottom: auto;
 }
 
-.fu-margin-right-auto {
+.fun-margin-right-auto {
   margin-right: auto;
 }
 
-.fu-margin-horizontal-auto {
+.fun-margin-horizontal-auto {
   margin-right: auto;
   margin-left: auto;
 }
 
-.fu-margin-vertical-auto {
+.fun-margin-vertical-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.fu-margin-remove {
+.fun-margin-remove {
   margin: 0;
 }
 
-.fu-margin-top-remove {
+.fun-margin-top-remove {
   margin-top: 0;
 }
 
-.fu-margin-left-remove {
+.fun-margin-left-remove {
   margin-left: 0;
 }
 
-.fu-margin-bottom-remove {
+.fun-margin-bottom-remove {
   margin-bottom: 0;
 }
 
-.fu-margin-right-remove {
+.fun-margin-right-remove {
   margin-right: 0;
 }
 
-.fu-margin-horizontal-remove {
+.fun-margin-horizontal-remove {
   margin-right: 0;
   margin-left: 0;
 }
 
-.fu-margin-vertical-remove {
+.fun-margin-vertical-remove {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -2006,244 +2137,244 @@ a {
 /* ========================================================================
      Component: padding
    ========================================================================== */
-.fu-padding-small {
+.fun-padding-small {
   padding: 10px;
 }
 
-.fu-padding-top-small {
+.fun-padding-top-small {
   padding-top: 10px;
 }
 
-.fu-padding-left-small {
+.fun-padding-left-small {
   padding-left: 10px;
 }
 
-.fu-padding-bottom-small {
+.fun-padding-bottom-small {
   padding-bottom: 10px;
 }
 
-.fu-padding-right-small {
+.fun-padding-right-small {
   padding-right: 10px;
 }
 
-.fu-padding-horizontal-small {
+.fun-padding-horizontal-small {
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.fu-padding-vertical-small {
+.fun-padding-vertical-small {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.fu-padding-medium {
+.fun-padding-medium {
   padding: 20px;
 }
 
-.fu-padding-top-medium {
+.fun-padding-top-medium {
   padding-top: 20px;
 }
 
-.fu-padding-left-medium {
+.fun-padding-left-medium {
   padding-left: 20px;
 }
 
-.fu-padding-bottom-medium {
+.fun-padding-bottom-medium {
   padding-bottom: 20px;
 }
 
-.fu-padding-right-medium {
+.fun-padding-right-medium {
   padding-right: 20px;
 }
 
-.fu-padding-horizontal-medium {
+.fun-padding-horizontal-medium {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.fu-padding-vertical-medium {
+.fun-padding-vertical-medium {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.fu-padding-large {
+.fun-padding-large {
   padding: 40px;
 }
 
-.fu-padding-top-large {
+.fun-padding-top-large {
   padding-top: 40px;
 }
 
-.fu-padding-left-large {
+.fun-padding-left-large {
   padding-left: 40px;
 }
 
-.fu-padding-bottom-large {
+.fun-padding-bottom-large {
   padding-bottom: 40px;
 }
 
-.fu-padding-right-large {
+.fun-padding-right-large {
   padding-right: 40px;
 }
 
-.fu-padding-horizontal-large {
+.fun-padding-horizontal-large {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.fu-padding-vertical-large {
+.fun-padding-vertical-large {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.fu-padding-xlarge {
+.fun-padding-xlarge {
   padding: 70px;
 }
 
-.fu-padding-top-xlarge {
+.fun-padding-top-xlarge {
   padding-top: 70px;
 }
 
-.fu-padding-left-xlarge {
+.fun-padding-left-xlarge {
   padding-left: 70px;
 }
 
-.fu-padding-bottom-xlarge {
+.fun-padding-bottom-xlarge {
   padding-bottom: 70px;
 }
 
-.fu-padding-right-xlarge {
+.fun-padding-right-xlarge {
   padding-right: 70px;
 }
 
-.fu-padding-horizontal-xlarge {
+.fun-padding-horizontal-xlarge {
   padding-right: 70px;
   padding-left: 70px;
 }
 
-.fu-padding-vertical-xlarge {
+.fun-padding-vertical-xlarge {
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
-.fu-padding-remove {
+.fun-padding-remove {
   padding: 0;
 }
 
-.fu-padding-top-remove {
+.fun-padding-top-remove {
   padding-top: 0;
 }
 
-.fu-padding-left-remove {
+.fun-padding-left-remove {
   padding-left: 0;
 }
 
-.fu-padding-bottom-remove {
+.fun-padding-bottom-remove {
   padding-bottom: 0;
 }
 
-.fu-padding-right-remove {
+.fun-padding-right-remove {
   padding-right: 0;
 }
 
-.fu-padding-horizontal-remove {
+.fun-padding-horizontal-remove {
   padding-right: 0;
   padding-left: 0;
 }
 
-.fu-padding-vertical-remove {
+.fun-padding-vertical-remove {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.fu-padding-auto {
+.fun-padding-auto {
   padding: 20px;
 }
 
-.fu-padding-top-auto {
+.fun-padding-top-auto {
   padding-top: 20px;
 }
 
-.fu-padding-left-auto {
+.fun-padding-left-auto {
   padding-left: 20px;
 }
 
-.fu-padding-bottom-auto {
+.fun-padding-bottom-auto {
   padding-bottom: 20px;
 }
 
-.fu-padding-right-auto {
+.fun-padding-right-auto {
   padding-right: 20px;
 }
 
-.fu-padding-horizontal-auto {
+.fun-padding-horizontal-auto {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.fu-padding-vertical-auto {
+.fun-padding-vertical-auto {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 @media (min-width: 960px) {
-  .fu-padding-auto {
+  .fun-padding-auto {
     padding: 40px;
   }
 
-  .fu-padding-top-auto {
+  .fun-padding-top-auto {
     padding-top: 40px;
   }
 
-  .fu-padding-left-auto {
+  .fun-padding-left-auto {
     padding-left: 40px;
   }
 
-  .fu-padding-bottom-auto {
+  .fun-padding-bottom-auto {
     padding-bottom: 40px;
   }
 
-  .fu-padding-right-auto {
+  .fun-padding-right-auto {
     padding-right: 40px;
   }
 
-  .fu-padding-horizontal-auto {
+  .fun-padding-horizontal-auto {
     padding-right: 40px;
     padding-left: 40px;
   }
 
-  .fu-padding-vertical-auto {
+  .fun-padding-vertical-auto {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
-  .fu-padding-auto {
+  .fun-padding-auto {
     padding: 70px;
   }
 
-  .fu-padding-top-auto {
+  .fun-padding-top-auto {
     padding-top: 70px;
   }
 
-  .fu-padding-left-auto {
+  .fun-padding-left-auto {
     padding-left: 70px;
   }
 
-  .fu-padding-bottom-auto {
+  .fun-padding-bottom-auto {
     padding-bottom: 70px;
   }
 
-  .fu-padding-right-auto {
+  .fun-padding-right-auto {
     padding-right: 70px;
   }
 
-  .fu-padding-horizontal-auto {
+  .fun-padding-horizontal-auto {
     padding-right: 70px;
     padding-left: 70px;
   }
 
-  .fu-padding-vertical-auto {
+  .fun-padding-vertical-auto {
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -2251,607 +2382,607 @@ a {
 /* ========================================================================
      Component: Height
    ========================================================================== */
-[class*=fu-height] {
+[class*=fun-height] {
   box-sizing: border-box;
 }
 
-.fu-height-1-1 {
+.fun-height-1-1 {
   height: 100%;
 }
 
-.fu-height-viewport {
+.fun-height-viewport {
   height: 100vh;
 }
 
-.fu-height-xsmall {
+.fun-height-xsmall {
   height: 150px;
 }
 
-.fu-height-max-xsmall {
+.fun-height-max-xsmall {
   max-height: 150px;
 }
 
-.fu-height-small {
+.fun-height-small {
   height: 300px;
 }
 
-.fu-height-max-small {
+.fun-height-max-small {
   max-height: 300px;
 }
 
-.fu-height-medium {
+.fun-height-medium {
   height: 450px;
 }
 
-.fu-height-max-medium {
+.fun-height-max-medium {
   max-height: 450px;
 }
 
-.fu-height-large {
+.fun-height-large {
   height: 600px;
 }
 
-.fu-height-max-large {
+.fun-height-max-large {
   max-height: 600px;
 }
 
-.fu-height-xlarge {
+.fun-height-xlarge {
   height: 750px;
 }
 
-.fu-height-max-xlarge {
+.fun-height-max-xlarge {
   max-height: 750px;
 }
 
 /* ========================================================================
      Component: Width
    ========================================================================== */
-[class*=fu-width] {
+[class*=fun-width] {
   box-sizing: border-box;
 }
 
-.fu-width-xsmall {
+.fun-width-xsmall {
   width: 150px;
 }
 
-.fu-width-small {
+.fun-width-small {
   width: 300px;
 }
 
-.fu-width-medium {
+.fun-width-medium {
   width: 450px;
 }
 
-.fu-width-large {
+.fun-width-large {
   width: 600px;
 }
 
-.fu-width-xlarge {
+.fun-width-xlarge {
   width: 750px;
 }
 
-.fu-max-width-xsmall {
+.fun-max-width-xsmall {
   max-width: 150px;
 }
 
-.fu-max-width-small {
+.fun-max-width-small {
   max-width: 300px;
 }
 
-.fu-max-width-medium {
+.fun-max-width-medium {
   max-width: 450px;
 }
 
-.fu-max-width-large {
+.fun-max-width-large {
   max-width: 600px;
 }
 
-.fu-max-width-xlarge {
+.fun-max-width-xlarge {
   max-width: 750px;
 }
 
 /* Relative widths
    ========================================================================== */
-.fu-width-1-1 {
+.fun-width-1-1 {
   width: 100%;
 }
 
-.fu-width-1-2 {
+.fun-width-1-2 {
   width: 50%;
 }
 
-.fu-width-1-3 {
+.fun-width-1-3 {
   width: 33.3333333333%;
 }
 
-.fu-width-1-4 {
+.fun-width-1-4 {
   width: 25%;
 }
 
-.fu-width-1-5 {
+.fun-width-1-5 {
   width: 20%;
 }
 
-.fu-width-1-6 {
+.fun-width-1-6 {
   width: 16.6666666667%;
 }
 
-.fu-width-2-3 {
+.fun-width-2-3 {
   width: 66.6666666667%;
 }
 
-.fu-width-3-4 {
+.fun-width-3-4 {
   width: 75%;
 }
 
-.fu-width-2-5 {
+.fun-width-2-5 {
   width: 40%;
 }
 
-.fu-width-3-5 {
+.fun-width-3-5 {
   width: 60%;
 }
 
-.fu-width-5-6 {
+.fun-width-5-6 {
   width: 83.3333333333%;
 }
 
 /* Child widths
    ========================================================================== */
-[class*=fu-child-width] > * {
+[class*=fun-child-width] > * {
   box-sizing: border-box;
   width: 100%;
 }
 
-.fu-child-width-1-2 > * {
+.fun-child-width-1-2 > * {
   width: 50%;
 }
 
-.fu-child-width-1-3 > * {
+.fun-child-width-1-3 > * {
   width: 33.3333333333%;
 }
 
-.fu-child-width-1-4 > * {
+.fun-child-width-1-4 > * {
   width: 25%;
 }
 
-.fu-child-width-1-5 > * {
+.fun-child-width-1-5 > * {
   width: 20%;
 }
 
-.fu-child-width-1-6 > * {
+.fun-child-width-1-6 > * {
   width: 16.6666666667%;
 }
 
 /* Auto and expand
    ========================================================================== */
 /* Auto */
-.fu-width-auto {
+.fun-width-auto {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand {
+.fun-width-expand {
   flex: 1;
   min-width: 100%;
 }
 
 /* Fit content */
-.fu-width-fit-content {
+.fun-width-fit-content {
   width: fit-content;
 }
 
 /* Responsive width
    ========================================================================== */
 @media (min-width: 640px) {
-  .fu-width-xsmall\@s {
+  .fun-width-xsmall\@s {
     width: 150px;
   }
 
-  .fu-width-small\@s {
+  .fun-width-small\@s {
     width: 300px;
   }
 
-  .fu-width-medium\@s {
+  .fun-width-medium\@s {
     width: 450px;
   }
 
-  .fu-width-large\@s {
+  .fun-width-large\@s {
     width: 600px;
   }
 
-  .fu-width-xlarge\@s {
+  .fun-width-xlarge\@s {
     width: 750px;
   }
 
   /* Relative widths */
-  .fu-width-1-1\@s {
+  .fun-width-1-1\@s {
     width: 100%;
   }
 
-  .fu-width-1-2\@s {
+  .fun-width-1-2\@s {
     width: 50%;
   }
 
-  .fu-width-1-3\@s {
+  .fun-width-1-3\@s {
     width: 33.3333333333%;
   }
 
-  .fu-width-1-4\@s {
+  .fun-width-1-4\@s {
     width: 25%;
   }
 
-  .fu-width-1-5\@s {
+  .fun-width-1-5\@s {
     width: 20%;
   }
 
-  .fu-width-1-6\@s {
+  .fun-width-1-6\@s {
     width: 16.6666666667%;
   }
 
-  .fu-width-2-3\@s {
+  .fun-width-2-3\@s {
     width: 66.6666666667%;
   }
 
-  .fu-width-3-4\@s {
+  .fun-width-3-4\@s {
     width: 75%;
   }
 
-  .fu-width-2-5\@s {
+  .fun-width-2-5\@s {
     width: 40%;
   }
 
-  .fu-width-3-5\@s {
+  .fun-width-3-5\@s {
     width: 60%;
   }
 
-  .fu-width-5-6\@s {
+  .fun-width-5-6\@s {
     width: 83.3333333333%;
   }
 }
 /* Child widths */
-.fu-child-width-1-2\@s > * {
+.fun-child-width-1-2\@s > * {
   width: 50%;
 }
 
-.fu-child-width-1-3\@s > * {
+.fun-child-width-1-3\@s > * {
   width: 33.3333333333%;
 }
 
-.fu-child-width-1-4\@s > * {
+.fun-child-width-1-4\@s > * {
   width: 25%;
 }
 
-.fu-child-width-1-5\@s > * {
+.fun-child-width-1-5\@s > * {
   width: 20%;
 }
 
-.fu-child-width-1-6\@s > * {
+.fun-child-width-1-6\@s > * {
   width: 16.6666666667%;
 }
 
 /* Auto */
-.fu-width-auto\@s {
+.fun-width-auto\@s {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand\@s {
+.fun-width-expand\@s {
   flex: 1;
   min-width: 1px;
 }
 
 /* Fit content */
-.fu-width-fit-content\@s {
+.fun-width-fit-content\@s {
   width: fit-content;
 }
 
 @media (min-width: 960px) {
-  .fu-width-xsmall\@m {
+  .fun-width-xsmall\@m {
     width: 150px;
   }
 
-  .fu-width-small\@m {
+  .fun-width-small\@m {
     width: 300px;
   }
 
-  .fu-width-medium\@m {
+  .fun-width-medium\@m {
     width: 450px;
   }
 
-  .fu-width-large\@m {
+  .fun-width-large\@m {
     width: 600px;
   }
 
-  .fu-width-xlarge\@m {
+  .fun-width-xlarge\@m {
     width: 750px;
   }
 
   /* Relative widths */
-  .fu-width-1-1\@m {
+  .fun-width-1-1\@m {
     width: 100%;
   }
 
-  .fu-width-1-2\@m {
+  .fun-width-1-2\@m {
     width: 50%;
   }
 
-  .fu-width-1-3\@m {
+  .fun-width-1-3\@m {
     width: 33.3333333333%;
   }
 
-  .fu-width-1-4\@m {
+  .fun-width-1-4\@m {
     width: 25%;
   }
 
-  .fu-width-1-5\@m {
+  .fun-width-1-5\@m {
     width: 20%;
   }
 
-  .fu-width-1-6\@m {
+  .fun-width-1-6\@m {
     width: 16.6666666667%;
   }
 
-  .fu-width-2-3\@m {
+  .fun-width-2-3\@m {
     width: 66.6666666667%;
   }
 
-  .fu-width-3-4\@m {
+  .fun-width-3-4\@m {
     width: 75%;
   }
 
-  .fu-width-2-5\@m {
+  .fun-width-2-5\@m {
     width: 40%;
   }
 
-  .fu-width-3-5\@m {
+  .fun-width-3-5\@m {
     width: 60%;
   }
 
-  .fu-width-5-6\@m {
+  .fun-width-5-6\@m {
     width: 83.3333333333%;
   }
 }
 /* Child widths */
-.fu-child-width-1-2\@m > * {
+.fun-child-width-1-2\@m > * {
   width: 50%;
 }
 
-.fu-child-width-1-3\@m > * {
+.fun-child-width-1-3\@m > * {
   width: 33.3333333333%;
 }
 
-.fu-child-width-1-4\@m > * {
+.fun-child-width-1-4\@m > * {
   width: 25%;
 }
 
-.fu-child-width-1-5\@m > * {
+.fun-child-width-1-5\@m > * {
   width: 20%;
 }
 
-.fu-child-width-1-6\@m > * {
+.fun-child-width-1-6\@m > * {
   width: 16.6666666667%;
 }
 
 /* Auto */
-.fu-width-auto\@m {
+.fun-width-auto\@m {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand\@m {
+.fun-width-expand\@m {
   flex: 1;
   min-width: 1px;
 }
 
 /* Fit content */
-.fu-width-fit-content\@m {
+.fun-width-fit-content\@m {
   width: fit-content;
 }
 
 @media (min-width: 1200px) {
-  .fu-width-xsmall\@l {
+  .fun-width-xsmall\@l {
     width: 150px;
   }
 
-  .fu-width-small\@l {
+  .fun-width-small\@l {
     width: 300px;
   }
 
-  .fu-width-medium\@l {
+  .fun-width-medium\@l {
     width: 450px;
   }
 
-  .fu-width-large\@l {
+  .fun-width-large\@l {
     width: 600px;
   }
 
-  .fu-width-xlarge\@l {
+  .fun-width-xlarge\@l {
     width: 750px;
   }
 
   /* Relative widths */
-  .fu-width-1-1\@l {
+  .fun-width-1-1\@l {
     width: 100%;
   }
 
-  .fu-width-1-2\@l {
+  .fun-width-1-2\@l {
     width: 50%;
   }
 
-  .fu-width-1-3\@l {
+  .fun-width-1-3\@l {
     width: 33.3333333333%;
   }
 
-  .fu-width-1-4\@l {
+  .fun-width-1-4\@l {
     width: 25%;
   }
 
-  .fu-width-1-5\@l {
+  .fun-width-1-5\@l {
     width: 20%;
   }
 
-  .fu-width-1-6\@l {
+  .fun-width-1-6\@l {
     width: 16.6666666667%;
   }
 
-  .fu-width-2-3\@l {
+  .fun-width-2-3\@l {
     width: 66.6666666667%;
   }
 
-  .fu-width-3-4\@l {
+  .fun-width-3-4\@l {
     width: 75%;
   }
 
-  .fu-width-2-5\@l {
+  .fun-width-2-5\@l {
     width: 40%;
   }
 
-  .fu-width-3-5\@l {
+  .fun-width-3-5\@l {
     width: 60%;
   }
 
-  .fu-width-5-6\@l {
+  .fun-width-5-6\@l {
     width: 83.3333333333%;
   }
 }
 /* Child widths */
-.fu-child-width-1-2\@l > * {
+.fun-child-width-1-2\@l > * {
   width: 50%;
 }
 
-.fu-child-width-1-3\@l > * {
+.fun-child-width-1-3\@l > * {
   width: 33.3333333333%;
 }
 
-.fu-child-width-1-4\@l > * {
+.fun-child-width-1-4\@l > * {
   width: 25%;
 }
 
-.fu-child-width-1-5\@l > * {
+.fun-child-width-1-5\@l > * {
   width: 20%;
 }
 
-.fu-child-width-1-6\@l > * {
+.fun-child-width-1-6\@l > * {
   width: 16.6666666667%;
 }
 
 /* Auto */
-.fu-width-auto\@l {
+.fun-width-auto\@l {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand\@l {
+.fun-width-expand\@l {
   flex: 1;
   min-width: 1px;
 }
 
 /* Fit content */
-.fu-width-fit-content\@l {
+.fun-width-fit-content\@l {
   width: fit-content;
 }
 
 @media (min-width: 1600px) {
-  .fu-width-xsmall\@xl {
+  .fun-width-xsmall\@xl {
     width: 150px;
   }
 
-  .fu-width-small\@xl {
+  .fun-width-small\@xl {
     width: 300px;
   }
 
-  .fu-width-medium\@xl {
+  .fun-width-medium\@xl {
     width: 450px;
   }
 
-  .fu-width-large\@xl {
+  .fun-width-large\@xl {
     width: 600px;
   }
 
-  .fu-width-xlarge\@xl {
+  .fun-width-xlarge\@xl {
     width: 750px;
   }
 
   /* Relative widths */
-  .fu-width-1-1\@xl {
+  .fun-width-1-1\@xl {
     width: 100%;
   }
 
-  .fu-width-1-2\@xl {
+  .fun-width-1-2\@xl {
     width: 50%;
   }
 
-  .fu-width-1-3\@xl {
+  .fun-width-1-3\@xl {
     width: 33.3333333333%;
   }
 
-  .fu-width-1-4\@xl {
+  .fun-width-1-4\@xl {
     width: 25%;
   }
 
-  .fu-width-1-5\@xl {
+  .fun-width-1-5\@xl {
     width: 20%;
   }
 
-  .fu-width-1-6\@xl {
+  .fun-width-1-6\@xl {
     width: 16.6666666667%;
   }
 
-  .fu-width-2-3\@xl {
+  .fun-width-2-3\@xl {
     width: 66.6666666667%;
   }
 
-  .fu-width-3-4\@xl {
+  .fun-width-3-4\@xl {
     width: 75%;
   }
 
-  .fu-width-2-5\@xl {
+  .fun-width-2-5\@xl {
     width: 40%;
   }
 
-  .fu-width-3-5\@xl {
+  .fun-width-3-5\@xl {
     width: 60%;
   }
 
-  .fu-width-5-6\@xl {
+  .fun-width-5-6\@xl {
     width: 83.3333333333%;
   }
 }
 /* Child widths */
-.fu-child-width-1-2\@xl > * {
+.fun-child-width-1-2\@xl > * {
   width: 50%;
 }
 
-.fu-child-width-1-3\@xl > * {
+.fun-child-width-1-3\@xl > * {
   width: 33.3333333333%;
 }
 
-.fu-child-width-1-4\@xl > * {
+.fun-child-width-1-4\@xl > * {
   width: 25%;
 }
 
-.fu-child-width-1-5\@xl > * {
+.fun-child-width-1-5\@xl > * {
   width: 20%;
 }
 
-.fu-child-width-1-6\@xl > * {
+.fun-child-width-1-6\@xl > * {
   width: 16.6666666667%;
 }
 
 /* Auto */
-.fu-width-auto\@xl {
+.fun-width-auto\@xl {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand\@xl {
+.fun-width-expand\@xl {
   flex: 1;
   min-width: 1px;
 }
 
 /* Fit content */
-.fu-width-fit-content\@xl {
+.fun-width-fit-content\@xl {
   width: fit-content;
 }
 
@@ -2859,110 +2990,110 @@ a {
 /* ========================================================================
      Component: Flex
    ========================================================================== */
-.fu-flex {
+.fun-flex {
   display: flex;
 }
 
-.fu-flex-inline {
+.fun-flex-inline {
   display: inline-flex;
 }
 
 /**
   * Remove the pseudo-element created by micro clearfix as a precaution
   */
-.fu-flex::before, .fu-flex::after {
+.fun-flex::before, .fun-flex::after {
   display: none;
 }
 
-.fu-flex-inline::before, .fu-flex-inline::after {
+.fun-flex-inline::before, .fun-flex-inline::after {
   display: none;
 }
 
 /* Direction
    ========================================================================== */
-.fu-flex-row {
+.fun-flex-row {
   flex-direction: row;
 }
 
-.fu-flex-row-reverse {
+.fun-flex-row-reverse {
   flex-direction: row-reverse;
 }
 
-.fu-flex-column {
+.fun-flex-column {
   flex-direction: column;
 }
 
-.fu-flex-column-reverse {
+.fun-flex-column-reverse {
   flex-direction: column-reverse;
 }
 
 /* Wrap
    ========================================================================== */
-.fu-flex-nowrap {
+.fun-flex-nowrap {
   flex-wrap: nowrap;
 }
 
-.fu-flex-wrap {
+.fun-flex-wrap {
   flex-wrap: wrap;
 }
 
-.fu-flex-wrap-reverse {
+.fun-flex-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 
 /* Alignments of main axis
    ========================================================================== */
-.fu-main-start {
+.fun-main-start {
   justify-content: flex-start;
 }
 
-.fu-main-end {
+.fun-main-end {
   justify-content: flex-end;
 }
 
-.fu-main-center {
+.fun-main-center {
   justify-content: center;
 }
 
-.fu-main-between {
+.fun-main-between {
   justify-content: space-between;
 }
 
-.fu-main-around {
+.fun-main-around {
   justify-content: space-around;
 }
 
 /* Alignments of cross axis
    ========================================================================== */
-.fu-cross-stretch {
+.fun-cross-stretch {
   align-items: stretch;
 }
 
-.fu-cross-start {
+.fun-cross-start {
   align-items: flex-start;
 }
 
-.fu-cross-end {
+.fun-cross-end {
   align-items: flex-end;
 }
 
-.fu-cross-center {
+.fun-cross-center {
   align-items: center;
 }
 
 /* Allocate child space
    ========================================================================== */
-.fu-flex-auto {
+.fun-flex-auto {
   /* Ratio */
   flex: auto;
 }
 
-.fu-flex-none {
+.fun-flex-none {
   /* Fit */
   flex: none;
 }
 
-.fu-flex-1 {
+.fun-flex-1 {
   /* Equal */
   flex: 1;
 }
@@ -2970,115 +3101,115 @@ a {
 /* ========================================================================
      Component: Grid
    ========================================================================== */
-.fu-grid {
+.fun-grid {
   display: grid;
 }
 
-.fu-grid-inline {
+.fun-grid-inline {
   display: inline-grid;
 }
 
 /* Row and column spacing
    ========================================================================== */
-.fu-grid-row-xsmall > * {
+.fun-grid-row-xsmall > * {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.fu-grid-column-xsmall > * {
+.fun-grid-column-xsmall > * {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.fu-grid-row-small > * {
+.fun-grid-row-small > * {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.fu-grid-column-small > * {
+.fun-grid-column-small > * {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.fu-grid-row-medium > * {
+.fun-grid-row-medium > * {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.fu-grid-column-medium > * {
+.fun-grid-column-medium > * {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.fu-grid-row-large > * {
+.fun-grid-row-large > * {
   margin-right: 35px;
   margin-left: 35px;
 }
 
-.fu-grid-column-large > * {
+.fun-grid-column-large > * {
   margin-top: 35px;
   margin-bottom: 35px;
 }
 
-.fu-grid-row-xlarge > * {
+.fun-grid-row-xlarge > * {
   margin-right: 60px;
   margin-left: 60px;
 }
 
-.fu-grid-column-xlarge > * {
+.fun-grid-column-xlarge > * {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.fu-grid-row-remove > * {
+.fun-grid-row-remove > * {
   margin-right: 0;
   margin-left: 0;
 }
 
-.fu-grid-column-remove > * {
+.fun-grid-column-remove > * {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* Grid template
    ========================================================================== */
-.fu-grid-row-2 {
+.fun-grid-row-2 {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.fu-grid-column-2 {
+.fun-grid-column-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.fu-grid-row-3 {
+.fun-grid-row-3 {
   grid-template-rows: repeat(3, 1fr);
 }
 
-.fu-grid-column-3 {
+.fun-grid-column-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.fu-grid-row-4 {
+.fun-grid-row-4 {
   grid-template-rows: repeat(4, 1fr);
 }
 
-.fu-grid-column-4 {
+.fun-grid-column-4 {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.fu-grid-row-5 {
+.fun-grid-row-5 {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.fu-grid-column-5 {
+.fun-grid-column-5 {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.fu-grid-row-6 {
+.fun-grid-row-6 {
   grid-template-rows: repeat(6, 1fr);
 }
 
-.fu-grid-column-6 {
+.fun-grid-column-6 {
   grid-template-columns: repeat(6, 1fr);
 }
 
@@ -3090,11 +3221,11 @@ a {
 /**
   * 1. Prevent content overflow if `max-width: 100%` is used inside position container.
   */
-[class*=fu-position-top],
-[class*=fu-position-right],
-[class*=fu-position-bottom],
-[class*=fu-position-left],
-[class*=fu-position-center] {
+[class*=fun-position-top],
+[class*=fun-position-right],
+[class*=fun-position-bottom],
+[class*=fun-position-left],
+[class*=fun-position-center] {
   position: absolute;
   /* 1 */
   max-width: 100%;
@@ -3103,25 +3234,25 @@ a {
 /* Edges
    ========================================================================== */
 /* Don't use `width: 100%` because it is wrong if the parent has padding. */
-.fu-position-top {
+.fun-position-top {
   top: 0;
   right: 0;
   left: 0;
 }
 
-.fu-position-right {
+.fun-position-right {
   top: 0;
   right: 0;
   bottom: 0;
 }
 
-.fu-position-bottom {
+.fun-position-bottom {
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.fu-position-left {
+.fun-position-left {
   top: 0;
   bottom: 0;
   left: 0;
@@ -3131,7 +3262,7 @@ a {
   * Center
   * 1. Fix text wrapping if content is larger than 50% of the container.
   */
-.fu-position-center {
+.fun-position-center {
   top: 50%;
   left: 50%;
   box-sizing: border-box;
@@ -3143,44 +3274,44 @@ a {
 
 /* Corners
    ========================================================================== */
-.fu-position-top-left {
+.fun-position-top-left {
   top: 0;
   left: 0;
 }
 
-.fu-position-top-right {
+.fun-position-top-right {
   top: 0;
   right: 0;
 }
 
-.fu-position-bottom-left {
+.fun-position-bottom-left {
   bottom: 0;
   left: 0;
 }
 
-.fu-position-bottom-right {
+.fun-position-bottom-right {
   right: 0;
   bottom: 0;
 }
 
 /* Vertical */
-[class*=fu-position-center-left],
-[class*=fu-position-center-right] {
+[class*=fun-position-center-left],
+[class*=fun-position-center-right] {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.fu-position-center-left {
+.fun-position-center-left {
   left: 0;
 }
 
-.fu-position-center-right {
+.fun-position-center-right {
   right: 0;
 }
 
 /* Horizontal */
-.fu-position-top-center,
-.fu-position-bottom-center {
+.fun-position-top-center,
+.fun-position-bottom-center {
   left: 50%;
   box-sizing: border-box;
   /* 1 */
@@ -3189,17 +3320,17 @@ a {
   transform: translateX(-50%);
 }
 
-.fu-position-top-center {
+.fun-position-top-center {
   top: 0;
 }
 
-.fu-position-bottom-center {
+.fun-position-bottom-center {
   bottom: 0;
 }
 
 /* Cover
    ========================================================================== */
-.fu-position-cover {
+.fun-position-cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -3209,24 +3340,24 @@ a {
 
 /* Utility
    ========================================================================== */
-.fu-position-relative {
+.fun-position-relative {
   position: relative;
 }
 
-.fu-position-absolute {
+.fun-position-absolute {
   position: absolute;
 }
 
-.fu-position-fixed {
+.fun-position-fixed {
   position: fixed;
 }
 
-.fu-position-sticky {
+.fun-position-sticky {
   position: sticky;
   top: 0;
 }
 
-.fu-position-z-index {
+.fun-position-z-index {
   z-index: 1;
 }
 
@@ -3234,210 +3365,77 @@ a {
      Component: Visibility
    ========================================================================== */
 [hidden],
-.fu-hidden {
+.fun-hidden {
   display: none;
 }
 
-.fu-invisible {
+.fun-invisible {
   visibility: hidden;
 }
 
-.fu-visible {
+.fun-visible {
   visibility: visible;
 }
 
 /* Responsive visibility
    ========================================================================== */
 @media (min-width: 640px) {
-  .fu-hidden\@s {
+  .fun-hidden\@s {
     display: none;
   }
 }
 @media (min-width: 960px) {
-  .fu-hidden\@m {
+  .fun-hidden\@m {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .fu-hidden\@l {
+  .fun-hidden\@l {
     display: none;
   }
 }
 @media (min-width: 1600px) {
-  .fu-hidden\@xl {
+  .fun-hidden\@xl {
     display: none;
   }
 }
 @media (max-width: 639px) {
-  .fu-visible\@s {
+  .fun-visible\@s {
     display: none;
   }
 }
 @media (max-width: 959px) {
-  .fu-visible\@m {
+  .fun-visible\@m {
     display: none;
   }
 }
 @media (max-width: 1199px) {
-  .fu-visible\@l {
+  .fun-visible\@l {
     display: none;
   }
 }
 @media (max-width: 1599px) {
-  .fu-visible\@xl {
+  .fun-visible\@xl {
     display: none;
   }
 }
 /* Touch
    ========================================================================== */
-.fu-hidden-touch {
+.fun-hidden-touch {
   display: block;
 }
 
 @media (pointer: coarse) {
-  .fu-hidden-touch {
+  .fun-hidden-touch {
     display: none;
   }
 }
-.fu-hidden-notouch {
+.fun-hidden-notouch {
   display: none;
 }
 
 @media (pointer: coarse) {
-  .fu-hidden-notouch {
+  .fun-hidden-notouch {
     display: block;
-  }
-}
-/* ========================================================================
-     Component: Background
-   ========================================================================== */
-/* Background color
-   ========================================================================== */
-.fu-background-transparent {
-  background: transparent;
-}
-
-.fu-background-default {
-  background-color: #fff;
-}
-
-.fu-background-muted {
-  background-color: #fafafa;
-}
-
-.fu-background-primary {
-  background-color: #212121;
-}
-
-.fu-background-secondary {
-  background-color: #0366d6;
-}
-
-.fu-background-warning {
-  background-color: #d73a49;
-}
-
-.fu-background-success {
-  background-color: #28a745;
-}
-
-/* Size
-   ========================================================================== */
-.fu-background-cover,
-.fu-background-contain {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.fu-background-cover {
-  background-size: cover;
-}
-
-.fu-background-contain {
-  background-size: contain;
-}
-
-/* Position
-   ========================================================================== */
-.fu-background-top-left {
-  background-position: 0 0;
-}
-
-.fu-background-top-center {
-  background-position: 50% 0;
-}
-
-.fu-background-top-right {
-  background-position: 100% 0;
-}
-
-.fu-background-center-left {
-  background-position: 0 50%;
-}
-
-.fu-background-center-center {
-  background-position: 50% 50%;
-}
-
-.fu-background-center-right {
-  background-position: 100% 50%;
-}
-
-.fu-background-bottom-left {
-  background-position: 0 100%;
-}
-
-.fu-background-bottom-center {
-  background-position: 50% 100%;
-}
-
-.fu-background-bottom-right {
-  background-position: 100% 100%;
-}
-
-/* Repeat
-   ========================================================================== */
-.fu-background-norepeat {
-  background-repeat: no-repeat;
-}
-
-/* Attachment
-   ========================================================================== */
-/*
-  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
-  */
-.fu-background-fixed {
-  background-attachment: fixed;
-  backface-visibility: hidden;
-}
-
-/*
-  * Exclude touch devices because `fixed` doesn't work on iOS and Android
-  */
-@media (pointer: coarse) {
-  .fu-background-fixed {
-    background-attachment: scroll;
-  }
-}
-/* Image
-   ========================================================================== */
-@media (max-width: 639px) {
-  .fu-background-image\@s {
-    background-image: none;
-  }
-}
-@media (max-width: 959px) {
-  .fu-background-image\@m {
-    background-image: none;
-  }
-}
-@media (max-width: 1199px) {
-  .fu-background-image\@l {
-    background-image: none;
-  }
-}
-@media (max-width: 1599px) {
-  .fu-background-image\@xl {
-    background-image: none;
   }
 }

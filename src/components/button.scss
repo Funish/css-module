@@ -1,7 +1,7 @@
 /* ========================================================================
      Component: Button
    ========================================================================== */
-.fu-button {
+.fun-button {
   height: 36px;
   padding: 0 8px;
 
@@ -48,18 +48,18 @@
   }
 }
 
-.fu-button-dense {
+.fun-button-dense {
   font-size: 0.8125rem;
 
   height: 32px;
 }
 
-.fu-button-loose {
+.fun-button-loose {
   height: 40px;
 }
 
 /* Style modifiers   ========================================================================== */
-.fu-button-outlined {
+.fun-button-outlined {
   padding: 0 16px;
 
   &:not(:disabled) {
@@ -67,7 +67,7 @@
   }
 }
 
-.fu-button-contained {
+.fun-button-contained {
   padding: 0 16px;
 
   &:not(:disabled) {
@@ -81,8 +81,8 @@
   }
 }
 
-.fu-button-raised {
-  @extend .fu-button-contained;
+.fun-button-raised {
+  @extend .fun-button-contained;
 
   &:not(:disabled) {
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,7 +104,7 @@
 }
 
 /* Icon button   ========================================================================== */
-.fu-button-icon {
+.fun-button-icon {
   font-size: 18px;
 
   display: inline-block;
@@ -117,41 +117,41 @@
   color: inherit;
 }
 
-.fu-button-reverse .fu-button .fu-button-icon,
-.fu-button-reverse.fu-button .fu-button-icon {
+.fun-button-reverse .fun-button .fun-button-icon,
+.fun-button-reverse.fun-button .fun-button-icon {
   margin-right: 0;
   margin-left: 8px;
 }
 
-svg.fu-button-icon {
+svg.fun-button-icon {
   fill: currentColor;
 }
 
-.fu-button-contained .fu-button-icon,
-.fu-button-outlined .fu-button-icon {
+.fun-button-contained .fun-button-icon,
+.fun-button-outlined .fun-button-icon {
   margin-right: 8px;
   margin-left: -4px;
 }
 
-.fu-button-reverse .fu-button-contained .fu-button-icon,
-.fu-button-reverse .fu-button-outlined .fu-button-icon,
-.fu-button-reverse.fu-button-contained .fu-button-icon,
-.fu-button-reverse.fu-button-outlined .fu-button-icon {
+.fun-button-reverse .fun-button-contained .fun-button-icon,
+.fun-button-reverse .fun-button-outlined .fun-button-icon,
+.fun-button-reverse.fun-button-contained .fun-button-icon,
+.fun-button-reverse.fun-button-outlined .fun-button-icon {
   margin-right: -4px;
   margin-left: 8px;
 }
 
-.fu-icon-button {
+.fun-icon-button {
   min-width: 36px;
   padding: 0;
 
   border-radius: 500px;
 
-  &.fu-button-dense {
+  &.fun-button-dense {
     min-width: 32px;
   }
 
-  &.fu-button-loose {
+  &.fun-button-loose {
     min-width: 40px;
   }
 }
@@ -161,7 +161,7 @@ svg.fu-button-icon {
  * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements 
  * 2. Behave like button * 3. Create position context 
  */
-.fu-button-group {
+.fun-button-group {
   position: relative;
 
   display: inline-flex;
@@ -169,17 +169,17 @@ svg.fu-button-icon {
   vertical-align: middle;
 
   > {
-    .fu-button:first-child,
-    .fu-button:last-child {
+    .fun-button:first-child,
+    .fun-button:last-child {
       border-radius: 4px;
     }
 
-    .fu-button:not(:first-child) {
+    .fun-button:not(:first-child) {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
 
-    .fu-button:not(:last-child) {
+    .fun-button:not(:last-child) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }

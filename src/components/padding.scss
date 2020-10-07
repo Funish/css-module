@@ -2,64 +2,64 @@
      Component: padding
    ========================================================================== */
 @each $padding, $length in $padding-spacings {
-  .fu-padding-#{$padding} {
+  .fun-padding-#{$padding} {
     padding: #{$length};
   }
 
-  .fu-padding-top-#{$padding} {
+  .fun-padding-top-#{$padding} {
     padding-top: #{$length};
   }
 
-  .fu-padding-left-#{$padding} {
+  .fun-padding-left-#{$padding} {
     padding-left: #{$length};
   }
 
-  .fu-padding-bottom-#{$padding} {
+  .fun-padding-bottom-#{$padding} {
     padding-bottom: #{$length};
   }
 
-  .fu-padding-right-#{$padding} {
+  .fun-padding-right-#{$padding} {
     padding-right: #{$length};
   }
 
-  .fu-padding-horizontal-#{$padding} {
+  .fun-padding-horizontal-#{$padding} {
     padding-right: #{$length};
     padding-left: #{$length};
   }
 
-  .fu-padding-vertical-#{$padding} {
+  .fun-padding-vertical-#{$padding} {
     padding-top: #{$length};
     padding-bottom: #{$length};
   }
 }
 
 @each $length in 20px {
-  .fu-padding-auto {
+  .fun-padding-auto {
     padding: #{$length};
   }
 
-  .fu-padding-top-auto {
+  .fun-padding-top-auto {
     padding-top: #{$length};
   }
 
-  .fu-padding-left-auto {
+  .fun-padding-left-auto {
     padding-left: #{$length};
   }
 
-  .fu-padding-bottom-auto {
+  .fun-padding-bottom-auto {
     padding-bottom: #{$length};
   }
 
-  .fu-padding-right-auto {
+  .fun-padding-right-auto {
     padding-right: #{$length};
   }
 
-  .fu-padding-horizontal-auto {
+  .fun-padding-horizontal-auto {
     padding-right: #{$length};
     padding-left: #{$length};
   }
 
-  .fu-padding-vertical-auto {
+  .fun-padding-vertical-auto {
     padding-top: #{$length};
     padding-bottom: #{$length};
   }
@@ -67,32 +67,32 @@
 
 @each $width, $length in (960px, 40px), (1200px, 70px) {
   @media (min-width: #{$width}) {
-    .fu-padding-auto {
+    .fun-padding-auto {
       padding: #{$length};
     }
 
-    .fu-padding-top-auto {
+    .fun-padding-top-auto {
       padding-top: #{$length};
     }
 
-    .fu-padding-left-auto {
+    .fun-padding-left-auto {
       padding-left: #{$length};
     }
 
-    .fu-padding-bottom-auto {
+    .fun-padding-bottom-auto {
       padding-bottom: #{$length};
     }
 
-    .fu-padding-right-auto {
+    .fun-padding-right-auto {
       padding-right: #{$length};
     }
 
-    .fu-padding-horizontal-auto {
+    .fun-padding-horizontal-auto {
       padding-right: #{$length};
       padding-left: #{$length};
     }
 
-    .fu-padding-vertical-auto {
+    .fun-padding-vertical-auto {
       padding-top: #{$length};
       padding-bottom: #{$length};
     }

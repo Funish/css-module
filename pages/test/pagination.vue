@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Height</h1>
-    <nav class="fu-flex fu-main-center">
-      <div class="fu-pagination">
+    <nav class="fun-flex fun-main-center">
+      <div class="fun-pagination">
         <span>Previous</span>
         <em>1</em>
         <a href="#url">2</a>

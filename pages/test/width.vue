@@ -5,168 +5,168 @@
     <h2>Style</h2>
     <div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-xsmall"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-xsmall"
       >
-        .fu-width-xsmall
+        .fun-width-xsmall
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-small"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-small"
       >
-        .fu-width-small
+        .fun-width-small
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-medium"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-medium"
       >
-        .fu-width-medium
+        .fun-width-medium
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-large"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-large"
       >
-        .fu-width-large
+        .fun-width-large
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-xlarge"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-xlarge"
       >
-        .fu-width-xlarge
+        .fun-width-xlarge
       </div>
     </div>
     <h2>Relative Width</h2>
     <div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-1"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-1"
       >
-        .fu-width-1-1
+        .fun-width-1-1
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-2"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-2"
       >
-        .fu-width-1-2
+        .fun-width-1-2
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-3"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-3"
       >
-        .fu-width-1-3
+        .fun-width-1-3
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-2-3"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-2-3"
       >
-        .fu-width-2-3
+        .fun-width-2-3
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-4"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-4"
       >
-        .fu-width-1-4
+        .fun-width-1-4
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-3-4"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-3-4"
       >
-        .fu-width-3-4
+        .fun-width-3-4
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-5"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-5"
       >
-        .fu-width-1-5
+        .fun-width-1-5
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-2-5"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-2-5"
       >
-        .fu-width-2-5
+        .fun-width-2-5
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-3-5"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-3-5"
       >
-        .fu-width-3-5
+        .fun-width-3-5
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-1-6"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-1-6"
       >
-        .fu-width-1-6
+        .fun-width-1-6
       </div>
       <div
-        class="fu-border-large fu-margin-bottom-medium fu-padding-medium fu-width-5-6"
+        class="fun-border-large fun-margin-bottom-medium fun-padding-medium fun-width-5-6"
       >
-        .fu-width-5-6
+        .fun-width-5-6
       </div>
     </div>
     <h2>Child width</h2>
     <div>
-      <div class="fu-flex fu-child-width-1-2 fu-margin-bottom-medium">
-        <div class="fu-border-large fu-padding-medium">
+      <div class="fun-flex fun-child-width-1-2 fun-margin-bottom-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-2
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-2
         </div>
       </div>
-      <div class="fu-flex fu-child-width-1-3 fu-margin-bottom-medium">
-        <div class="fu-border-large fu-padding-medium">
+      <div class="fun-flex fun-child-width-1-3 fun-margin-bottom-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-3
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-3
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-3
         </div>
       </div>
-      <div class="fu-flex fu-child-width-1-4 fu-margin-bottom-medium">
-        <div class="fu-border-large fu-padding-medium">
+      <div class="fun-flex fun-child-width-1-4 fun-margin-bottom-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-4
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-4
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-4
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-4
         </div>
       </div>
-      <div class="fu-flex fu-child-width-1-5 fu-margin-bottom-medium">
-        <div class="fu-border-large fu-padding-medium">
+      <div class="fun-flex fun-child-width-1-5 fun-margin-bottom-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-5
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-5
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-5
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-5
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-5
         </div>
       </div>
-      <div class="fu-flex fu-child-width-1-6 fu-margin-bottom-medium">
-        <div class="fu-border-large fu-padding-medium">
+      <div class="fun-flex fun-child-width-1-6 fun-margin-bottom-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
-        <div class="fu-border-large fu-padding-medium">
+        <div class="fun-border-large fun-padding-medium">
           1-6
         </div>
       </div>
     </div>
     <h2>Auto and Expand</h2>
-    <div class="fu-flex">
-      <div class="fu-border-large fu-padding-medium fu-width-auto">
+    <div class="fun-flex">
+      <div class="fun-border-large fun-padding-medium fun-width-auto">
         Auto
       </div>
-      <div class="fu-border-large fu-padding-medium fu-width-expand">
+      <div class="fun-border-large fun-padding-medium fun-width-expand">
         Expand
       </div>
     </div>

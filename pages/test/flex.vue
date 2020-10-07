@@ -2,169 +2,169 @@
   <div>
     <h1>Flex</h1>
     <hr />
-    <h2>.fu-flex-row</h2>
-    <div class="fu-flex fu-flex-wrap fu-flex-row">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
+    <h2>.fun-flex-row</h2>
+    <div class="fun-flex fun-flex-wrap fun-flex-row">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
-      </div>
-    </div>
-    <h2>.fu-flex-row-reverse</h2>
-    <div class="fu-flex fu-flex-wrap fu-flex-row-reverse">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-flex-column</h2>
-    <div class="fu-flex fu-flex-wrap fu-flex-column">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
+    <h2>.fun-flex-row-reverse</h2>
+    <div class="fun-flex fun-flex-wrap fun-flex-row-reverse">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
-      </div>
-    </div>
-    <h2>.fu-flex-column-reverse</h2>
-    <div class="fu-flex fu-flex-wrap fu-flex-column-reverse">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-main-start</h2>
-    <div class="fu-flex fu-flex-wrap fu-main-start">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
+    <h2>.fun-flex-column</h2>
+    <div class="fun-flex fun-flex-wrap fun-flex-column">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
-      </div>
-    </div>
-    <h2>.fu-main-end</h2>
-    <div class="fu-flex fu-flex-wrap fu-main-end">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-main-center</h2>
-    <div class="fu-flex fu-flex-wrap fu-main-center">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
+    <h2>.fun-flex-column-reverse</h2>
+    <div class="fun-flex fun-flex-wrap fun-flex-column-reverse">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
-      </div>
-    </div>
-    <h2>.fu-main-between</h2>
-    <div class="fu-flex fu-flex-wrap fu-main-between">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
-      </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-main-around</h2>
-    <div class="fu-flex fu-flex-wrap fu-main-around">
-      <div class="fu-box">
-        <div class="fu-box-content">Item1</div>
+    <h2>.fun-main-start</h2>
+    <div class="fun-flex fun-flex-wrap fun-main-start">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item2</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">Item3</div>
-      </div>
-    </div>
-    <h2>.fu-cross-stretch</h2>
-    <div class="fu-flex fu-flex-wrap fu-cross-stretch">
-      <div class="fu-box fu-height-xsmall">
-        <div class="fu-box-content">.fu-height-xsmall</div>
-      </div>
-      <div class="fu-box fu-height-small">
-        <div class="fu-box-content">.fu-height-small</div>
-      </div>
-      <div class="fu-box fu-height-medium">
-        <div class="fu-box-content">.fu-height-medium</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-cross-start</h2>
-    <div class="fu-flex fu-flex-wrap fu-cross-start">
-      <div class="fu-box fu-height-xsmall">
-        <div class="fu-box-content">.fu-height-xsmall</div>
+    <h2>.fun-main-end</h2>
+    <div class="fun-flex fun-flex-wrap fun-main-end">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box fu-height-small">
-        <div class="fu-box-content">.fu-height-small</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box fu-height-medium">
-        <div class="fu-box-content">.fu-height-medium</div>
-      </div>
-    </div>
-    <h2>.fu-cross-end</h2>
-    <div class="fu-flex fu-flex-wrap fu-cross-end">
-      <div class="fu-box fu-height-xsmall">
-        <div class="fu-box-content">.fu-height-xsmall</div>
-      </div>
-      <div class="fu-box fu-height-small">
-        <div class="fu-box-content">.fu-height-small</div>
-      </div>
-      <div class="fu-box fu-height-medium">
-        <div class="fu-box-content">.fu-height-medium</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-cross-center</h2>
-    <div class="fu-flex fu-flex-wrap fu-cross-center">
-      <div class="fu-box fu-height-xsmall">
-        <div class="fu-box-content">.fu-height-xsmall</div>
+    <h2>.fun-main-center</h2>
+    <div class="fun-flex fun-flex-wrap fun-main-center">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box fu-height-small">
-        <div class="fu-box-content">.fu-height-small</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
       </div>
-      <div class="fu-box fu-height-medium">
-        <div class="fu-box-content">.fu-height-medium</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
       </div>
     </div>
-    <h2>.fu-flex-auto</h2>
-    <div class="fu-flex fu-flex-wrap">
-      <div class="fu-box fu-flex-auto">
-        <div class="fu-box-content">.fu-flex-auto</div>
+    <h2>.fun-main-between</h2>
+    <div class="fun-flex fun-flex-wrap fun-main-between">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
       </div>
-      <div class="fu-box">
-        <div class="fu-box-content">.fu-box</div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
+      </div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
+      </div>
+    </div>
+    <h2>.fun-main-around</h2>
+    <div class="fun-flex fun-flex-wrap fun-main-around">
+      <div class="fun-card">
+        <div class="fun-card-content">Item1</div>
+      </div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item2</div>
+      </div>
+      <div class="fun-card">
+        <div class="fun-card-content">Item3</div>
+      </div>
+    </div>
+    <h2>.fun-cross-stretch</h2>
+    <div class="fun-flex fun-flex-wrap fun-cross-stretch">
+      <div class="fun-card fun-height-xsmall">
+        <div class="fun-card-content">.fun-height-xsmall</div>
+      </div>
+      <div class="fun-card fun-height-small">
+        <div class="fun-card-content">.fun-height-small</div>
+      </div>
+      <div class="fun-card fun-height-medium">
+        <div class="fun-card-content">.fun-height-medium</div>
+      </div>
+    </div>
+    <h2>.fun-cross-start</h2>
+    <div class="fun-flex fun-flex-wrap fun-cross-start">
+      <div class="fun-card fun-height-xsmall">
+        <div class="fun-card-content">.fun-height-xsmall</div>
+      </div>
+      <div class="fun-card fun-height-small">
+        <div class="fun-card-content">.fun-height-small</div>
+      </div>
+      <div class="fun-card fun-height-medium">
+        <div class="fun-card-content">.fun-height-medium</div>
+      </div>
+    </div>
+    <h2>.fun-cross-end</h2>
+    <div class="fun-flex fun-flex-wrap fun-cross-end">
+      <div class="fun-card fun-height-xsmall">
+        <div class="fun-card-content">.fun-height-xsmall</div>
+      </div>
+      <div class="fun-card fun-height-small">
+        <div class="fun-card-content">.fun-height-small</div>
+      </div>
+      <div class="fun-card fun-height-medium">
+        <div class="fun-card-content">.fun-height-medium</div>
+      </div>
+    </div>
+    <h2>.fun-cross-center</h2>
+    <div class="fun-flex fun-flex-wrap fun-cross-center">
+      <div class="fun-card fun-height-xsmall">
+        <div class="fun-card-content">.fun-height-xsmall</div>
+      </div>
+      <div class="fun-card fun-height-small">
+        <div class="fun-card-content">.fun-height-small</div>
+      </div>
+      <div class="fun-card fun-height-medium">
+        <div class="fun-card-content">.fun-height-medium</div>
+      </div>
+    </div>
+    <h2>.fun-flex-auto</h2>
+    <div class="fun-flex fun-flex-wrap">
+      <div class="fun-card fun-flex-auto">
+        <div class="fun-card-content">.fun-flex-auto</div>
+      </div>
+      <div class="fun-card">
+        <div class="fun-card-content">.fun-card</div>
       </div>
     </div>
   </div>

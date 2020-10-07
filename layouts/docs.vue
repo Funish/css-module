@@ -1,9 +1,11 @@
 <template>
-  <div class="fu-flex fu-flex-column">
+  <div class="fun-flex fun-flex-column">
     <Header></Header>
-    <div class="fu-flex fu-flex-1">
+    <div class="fun-flex fun-flex-1">
       <Sidebar></Sidebar>
-      <div class="fu-markdown-body fu-padding-horizontal-medium fu-width-1-1">
+      <div
+        class="fun-markdown-body fun-padding-horizontal-medium fun-width-1-1"
+      >
         <nuxt />
       </div>
     </div>

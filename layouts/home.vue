@@ -1,7 +1,7 @@
 <template>
-  <div class="fu-flex fu-flex-column fu-height-viewport">
+  <div class="fun-flex fun-flex-column fun-height-viewport">
     <Header></Header>
-    <div class="fu-flex fu-main-center fu-cross-center fu-flex-1">
+    <div class="fun-flex fun-main-center fun-cross-center fun-flex-1">
       <nuxt />
     </div>
     <Footer></Footer>

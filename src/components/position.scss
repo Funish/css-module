@@ -7,11 +7,11 @@
   * 1. Prevent content overflow if `max-width: 100%` is used inside position container.
   */
 
-[class*='fu-position-top'],
-[class*='fu-position-right'],
-[class*='fu-position-bottom'],
-[class*='fu-position-left'],
-[class*='fu-position-center'] {
+[class*='fun-position-top'],
+[class*='fun-position-right'],
+[class*='fun-position-bottom'],
+[class*='fun-position-left'],
+[class*='fun-position-center'] {
   position: absolute;
   /* 1 */
 
@@ -22,25 +22,25 @@
    ========================================================================== */
 /* Don't use `width: 100%` because it is wrong if the parent has padding. */
 
-.fu-position-top {
+.fun-position-top {
   top: 0;
   right: 0;
   left: 0;
 }
 
-.fu-position-right {
+.fun-position-right {
   top: 0;
   right: 0;
   bottom: 0;
 }
 
-.fu-position-bottom {
+.fun-position-bottom {
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.fu-position-left {
+.fun-position-left {
   top: 0;
   bottom: 0;
   left: 0;
@@ -51,7 +51,7 @@
   * 1. Fix text wrapping if content is larger than 50% of the container.
   */
 
-.fu-position-center {
+.fun-position-center {
   top: 50%;
   left: 50%;
 
@@ -65,47 +65,47 @@
 
 /* Corners
    ========================================================================== */
-.fu-position-top-left {
+.fun-position-top-left {
   top: 0;
   left: 0;
 }
 
-.fu-position-top-right {
+.fun-position-top-right {
   top: 0;
   right: 0;
 }
 
-.fu-position-bottom-left {
+.fun-position-bottom-left {
   bottom: 0;
   left: 0;
 }
 
-.fu-position-bottom-right {
+.fun-position-bottom-right {
   right: 0;
   bottom: 0;
 }
 
 /* Vertical */
 
-[class*='fu-position-center-left'],
-[class*='fu-position-center-right'] {
+[class*='fun-position-center-left'],
+[class*='fun-position-center-right'] {
   top: 50%;
 
   transform: translateY(-50%);
 }
 
-.fu-position-center-left {
+.fun-position-center-left {
   left: 0;
 }
 
-.fu-position-center-right {
+.fun-position-center-right {
   right: 0;
 }
 
 /* Horizontal */
 
-.fu-position-top-center,
-.fu-position-bottom-center {
+.fun-position-top-center,
+.fun-position-bottom-center {
   left: 50%;
 
   box-sizing: border-box;
@@ -116,17 +116,17 @@
   transform: translateX(-50%);
 }
 
-.fu-position-top-center {
+.fun-position-top-center {
   top: 0;
 }
 
-.fu-position-bottom-center {
+.fun-position-bottom-center {
   bottom: 0;
 }
 
 /* Cover
    ========================================================================== */
-.fu-position-cover {
+.fun-position-cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -136,23 +136,23 @@
 
 /* Utility
    ========================================================================== */
-.fu-position-relative {
+.fun-position-relative {
   position: relative;
 }
 
-.fu-position-absolute {
+.fun-position-absolute {
   position: absolute;
 }
 
-.fu-position-fixed {
+.fun-position-fixed {
   position: fixed;
 }
 
-.fu-position-sticky {
+.fun-position-sticky {
   position: sticky;
   top: 0;
 }
 
-.fu-position-z-index {
+.fun-position-z-index {
   z-index: 1;
 }

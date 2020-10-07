@@ -1,23 +1,23 @@
 /* ========================================================================
      Component: Height
    ========================================================================== */
-[class*='fu-height'] {
+[class*='fun-height'] {
   box-sizing: border-box;
 }
 
-.fu-height-1-1 {
+.fun-height-1-1 {
   height: 100%;
 }
 
-.fu-height-viewport {
+.fun-height-viewport {
   height: 100vh;
 }
 @each $height, $spacing in $heights {
-  .fu-height-#{$height} {
+  .fun-height-#{$height} {
     height: $spacing;
   }
 
-  .fu-height-max-#{$height} {
+  .fun-height-max-#{$height} {
     max-height: $spacing;
   }
 }

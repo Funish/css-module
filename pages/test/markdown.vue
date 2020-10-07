@@ -1,5 +1,5 @@
 <template>
-  <div class="fu-markdown-body">
+  <div class="fun-markdown-body">
     <h1>Markdown</h1>
     <p>
       Text can be

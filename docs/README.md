@@ -32,8 +32,9 @@ Funish CSS 是 [Thus.Fun](https://thus.fun) 团队开发的 `Funish` 项目的�
 
 ### 控件
 
-- [Box](/docs/box)
+- [Background](/docs/background)
 - [Button](/docs/button)
+- [Card](/docs/card)
 - [Dropdown](/docs/dropdown)
 - [Form](/docs/form)
 - [Menu](/docs/menu)

@@ -1,11 +1,11 @@
 /* ========================================================================
      Component: Grid
    ========================================================================== */
-.fu-grid {
+.fun-grid {
   display: grid;
 }
 
-.fu-grid-inline {
+.fun-grid-inline {
   display: inline-grid;
 }
 
@@ -13,12 +13,12 @@
    ========================================================================== */
 
 @each $grid, $spacing in $grid-spacings {
-  .fu-grid-row-#{$grid} > * {
+  .fun-grid-row-#{$grid} > * {
     margin-right: #{$spacing};
     margin-left: #{$spacing};
   }
 
-  .fu-grid-column-#{$grid} > * {
+  .fun-grid-column-#{$grid} > * {
     margin-top: #{$spacing};
     margin-bottom: #{$spacing};
   }
@@ -28,11 +28,11 @@
    ========================================================================== */
 
 @for $number from 2 through 6 {
-  .fu-grid-row-#{$number} {
+  .fun-grid-row-#{$number} {
     grid-template-rows: repeat(#{$number}, 1fr);
   }
 
-  .fu-grid-column-#{$number} {
+  .fun-grid-column-#{$number} {
     grid-template-columns: repeat(#{$number}, 1fr);
   }
 }

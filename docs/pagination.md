@@ -4,10 +4,10 @@ Pagination 模块用于创建分页导航
 
 ## 用法
 
-使用类选择器 `.fu-pagination` 以应用样式。
+使用类选择器 `.fun-pagination` 以应用样式。
 
 ```html
-<div class="fu-pagination">
+<div class="fun-pagination">
   <span>Previous</span>
   <em>1</em>
   <a href="#url">2</a>

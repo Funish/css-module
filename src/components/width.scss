@@ -1,18 +1,18 @@
 /* ========================================================================
      Component: Width
    ========================================================================== */
-[class*='fu-width'] {
+[class*='fun-width'] {
   box-sizing: border-box;
 }
 
 @each $width, $spacing in $widths {
-  .fu-width-#{$width} {
+  .fun-width-#{$width} {
     width: #{$spacing};
   }
 }
 
 @each $width, $spacing in $widths {
-  .fu-max-width-#{$width} {
+  .fun-max-width-#{$width} {
     max-width: #{$spacing};
   }
 }
@@ -20,40 +20,40 @@
 /* Relative widths
    ========================================================================== */
 @for $width from 1 through 6 {
-  .fu-width-1-#{$width} {
+  .fun-width-1-#{$width} {
     width: #{100% / $width};
   }
 }
 
-.fu-width-2-3 {
+.fun-width-2-3 {
   width: 100% * 2 / 3;
 }
 
-.fu-width-3-4 {
+.fun-width-3-4 {
   width: 100% * 3 / 4;
 }
 
-.fu-width-2-5 {
+.fun-width-2-5 {
   width: 100% * 2 / 5;
 }
 
-.fu-width-3-5 {
+.fun-width-3-5 {
   width: 100% * 3 / 5;
 }
 
-.fu-width-5-6 {
+.fun-width-5-6 {
   width: 100% * 5 / 6;
 }
 
 /* Child widths
    ========================================================================== */
-[class*='fu-child-width'] > * {
+[class*='fun-child-width'] > * {
   box-sizing: border-box;
   width: 100%;
 }
 
 @for $width from 2 through 6 {
-  .fu-child-width-1-#{$width} > * {
+  .fun-child-width-1-#{$width} > * {
     width: #{100% / $width};
   }
 }
@@ -61,19 +61,19 @@
 /* Auto and expand
    ========================================================================== */
 /* Auto */
-.fu-width-auto {
+.fun-width-auto {
   width: auto;
 }
 
 /* Expand */
-.fu-width-expand {
+.fun-width-expand {
   flex: 1;
 
   min-width: 100%;
 }
 
 /* Fit content */
-.fu-width-fit-content {
+.fun-width-fit-content {
   width: fit-content;
 }
 
@@ -82,60 +82,60 @@
 @each $breakpoint, $width in $breakpoints {
   @media (min-width: #{$width}) {
     @each $width, $spacing in $widths {
-      .fu-width-#{$width}#{$breakpoint} {
+      .fun-width-#{$width}#{$breakpoint} {
         width: #{$spacing};
       }
     }
 
     /* Relative widths */
     @for $width from 1 through 6 {
-      .fu-width-1-#{$width}#{$breakpoint} {
+      .fun-width-1-#{$width}#{$breakpoint} {
         width: #{100% / $width};
       }
     }
 
-    .fu-width-2-3#{$breakpoint} {
+    .fun-width-2-3#{$breakpoint} {
       width: 100% * 2 / 3;
     }
 
-    .fu-width-3-4#{$breakpoint} {
+    .fun-width-3-4#{$breakpoint} {
       width: 100% * 3 / 4;
     }
 
-    .fu-width-2-5#{$breakpoint} {
+    .fun-width-2-5#{$breakpoint} {
       width: 100% * 2 / 5;
     }
 
-    .fu-width-3-5#{$breakpoint} {
+    .fun-width-3-5#{$breakpoint} {
       width: 100% * 3 / 5;
     }
 
-    .fu-width-5-6#{$breakpoint} {
+    .fun-width-5-6#{$breakpoint} {
       width: 100% * 5 / 6;
     }
   }
 
   /* Child widths */
   @for $width from 2 through 6 {
-    .fu-child-width-1-#{$width}#{$breakpoint} > * {
+    .fun-child-width-1-#{$width}#{$breakpoint} > * {
       width: #{100% / $width};
     }
   }
 
   /* Auto */
-  .fu-width-auto#{$breakpoint} {
+  .fun-width-auto#{$breakpoint} {
     width: auto;
   }
 
   /* Expand */
-  .fu-width-expand#{$breakpoint} {
+  .fun-width-expand#{$breakpoint} {
     flex: 1;
 
     min-width: 1px;
   }
 
   /* Fit content */
-  .fu-width-fit-content#{$breakpoint} {
+  .fun-width-fit-content#{$breakpoint} {
     width: fit-content;
   }
 }

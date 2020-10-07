@@ -1,31 +1,44 @@
 /* ========================================================================
      Component: Navbar
    ========================================================================== */
-.fu-navbar-top,
-.fu-navbar-bottom {
-  line-height: 100%;
+.fun-navbar-top,
+.fun-navbar-bottom {
+  line-height: 48px;
 
   position: sticky;
   z-index: 998;
 
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
+  height: 48px;
+
+  user-select: none;
   white-space: nowrap;
 
   background: $default-light;
 }
 
-.fu-navbar-top {
+.fun-navbar-top {
   top: 0;
 
-  padding: 0 16px;
+  padding: 0 8px;
 
   box-shadow: 0 1px 4px -1px $default-dark;
 }
 
-.fu-navbar-bottom {
+.fun-navbar-container {
+  display: inline-flex;
+  align-items: center;
+  flex: auto;
+
+  > * {
+    margin: 0 8px;
+  }
+}
+
+.fun-navbar-bottom {
   bottom: 0;
 
   padding: 16px;
@@ -33,23 +46,9 @@
   box-shadow: 0 -1px 4px -1px $default-dark;
 }
 
-.fu-navbar-item {
-  display: inline-block;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: nowrap;
-
-  height: 100%;
-  margin-right: 16px;
-  padding: 16px 0;
-}
-
-.fu-navbar-dropdown,
-.fu-navbar-drawer {
+.fun-navbar-dropdown > :not(summary) {
   line-height: 1.5;
-}
 
-.fu-navbar-dropdown > :not(summary) {
   position: absolute;
   z-index: 998;
   top: 100%;
@@ -63,7 +62,9 @@
   box-shadow: 0 1px 4px -1px $default-dark;
 }
 
-.fu-navbar-drawer > :not(summary) {
+.fun-navbar-drawer > :not(summary) {
+  line-height: 1.5;
+
   position: fixed;
   z-index: 999;
   top: 0;
@@ -79,7 +80,7 @@
   box-shadow: 1px 0 4px -1px $default-dark;
 }
 
-.fu-navbar-drawer-reverse > :not(summary) {
+.fun-navbar-drawer-reverse > :not(summary) {
   right: 0;
   left: auto;
 }

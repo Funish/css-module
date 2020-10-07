@@ -1,9 +1,9 @@
 /* ========================================================================
      Component: Dropdown 
    ========================================================================== */
-.fu-dropdown,
-.fu-navbar-dropdown,
-.fu-navbar-drawer {
+.fun-dropdown,
+.fun-navbar-dropdown,
+.fun-navbar-drawer {
   summary {
     cursor: pointer;
     user-select: none;
@@ -35,12 +35,12 @@
   }
 }
 
-.fu-dropdown {
+.fun-dropdown {
   position: relative;
 }
 
-.fu-dropdown-menu,
-.fu-dropdown-menu-bottom-left {
+.fun-dropdown-menu,
+.fun-dropdown-menu-bottom-left {
   position: absolute;
   z-index: 100;
   top: 100%;
@@ -58,7 +58,7 @@
 
 /* Style modifiers
    ========================================================================== */
-.fu-dropdown-menu-top {
+.fun-dropdown-menu-top {
   top: auto;
   bottom: 100%;
   left: 0;
@@ -72,19 +72,19 @@
   }
 }
 
-.fu-dropdown-menu-bottom {
+.fun-dropdown-menu-bottom {
   right: 50%;
   left: auto;
 
   transform: translateX(50%);
 }
 
-.fu-dropdown-menu-bottom-right {
+.fun-dropdown-menu-bottom-right {
   right: 0;
   left: auto;
 }
 
-.fu-dropdown-menu-left {
+.fun-dropdown-menu-left {
   top: 0;
   right: 100%;
   left: auto;
@@ -94,7 +94,7 @@
   margin-right: 8px;
 }
 
-.fu-dropdown-menu-right {
+.fun-dropdown-menu-right {
   top: 0;
   left: 100%;
 
