@@ -409,139 +409,6 @@ hr {
 
 /* Controls */
 /* ========================================================================
-     Component: Background
-   ========================================================================== */
-/* Background color
-   ========================================================================== */
-.fun-background-transparent {
-  background: transparent;
-}
-
-.fun-background-default {
-  background-color: #fff;
-}
-
-.fun-background-muted {
-  background-color: #fafafa;
-}
-
-.fun-background-primary {
-  background-color: #212121;
-}
-
-.fun-background-secondary {
-  background-color: #0366d6;
-}
-
-.fun-background-warning {
-  background-color: #d73a49;
-}
-
-.fun-background-success {
-  background-color: #28a745;
-}
-
-/* Size
-   ========================================================================== */
-.fun-background-cover,
-.fun-background-contain {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.fun-background-cover {
-  background-size: cover;
-}
-
-.fun-background-contain {
-  background-size: contain;
-}
-
-/* Position
-   ========================================================================== */
-.fun-background-top-left {
-  background-position: 0 0;
-}
-
-.fun-background-top-center {
-  background-position: 50% 0;
-}
-
-.fun-background-top-right {
-  background-position: 100% 0;
-}
-
-.fun-background-center-left {
-  background-position: 0 50%;
-}
-
-.fun-background-center-center {
-  background-position: 50% 50%;
-}
-
-.fun-background-center-right {
-  background-position: 100% 50%;
-}
-
-.fun-background-bottom-left {
-  background-position: 0 100%;
-}
-
-.fun-background-bottom-center {
-  background-position: 50% 100%;
-}
-
-.fun-background-bottom-right {
-  background-position: 100% 100%;
-}
-
-/* Repeat
-   ========================================================================== */
-.fun-background-norepeat {
-  background-repeat: no-repeat;
-}
-
-/* Attachment
-   ========================================================================== */
-/*
-  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
-  */
-.fun-background-fixed {
-  background-attachment: fixed;
-  backface-visibility: hidden;
-}
-
-/*
-  * Exclude touch devices because `fixed` doesn't work on iOS and Android
-  */
-@media (pointer: coarse) {
-  .fun-background-fixed {
-    background-attachment: scroll;
-  }
-}
-/* Image
-   ========================================================================== */
-@media (max-width: 639px) {
-  .fun-background-image\@s {
-    background-image: none;
-  }
-}
-@media (max-width: 959px) {
-  .fun-background-image\@m {
-    background-image: none;
-  }
-}
-@media (max-width: 1199px) {
-  .fun-background-image\@l {
-    background-image: none;
-  }
-}
-@media (max-width: 1599px) {
-  .fun-background-image\@xl {
-    background-image: none;
-  }
-}
-/* ========================================================================
      Component: Card
    ========================================================================== */
 .fun-card {
@@ -1269,6 +1136,139 @@ svg.fun-button-icon {
   background: #000;
 }
 
+/* ========================================================================
+     Component: Background
+   ========================================================================== */
+/* Background color
+   ========================================================================== */
+.fun-background-transparent {
+  background: transparent;
+}
+
+.fun-background-default {
+  background-color: #fff;
+}
+
+.fun-background-muted {
+  background-color: #fafafa;
+}
+
+.fun-background-primary {
+  background-color: #212121;
+}
+
+.fun-background-secondary {
+  background-color: #0366d6;
+}
+
+.fun-background-warning {
+  background-color: #d73a49;
+}
+
+.fun-background-success {
+  background-color: #28a745;
+}
+
+/* Size
+   ========================================================================== */
+.fun-background-cover,
+.fun-background-contain {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fun-background-cover {
+  background-size: cover;
+}
+
+.fun-background-contain {
+  background-size: contain;
+}
+
+/* Position
+   ========================================================================== */
+.fun-background-top-left {
+  background-position: 0 0;
+}
+
+.fun-background-top-center {
+  background-position: 50% 0;
+}
+
+.fun-background-top-right {
+  background-position: 100% 0;
+}
+
+.fun-background-center-left {
+  background-position: 0 50%;
+}
+
+.fun-background-center-center {
+  background-position: 50% 50%;
+}
+
+.fun-background-center-right {
+  background-position: 100% 50%;
+}
+
+.fun-background-bottom-left {
+  background-position: 0 100%;
+}
+
+.fun-background-bottom-center {
+  background-position: 50% 100%;
+}
+
+.fun-background-bottom-right {
+  background-position: 100% 100%;
+}
+
+/* Repeat
+   ========================================================================== */
+.fun-background-norepeat {
+  background-repeat: no-repeat;
+}
+
+/* Attachment
+   ========================================================================== */
+/*
+  * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+  */
+.fun-background-fixed {
+  background-attachment: fixed;
+  backface-visibility: hidden;
+}
+
+/*
+  * Exclude touch devices because `fixed` doesn't work on iOS and Android
+  */
+@media (pointer: coarse) {
+  .fun-background-fixed {
+    background-attachment: scroll;
+  }
+}
+/* Image
+   ========================================================================== */
+@media (max-width: 639px) {
+  .fun-background-image\@s {
+    background-image: none;
+  }
+}
+@media (max-width: 959px) {
+  .fun-background-image\@m {
+    background-image: none;
+  }
+}
+@media (max-width: 1199px) {
+  .fun-background-image\@l {
+    background-image: none;
+  }
+}
+@media (max-width: 1599px) {
+  .fun-background-image\@xl {
+    background-image: none;
+  }
+}
 /* ========================================================================
      Component: Utility
    ========================================================================== */
