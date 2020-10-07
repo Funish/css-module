@@ -6,7 +6,7 @@
       <nuxt-link to="/docs/" class="fun-button fun-button-contained"
         >Get Started</nuxt-link
       >
-      <nuxt-link to="/test/" class="fun-button">Demo</nuxt-link>
+      <nuxt-link to="/demo/" class="fun-button">Demo</nuxt-link>
     </div>
   </div>
 </template>

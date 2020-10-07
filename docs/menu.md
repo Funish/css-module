@@ -20,3 +20,10 @@ Menu 模块用于创建菜单。
   <li class="fun-menu-item">item3</li>
 </div>
 ```
+
+<div class="fun-card fun-padding-vertical-small fun-menu">
+  <div class="fun-menu-header">Header</div>
+  <li class="fun-menu-item">item1</li>
+  <li class="fun-menu-item">item2</li>
+  <li class="fun-menu-item">item3</li>
+</div>

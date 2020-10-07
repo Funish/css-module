@@ -391,7 +391,7 @@ template,
 /* Element modifiers
    ========================================================================== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
   line-height: 1.25;
   overflow-y: scroll;
@@ -625,8 +625,7 @@ hr {
 .fun-form-action.fun-form:hover, .fun-form-action.fun-form:focus,
 .fun-form-action .fun-form:hover,
 .fun-form-action .fun-form:focus {
-  border: 0.5px solid;
-  border-color: #000;
+  border: 1px solid currentColor;
   background: inherit;
 }
 .fun-form-action.fun-form:focus,
@@ -1000,20 +999,20 @@ svg.fun-button-icon {
    ========================================================================== */
 .fun-menu,
 .fun-dropdown-menu,
-.fun-navbar-dropdown {
+.fun-navbar-dropdown > :not(summary) {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 .fun-menu ul,
 .fun-dropdown-menu ul,
-.fun-navbar-dropdown ul {
+.fun-navbar-dropdown > :not(summary) ul {
   margin: 0;
   padding: 0;
 }
 .fun-menu li,
 .fun-dropdown-menu li,
-.fun-navbar-dropdown li {
+.fun-navbar-dropdown > :not(summary) li {
   list-style: none;
 }
 
@@ -1026,6 +1025,7 @@ svg.fun-button-icon {
 .fun-menu-item {
   display: block;
   padding: 4px 16px;
+  cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
@@ -1044,7 +1044,7 @@ svg.fun-button-icon {
   position: sticky;
   z-index: 998;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: nowrap;
   height: 48px;
   user-select: none;

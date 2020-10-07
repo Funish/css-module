@@ -2,7 +2,7 @@
   <aside>
     <div class="fun-margin-medium fun-width-small fun-visible@m">
       <div class="fun-card fun-menu fun-padding-vertical-medium">
-        <div class="fun-menu-header fun-text-subtitle">Funish CSS</div>
+        <div class="fun-menu-header">Funish CSS</div>
         <nuxt-link
           v-for="(item, i) in home_items"
           :key="i"

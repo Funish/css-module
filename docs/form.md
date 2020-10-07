@@ -19,6 +19,16 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input class="fun-form fun-form-action" />
 ```
 
+<div class="fun-margin-bottom-small">
+<input class="fun-form fun-form-outlined" placeholder="Placeholder" />
+</div>
+<div class="fun-margin-bottom-small">
+<input class="fun-form fun-form-contained" placeholder="Placeholder" />
+</div>
+<div>
+<input class="fun-form fun-form-action" placeholder="Placeholder" />
+</div>
+
 ## 单选框和复选框
 
 ```html
@@ -26,6 +36,10 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input type="radio" name="radio1" class="fun-radio" />
 <input type="checkbox" class="fun-checkbox" />
 ```
+
+<input type="radio" name="radio1" class="fun-radio" />
+<input type="radio" name="radio1" class="fun-radio" />
+<input type="checkbox" class="fun-checkbox" />
 
 ## 开关
 
@@ -35,6 +49,8 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input type="checkbox" class="fun-switch" />
 ```
 
+<input type="checkbox" class="fun-switch" />
+
 ## 开关
 
 通过使用类选择器 `fun-range` 应用样式
@@ -42,6 +58,8 @@ Form 模块使您可以轻松创建漂亮的表单。
 ```html
 <input type="range" class="fun-range" />
 ```
+
+<input type="range" class="fun-range" />
 
 ## 上传
 
@@ -57,9 +75,14 @@ Form 模块使您可以轻松创建漂亮的表单。
 ```html
 <div class="fun-icon-form">
   <i class="fas fa-user fun-form-icon"></i>
-  <input class="fun-form" />
+  <input class="fun-form fun-form-outlined" placeholder="Placeholder" />
 </div>
 ```
+
+<div class="fun-icon-form">
+  <i class="fas fa-user fun-form-icon"></i>
+  <input class="fun-form fun-form-outlined" placeholder="Placeholder" />
+</div>
 
 ## 反转
 

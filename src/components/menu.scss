@@ -3,7 +3,7 @@
    ========================================================================== */
 .fun-menu,
 .fun-dropdown-menu,
-.fun-navbar-dropdown {
+.fun-navbar-dropdown > :not(summary) {
   overflow: hidden;
 
   margin: 0;
@@ -32,6 +32,7 @@
 
   padding: 4px 16px;
 
+  cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;

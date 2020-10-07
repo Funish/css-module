@@ -47,9 +47,17 @@ Text 模块是用于调整文本的样式集合。
 
 ## 文本大小
 
-| 类名 | 描述 |
-| ---- | ---- |
-
+| 类名               | 描述         |
+| ------------------ | ------------ |
+| `.fu-text-xxsmall` | 超小号文本   |
+| `.fu-text-xsmall`  | 较小号文本   |
+| `.fu-text-small`   | 小号文本     |
+| `.fu-text-medium`  | 中等文本     |
+| `.fu-text-large`   | 大号文本     |
+| `.fu-text-xlarge`  | 较大号文本   |
+| `.fu-text-xxlarge` | 超大号文本   |
+| `.fu-text-smaller` | 更小号的文本 |
+| `.fu-text-larger`  | 更大号的文本 |
 
 ## 文本粗细
 

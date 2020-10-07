@@ -18,6 +18,10 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 <button class="fun-button fun-button-loose">Button</button>
 ```
 
+<button class="fun-button fun-button-raised">Normal</button>
+<button class="fun-button fun-button-raised fun-button-dense">Dense</button>
+<button class="fun-button fun-button-raised fun-button-loose">Loose</button>
+
 ## 变体
 
 同时使用类选择器 `.fun-button` 和 `.fun-button-*` 以应用样式。
@@ -34,7 +38,11 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 <button class="fun-button fun-button-raised">Raised</button>
 ```
 
-## 图标
+<button class="fun-button fun-button-outlined">Outlined</button>
+<button class="fun-button fun-button-contained">Contained</button>
+<button class="fun-button fun-button-raised">Raised</button>
+
+## 按钮上的图标
 
 通过应用类选择器 `.fun-button-icon` 配合 `fontawesome` 为按钮添加图标。
 
@@ -45,14 +53,57 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 </button>
 ```
 
+<button class="fun-button fun-button-outlined">
+  <i class="fas fa-user fun-button-icon"></i>
+  <div>Button</div>
+</button>
+<button class="fun-button fun-button-contained">
+  <i class="fas fa-user fun-button-icon"></i>
+  <div>Button</div>
+</button>
+<button class="fun-button fun-button-raised">
+  <i class="fas fa-user fun-button-icon"></i>
+  <div>Button</div>
+</button>
+
+## 图标按钮
+
 通过应用类选择器 `.fun-icon-button` 创建图标按钮。
 
 ```html
 <button class="fun-button fun-icon-button">
-  <i class="fas fa-user"></i></button
->>
+  <i class="fas fa-user"></i>
+</button>
 ```
+
+<button class="fun-button fun-icon-button">
+  <i class="fas fa-user"></i>
+</button>
+<button class="fun-button fun-button-outlined fun-icon-button">
+  <i class="fas fa-user"></i>
+</button>
+<button class="fun-button fun-button-contained fun-icon-button">
+  <i class="fas fa-user"></i>
+</button>
+<button class="fun-button fun-button-raised fun-icon-button">
+  <i class="fas fa-user"></i>
+</button>
 
 ## 反转
 
 通过在父节点和子节点应用类选择器 `.fun-button-reverse` 以使按钮模块反转。
+
+<div class="fun-button-reverse">
+<button class="fun-button fun-button-outlined">
+  <div>Button</div>
+  <i class="fas fa-user fun-button-icon"></i>
+</button>
+<button class="fun-button fun-button-contained">
+  <div>Button</div>
+  <i class="fas fa-user fun-button-icon"></i>
+</button>
+<button class="fun-button fun-button-raised">
+  <div>Button</div>
+  <i class="fas fa-user fun-button-icon"></i>
+</button>
+</div>

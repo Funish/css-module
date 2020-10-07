@@ -1,6 +1,6 @@
-# Box
+# Card
 
-Box 模块用于创建盒子。
+Card 模块用于创建盒子。
 
 ## 用法
 
@@ -19,6 +19,36 @@ Box 模块用于创建盒子。
 </div>
 ```
 
+<div class="fun-flex fun-flex-wrap fun-grid-row-medium fun-grid-column-medium">
+<div class="fun-card">
+  <div class="fun-card-header">
+    <div class="fun-text-title">Card</div>
+    <div class="fun-text-subtitle">Subtitle</div>
+  </div>
+  <div class="fun-card-content">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+</div>
+
+<div class="fun-card">
+  <div class="fun-card-header">
+    <div class="fun-text-title">Card</div>
+    <div class="fun-text-subtitle">Subtitle</div>
+  </div>
+  <div class="fun-card-content">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <div class="fun-card-footer fun-flex fun-main-end">
+  <button class="fun-button fun-icon-button">
+    <i class="far fa-heart"></i>
+  </button>
+  <button class="fun-button fun-icon-button">
+    <i class="far fa-bookmark"></i>
+  </button>
+  </div>
+</div>
+</div>
+
 ## 动作
 
 通过应用类选择器 `.fun-card-action` 为盒子容器添加可交互式动作。
@@ -26,3 +56,23 @@ Box 模块用于创建盒子。
 ```html
 <div class="fun-card fun-card-action"></div>
 ```
+
+<div class="fun-card">
+  <div class="fun-card-action">
+  <div class="fun-card-header">
+    <div class="fun-text-title">Card</div>
+  <div class="fun-text-subtitle">Subtitle</div>
+  </div>
+  <div class="fun-card-content">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  </div>
+  <div class="fun-card-footer fun-flex fun-main-end">
+  <button class="fun-button fun-icon-button">
+    <i class="far fa-heart"></i>
+  </button>
+  <button class="fun-button fun-icon-button">
+    <i class="far fa-bookmark"></i>
+  </button>
+  </div>
+</div>

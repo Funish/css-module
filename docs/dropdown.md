@@ -20,6 +20,17 @@ Dropdown 模块用于创建下拉菜单。
 </details>
 ```
 
+<details class="fun-dropdown">
+  <summary>
+  <span class="fun-button fun-button-contained">Dropdown</span>
+  </summary>
+  <div class="fun-dropdown-menu fun-dropdown-menu-bottom">
+    <li class="fun-menu-item">Item1</li>
+    <li class="fun-menu-item">Item2</li>
+    <li class="fun-menu-item">Item3</li>
+  </div>
+</details>
+
 ## 下拉菜单位置
 
 | 类名                             | 描述                       |
