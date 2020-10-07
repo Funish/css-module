@@ -8,7 +8,7 @@ export default {
     if (payload) return {docs: payload};
     else
       return {
-        docs: await require(`~/docs/README.md`)
+        docs: await require(`~/README_zh.md`)
       };
   },
   layout: 'docs'
