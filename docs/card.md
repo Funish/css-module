@@ -57,6 +57,17 @@ Card 模块用于创建盒子。
 <div class="fun-card fun-card-action"></div>
 ```
 
+<div class="fun-flex fun-flex-wrap fun-grid-row-medium fun-grid-column-medium">
+<div class="fun-card fun-card-action">
+  <div class="fun-card-header">
+    <div class="fun-text-title">Card</div>
+    <div class="fun-text-subtitle">Subtitle</div>
+  </div>
+  <div class="fun-card-content">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+</div>
+
 <div class="fun-card">
   <div class="fun-card-action">
   <div class="fun-card-header">
@@ -75,4 +86,5 @@ Card 模块用于创建盒子。
     <i class="far fa-bookmark"></i>
   </button>
   </div>
+</div>
 </div>

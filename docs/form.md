@@ -51,7 +51,7 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 <input type="checkbox" class="fun-switch" />
 
-## 开关
+## 滑动条
 
 通过使用类选择器 `fun-range` 应用样式
 
@@ -59,16 +59,21 @@ Form 模块使您可以轻松创建漂亮的表单。
 <input type="range" class="fun-range" />
 ```
 
-<input type="range" class="fun-range" />
+<input type="range" class="fun-range" value="0" max="100" />
 
 ## 上传
 
 ```html
 <div class="fun-form-file">
   <input type="file" id="file" />
-  <label class="fun-form" for="file">Select</label>
+  <label class="fun-form fun-form-outlined" for="file">Select</label>
 </div>
 ```
+
+<div class="fun-form-file">
+  <input type="file" id="file" />
+  <label class="fun-form fun-form-outlined" for="file">Select</label>
+</div>
 
 ## 图标
 
@@ -79,9 +84,25 @@ Form 模块使您可以轻松创建漂亮的表单。
 </div>
 ```
 
+<div class="fun-margin-bottom-small">
 <div class="fun-icon-form">
   <i class="fas fa-user fun-form-icon"></i>
   <input class="fun-form fun-form-outlined" placeholder="Placeholder" />
+</div>
+</div>
+
+<div class="fun-margin-bottom-small">
+<div class="fun-icon-form">
+  <i class="fas fa-user fun-form-icon"></i>
+  <input class="fun-form fun-form-contained" placeholder="Placeholder" />
+</div>
+</div>
+
+<div>
+<div class="fun-icon-form">
+  <i class="fas fa-user fun-form-icon"></i>
+  <input class="fun-form fun-form-action" placeholder="Placeholder" />
+</div>
 </div>
 
 ## 反转

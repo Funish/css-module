@@ -33,7 +33,7 @@ Narbar 模块用于创建顶部导航栏。
 </div>
 ```
 
-<div class="fun-navbar-top fun-position-relative">
+<div class="fun-navbar-top">
   <details class="fun-navbar-dropdown">
     <summary>
       <span class="fun-button fun-icon-button">
@@ -66,5 +66,5 @@ Narbar 模块用于创建顶部导航栏。
   <summary>
   <span class="fun-button fun-button-outlined">Toggle</span>
   </summary>
-  <div>...</div>
+  <div></div>
 </details>

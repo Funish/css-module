@@ -7,15 +7,68 @@
   em {
     font-style: normal;
 
-    display: inline-block;
+    position: relative;
 
-    min-width: 32px;
-    height: 100%;
-    padding: 5px 10px;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 
-    text-align: center;
-    white-space: nowrap;
+    box-sizing: border-box;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 8px;
 
-    @extend .fun-button;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 4px;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    &:not(:disabled) {
+      cursor: pointer;
+
+      color: var(--fun-theme-text);
+      background: var(--fun-theme-bg);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: calc(50% - 100%);
+      left: calc(50% - 100%);
+
+      width: 200%;
+      height: 200%;
+
+      content: '';
+      pointer-events: none;
+
+      opacity: 0;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    &::after {
+      transition: all 150ms linear;
+    }
+
+    &:hover::before {
+      opacity: 0.08;
+    }
+
+    &:focus::before,
+    &:active::after {
+      transition-duration: 75ms;
+
+      opacity: 0.24;
+    }
   }
 }

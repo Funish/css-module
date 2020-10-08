@@ -14,7 +14,7 @@
           <div v-text="item.title"></div>
         </nuxt-link>
         <hr />
-        <div class="fun-menu-header fun-text-subtitle">布局</div>
+        <div class="fun-menu-header">布局</div>
         <nuxt-link
           v-for="(item, i) in layouts_items"
           :key="i"
@@ -26,7 +26,7 @@
           <div v-text="item.title"></div>
         </nuxt-link>
         <hr />
-        <div class="fun-menu-header fun-text-subtitle">盒模型</div>
+        <div class="fun-menu-header">盒模型</div>
         <nuxt-link
           v-for="(item, i) in box_model_items"
           :key="i"
@@ -38,7 +38,7 @@
           <div v-text="item.title"></div>
         </nuxt-link>
         <hr />
-        <div class="fun-menu-header fun-text-subtitle">文本</div>
+        <div class="fun-menu-header">文本</div>
         <nuxt-link
           v-for="(item, i) in text_items"
           :key="i"
@@ -50,7 +50,7 @@
           <div v-text="item.title"></div>
         </nuxt-link>
         <hr />
-        <div class="fun-menu-header fun-text-subtitle">控件</div>
+        <div class="fun-menu-header">控件</div>
         <nuxt-link
           v-for="(item, i) in controls_items"
           :key="i"
@@ -74,7 +74,7 @@
 
       <div class="fun-menu">
         <div class="fun-padding-vertical-medium">
-          <div class="fun-menu-header fun-text-subtitle">Funish CSS</div>
+          <div class="fun-menu-header">Funish CSS</div>
           <nuxt-link
             v-for="(item, i) in home_items"
             :key="i"
@@ -86,7 +86,7 @@
             <div v-text="item.title"></div>
           </nuxt-link>
           <hr />
-          <div class="fun-menu-header fun-text-subtitle">布局</div>
+          <div class="fun-menu-header">布局</div>
           <nuxt-link
             v-for="(item, i) in layouts_items"
             :key="i"
@@ -98,7 +98,7 @@
             <div v-text="item.title"></div>
           </nuxt-link>
           <hr />
-          <div class="fun-menu-header fun-text-subtitle">盒模型</div>
+          <div class="fun-menu-header">盒模型</div>
           <nuxt-link
             v-for="(item, i) in box_model_items"
             :key="i"
@@ -110,7 +110,7 @@
             <div v-text="item.title"></div>
           </nuxt-link>
           <hr />
-          <div class="fun-menu-header fun-text-subtitle">文本</div>
+          <div class="fun-menu-header">文本</div>
           <nuxt-link
             v-for="(item, i) in text_items"
             :key="i"
@@ -122,7 +122,7 @@
             <div v-text="item.title"></div>
           </nuxt-link>
           <hr />
-          <div class="fun-menu-header fun-text-subtitle">控件</div>
+          <div class="fun-menu-header">控件</div>
           <nuxt-link
             v-for="(item, i) in controls_items"
             :key="i"
@@ -235,6 +235,10 @@ export default {
         {
           title: 'Navbar',
           to: '/docs/navbar'
+        },
+        {
+          title: 'Pagination',
+          to: '/docs/pagination'
         },
         {
           title: 'Utility',

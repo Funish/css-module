@@ -71,8 +71,8 @@
   padding: 0 16px;
 
   &:not(:disabled) {
-    color: $primary-text;
-    background: $primary-dark;
+    color: var(--fun-theme-text);
+    background: var(--fun-theme-bg);
   }
 
   &::before,

@@ -3,4 +3,10 @@
 /*! Funish CSS 0.0.1 | https://funish.net | © Funish.net | MIT License */
 @import './variables';
 
+/* Reset CSS */
+@import './components/normalize';
+
+/* Global variables */
+@import './base';
+
 @import './components/import';

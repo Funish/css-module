@@ -16,7 +16,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "csscomb": "csscomb src/",
+    "csscomb": "csscomb src/components/",
     "prettier": "prettier --write \"./**/*.{vue,js,json,md,scss}\"",
     "format": "yarn csscomb && yarn prettier",
     "complete": "sass src/funish.scss dist/funish.css --no-source-map",

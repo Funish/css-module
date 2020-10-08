@@ -4,7 +4,7 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 ## 用法
 
-使用类选择器 `.fun-button` 以应用样式。
+通过应用类选择器 `.fun-button` 以添加样式。
 
 | 类名                | 描述               |
 | ------------------- | ------------------ |
@@ -55,15 +55,15 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 <button class="fun-button fun-button-outlined">
   <i class="fas fa-user fun-button-icon"></i>
-  <div>Button</div>
+  <div>outlined</div>
 </button>
 <button class="fun-button fun-button-contained">
   <i class="fas fa-user fun-button-icon"></i>
-  <div>Button</div>
+  <div>contained</div>
 </button>
 <button class="fun-button fun-button-raised">
   <i class="fas fa-user fun-button-icon"></i>
-  <div>Button</div>
+  <div>raised</div>
 </button>
 
 ## 图标按钮
@@ -95,15 +95,15 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 <div class="fun-button-reverse">
 <button class="fun-button fun-button-outlined">
-  <div>Button</div>
+  <div>outlined</div>
   <i class="fas fa-user fun-button-icon"></i>
 </button>
 <button class="fun-button fun-button-contained">
-  <div>Button</div>
+  <div>contained</div>
   <i class="fas fa-user fun-button-icon"></i>
 </button>
 <button class="fun-button fun-button-raised">
-  <div>Button</div>
+  <div>raised</div>
   <i class="fas fa-user fun-button-icon"></i>
 </button>
 </div>

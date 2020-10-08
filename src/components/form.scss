@@ -33,39 +33,40 @@
 
   &:not(:disabled) {
     color: currentColor;
-    border-color: currentColor;
     background: inherit;
   }
 }
 
 .fun-form-outlined.fun-form,
 .fun-form-outlined .fun-form {
-  border: 1px solid;
+  transition: box-shadow 150ms linear;
+
+  box-shadow: inset 0 0 0 0.5px currentColor;
 
   &:focus {
-    box-shadow: inset 0 0 0 0.5px currentColor;
+    box-shadow: inset 0 0 0 1.5px currentColor;
   }
 }
 
 .fun-form-contained.fun-form,
 .fun-form-contained .fun-form {
-  border: 1px solid $default;
   background: $default;
 }
 
 .fun-form-action.fun-form,
 .fun-form-action .fun-form {
-  border: 1px solid $default;
+  transition: box-shadow 150ms linear;
+
   background: $default;
 
   &:hover,
   &:focus {
-    border: 1px solid currentColor;
     background: inherit;
+    box-shadow: inset 0 0 0 0.5px currentColor;
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 0.5px currentColor;
+    box-shadow: inset 0 0 0 1.5px currentColor;
   }
 }
 
@@ -86,17 +87,12 @@ textarea.fun-form {
   height: 20px;
 
   cursor: pointer;
-  transition: background-color 75ms linear, border-color 75ms linear;
+  transition: border-color 75ms linear, background-color 75ms linear;
   vertical-align: middle;
 
-  border: 1px solid $default-dark;
+  border: 2px solid $default-dark;
 
   appearance: none;
-
-  &:checked {
-    border-color: $primary;
-    background: $primary;
-  }
 
   &:disabled {
     background: $default;
@@ -107,24 +103,28 @@ textarea.fun-form {
   border-radius: 50%;
 
   &:checked {
+    border-color: var(--fun-theme-bg);
+
     &::after {
       position: absolute;
       top: 50%;
       left: 50%;
 
-      width: 4px;
-      height: 4px;
+      width: 12px;
+      height: 12px;
 
       content: '';
       transform: translate(-50%, -50%);
 
       border-radius: 50%;
-      background: $default-light;
+      background: var(--fun-theme-bg);
     }
   }
 }
 
 .fun-checkbox:checked {
+  border-color: var(--fun-theme-bg);
+  background: var(--fun-theme-bg);
   background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A');
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -165,12 +165,12 @@ textarea.fun-form {
   }
 
   &:checked {
-    background: $primary-light;
+    background: var(--fun-theme-light);
 
     &::after {
       transform: translate(100%, -50%);
 
-      background: $primary;
+      background: var(--fun-theme-bg);
     }
   }
 
@@ -183,14 +183,19 @@ textarea.fun-form {
 /* Range
    ========================================================================== */
 .fun-range {
+  width: 100%;
+
   appearance: none;
 
   &::-webkit-slider-runnable-track {
-    width: 100%;
     height: 2px;
 
     border-radius: 500px;
     background: $default-dark;
+
+    &:active {
+      background: var(--fun-theme-light);
+    }
   }
 
   &::-webkit-slider-thumb {
@@ -200,13 +205,20 @@ textarea.fun-form {
     width: 16px;
     height: 16px;
 
+    cursor: pointer;
     transform: translate(0, -50%);
 
-    border: 1px solid $default-dark;
     border-radius: 50%;
-    background: $default-light;
+    background: var(--fun-theme-bg);
 
     appearance: none;
+
+    &:active {
+      width: 20px;
+      height: 20px;
+
+      transition: all 75ms linear;
+    }
   }
 }
 
@@ -220,7 +232,7 @@ textarea.fun-form {
   }
 
   .fun-form {
-    color: $primary-light;
+    cursor: pointer;
   }
 }
 
