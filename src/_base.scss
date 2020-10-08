@@ -70,5 +70,9 @@ hr {
   padding: 0;
 
   border: none;
-  background-color: #e1e4e8;
+  background: #e1e4e8;
+
+  @media (prefers-color-scheme: dark) {
+    background: #484848;
+  }
 }
