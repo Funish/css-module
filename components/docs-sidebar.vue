@@ -241,6 +241,10 @@ export default {
           to: '/docs/pagination'
         },
         {
+          title: 'Progress',
+          to: '/docs/progress'
+        },
+        {
           title: 'Utility',
           to: '/docs/utility'
         }

@@ -16,3 +16,33 @@
     background: $default-text;
   }
 }
+
+.fun-progress-secondary {
+  &::-webkit-progress-bar {
+    background: $secondary-light;
+  }
+
+  &::-webkit-progress-value {
+    background: $secondary-dark;
+  }
+}
+
+.fun-progress-warning {
+  &::-webkit-progress-bar {
+    background: $warning-light;
+  }
+
+  &::-webkit-progress-value {
+    background: $warning-dark;
+  }
+}
+
+.fun-progress-success {
+  &::-webkit-progress-bar {
+    background: $success-light;
+  }
+
+  &::-webkit-progress-value {
+    background: $success-dark;
+  }
+}

@@ -1187,6 +1187,27 @@ svg.fun-button-icon {
   background: #000;
 }
 
+.fun-progress-secondary::-webkit-progress-bar {
+  background: #6093ff;
+}
+.fun-progress-secondary::-webkit-progress-value {
+  background: #003da4;
+}
+
+.fun-progress-warning::-webkit-progress-bar {
+  background: #ff6f74;
+}
+.fun-progress-warning::-webkit-progress-value {
+  background: #9f0022;
+}
+
+.fun-progress-success::-webkit-progress-bar {
+  background: #64da73;
+}
+.fun-progress-success::-webkit-progress-value {
+  background: #007717;
+}
+
 /* ========================================================================
      Component: Background
    ========================================================================== */

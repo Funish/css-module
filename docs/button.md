@@ -24,7 +24,7 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 ## 变体
 
-同时使用类选择器 `.fun-button` 和 `.fun-button-*` 以应用样式。
+同时应用类选择器 `.fun-button` 和 `.fun-button-*` 以添加样式。
 
 | 类名                    | 描述                         |
 | ----------------------- | ---------------------------- |
@@ -68,7 +68,7 @@ Button 模块是 Form 模块的延伸，具有更丰富的按钮样式。
 
 ## 图标按钮
 
-通过应用类选择器 `.fun-icon-button` 创建图标按钮。
+通过应用类选择器 `.fun-icon-button` 以创建图标按钮。
 
 ```html
 <button class="fun-button fun-icon-button">
