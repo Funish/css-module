@@ -3,6 +3,18 @@
    ========================================================================== */
 /* Background color
    ========================================================================== */
+.fun-background-scheme {
+  background-color: var(--fun-scheme-bg);
+}
+
+.fun-background-surface {
+  background-color: var(--fun-scheme-surface);
+}
+
+.fun-background-theme {
+  background-color: var(--fun-theme-bg);
+}
+
 .fun-background-transparent {
   background: transparent;
 }

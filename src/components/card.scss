@@ -4,19 +4,13 @@
 .fun-card {
   line-height: 1.5;
 
-  position: relative;
-
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 344px;
+  width: 344px;
 
   text-overflow: ellipsis;
   word-break: break-word;
 
-  border-radius: 4px;
+  border-radius: 8px;
   background: var(--fun-scheme-surface);
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
   .fun-card-header {
     padding: 15px 15px 5px;
@@ -24,6 +18,10 @@
 
   .fun-card-content {
     padding: 10px 15px;
+  }
+
+  .fun-card-content:last-child {
+    padding: 10px 15px 15px;
   }
 
   .fun-card-footer {
@@ -38,8 +36,6 @@
 }
 
 .fun-card-action {
-  position: relative;
-
   display: block;
   overflow: hidden;
 
@@ -47,8 +43,8 @@
   user-select: none;
   transition: background-color 150ms linear;
 
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 
   &::before,
   &::after {

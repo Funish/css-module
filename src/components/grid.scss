@@ -11,22 +11,18 @@
 
 /* Row and column spacing
    ========================================================================== */
-
 @each $grid, $spacing in $grid-spacings {
-  .fun-grid-row-#{$grid} > * {
-    margin-right: #{$spacing};
-    margin-left: #{$spacing};
+  .fun-grid-row-#{$grid} {
+    grid-row-gap: #{$spacing};
   }
 
-  .fun-grid-column-#{$grid} > * {
-    margin-top: #{$spacing};
-    margin-bottom: #{$spacing};
+  .fun-grid-column-#{$grid} {
+    grid-column-gap: #{$spacing};
   }
 }
 
 /* Grid template
    ========================================================================== */
-
 @for $number from 2 through 6 {
   .fun-grid-row-#{$number} {
     grid-template-rows: repeat(#{$number}, 1fr);
@@ -34,5 +30,15 @@
 
   .fun-grid-column-#{$number} {
     grid-template-columns: repeat(#{$number}, 1fr);
+  }
+}
+
+@each $width, $spacing in $widths {
+  .fun-grid-template-row-#{$width} {
+    grid-template-rows: repeat(auto-fill, minmax(#{$spacing}, 1fr));
+  }
+
+  .fun-grid-template-column-#{$width} {
+    grid-template-columns: repeat(auto-fill, minmax(#{$spacing}, 1fr));
   }
 }

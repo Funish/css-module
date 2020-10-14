@@ -1,10 +1,6 @@
 /* ========================================================================
      Component: Width
    ========================================================================== */
-[class*='fun-width'] {
-  box-sizing: border-box;
-}
-
 @each $width, $spacing in $widths {
   .fun-width-#{$width} {
     width: #{$spacing};
@@ -48,7 +44,6 @@
 /* Child widths
    ========================================================================== */
 [class*='fun-child-width'] > * {
-  box-sizing: border-box;
   width: 100%;
 }
 

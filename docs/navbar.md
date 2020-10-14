@@ -64,7 +64,12 @@ Narbar 模块用于创建顶部导航栏。
 
 <details class="fun-navbar-drawer">
   <summary>
-  <span class="fun-button fun-button-outlined">Toggle</span>
+    <span class="fun-button fun-button-outlined">Toggle</span>
   </summary>
-  <div></div>
+  <div>
+    <div class="fun-menu-header">Header</div>
+    <div class="fun-menu-item">Item1</div>
+    <div class="fun-menu-item">Item2</div>
+    <div class="fun-menu-item">Item3</div>
+  </div>
 </details>

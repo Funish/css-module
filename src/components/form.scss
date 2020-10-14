@@ -3,14 +3,11 @@
    ========================================================================== */
 .fun-button,
 .fun-form {
-  position: relative;
-
   display: inline-flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
 
-  box-sizing: border-box;
   min-width: 64px;
 
   vertical-align: middle;
@@ -89,8 +86,6 @@ textarea.fun-form {
    ========================================================================== */
 .fun-radio,
 .fun-checkbox {
-  position: relative;
-
   width: 20px;
   height: 20px;
 
@@ -143,8 +138,6 @@ textarea.fun-form {
 /* Switch
    ========================================================================== */
 .fun-switch {
-  position: relative;
-
   width: 40px;
   height: 20px;
 
@@ -174,7 +167,7 @@ textarea.fun-form {
   }
 
   &:checked {
-    background: var(--fun-theme-light);
+    background: var(--fun-theme-surface);
 
     &::after {
       left: 0;
@@ -195,7 +188,7 @@ textarea.fun-form {
     height: 2px;
 
     border-radius: 500px;
-    background: var(--fun-theme-light);
+    background: var(--fun-theme-surface);
   }
 
   &::-webkit-slider-thumb {
@@ -249,8 +242,6 @@ textarea.fun-form {
  */
 
 .fun-icon-form {
-  position: relative;
-
   display: inline-block;
 
   max-width: 100%;

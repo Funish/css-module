@@ -1,5 +1,5 @@
 <template>
-  <div class="markdown-body">
+  <div class="fun-markdown-body fun-padding-medium">
     <p>
       Text can be <b>bold</b>, <i>italic</i>, or <s>strikethrough</s>.
       <a href="https://github.com">Links </a> should be blue with no underlines

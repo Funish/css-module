@@ -19,7 +19,7 @@ Card 模块用于创建盒子。
 </div>
 ```
 
-<div class="fun-flex fun-flex-wrap fun-grid-row-medium fun-grid-column-medium">
+<div class="fun-grid fun-child-width-1-1 fun-grid-small fun-grid-template-column-small">
 <div class="fun-card">
   <div class="fun-card-header">
     <div class="fun-text-title">Card</div>
@@ -57,7 +57,7 @@ Card 模块用于创建盒子。
 <div class="fun-card fun-card-action"></div>
 ```
 
-<div class="fun-flex fun-flex-wrap fun-grid-row-medium fun-grid-column-medium">
+<div class="fun-grid fun-child-width-1-1 fun-grid-small fun-grid-template-column-small">
 <div class="fun-card fun-card-action">
   <div class="fun-card-header">
     <div class="fun-text-title">Card</div>

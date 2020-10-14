@@ -1,10 +1,10 @@
 <template>
   <div class="fun-flex fun-flex-column">
     <Header></Header>
-    <div class="fun-flex fun-flex-1">
+    <div class="fun-flex fun-main-center">
       <Sidebar></Sidebar>
       <div
-        class="fun-markdown-body fun-padding-horizontal-medium fun-width-1-1"
+        class="fun-markdown-body fun-padding-horizontal-auto fun-width-1-1 fun-max-width-xlarge"
       >
         <nuxt />
       </div>

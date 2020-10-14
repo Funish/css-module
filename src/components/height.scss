@@ -1,10 +1,6 @@
 /* ========================================================================
      Component: Height
    ========================================================================== */
-[class*='fun-height'] {
-  box-sizing: border-box;
-}
-
 .fun-height-1-1 {
   height: 100%;
 }
@@ -12,6 +8,7 @@
 .fun-height-viewport {
   height: 100vh;
 }
+
 @each $height, $spacing in $heights {
   .fun-height-#{$height} {
     height: $spacing;

@@ -10,10 +10,7 @@
 /* Breakpoints
    ========================================================================== */
 /* Reset CSS */
-/* ========================================================================
-     Component: Normalize
-   ========================================================================== */
-/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -22,29 +19,31 @@
  */
 html {
   line-height: 1.15;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
    ========================================================================== */
 /**
-  * Remove the margin in all browsers.
-  */
+ * Remove the margin in all browsers.
+ */
 body {
   margin: 0;
 }
 
 /**
-  * Render the `main` element consistently in IE.
-  */
+ * Render the `main` element consistently in IE.
+ */
 main {
   display: block;
 }
 
 /**
-  * Correct the font size and margin on `h1` elements within `section` and
-  * `article` contexts in Chrome, Firefox, and Safari.
-  */
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -53,73 +52,83 @@ h1 {
 /* Grouping content
    ========================================================================== */
 /**
-  * 1. Add the correct box sizing in Firefox.
-  * 2. Show the overflow in Edge and IE.
-  */
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 hr {
-  overflow: visible;
   box-sizing: content-box;
+  /* 1 */
   height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
-  * 1. Correct the inheritance and scaling of font size in all browsers.
-  * 2. Correct the odd `em` font sizing in all browsers.
-  */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 pre {
   font-family: monospace, monospace;
+  /* 1 */
   font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
    ========================================================================== */
 /**
-  * Remove the gray background on active links in IE 10.
-  */
+ * Remove the gray background on active links in IE 10.
+ */
 a {
   background-color: transparent;
 }
 
 /**
-  * 1. Remove the bottom border in Chrome 57-
-  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-  */
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
   border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
-  * Add the correct font weight in Chrome, Edge, and Safari.
-  */
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
-  * 1. Correct the inheritance and scaling of font size in all browsers.
-  * 2. Correct the odd `em` font sizing in all browsers.
-  */
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 code,
 kbd,
 samp {
   font-family: monospace, monospace;
+  /* 1 */
   font-size: 1em;
+  /* 2 */
 }
 
 /**
-  * Add the correct font size in all browsers.
-  */
+ * Add the correct font size in all browsers.
+ */
 small {
   font-size: 80%;
 }
 
 /**
-  * Prevent `sub` and `sup` elements from affecting the line height in
-  * all browsers.
-  */
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 sub,
 sup {
   font-size: 75%;
@@ -138,104 +147,57 @@ sup {
 
 /* Embedded content
    ========================================================================== */
-/*
- * Remove the gap between embedded content and the bottom of their containers.
+/**
+ * Remove the border on images inside links in IE 10.
  */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
-  * 1. Add responsiveness.
-  * 2. Auto-scale the height. Only needed if `height` attribute is present.
-  * 3. Corrects responsive `max-width` behavior if padding and border are used.
-  * 4. Exclude SVGs for IE11 because they don't preserve their aspect ratio.
-  */
-canvas,
-img,
-video {
-  /* 3 */
-  box-sizing: border-box;
-  max-width: 100%;
-  height: auto;
-}
-
-/* 4 */
-@supports (display: block) {
-  svg {
-    box-sizing: border-box;
-    max-width: 100%;
-    height: auto;
-  }
-}
-/*
-  * Hide the overflow in IE.
-  */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/*
-  * 1. Fix lazy loading images if parent element is set to `display: inline` and has `overflow: hidden`.
-  * 2. Hide `alt` text for lazy loading images.
-  * Note: Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
-  */
-img:not([src]) {
-  visibility: hidden;
-  min-width: 1px;
-}
-
-/*
-  * Iframe
-  * Remove border in all browsers
-  */
-iframe {
-  border: 0;
+img {
+  border-style: none;
 }
 
 /* Forms
    ========================================================================== */
 /**
-  * 1. Change the font styles in all browsers.
-  * 2. Remove the margin in Firefox and Safari.
-  */
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: inherit;
+  /* 1 */
   font-size: 100%;
+  /* 1 */
   line-height: 1.15;
+  /* 1 */
   margin: 0;
+  /* 2 */
 }
 
 /**
-  * Show the overflow in IE.
-  * 1. Show the overflow in Edge.
-  */
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 button,
 input {
+  /* 1 */
   overflow: visible;
 }
 
 /**
-  * Remove the inheritance of text transform in Edge, Firefox, and IE.
-  * 1. Remove the inheritance of text transform in Firefox.
-  */
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
 button,
 select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
-  * Correct the inability to style clickable types in iOS and Safari.
-  */
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
 button,
 [type=button],
 [type=reset],
@@ -244,19 +206,19 @@ button,
 }
 
 /**
-  * Remove the inner border and padding in Firefox.
-  */
+ * Remove the inner border and padding in Firefox.
+ */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
-  padding: 0;
   border-style: none;
+  padding: 0;
 }
 
 /**
-  * Restore the focus styles unset by the previous rule.
-  */
+ * Restore the focus styles unset by the previous rule.
+ */
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -265,95 +227,108 @@ button:-moz-focusring,
 }
 
 /**
-  * Correct the padding in Firefox.
-  */
+ * Correct the padding in Firefox.
+ */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
-  * 1. Correct the text wrapping in Edge and IE.
-  * 2. Correct the color inheritance from `fieldset` elements in IE.
-  * 3. Remove the padding so developers are not caught out when they zero out
-  *    `fieldset` elements in all browsers.
-  */
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
 legend {
-  display: table;
   box-sizing: border-box;
-  max-width: 100%;
-  /* 3 */
-  padding: 0;
-  white-space: normal;
+  /* 1 */
   color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
-  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-  */
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 progress {
   vertical-align: baseline;
 }
 
 /**
-  * Remove the default vertical scrollbar in IE 10+.
-  */
+ * Remove the default vertical scrollbar in IE 10+.
+ */
 textarea {
   overflow: auto;
 }
 
 /**
-  * 1. Add the correct box sizing in IE 10.
-  * 2. Remove the padding in IE 10.
-  */
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
 [type=checkbox],
 [type=radio] {
   box-sizing: border-box;
+  /* 1 */
   padding: 0;
+  /* 2 */
 }
 
 /**
-  * Correct the cursor style of increment and decrement buttons in Chrome.
-  */
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
-  * 1. Correct the odd appearance in Chrome and Safari.
-  * 2. Correct the outline style in Safari.
-  */
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
 [type=search] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
-  * Remove the inner padding in Chrome and Safari on macOS.
-  */
-/**
-  * 1. Correct the inability to style clickable types in iOS and Safari.
-  * 2. Change font properties to `inherit` in Safari.
-  */
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
 ::-webkit-file-upload-button {
-  font: inherit;
   -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
    ========================================================================== */
 /*
-  * Add the correct display in Edge, IE 10+, and Firefox.
-  */
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
 details {
   display: block;
 }
 
 /*
-  * Add the correct display in all browsers.
-  */
+ * Add the correct display in all browsers.
+ */
 summary {
   display: list-item;
 }
@@ -361,9 +336,15 @@ summary {
 /* Misc
    ========================================================================== */
 /**
-  * Add the correct display in IE 10+.
-  */
-template,
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
 [hidden] {
   display: none;
 }
@@ -380,6 +361,8 @@ template,
   */
 * {
   outline: none;
+  position: relative;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -390,29 +373,20 @@ template,
 
 :root {
   --fun-scheme-bg: #fff;
-  --fun-scheme-surface: #fff;
-  --fun-scheme-text: #000;
+  --fun-scheme-surface: #f7f7f7;
+  --fun-scheme-text: #333;
   --fun-theme-bg: #212121;
-  --fun-theme-light: #333;
-  --fun-theme-dark: #121212;
+  --fun-theme-surface: #424242;
   --fun-theme-text: #fff;
 }
 
-@media (max-width: 959px) {
-  :root {
-    --fun-scheme-bg: #f2f0ee;
-    --fun-scheme-surface: #fff;
-    --fun-scheme-text: #000;
-  }
-}
 @media (prefers-color-scheme: dark) {
   :root {
-    --fun-scheme-bg: #212121;
-    --fun-scheme-surface: #262626;
-    --fun-scheme-text: #fff;
+    --fun-scheme-bg: #191919;
+    --fun-scheme-surface: #202020;
+    --fun-scheme-text: rgba(255, 255, 255, 0.6);
     --fun-theme-bg: #333;
-    --fun-theme-light: #383838;
-    --fun-theme-dark: #282828;
+    --fun-theme-surface: #515151;
     --fun-theme-text: #fff;
   }
 }
@@ -436,7 +410,7 @@ hr {
 }
 @media (prefers-color-scheme: dark) {
   hr {
-    background: #484848;
+    background: #777a7d;
   }
 }
 
@@ -446,21 +420,20 @@ hr {
    ========================================================================== */
 .fun-card {
   line-height: 1.5;
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 344px;
+  width: 344px;
   text-overflow: ellipsis;
   word-break: break-word;
-  border-radius: 4px;
+  border-radius: 8px;
   background: var(--fun-scheme-surface);
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .fun-card .fun-card-header {
   padding: 15px 15px 5px;
 }
 .fun-card .fun-card-content {
   padding: 10px 15px;
+}
+.fun-card .fun-card-content:last-child {
+  padding: 10px 15px 15px;
 }
 .fun-card .fun-card-footer {
   padding: 5px 15px 5px;
@@ -472,14 +445,13 @@ hr {
 }
 
 .fun-card-action {
-  position: relative;
   display: block;
   overflow: hidden;
   cursor: pointer;
   user-select: none;
   transition: background-color 150ms linear;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .fun-card-action::before, .fun-card-action::after {
   position: absolute;
@@ -540,17 +512,12 @@ hr {
   background: transparent;
 }
 
-.fun-dropdown {
-  position: relative;
-}
-
 .fun-dropdown-menu,
 .fun-dropdown-menu-bottom-left {
   position: absolute;
   z-index: 100;
   top: 100%;
   left: 0;
-  box-sizing: border-box;
   min-width: 100%;
   margin-top: 2px;
   padding: 4px;
@@ -605,12 +572,10 @@ hr {
    ========================================================================== */
 .fun-button,
 .fun-form {
-  position: relative;
   display: inline-flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   min-width: 64px;
   vertical-align: middle;
   text-decoration: none;
@@ -685,7 +650,6 @@ textarea.fun-form {
    ========================================================================== */
 .fun-radio,
 .fun-checkbox {
-  position: relative;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -730,7 +694,6 @@ textarea.fun-form {
 /* Switch
    ========================================================================== */
 .fun-switch {
-  position: relative;
   width: 40px;
   height: 20px;
   cursor: pointer;
@@ -753,7 +716,7 @@ textarea.fun-form {
   background: #fff;
 }
 .fun-switch:checked {
-  background: var(--fun-theme-light);
+  background: var(--fun-theme-surface);
 }
 .fun-switch:checked::after {
   left: 0;
@@ -769,7 +732,7 @@ textarea.fun-form {
 .fun-range::-webkit-slider-runnable-track {
   height: 2px;
   border-radius: 500px;
-  background: var(--fun-theme-light);
+  background: var(--fun-theme-surface);
 }
 .fun-range::-webkit-slider-thumb {
   top: 50%;
@@ -812,7 +775,6 @@ textarea.fun-form {
  * 6. Clip child elements
  */
 .fun-icon-form {
-  position: relative;
   display: inline-block;
   max-width: 100%;
   vertical-align: middle;
@@ -990,7 +952,6 @@ svg.fun-button-icon {
  * 2. Behave like button * 3. Create position context 
  */
 .fun-button-group {
-  position: relative;
   display: inline-flex;
   vertical-align: middle;
 }
@@ -1054,21 +1015,21 @@ svg.fun-button-icon {
 .fun-navbar-top,
 .fun-navbar-bottom {
   line-height: 48px;
-  position: sticky;
   z-index: 998;
   display: flex;
   align-items: stretch;
   flex-wrap: nowrap;
+  width: 100%;
   height: 48px;
   user-select: none;
   white-space: nowrap;
-  background: var(--fun-scheme-surface);
+  background: var(--fun-scheme-bg);
 }
 
 .fun-navbar-top {
   top: 0;
   padding: 0 8px;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.2);
 }
 
 .fun-navbar-container {
@@ -1083,7 +1044,7 @@ svg.fun-button-icon {
 .fun-navbar-bottom {
   bottom: 0;
   padding: 16px;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -3px 5px -2px rgba(0, 0, 0, 0.2);
 }
 
 .fun-navbar-dropdown > :not(summary) {
@@ -1092,11 +1053,10 @@ svg.fun-button-icon {
   z-index: 998;
   top: 100%;
   left: 0;
-  box-sizing: border-box;
   width: 100%;
   border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 1px 4px -1px #c7c7c7;
+  background: var(--fun-scheme-bg);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .fun-navbar-drawer > :not(summary) {
@@ -1106,11 +1066,11 @@ svg.fun-button-icon {
   top: 0;
   left: 0;
   overflow-y: auto;
-  box-sizing: border-box;
   width: 300px;
   height: 100%;
-  background: #fff;
-  box-shadow: 1px 0 4px -1px #c7c7c7;
+  padding: 8px 0;
+  background: var(--fun-scheme-bg);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .fun-navbar-drawer-reverse > :not(summary) {
@@ -1125,12 +1085,10 @@ svg.fun-button-icon {
 .fun-pagination span,
 .fun-pagination em {
   font-style: normal;
-  position: relative;
   display: inline-flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   min-width: 36px;
   height: 36px;
   padding: 0 8px;
@@ -1175,7 +1133,6 @@ svg.fun-button-icon {
    Component: Progress
    ========================================================================== */
 .fun-progress {
-  box-sizing: border-box;
   width: 100%;
   height: 4px;
   appearance: none;
@@ -1213,6 +1170,18 @@ svg.fun-button-icon {
    ========================================================================== */
 /* Background color
    ========================================================================== */
+.fun-background-scheme {
+  background-color: var(--fun-scheme-bg);
+}
+
+.fun-background-surface {
+  background-color: var(--fun-scheme-surface);
+}
+
+.fun-background-theme {
+  background-color: var(--fun-theme-bg);
+}
+
 .fun-background-transparent {
   background: transparent;
 }
@@ -1346,10 +1315,6 @@ svg.fun-button-icon {
    ========================================================================== */
 /* Border
    ========================================================================== */
-[class*=fun-border] {
-  box-sizing: border-box;
-}
-
 /** 
   * Border radius
   */
@@ -1496,7 +1461,7 @@ svg.fun-button-icon {
   margin: 24px 0;
   padding: 0;
   border: 0;
-  background-color: #e1e4e8;
+  background-color: currentColor;
 }
 .fun-markdown-body blockquote {
   padding: 0 1em;
@@ -1573,12 +1538,12 @@ svg.fun-button-icon {
 .fun-markdown-body h1 {
   font-size: 2em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 0.15em solid var(--fun-scheme-surface);
 }
 .fun-markdown-body h2 {
   font-size: 1.5em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 0.15em solid var(--fun-scheme-surface);
 }
 .fun-markdown-body h3 {
   font-size: 1.25em;
@@ -1654,12 +1619,11 @@ svg.fun-button-icon {
   border: 1px solid #dfe2e5;
 }
 .fun-markdown-body table tr {
-  color: #000;
   border-top: 1px solid #c6cbd1;
-  background-color: #fff;
+  background-color: var(--fun-scheme-bg);
 }
 .fun-markdown-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: var(--fun-scheme-surface);
 }
 .fun-markdown-body table img {
   background-color: transparent;
@@ -1667,7 +1631,7 @@ svg.fun-button-icon {
 .fun-markdown-body img {
   box-sizing: content-box;
   max-width: 100%;
-  background-color: #fff;
+  background-color: var(--fun-scheme-bg);
 }
 .fun-markdown-body img[align=right] {
   padding-left: 20px;
@@ -1691,7 +1655,7 @@ svg.fun-button-icon {
   width: auto;
   margin: 13px 0 0;
   padding: 7px;
-  border: 1px solid #dfe2e5;
+  border: 1px solid var(--fun-scheme-surface);
 }
 .fun-markdown-body span.frame span img {
   display: block;
@@ -1792,16 +1756,15 @@ svg.fun-button-icon {
   padding: 16px;
   word-break: normal;
   border-radius: 6px;
-  background-color: #f6f8fa;
+  background-color: var(--fun-scheme-surface);
 }
 .fun-markdown-body pre {
   font-size: 85%;
   line-height: 1.45;
   overflow: auto;
   padding: 16px;
-  color: #000;
   border-radius: 6px;
-  background-color: #f6f8fa;
+  background-color: var(--fun-scheme-surface);
 }
 .fun-markdown-body pre code,
 .fun-markdown-body pre tt {
@@ -1828,8 +1791,6 @@ a {
 
 .fun-text-linked,
 .fun-text-link {
-  position: relative;
-  box-sizing: border-box;
   width: fit-content;
   text-decoration: none;
 }
@@ -1838,7 +1799,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  box-sizing: border-box;
   width: 0;
   height: 100%;
   content: "";
@@ -1857,7 +1817,6 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  box-sizing: border-box;
   width: 100%;
   height: 100%;
   content: "";
@@ -2456,10 +2415,6 @@ a {
 /* ========================================================================
      Component: Height
    ========================================================================== */
-[class*=fun-height] {
-  box-sizing: border-box;
-}
-
 .fun-height-1-1 {
   height: 100%;
 }
@@ -2511,10 +2466,6 @@ a {
 /* ========================================================================
      Component: Width
    ========================================================================== */
-[class*=fun-width] {
-  box-sizing: border-box;
-}
-
 .fun-width-xsmall {
   width: 150px;
 }
@@ -2604,7 +2555,6 @@ a {
 /* Child widths
    ========================================================================== */
 [class*=fun-child-width] > * {
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -3185,64 +3135,52 @@ a {
 
 /* Row and column spacing
    ========================================================================== */
-.fun-grid-row-xsmall > * {
-  margin-right: 5px;
-  margin-left: 5px;
+.fun-grid-row-xsmall {
+  grid-row-gap: 5px;
 }
 
-.fun-grid-column-xsmall > * {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.fun-grid-column-xsmall {
+  grid-column-gap: 5px;
 }
 
-.fun-grid-row-small > * {
-  margin-right: 10px;
-  margin-left: 10px;
+.fun-grid-row-small {
+  grid-row-gap: 10px;
 }
 
-.fun-grid-column-small > * {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.fun-grid-column-small {
+  grid-column-gap: 10px;
 }
 
-.fun-grid-row-medium > * {
-  margin-right: 20px;
-  margin-left: 20px;
+.fun-grid-row-medium {
+  grid-row-gap: 20px;
 }
 
-.fun-grid-column-medium > * {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.fun-grid-column-medium {
+  grid-column-gap: 20px;
 }
 
-.fun-grid-row-large > * {
-  margin-right: 35px;
-  margin-left: 35px;
+.fun-grid-row-large {
+  grid-row-gap: 35px;
 }
 
-.fun-grid-column-large > * {
-  margin-top: 35px;
-  margin-bottom: 35px;
+.fun-grid-column-large {
+  grid-column-gap: 35px;
 }
 
-.fun-grid-row-xlarge > * {
-  margin-right: 60px;
-  margin-left: 60px;
+.fun-grid-row-xlarge {
+  grid-row-gap: 60px;
 }
 
-.fun-grid-column-xlarge > * {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.fun-grid-column-xlarge {
+  grid-column-gap: 60px;
 }
 
-.fun-grid-row-remove > * {
-  margin-right: 0;
-  margin-left: 0;
+.fun-grid-row-remove {
+  grid-row-gap: 0;
 }
 
-.fun-grid-column-remove > * {
-  margin-top: 0;
-  margin-bottom: 0;
+.fun-grid-column-remove {
+  grid-column-gap: 0;
 }
 
 /* Grid template
@@ -3285,6 +3223,46 @@ a {
 
 .fun-grid-column-6 {
   grid-template-columns: repeat(6, 1fr);
+}
+
+.fun-grid-template-row-xsmall {
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.fun-grid-template-column-xsmall {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.fun-grid-template-row-small {
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.fun-grid-template-column-small {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.fun-grid-template-row-medium {
+  grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.fun-grid-template-column-medium {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.fun-grid-template-row-large {
+  grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.fun-grid-template-column-large {
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.fun-grid-template-row-xlarge {
+  grid-template-rows: repeat(auto-fill, minmax(750px, 1fr));
+}
+
+.fun-grid-template-column-xlarge {
+  grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
 }
 
 /* ========================================================================
@@ -3339,7 +3317,6 @@ a {
 .fun-position-center {
   top: 50%;
   left: 50%;
-  box-sizing: border-box;
   /* 1 */
   width: max-content;
   max-width: 100%;
@@ -3387,7 +3364,6 @@ a {
 .fun-position-top-center,
 .fun-position-bottom-center {
   left: 50%;
-  box-sizing: border-box;
   /* 1 */
   width: max-content;
   max-width: 100%;

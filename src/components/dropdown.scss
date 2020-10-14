@@ -35,10 +35,6 @@
   }
 }
 
-.fun-dropdown {
-  position: relative;
-}
-
 .fun-dropdown-menu,
 .fun-dropdown-menu-bottom-left {
   position: absolute;
@@ -46,7 +42,6 @@
   top: 100%;
   left: 0;
 
-  box-sizing: border-box;
   min-width: 100%;
   margin-top: 2px;
   padding: 4px;
