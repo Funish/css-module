@@ -64,9 +64,5 @@ hr {
   padding: 0;
 
   border: none;
-  background: #e1e4e8;
-
-  @media (prefers-color-scheme: dark) {
-    background: #777a7d;
-  }
+  background: var(--fun-scheme-surface);
 }

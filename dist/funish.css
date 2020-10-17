@@ -406,12 +406,7 @@ hr {
   height: 0.15em;
   padding: 0;
   border: none;
-  background: #e1e4e8;
-}
-@media (prefers-color-scheme: dark) {
-  hr {
-    background: #777a7d;
-  }
+  background: var(--fun-scheme-surface);
 }
 
 /* Controls */
@@ -1461,7 +1456,7 @@ svg.fun-button-icon {
   margin: 24px 0;
   padding: 0;
   border: 0;
-  background-color: currentColor;
+  background-color: var(--fun-scheme-surface);
 }
 .fun-markdown-body blockquote {
   padding: 0 1em;
