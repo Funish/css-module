@@ -14,10 +14,10 @@ Text 模块是用于调整文本的样式集合。
 | 类名                   | 描述             |
 | ---------------------- | ---------------- |
 | `.fun-color-default`   | 显示默认文本颜色 |
-| `.fun-color-muted`     | 显示静音文本颜色 |
 | `.fun-color-primary`   | 显示主要文本颜色 |
 | `.fun-color-secondary` | 显示次要文本颜色 |
 | `.fun-color-warning`   | 显示警示文本颜色 |
+| `.fun-color-danger`    | 显示危险文本颜色 |
 | `.fun-color-success`   | 显示成功文本颜色 |
 
 ## 标题

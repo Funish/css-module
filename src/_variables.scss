@@ -1,31 +1,34 @@
 /* Color modifiers
    ========================================================================== */
 /* Default */
-$default: #fafafa;
-$default-light: #fff;
-$default-dark: #c7c7c7;
-$default-text: #000;
+$default-lighter: #ffffff;
+$default-light: #f1f2f6;
+$default-dark: #dfe4ea;
+$default-darker: #ced6e0;
 
 /* Primary */
-$primary: #212121;
-$primary-light: #333;
-$primary-dark: #121212;
-$primary-text: #fff;
+$primary-lighter: #a4b0be;
+$primary-light: #747d8c;
+$primary-dark: #57606f;
+$primary-darker: #2f3542;
 
 /* Secondary */
-$secondary: #0366d6;
-$secondary-light: #6093ff;
-$secondary-dark: #003da4;
+$secondary-lighter: #70a1ff;
+$secondary-light: #1e90ff;
+$secondary-dark: #5352ed;
+$secondary-darker: #3742fa;
 
 /* Warning */
-$warning: #d73a49;
-$warning-light: #ff6f74;
-$warning-dark: #9f0022;
+$warning-light: #eccc68;
+$warning-dark: #ffa502;
+
+/* Danger */
+$danger-light: #ff6b81;
+$danger-dark: #ff4757;
 
 /* Success */
-$success: #28a745;
-$success-light: #64da73;
-$success-dark: #007717;
+$success-light: #7bed9f;
+$success-dark: #2ed573;
 
 /* Breakpoints
    ========================================================================== */
@@ -46,12 +49,10 @@ $padding-spacings: (
   remove: 0
 ) !default;
 $grid-spacings: (
-  xsmall: 5px,
   small: 10px,
   medium: 20px,
-  large: 35px,
-  xlarge: 60px,
-  remove: 0
+  large: 40px,
+  xlarge: 70px
 ) !default;
 $heights: (
   xsmall: 150px,

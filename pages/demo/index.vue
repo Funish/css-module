@@ -1,20 +1,21 @@
 <template>
-  <div>
+  <div class="fun-padding-vertical-auto">
     <div
-      class="fun-grid fun-child-width-1-1 fun-grid-row-small fun-grid-column-small fun-grid-template-row-xsmall fun-grid-template-column-small fun-padding-auto"
+      class="fun-grid fun-grid-small fun-grid-column-1-2@s fun-grid-column-1-3@m fun-grid-column-1-4@l"
     >
       <nuxt-link
-        class="fun-card fun-card-action"
+        class="fun-card"
         v-for="(item, i) in demo_items"
         :key="i"
         :to="item.to"
         router
         exact
       >
-        <div
-          class="fun-text-title fun-position-center"
-          v-text="item.title"
-        ></div>
+        <div class="fun-card-action">
+          <div class="fun-card-header">
+            <div class="fun-text-title" v-text="item.title"></div>
+          </div>
+        </div>
       </nuxt-link>
     </div>
   </div>

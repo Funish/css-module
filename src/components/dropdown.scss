@@ -4,9 +4,13 @@
 .fun-dropdown,
 .fun-navbar-dropdown,
 .fun-navbar-drawer {
+  box-sizing: border-box;
+
   summary {
     cursor: pointer;
     user-select: none;
+
+    outline: none;
 
     &::before,
     &::-webkit-details-marker {
@@ -35,6 +39,10 @@
   }
 }
 
+.fun-dropdown {
+  position: relative;
+}
+
 .fun-dropdown-menu,
 .fun-dropdown-menu-bottom-left {
   position: absolute;
@@ -47,7 +55,7 @@
   padding: 4px;
 
   border-radius: 4px;
-  background: var(--fun-scheme-surface);
+  background: var(--fun-scheme-light);
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }

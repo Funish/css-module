@@ -39,6 +39,8 @@ Funish CSS is [Thus.Fun](https://thus.fun) As part of the `Funish` project devel
 - [Form](/docs/form)
 - [Menu](/docs/menu)
 - [Navbar](/docs/navbar)
+- [Pagination](docs/pagination)
+- [Progress](/docs/progress)
 - [Utility](/docs/utility)
 
 ## Usage

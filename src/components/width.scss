@@ -47,7 +47,7 @@
   width: 100%;
 }
 
-@for $width from 2 through 6 {
+@for $width from 1 through 6 {
   .fun-child-width-1-#{$width} > * {
     width: #{100% / $width};
   }
@@ -108,12 +108,12 @@
     .fun-width-5-6#{$breakpoint} {
       width: 100% * 5 / 6;
     }
-  }
 
-  /* Child widths */
-  @for $width from 2 through 6 {
-    .fun-child-width-1-#{$width}#{$breakpoint} > * {
-      width: #{100% / $width};
+    /* Child widths */
+    @for $width from 2 through 6 {
+      .fun-child-width-1-#{$width}#{$breakpoint} > * {
+        width: #{100% / $width};
+      }
     }
   }
 

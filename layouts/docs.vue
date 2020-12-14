@@ -1,12 +1,12 @@
 <template>
-  <div class="fun-flex fun-flex-column">
+  <div class="fun-flex fun-flex-column" style="min-height: 100vh;">
     <Header></Header>
-    <div class="fun-flex fun-main-center">
+    <div class="fun-flex fun-main-center fun-flex-1">
       <Sidebar></Sidebar>
-      <div
-        class="fun-markdown-body fun-padding-horizontal-auto fun-width-1-1 fun-max-width-xlarge"
-      >
-        <nuxt />
+      <div class="fun-markdown-body fun-width-1-1 fun-max-width-xlarge">
+        <div class="fun-margin-horizontal-medium">
+          <nuxt />
+        </div>
       </div>
     </div>
     <Footer></Footer>

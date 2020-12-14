@@ -8,11 +8,11 @@
   appearance: none;
 
   &::-webkit-progress-bar {
-    background: $default-dark;
+    background: $default-light;
   }
 
   &::-webkit-progress-value {
-    background: $default-text;
+    background: $default-dark;
   }
 }
 
@@ -33,6 +33,16 @@
 
   &::-webkit-progress-value {
     background: $warning-dark;
+  }
+}
+
+.fun-progress-danger {
+  &::-webkit-progress-bar {
+    background: $danger-light;
+  }
+
+  &::-webkit-progress-value {
+    background: $danger-dark;
   }
 }
 

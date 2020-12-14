@@ -20,25 +20,78 @@
 }
 
 .fun-menu-header {
-  font-size: large;
-
   display: block;
 
-  padding: 4px 16px;
+  padding: 12px 16px 8px;
 }
 
 .fun-menu-item {
-  display: block;
+  line-height: 1rem;
 
-  padding: 4px 16px;
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  padding: 12px 16px;
 
   cursor: pointer;
+  user-select: none;
+  transition: background-color 150ms linear;
   white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
 
-  &:hover {
-    color: var(--fun-scheme-bg);
-    background: var(--fun-scheme-text);
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+  &::before {
+    z-index: 1;
+
+    transition: opacity 15ms linear, background-color 15ms linear;
+  }
+
+  &::before,
+  &::after {
+    top: calc(50% - 100%);
+    /* @noflip */
+    left: calc(50% - 100%);
+
+    width: 200%;
+    height: 200%;
+  }
+
+  &::before,
+  &::after {
+    background-color: currentColor;
+  }
+
+  &:hover::before {
+    opacity: 0.04;
+  }
+
+  &:focus::before {
+    transition-duration: 75ms;
+
+    opacity: 0.12;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
+  }
+
+  &:active::after {
+    transition-duration: 75ms;
+
+    opacity: 0.12;
   }
 }

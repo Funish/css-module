@@ -4,7 +4,7 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ## 用法
 
-使用类选择器 `.fun-form` 和 `fun-form-*` 应用样式。为统一视觉上的观感，`button`、`input`、`select`、`textarea` 将共用大部分样式。
+使用类选择器 `.fun-form` 和 `.fun-form-*` 应用样式。为统一视觉上的观感，`button`、`input`、`select`、`textarea` 将共用大部分样式。
 
 | 类名                  | 描述                                                          |
 | --------------------- | ------------------------------------------------------------- |
@@ -43,7 +43,7 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ## 开关
 
-通过使用类选择器 `fun-switch` 应用样式
+通过使用类选择器 `.fun-switch` 应用样式
 
 ```html
 <input type="checkbox" class="fun-switch" />
@@ -53,7 +53,7 @@ Form 模块使您可以轻松创建漂亮的表单。
 
 ## 滑动条
 
-通过使用类选择器 `fun-range` 应用样式
+通过使用类选择器 `.fun-range` 应用样式
 
 ```html
 <input type="range" class="fun-range" />
@@ -66,13 +66,13 @@ Form 模块使您可以轻松创建漂亮的表单。
 ```html
 <div class="fun-form-file">
   <input type="file" id="file" />
-  <label class="fun-form fun-form-outlined" for="file">Select</label>
+  <label class="fun-button fun-button-outlined" for="file">Select</label>
 </div>
 ```
 
 <div class="fun-form-file">
   <input type="file" id="file" />
-  <label class="fun-form fun-form-outlined" for="file">Select</label>
+  <label class="fun-button fun-button-outlined" for="file">Select</label>
 </div>
 
 ## 图标

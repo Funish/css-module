@@ -3,7 +3,7 @@
     <div class="fun-padding-bottom-xlarge">
       <h1>Funish CSS</h1>
       <h2>一款简洁的前端CSS框架</h2>
-      <nuxt-link to="/docs/" class="fun-button fun-button-contained"
+      <nuxt-link to="/docs/" class="fun-button fun-button-raised"
         >Get Started</nuxt-link
       >
       <nuxt-link to="/demo/" class="fun-button">Demo</nuxt-link>

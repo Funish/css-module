@@ -1,71 +1,97 @@
-/* ========================================================================
-     Component: Pagination
-   ========================================================================== */
 .fun-pagination {
   a,
   span,
   em {
     font-style: normal;
+    line-height: 32px;
 
-    display: inline-flex;
+    position: relative;
+
+    display: inline-block;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
 
-    min-width: 36px;
-    height: 36px;
-    padding: 0 8px;
+    min-width: 32px;
 
+    cursor: pointer;
     user-select: none;
+    text-align: center;
     vertical-align: middle;
-    text-decoration: none;
-    text-transform: uppercase;
+    white-space: nowrap;
 
-    border: none;
     border-radius: 4px;
-
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
   }
 
-  a {
-    &:not(:disabled) {
-      cursor: pointer;
+  a:not(.gap),
+  span:not(.gap),
+  em:not(.gap) {
+    border: 1px solid var(--fun-theme-surface);
 
-      color: var(--fun-theme-text);
-      background: var(--fun-theme-bg);
+    &:active {
+      transition: none;
     }
 
     &::before,
     &::after {
       position: absolute;
-      top: calc(50% - 100%);
-      left: calc(50% - 100%);
-
-      width: 200%;
-      height: 200%;
 
       content: '';
       pointer-events: none;
 
       opacity: 0;
       border-radius: 50%;
-      background: currentColor;
     }
 
+    &::before {
+      z-index: 1;
+
+      transition: opacity 15ms linear, background-color 15ms linear;
+    }
+
+    &::before,
     &::after {
-      transition: all 150ms linear;
+      top: calc(50% - 100%);
+      /* @noflip */
+      left: calc(50% - 100%);
+
+      width: 200%;
+      height: 200%;
+    }
+
+    &::before,
+    &::after {
+      background-color: currentColor;
     }
 
     &:hover::before {
-      opacity: 0.08;
+      opacity: 0.04;
     }
 
-    &:focus::before,
+    &:focus::before {
+      transition-duration: 75ms;
+
+      opacity: 0.12;
+    }
+
+    &::after {
+      transition: opacity 150ms linear;
+    }
+
     &:active::after {
       transition-duration: 75ms;
 
-      opacity: 0.24;
+      opacity: 0.12;
     }
+  }
+
+  .previous_page,
+  .next_page {
+    padding: 0 10px;
+  }
+
+  .gap,
+  .gap:hover {
+    cursor: default;
+
+    color: #6a737d;
   }
 }

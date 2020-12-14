@@ -2,94 +2,191 @@
      Component: Button
    ========================================================================== */
 .fun-button {
+  font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  /* @alternate */
+  line-height: inherit;
+
+  position: relative;
+
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  min-width: 64px;
   height: 36px;
-  padding: 0 8px;
+  padding: 0 8px 0 8px;
 
   user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.0892857143em;
   text-transform: uppercase;
 
-  &:not(:disabled) {
-    cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 
-    color: currentColor;
-    background: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+
+  &::-moz-focus-inner {
+    padding: 0;
+
+    border: 0;
   }
 
-  &::before,
-  &::after {
-    position: absolute;
-    top: calc(50% - 100%);
-    left: calc(50% - 100%);
+  &:active {
+    outline: none;
+  }
 
-    width: 200%;
-    height: 200%;
+  &:hover {
+    cursor: pointer;
+  }
 
-    content: '';
+  &:disabled {
+    cursor: default;
     pointer-events: none;
 
-    opacity: 0;
-    border-radius: 50%;
-    background: currentColor;
+    color: rgba(0, 0, 0, 0.37);
+    background-color: transparent;
   }
 
-  &::after {
-    transition: all 150ms linear;
+  &.fun-button-dense {
+    border-radius: 4px;
   }
 
-  &:hover::before {
-    opacity: 0.08;
+  &.fun-button-loose {
+    height: 40px;
   }
-
-  &:focus::before,
-  &:active::after {
-    transition-duration: 75ms;
-
-    opacity: 0.24;
-  }
-}
-
-.fun-button-dense {
-  font-size: 0.8125rem;
-
-  height: 32px;
-}
-
-.fun-button-loose {
-  height: 40px;
-}
-
-/* Style modifiers   ========================================================================== */
-.fun-button-outlined {
-  padding: 0 16px;
 
   &:not(:disabled) {
-    border: 1px solid currentColor;
+    background-color: transparent;
+  }
+
+  .fun-button-icon {
+    font-size: 18px;
+
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+    /* @noflip */
+    margin-right: 8px;
+    /* @noflip */
+    margin-left: 0;
+
+    vertical-align: top;
   }
 }
 
+[dir='rtl'] .fun-button .fun-button-icon {
+  /* @noflip */
+  margin-right: 0;
+  /* @noflip */
+  margin-left: 8px;
+}
+
+.fun-button {
+  .fun-button-icon[dir='rtl'] {
+    /* @noflip */
+    margin-right: 0;
+    /* @noflip */
+    margin-left: 8px;
+  }
+
+  &:not(:disabled) {
+    color: var(--fun-scheme-light);
+    color: inherit;
+  }
+}
+
+.fun-button-label + .fun-button-icon {
+  /* @noflip */
+  margin-right: 0;
+  /* @noflip */
+  margin-left: 8px;
+}
+
+[dir='rtl'] .fun-button-label + .fun-button-icon,
+.fun-button-label + .fun-button-icon[dir='rtl'] {
+  /* @noflip */
+  margin-right: 8px;
+  /* @noflip */
+  margin-left: 0;
+}
+
+svg.fun-button-icon {
+  fill: currentColor;
+}
+
+.fun-button-raised .fun-button-icon,
+.fun-button-contained .fun-button-icon,
+.fun-button-outlined .fun-button-icon {
+  /* @noflip */
+  margin-right: 8px;
+  /* @noflip */
+  margin-left: -4px;
+}
+
+[dir='rtl'] .fun-button-raised .fun-button-icon,
+.fun-button-raised .fun-button-icon[dir='rtl'],
+[dir='rtl'] .fun-button-contained .fun-button-icon,
+.fun-button-contained .fun-button-icon[dir='rtl'],
+[dir='rtl'] .fun-button-outlined .fun-button-icon,
+.fun-button-outlined .fun-button-icon[dir='rtl'],
+.fun-button-raised .fun-button-label + .fun-button-icon,
+.fun-button-contained .fun-button-label + .fun-button-icon,
+.fun-button-outlined .fun-button-label + .fun-button-icon {
+  /* @noflip */
+  margin-right: -4px;
+  /* @noflip */
+  margin-left: 8px;
+}
+
+[dir='rtl'] .fun-button-raised .fun-button-label + .fun-button-icon,
+.fun-button-raised .fun-button-label + .fun-button-icon[dir='rtl'],
+[dir='rtl'] .fun-button-contained .fun-button-label + .fun-button-icon,
+.fun-button-contained .fun-button-label + .fun-button-icon[dir='rtl'],
+[dir='rtl'] .fun-button-outlined .fun-button-label + .fun-button-icon,
+.fun-button-outlined .fun-button-label + .fun-button-icon[dir='rtl'] {
+  /* @noflip */
+  margin-right: 8px;
+  /* @noflip */
+  margin-left: -4px;
+}
+
+.fun-button-raised,
 .fun-button-contained {
-  padding: 0 16px;
+  padding: 0 16px 0 16px;
+}
 
-  &:not(:disabled) {
-    color: var(--fun-theme-text);
-    background: var(--fun-theme-bg);
-  }
+.fun-button-raised:disabled,
+.fun-button-contained:disabled {
+  color: rgba(0, 0, 0, 0.37);
+  background-color: rgba(0, 0, 0, 0.12);
+}
 
-  &::before,
-  &::after {
-    background: currentColor;
-  }
+.fun-button-raised:not(:disabled),
+.fun-button-contained:not(:disabled) {
+  background-color: var(--fun-scheme-light);
+}
+
+.fun-button-raised:not(:disabled),
+.fun-button-contained:not(:disabled) {
+  color: var(--fun-theme-text);
 }
 
 .fun-button-raised {
-  @extend .fun-button-contained;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:not(:disabled) {
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 
   &:hover,
   &:focus {
@@ -101,51 +198,143 @@
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
       0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
   }
+
+  &:disabled {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14),
+      0 0 0 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+.fun-button-outlined {
+  padding: 0 15px 0 15px;
+
+  border-width: 1px;
+  border-style: solid;
+
+  &:disabled {
+    border-color: rgba(0, 0, 0, 0.37);
+  }
+
+  &:not(:disabled) {
+    border-color: var(--fun-scheme-darker);
+  }
+}
+
+.fun-button-dense {
+  font-size: 0.8125rem;
+
+  height: 32px;
+}
+
+.fun-button {
+  -webkit-tap-highlight-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+  &::before {
+    z-index: 1;
+
+    transition: opacity 15ms linear, background-color 15ms linear;
+  }
+
+  &::before,
+  &::after {
+    top: calc(50% - 100%);
+    /* @noflip */
+    left: calc(50% - 100%);
+
+    width: 200%;
+    height: 200%;
+  }
+
+  &::before,
+  &::after {
+    background-color: currentColor;
+  }
+
+  &:hover::before {
+    opacity: 0.04;
+  }
+
+  &:focus::before {
+    transition-duration: 75ms;
+
+    opacity: 0.12;
+  }
+
+  &::after {
+    transition: opacity 150ms linear;
+  }
+
+  &:active::after {
+    transition-duration: 75ms;
+
+    opacity: 0.12;
+  }
+}
+
+.fun-button-raised {
+  &::before,
+  &::after {
+    background-color: var(--fun-theme-text);
+  }
+}
+
+.fun-button-contained {
+  &::before,
+  &::after {
+    background-color: var(--fun-theme-text);
+  }
+}
+
+.fun-button-raised:hover::before,
+.fun-button-contained:hover::before {
+  opacity: 0.08;
+}
+
+.fun-button-raised {
+  &:focus::before {
+    transition-duration: 75ms;
+
+    opacity: 0.24;
+  }
+}
+
+.fun-button-contained {
+  &:focus::before {
+    transition-duration: 75ms;
+
+    opacity: 0.24;
+  }
+}
+
+.fun-button-raised::after,
+.fun-button-contained::after {
+  transition: opacity 150ms linear;
+}
+
+.fun-button-raised:active::after,
+.fun-button-contained:active::after {
+  transition-duration: 75ms;
+
+  opacity: 0.24;
 }
 
 /* Icon button   ========================================================================== */
-.fun-button-icon {
-  font-size: 18px;
-
-  display: inline-block;
-
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  margin-left: 0;
-
-  color: inherit;
-}
-
-.fun-button-reverse .fun-button .fun-button-icon,
-.fun-button-reverse.fun-button .fun-button-icon {
-  margin-right: 0;
-  margin-left: 8px;
-}
-
-svg.fun-button-icon {
-  fill: currentColor;
-}
-
-.fun-button-contained .fun-button-icon,
-.fun-button-outlined .fun-button-icon {
-  margin-right: 8px;
-  margin-left: -4px;
-}
-
-.fun-button-reverse .fun-button-contained .fun-button-icon,
-.fun-button-reverse .fun-button-outlined .fun-button-icon,
-.fun-button-reverse.fun-button-contained .fun-button-icon,
-.fun-button-reverse.fun-button-outlined .fun-button-icon {
-  margin-right: -4px;
-  margin-left: 8px;
-}
-
 .fun-icon-button {
   min-width: 36px;
   padding: 0;
 
-  border-radius: 500px;
+  border-radius: 50%;
 
   &.fun-button-dense {
     min-width: 32px;

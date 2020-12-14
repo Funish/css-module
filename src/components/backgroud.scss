@@ -3,44 +3,32 @@
    ========================================================================== */
 /* Background color
    ========================================================================== */
-.fun-background-scheme {
-  background-color: var(--fun-scheme-bg);
-}
-
-.fun-background-surface {
-  background-color: var(--fun-scheme-surface);
-}
-
-.fun-background-theme {
-  background-color: var(--fun-theme-bg);
-}
-
 .fun-background-transparent {
   background: transparent;
 }
 
 .fun-background-default {
-  background-color: $default-light;
-}
-
-.fun-background-muted {
-  background-color: $default;
+  background: var(--fun-theme-default);
 }
 
 .fun-background-primary {
-  background-color: $primary;
+  background: var(--fun-theme-primary);
 }
 
 .fun-background-secondary {
-  background-color: $secondary;
+  background: var(--fun-theme-secondary);
 }
 
 .fun-background-warning {
-  background-color: $warning;
+  background: var(--fun-theme-warning);
+}
+
+.fun-background-danger {
+  background: var(--fun-theme-danger);
 }
 
 .fun-background-success {
-  background-color: $success;
+  background: var(--fun-theme-success);
 }
 
 /* Size

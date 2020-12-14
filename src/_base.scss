@@ -3,51 +3,48 @@
    ========================================================================== */
 /* Universal style
    ========================================================================== */
-/**
-  * 1.Remove the outline on all elements when they are active or hovered
-  * 2.Make the tap highlight color of all elements in Webkit browser transparent
-  */
-
-* {
-  outline: none;
-
-  position: relative;
-
-  box-sizing: border-box;
-
-  -webkit-tap-highlight-color: transparent;
-}
-
-:disabled {
-  cursor: default;
-  pointer-events: none;
-}
-
 :root {
-  --fun-scheme-bg: #fff;
-  --fun-scheme-surface: #f7f7f7;
-  --fun-scheme-text: #333;
-  --fun-theme-bg: #212121;
-  --fun-theme-surface: #424242;
-  --fun-theme-text: #fff;
+  --fun-scheme-lighter: #{$default-lighter};
+  --fun-scheme-light: #{$default-light};
+  --fun-scheme-dark: #{$default-dark};
+  --fun-scheme-darker: #{$default-darker};
+  --fun-scheme-text: #{$primary-darker};
+  --fun-theme-bg: #{$default-lighter};
+  --fun-theme-surface: #{$default-dark};
+  --fun-theme-default: #{$default-light};
+  --fun-theme-primary: #{$primary-light};
+  --fun-theme-secondary: #{$secondary-light};
+  --fun-theme-warning: #{$warning-light};
+  --fun-theme-danger: #{$danger-light};
+  --fun-theme-success: #{$success-light};
+  --fun-theme-text: #{$primary-darker};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fun-scheme-bg: #191919;
-    --fun-scheme-surface: #202020;
-    --fun-scheme-text: rgba(255, 255, 255, 0.6);
-    --fun-theme-bg: #333;
-    --fun-theme-surface: #515151;
-    --fun-theme-text: #fff;
+    --fun-scheme-lighter: #{$primary-darker};
+    --fun-scheme-light: #{$primary-dark};
+    --fun-scheme-dark: #{$primary-light};
+    --fun-scheme-darker: #{$primary-lighter};
+    --fun-scheme-text: #{$default-lighter};
+    --fun-theme-bg: #{$primary-dark};
+    --fun-theme-surface: #{$primary-light};
+    --fun-theme-default: #{$default-dark};
+    --fun-theme-primary: #{$primary-dark};
+    --fun-theme-secondary: #{$secondary-dark};
+    --fun-theme-warning: #{$warning-dark};
+    --fun-theme-danger: #{$danger-dark};
+    --fun-theme-success: #{$success-dark};
+    --fun-theme-text: #{$default-lighter};
   }
 }
 
 /* Element modifiers
    ========================================================================== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: 'Roboto', 'Noto Sans SC', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji';
   font-size: 16px;
   line-height: 1.25;
 
@@ -55,8 +52,9 @@ body {
 
   word-wrap: break-word;
 
+  caret-color: var(--fun-scheme-text);
   color: var(--fun-scheme-text);
-  background: var(--fun-scheme-bg);
+  background: var(--fun-scheme-lighter);
 }
 
 hr {
@@ -64,5 +62,32 @@ hr {
   padding: 0;
 
   border: none;
-  background: var(--fun-scheme-surface);
+  background: var(--fun-scheme-light);
+}
+
+.fun-scrollbar {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-corner {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(51, 51, 51, 0.3);
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #e5e5e5;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background: 0 0;
+  }
 }

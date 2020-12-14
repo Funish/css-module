@@ -12,6 +12,11 @@
 /* Row and column spacing
    ========================================================================== */
 @each $grid, $spacing in $grid-spacings {
+  .fun-grid-#{$grid} {
+    grid-row-gap: #{$spacing};
+    grid-column-gap: #{$spacing};
+  }
+
   .fun-grid-row-#{$grid} {
     grid-row-gap: #{$spacing};
   }
@@ -23,22 +28,38 @@
 
 /* Grid template
    ========================================================================== */
-@for $number from 2 through 6 {
-  .fun-grid-row-#{$number} {
-    grid-template-rows: repeat(#{$number}, 1fr);
+@for $grids from 2 through 6 {
+  .fun-grid-row-1-#{$grids} {
+    grid-template-rows: repeat(
+      auto-fill,
+      minmax(calc(#{100% / $grids} - 70px), 1fr)
+    );
   }
 
-  .fun-grid-column-#{$number} {
-    grid-template-columns: repeat(#{$number}, 1fr);
+  .fun-grid-column-1-#{$grids} {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(#{100% / $grids} - 70px), 1fr)
+    );
   }
 }
 
-@each $width, $spacing in $widths {
-  .fun-grid-template-row-#{$width} {
-    grid-template-rows: repeat(auto-fill, minmax(#{$spacing}, 1fr));
-  }
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: #{$width}) {
+    @for $grids from 2 through 6 {
+      .fun-grid-row-1-#{$grids}#{$breakpoint} {
+        grid-template-rows: repeat(
+          auto-fill,
+          minmax(calc(#{100% / $grids} - 70px), 1fr)
+        );
+      }
 
-  .fun-grid-template-column-#{$width} {
-    grid-template-columns: repeat(auto-fill, minmax(#{$spacing}, 1fr));
+      .fun-grid-column-1-#{$grids}#{$breakpoint} {
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(calc(#{100% / $grids} - 70px), 1fr)
+        );
+      }
+    }
   }
 }

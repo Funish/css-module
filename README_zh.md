@@ -39,6 +39,8 @@ Funish CSS 是 [Thus.Fun](https://thus.fun) 团队开发的 `Funish` 项目的�
 - [Form](/docs/form)
 - [Menu](/docs/menu)
 - [Navbar](/docs/navbar)
+- [Pagination](docs/pagination)
+- [Progress](/docs/progress)
 - [Utility](/docs/utility)
 
 ## 用法
